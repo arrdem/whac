@@ -27,6 +27,8 @@ public class DeviceVO implements Runnable {
 	private boolean aborted;
 	private ObjectInputStream ois;
 	private ObjectOutputStream oos;
+	
+	private boolean connected = false; 
 
 	public DeviceVO(String btAddress, BluetoothSocket conn,
 			MessageObserver messageReceivedHandler, DeviceManager deviceManager) {
