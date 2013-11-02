@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal" >
+    <com.schlaf.steam.activities.damages.DamageLineView
+        android:id="@+id/damageLineView1"
+        android:layout_width="0dip"
+        android:layout_height="48dip"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="15dp"
+        android:layout_weight="1" />
+
+     <net.simonvt.numberpicker.NumberPicker
+         android:id="@+id/numberPickerDamage"
+         android:layout_width="48dp"
+         android:layout_height="124dp"
+         android:layout_gravity="center_vertical" />
+
+     </LinearLayout>
+     
+       <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/buttonCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxHeight="48dp"
+                android:text="Cancel" />
+
+            <Button
+                android:id="@+id/buttonApply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxHeight="48dp"
+                android:text="Apply" />
+
+            <Button
+                android:id="@+id/buttonCommit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxHeight="48dp"
+                android:text="Commit" />
+        </LinearLayout>     
+</LinearLayout>

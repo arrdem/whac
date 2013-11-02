@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="warmachine.xsd">
+	<armies>
+	    
+ 		    
+	    <army faction="faction_cygnar" name="cygnar">
+	        <warcasters>
+
+<warcaster  id="Yw01" name="Captain Victoria Haley" full_name="Captain Victoria Haley" generation="P" qualification="warcaster" focus="6" warjack_points="5" fa="C">
+	<basestats name="Victoria Haley" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="15" />
+	<weapons></weapons>
+	<feat title=""></feat>
+	
+</warcaster>
+<warcaster  id="Yx01" name="Major Victoria Haley" full_name="Major Victoria Haley" generation="E" qualification="warcaster" focus="6" warjack_points="5" fa="C">
+	<basestats name="Victoria Haley" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="15" />
+	<weapons></weapons>
+	<feat title=""></feat>
+	
+</warcaster>
+<warcaster  id="Yw02" name="Commander Coleman Stryker" full_name="Commander Coleman Stryker" generation="P" qualification="warcaster" focus="6" warjack_points="6" fa="C">
+	<basestats name="Stryker" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="17" />
+	<weapons></weapons>
+	<feat title=""></feat>
+	
+</warcaster>
+<warcaster  id="Yx02" name="Lord Commander Stryker" full_name="Lord Commander Stryker" generation="E" qualification="warcaster" focus="6" warjack_points="6" fa="C">
+	<basestats name="Stryker" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="17" />
+	<weapons></weapons>
+	<feat title=""></feat>
+	
+</warcaster>
+<warcaster  id="Yw03" name="Lieutenant Allister Caine" full_name="Lieutenant Allister Caine" generation="P" qualification="warcaster" focus="6" warjack_points="6" fa="C">
+	<basestats name="Allister Caine" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="15" />
+	<weapons></weapons>
+	<feat title=""></feat>
+	
+</warcaster>
+<warcaster  id="Yx03" name="Captain Allister Caine" full_name="Captain Allister Caine" generation="E" qualification="epic warcaster" focus="6" warjack_points="5" fa="C">
+	<basestats name="Allister Caine" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="15" />
+	<weapons></weapons>
+	<feat title=""></feat>
+	
+</warcaster>
+
+<warcaster  id="Yw04" name="Commander Adept Nemo" full_name="Commander Adept Nemo" generation="P" qualification="warcaster" focus="6" warjack_points="6" fa="C">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="14" />
+	<weapons></weapons>
+	<feat title=""></feat>
+	
+</warcaster>
+<warcaster  id="Yx04" name="General Adept Nemo" full_name="General Adept Nemo" generation="E" qualification="warcaster" focus="6" warjack_points="6" fa="C">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="14" />
+	<weapons></weapons>
+	<feat title=""></feat>
+	
+</warcaster>
+<warcaster  id="Yz04" name="Artificier General Nemo" full_name="Artificier General Nemo" generation="EE" qualification="warcaster" focus="6" warjack_points="3" fa="C">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="14" />
+	<weapons></weapons>
+	<feat title=""></feat>
+	
+	<model id="Finch" full_name="Finch" qualification="cygnar solo">
+	    <basestats name="Finch" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+	</model>
+</warcaster>
+<warcaster  id="YW05" name="'Siege' Brisbane" full_name="'Siege' Brisbane" generation="P" qualification="warcaster" focus="6" warjack_points="5" fa="C">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="18" />
+	<weapons></weapons>
+	<feat title=""></feat>
+	
+</warcaster>
+<warcaster  id="YW06" name="Kraye" full_name="Kraye" generation="P" qualification="warcaster" focus="6" warjack_points="6" fa="C">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="18" />
+	<weapons></weapons>
+	<feat title=""></feat>
+	
+</warcaster>
+<warcaster  id="YW07" name="Darius" full_name="Darius" generation="P" qualification="warcaster" focus="6" warjack_points="5" fa="C">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="22" />
+	<weapons></weapons>
+	<feat title=""></feat>
+	
+</warcaster>
+<warcaster  id="YW08" name="Kara Sloan" full_name="Kara Sloan" generation="P" qualification="warcaster" focus="6" warjack_points="6" fa="C">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="16" />
+	<weapons></weapons>
+	<feat title=""></feat>
+	
+</warcaster>
+<warcaster  id="YW09" name="Constance Blaize" full_name="Constance Blaize" generation="P" qualification="warcaster" focus="6" warjack_points="6" fa="C">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="16" />
+	<weapons></weapons>
+	<feat title=""></feat>
+	
+</warcaster>
+<warcaster  id="YX09" name="Constance Blaize" full_name="Constance Blaize" generation="P" qualification="warcaster" focus="6" warjack_points="6" fa="C">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="16" />
+	<weapons></weapons>
+	<feat title=""></feat>
+	
+</warcaster>	            
+	            	            
+	        </warcasters>
+	        <warjacks>
+<warjack  id="YJ01" name="Charger" full_name="Charger" damage_grid="xxxxxxx....x.......L..R.LLMCRRxMMCCx" cost="4" qualification="Cygnar light warjack" fa="U">
+	<basestats name="Charger" spd="6" str="8" mat="6" rat="6" def="13" arm="16" cmd="0" />
+	<weapons>
+	    <melee_weapon p_plus_s="12" pow="4" name="Battle Hammer" location="R"></melee_weapon>
+	    <ranged_weapon rng="12" name="Dual cannon" aoe="-" pow="12" rof="2" location="L">
+	        <capacity title="Powerful attack">When attacking with this weapon, this model can spend 1 focus point to boost attack and damage rolls for the attack.</capacity>
+	    </ranged_weapon>
+	</weapons>
+	
+</warjack>
+<warjack  id="YJ02" name="Lancer" full_name="Lancer" damage_grid="xx..xxx....x.......LAAR.LLMCRRxMMCCx" cost="6" qualification="Cygnar light warjack" fa="U">
+	<basestats name="Lancer" spd="6" str="8" mat="6" rat="6" def="13" arm="16" cmd="0" arc_node="true" />
+	<weapons>
+	    <melee_weapon p_plus_s="12" pow="4" name="War spear" location="R" reach="true">
+	        <capacity title="Set Defense">a model in this model's front arc suffer -2 on charge, slam power attack, and impact rolls against this model.</capacity>
+	    </melee_weapon>
+	    <melee_weapon p_plus_s="9" pow="1" name="Shock shield" location="L" shield="true">
+	        <capacity title="Cortex damage">When a warjack is hit by this weapon, it suffers 1 damage point to its first available Cortex system box. </capacity>
+	        <capacity title="Shock Field">If a warjack in this model's front arc hits it with a melee attack, immediatly after the attack is resolved the attacker suffers 1 damage point to its first available Cortex system box. This model loses Shock Field while this weapon system is crippled or locked.</capacity>
+	    </melee_weapon>
+   	</weapons>
+	
+</warjack>
+<warjack  id="YJ03" name="Sentinel" full_name="Sentinel" damage_grid="xxxxxxx....x.......L..R.LLMCRRxMMCCx" cost="4" qualification="Cygnar light warjack" fa="U">
+	<basestats name="Sentinel" spd="6" str="8" mat="6" rat="6" def="13" arm="16" cmd="0" />
+	<weapons>
+	    <melee_weapon p_plus_s="11" pow="4" name="Assault shield" location="R" shield="true">
+	    </melee_weapon>
+	    <ranged_weapon rng="10" name="Chain gun" aoe="-" pow="10" rof="1">
+	        <capacity title="Strafe [D6] (*Attack)">Make D6 ranged attacks targeting a primary target and any number of secondary targets within 2" of the first target. Ignore intervening models when declaring secondary targets. A secondary target cannot be targeted by more atacks than the primary target. Strafe counts as one attacks for ROF.</capacity>
+	    </ranged_weapon>
+	</weapons>
+	<capacity title="Shield Guard">Once per round, when a friendly model is directly hit by a ranged attack during your opponent's turn while within 2" of this model, this model can become the target of the attack and be automatically hit instead. This model cannot use Shield Guard if it is incorporeal, knocked down, or stationary.</capacity>
+</warjack>
+<warjack  id="YJ04" name="Hunter" full_name="Hunter" damage_grid="xxxxxxxx..xx.......L..R.LLMCRRxMMCCx" cost="6" qualification="Light Warjack" fa="U">
+	<basestats name="Hunter" spd="6" str="7" mat="6" rat="7" def="14" arm="15" cmd="0" advance_deployment="true" pathfinder="true"/>
+	<weapons>
+	    <melee_weapon p_plus_s="11" pow="4" name="Battle Axe" location="R"></melee_weapon>
+	    <ranged_weapon rng="14" name="Long Arm" aoe="-" pow="6" rof="1" location="L">
+	        <capacity title="Armor piercing">When calculating damage from this weapon, halve the base ARM stats of models hit that have medium or larger bases. This weapon gains +2 to damage rolls against models with small bases.</capacity>
+	    </ranged_weapon>
+	</weapons>
+	<capacity title="Extended control range">When cheking to see if this model is in its controllers's control area for focus allocation, double the area.</capacity>	
+	<capacity title="Parry">This model cannot be targeted by free strikes.</capacity>
+</warjack>
+<warjack  id="YJ05" name="Grenadier" full_name="Grenadier" damage_grid="xxxxxxxx..xx.......L..R.LLMCRRxMMCCx" cost="5" qualification="Cygnar light warjack" fa="U">
+	<basestats name="Grenadier" spd="6" str="7" mat="6" rat="6" def="14" arm="15" cmd="0" advance_deployment="true"/>
+	<weapons>
+	    <melee_weapon p_plus_s="12" pow="5" name="Mattock" location="R"></melee_weapon>
+	    <ranged_weapon rng="10" name="Grenade Launcher" aoe="3" pow="12" rof="1" location="L">
+	        <capacity title="Arcing fire">When attacking with this weapon, this model can ignore interening models except those within 1" of the target.</capacity>
+	        <capacity title="Manual Reload">This model can make one additional Grenade Launcher ranged attack during its combat action for each Trencher model B2B with it, up to a maximum of two additional attacks. These additional attacks do not count against the Grenade Launcher's ROF.</capacity>
+	    </ranged_weapon>
+	</weapons>
+	<capacity title="Dig in" type="*Action">This model gains cover, does not suffer blast damage, and does not block LOS. This model cannot dig into solid rock or man-made constructions. This model can begin the game dug in.</capacity>
+	
+</warjack>
+<warjack  id="YJ06" name="Thorn" full_name="Thorn" damage_grid="xx..xxx....x.......LAAR.LLMCRRxMMCCx" cost="8" qualification="Cygnar Character light warjack" fa="C">
+	<basestats name="Thorn" spd="6" str="8" mat="7" rat="6" def="13" arm="16" cmd="0" arc_node="true"/>
+	<weapons>
+	    <melee_weapon p_plus_s="13" pow="5" name="Disruption spear" location="R" reach="true">
+	        <capacity title="Disruption">A warjack hit loses its focus points and cannot be allocated focus or channel spells for one round.</capacity>
+	        <capacity title="Set Defense">a model in this model's front arc suffer -2 on charge, slam power attack, and impact rolls against this model.</capacity>
+	    </melee_weapon>
+	    <melee_weapon p_plus_s="9" pow="1" name="Shock shield" location="L" shield="true">
+	        <capacity title="Cortex damage">When a warjack is hit by this weapon, it suffers 1 damage point to its first available Cortex system box. </capacity>
+	        <capacity title="Shock Field">If a warjack in this model's front arc hits it with a melee attack, immediatly after the attack is resolved the attacker suffers 1 damage point to its first available Cortex system box. This model loses Shock Field while this weapon system is crippled or locked.</capacity>
+	    </melee_weapon>
+	</weapons>
+	<capacity title="Affinity [Haley]">While Thorn is engaged, Haley can channel spells through it as if it were not engaged.</capacity>
+	<capacity title="Imprint: Disengage">During its activation, this model can spend 1 focus pont to use Disengage. For one round, when this model is missed by an ennemy melee attack anytile other than when it is advencing, this model can move up to 2". During this movement, it cannot be targeted by free strikes.</capacity>
+	<capacity title="Reaction Drive">Once per turn, immediatly after this model's controller channels a spell throught it, this model can advance 3".</capacity>
+		
+</warjack>
+<warjack  id="YJ07" name="Defender" full_name="Defender" damage_grid="xx..xx.............L..R.LLMCRRxMMCCx" cost="9" qualification="Heavy Warjack" fa="U">
+	<basestats name="Defender" spd="5" str="11" mat="7" rat="6" def="12" arm="18" cmd="0"  />
+	<weapons>
+	    <melee_weapon name="Shock hammer"  location="R" p_plus_s="16" pow="5" >
+	        <capacity title="cortex damage"> When a warjack is hit by weapon, it suffer 1 damage point to its available Cortex system box.</capacity>
+	    </melee_weapon>
+	    <ranged_weapon name="Heavy barrel" rng="16" rof="1" aoe="-" pow="15" >
+		</ranged_weapon>
+	</weapons>
+</warjack>
+<warjack  id="Yj07" name="Defender" full_name="Defender" damage_grid="xx..xx.............L..R.LLMCRRxMMCCx" cost="9" qualification="Cygnar heavy warjack" fa="1">
+	<basestats name="Defender" spd="5" str="11" mat="7" rat="6" def="12" arm="18" cmd="0"  />
+	<weapons>
+	    <melee_weapon name="Shock hammer"  location="R" p_plus_s="16" pow="5" >
+	        <capacity title="cortex damage"> When a warjack is hit by weapon, it suffer 1 damage point to its available Cortex system box.</capacity>
+	    </melee_weapon>
+	    <ranged_weapon name="Heavy barrel" rng="16" rof="1" aoe="-" pow="15" >
+		</ranged_weapon>
+	</weapons>
+	
+</warjack>
+<warjack  id="YJ08" name="Ironclad" full_name="Ironclad" damage_grid="xx..xx.............L..R.LLMCRRxMMCCx" cost="7" qualification="Cygnar heavy warjack" fa="U">
+	<basestats name="Ironclad" spd="5" str="11" mat="7" rat="6" def="12" arm="18" cmd="0" />
+	<weapons>
+	    <melee_weapon name="Quake hammer"  location="L" p_plus_s="18" pow="7" >
+	        <capacity title="Critical Knockdown"> On a critical hit, the model hit is knocked down.</capacity>
+	        <capacity title="Tremor (*Attack)">Tremor affects every model within 2" of this model and does not require a target. Make one melee attack roll. If the roll equals or exceeds the DEF of an affected model, it is knocked down. This attack roll cannot be rerolled. This model can make a Tremor speial attack if it charges.</capacity>
+	    </melee_weapon>
+	    <melee_weapon name="Open fist"  location="R" p_plus_s="14" pow="3" open_fist="true"></melee_weapon>
+	</weapons>
+	
+</warjack>
+<warjack  id="YJ09" name="Centurion" full_name="Centurion" damage_grid="xx..xx.............L..R.LLMCRRxMMCCx" cost="9" qualification="Cygnar heavy warjack" fa="U">
+	<basestats name="Centurion" spd="4" str="12" mat="6" rat="4" def="11" arm="19" cmd="0" />
+		<weapons>
+	    <melee_weapon name="Piston spear"  location="R" p_plus_s="18" pow="6" reach="true">
+	        <capacity title="critical sustained attack">  On a critical hit during this model's activation, attacks made with this weapon against the model critically hit by weapon automatically hit it. If this model attacks another model with this activation, attacks against the last model critically hit with this weapon no longer automatically hit it.</capacity>
+	    </melee_weapon>
+	    <melee_weapon name="Magno shield"  location="L" p_plus_s="13" pow="1" shield="true">
+	    </melee_weapon>
+	</weapons>
+	<capacity title="polarity field" type="*Action">For one round, this model cannot be charged by a model beginning the charge in this model front arc.</capacity>	
+</warjack>
+<warjack  id="YJ10" name="Stormclad" full_name="Stormclad" damage_grid="xx..xx.............L..R.LLMCRRxMMCCx" cost="10" qualification="Cygnar heavy warjack" fa="U">
+	<basestats name="Stormclad" spd="5" str="11" mat="7" rat="6" def="12" arm="18" cmd="0" immunity_electricity="true"/>
+	<weapons>
+	  	<melee_weapon name="Generator Blade"  location="R" p_plus_s="19" pow="9" reach="true">
+	  	    <capacity title="Electro leap">When a model is hit with this weapon, you can have lightning arc to the nearest model within 4" of the model hit, ignoring the attacking model. The model the lightning arcs to suffers an unboostable POW 10 electrical damage roll</capacity>
+	    </melee_weapon>
+	  	<melee_weapon name="Open fist"  location="L" p_plus_s="14" pow="3" open_fist="true" buckler="true">
+	    </melee_weapon>
+	    
+	    <ranged_weapon name="Generator blast" rng="8" rof="1" aoe="-" pow="14" electricity="true" >
+	        <capacity title="Electro leap">See above.</capacity>
+		</ranged_weapon>
+	    
+	</weapons>
+	
+</warjack>
+<warjack  id="YJ11" name="Thunderhead" full_name="Thunderhead" damage_grid="x....x.............L..R.LLMCRRxMMCCx" cost="12" qualification="Cygnar Character Heavy warjack" fa="C">
+	<basestats name="Thunderhead" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons>
+		<melee_weapon name="Shock fist"  location="R" p_plus_s="16" pow="5" open_fist="true">
+	  	    <capacity title="Critical Disruption">On a critical hit on a warjack, it suffers Disruption. (A warjack suffering Disruption loses its focus points and cannot be allocated focus or channel spells for one round.)</capacity>
+	    </melee_weapon>
+		<melee_weapon name="Shock fist"  location="L" p_plus_s="16" pow="5" open_fist="true">
+	  	    <capacity title="Critical Disruption">See above.</capacity>
+	    </melee_weapon>
+			    
+	    <ranged_weapon name="Lightning coil" rng="10" rof="3" aoe="-" pow="14" electricity="true" >
+	        <capacity title="Critical Disruption">See above.</capacity>
+	        <capacity title="Energy pulse (*Attack)"></capacity>
+	        <capacity title="Sustained Attack">During this model's activation, when it makes an attack with this weapon against the last model hit by the weapon this activation, the attack automatically hits.</capacity>
+		</ranged_weapon>	    
+	</weapons>
+	
+</warjack>
+<warjack  id="YJ12" name="Hammersmith" full_name="Hammersmith" damage_grid="xx..xx.............L..R.LLMCRRxMMCCx" cost="8" qualification="Cygnar heavy warjack" fa="U">
+	<basestats name="Hammersmith" spd="4" str="12" mat="6" rat="4" def="11" arm="19" cmd="0" />
+		<weapons>
+	    <melee_weapon name="Hammer"  location="R" p_plus_s="17" pow="5" >
+	        <capacity title="Beat back">  Immediately after a normal attack with this weapon is resolved during this model's combat action, the enemy model hit can be pushed 1" directly away from the attacking model. After the enemy model is pushed, the attacking model can advance up to 1".</capacity>
+	    </melee_weapon>
+	    <melee_weapon name="Hammer"  location="L" p_plus_s="17" pow="5" >
+	        <capacity title="Beat back">  See above.</capacity>
+	    </melee_weapon>
+	    	</weapons>
+	<capacity title="Chain attack: smite"> If this model hits the same model with both its initial attacks with this weapon, after resolving the attacks it can immediatly make one additionnal melee attack against that model. If the additional attack hits, the target is slammed d6" directly away fom this model. the POW of slam dammage roll is egal to the STR of this model + the POW of this weapon. The POW of collateral damage is equal to the STR of this model.</capacity>	
+</warjack>
+<warjack  id="YJ13" name="Ol' Rowdy" full_name="Ol' Rowdy" damage_grid="xx..xx.............L..R.LLMCRRxMMCCx" cost="9" qualification="Cygnar Character Heavy warjack" fa="C">
+	<basestats name="Ol' Rowdy" spd="0" str="11" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons>
+	    <melee_weapon name="Quake Hammer"  location="L" p_plus_s="18" pow="7" >
+	        <capacity title="Critical Knockdown">  On a critical hit, the model hit is knocked down.</capacity>
+	        <capacity title="Tremor (*Attack)">Tremor affects every model within 2" of this model and does not require a target. Make one melee attack roll. If the roll equals or exceeds the DEF of an affected model, it is knocked down. This attack roll cannot be rerolled. This model can make a Tremor special attack if it charges.</capacity>
+	    </melee_weapon>
+	    <melee_weapon name="Open fist"  location="R" p_plus_s="14" pow="3" open_fist="true" buckler="true">
+	    </melee_weapon>
+	</weapons>
+	<capacity title="Affinity (Styker)">While B2B with Rowdy, Stryker gains +2 DEF against melee attack rolls and cannot be knocked down. While B2B with Stryker, Rowdy does not move when slammed.</capacity>	
+	<capacity title="Counter charge">When an enemy model advances and ends its movement within 6" of this model and in its LOS, this model can immediatly charge it. If it does, it cannot make another counter charge until after your next turn. This model cannot make a counter charge while engaged.</capacity>
+	<capacity title="Aggressive">This model can run or charge without spending focus or being forced.</capacity>
+	
+</warjack>
+<warjack  id="YJ14" name="Cyclone" full_name="Cyclone" damage_grid="xx..xx.............L..R.LLMCRRxMMCCx" cost="9" qualification="Cygnar heavy warjack" fa="U">
+	<basestats name="Cyclone" spd="5" str="11" mat="7" rat="6" def="12" arm="18" cmd="0" />
+	<weapons>
+	    <melee_weapon name="Open fist"  location="L" p_plus_s="14" pow="3" open_fist="true"></melee_weapon>
+	    <melee_weapon name="Open fist"  location="R" p_plus_s="14" pow="3" open_fist="true"></melee_weapon>
+	    <ranged_weapon name="Metal storm" location="L" rng="10" rof="1" aoe="-" pow="12" >
+							<capacity title="Dual covering fire (*Action)">
+Place two 3" AOEs anywhere completely within this weapon's RNG, centered on points in this model's LOS, ignoring intervening model. Place one less AOE for each crippled arm on this model. A model entering or ending its activation in the AOEs suffer a damage roll with POW equal to POW of this weapon. The AOEs remain in play for one round. If this model is destroyed or removed from play, immediatly remove the AOEs from play.					    
+						    </capacity>
+						    <capacity title=" Rapid fire (d3)">
+When you decide to make initial attacks with this weapon at the beginning of this model's combat action, roll a d3. The total rolled is the number of initial attacks this model can make with this weapon during the combat action, ignoring ROF.						        
+						    </capacity>
+						</ranged_weapon>
+		<ranged_weapon name="Metal storm" location="R"  rng="10" rof="1" aoe="-" pow="12" >
+							<capacity title="Dual covering fire (*Action)">
+See above.					    
+						    </capacity>
+						    <capacity title=" Rapid fire (d3)">
+See above.						        
+						    </capacity>
+						</ranged_weapon>
+	</weapons>
+	
+</warjack>
+<warjack  id="YJ15" name="Firefly" full_name="Firefly" damage_grid="xxxxxxx....x.......L..R.LLMCRRxMMCCx" cost="5" qualification="Light Warjack" fa="U">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+	
+</warjack>
+<warjack  id="YJ16" name="Triumph" full_name="Triumph" damage_grid="xx..xx.............L..R.LLMCRRxMMCCx" cost="11" qualification="Heavy Character Warjack" fa="C">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+	
+</warjack>
+<warjack  id="YJ17" name="Gallant" full_name="Gallant" damage_grid="xx..xx.............L..R.LLMCRRxMMCCx" cost="9" qualification="Heavy Character Warjack" fa="C">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+	
+</warjack>
+<warjack  id="YJ18" name="Minuteman" full_name="Minuteman" damage_grid="xxxxxxx....x.......L..R.LLMCRRxMMCCx" cost="5" qualification="Light Warjack" fa="U">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+	
+</warjack>
+<warjack  id="YJ19" name="Avenger" full_name="Avenger" damage_grid="xx..xx.............L..R.LLMCRRxMMCCx" cost="9" qualification="Cygnar heavy warjack" fa="U">
+	<basestats name="Avenger" spd="4" str="12" mat="6" rat="4" def="11" arm="19" cmd="0"  />
+	<weapons>
+	    <melee_weapon name="Stun blade"  location="R" p_plus_s="18" pow="6" >
+	        <capacity title="cortex damage">  A warjack hit by this attack suffers the Stall continuous effect. While a warjack is suffering Stall, its base DEF becomes 7 and it cannot run or charge.</capacity>
+	    </melee_weapon>
+	    <ranged_weapon name="Seismic cannon" location="L" rng="10" rof="1" aoe="4" pow="14" >
+	        <capacity title="Quake">On a direct hit against an enemy model, all models hit are knocked down.</capacity>
+		</ranged_weapon>
+	</weapons>
+	
+</warjack>    
+	        </warjacks>
+	
+<colossals>	        
+<colossal  id="YJ20" name="Stormwall" full_name="Stormwall" damage_grid_left="xxxxx.xxx.......SS.LLLSCLLCCCCLCMMMM" damage_grid_right=".xxxxx...xxxSS....CSRRR.CCCCRRMMMMCR" cost="19" qualification="Heavy Warjack" fa="2">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+	
+</colossal>
+</colossals>
+<battleEngines>
+    <battleEngine id="YE01" cost="9" fa="2" name="Storm Strider" full_name="Storm Strider" qualification="Cygnar Battle Engine">
+        <basestats name="Storm Strider" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="22" />
+        <weapons></weapons>
+    </battleEngine>
+</battleEngines>
+	        	        
+<units>
+    
+<unit  id="YU01" name="Arcane Tempest Gun Mages" full_name="Arcane Tempest Gun Mages" base_cost="6" baseCount="6" full_cost="-" fullCount="-" qualification="Unit" fa="2" has_unit_attachment="true">
+	<basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+<unit_attachment  id="YA01" name="Arcane Tempest Gun Mage Officer" full_name="Arcane Tempest Gun Mage Officer" fa="1" cost="2" qualification="Unit attachment">
+<model  id="Arcane Tempest Gun Mage Officer">
+	<basestats name="Arcane Tempest Gun Mage Officer" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="5" jack_marshal="true"/>
+</model>
+</unit_attachment>
+</unit>
+<unit  id="YU02" name="Long Gunner Infantry" full_name="Long Gunner Infantry" base_cost="6" baseCount="6" full_cost="10" fullCount="10" qualification="Unit" fa="2" has_unit_attachment="true">
+	<basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+	<unit_attachment  id="YA07" name="Long Gunner Infantry Officer &amp; Standard" full_name="Long Gunner Infantry Officer &amp; Standard" fa="1" cost="2" qualification="Unit attachment">
+<model  id="Long Gunner Infantry Officer">
+	<basestats name="Long Gunner Infantry Officer" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="5"/>
+</model>
+<model  id="Long Gunner Infantry Standard">
+	<basestats name="Long Gunner Infantry Standard" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="0"/>
+</model>
+</unit_attachment>
+	
+</unit>
+<unit  id="YU03" name="Field Mechaniks" full_name="Field Mechaniks" base_cost="2" baseCount="3" full_cost="3" fullCount="6" qualification="Unit" fa="3" >
+	<basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" jack_marshal="true"/>
+	<weapons></weapons>
+</unit>
+<unit  id="YU04" name="Stormblade Infantry" full_name="Stormblade Infantry" base_cost="5" baseCount="6" full_cost="-" fullCount="-" qualification="Unit" fa="2" has_unit_attachment="true">
+	<basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+	<unit_attachment  id="YA02" name="Stormblade Infantry Officer &amp; Standard" full_name="Stormblade Infantry Officer &amp; Standard" fa="1" cost="3" qualification="Unit attachment">
+<model  id="Stormblade Infantry Officer">
+	<basestats name="Stormblade Infantry Officer" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="5" jack_marshal="true"/>
+</model>
+<model  id="Stormblade Infantry Standard">
+	<basestats name="Stormblade Infantry Standard" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="0"/>
+</model>
+</unit_attachment>
+	<weapon_attachment  id="YA09" name="Stormblade Infantry Storm Gunner" full_name="Stormblade Infantry Storm Gunner" fa="2" cost="1" qualification="Unit attachment" max_wa="3">
+	    <model  id="Storm Gunner">
+	<basestats name="Storm Gunner" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="0"/>
+</model>
+</weapon_attachment>
+	
+</unit>
+<unit  id="YU05" name="Trencher Infantry" full_name="Trencher Infantry" base_cost="6" baseCount="6" full_cost="10" fullCount="10" qualification="Unit" fa="2" has_unit_attachment="true" has_weapon_attachment="true">
+	<basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+<unit_attachment  id="YA03" name="Trencher Infantry Officer &amp; Sniper" full_name="Trencher Infantry Officer &amp; Sniper" fa="1" cost="3" qualification="Unit attachment">
+<model  id="Trencher Infantry Officer">
+	<basestats name="Trencher Infantry Officer" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="5" jack_marshal="true"/>
+</model>
+<model  id="Trencher Infantry Sniper">
+	<basestats name="Trencher Infantry Sniper" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="0"/>
+</model>
+</unit_attachment>
+<weapon_attachment  id="YA04" name="Trencher Infantry Grenadier" full_name="Trencher Infantry Grenadier" fa="2" cost="1" qualification="Unit attachment" max_wa="3">
+<model  id="Trencher Infantry Grenadier">
+	<basestats name="Trencher Infantry Grenadier" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="0"/>
+</model>
+</weapon_attachment>
+
+</unit>
+<unit  id="YU06" name="Trencher Chaingun Crew" full_name="Trencher Chaingun Crew" base_cost="2" baseCount="2" full_cost="-" fullCount="-" qualification="Unit" fa="2">
+	<basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+</unit>
+<unit  id="YU07" name="Trencher Cannon Crew" full_name="Trencher Cannon Crew" base_cost="3" baseCount="2" full_cost="-" fullCount="-" qualification="Unit" fa="2">
+	<basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+</unit>
+<unit  id="YU08" name="Sword Knights" full_name="Sword Knights" base_cost="4" baseCount="6" full_cost="6" fullCount="10" qualification="Unit" fa="2" has_unit_attachment="true">
+	<basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+<unit_attachment  id="YA05" name="Sword Knight Officer &amp; Standard" full_name="Sword Knight Officer &amp; Standard" fa="1" cost="2" qualification="Unit attachment">
+<model  id="Sword Knight Officer">
+	<basestats name="Sword Knight Officer" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="5" jack_marshal="true"/>
+</model>
+<model  id="Sword Knight Standard">
+	<basestats name="Sword Knight Standard" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="0"/>
+</model>
+</unit_attachment>
+</unit>
+<unit  id="YU09" name="Stormguard" full_name="Stormguard" base_cost="6" baseCount="6" full_cost="9" fullCount="10" qualification="Unit" fa="2">
+	<basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+</unit>
+<unit  id="YU10" name="Storm Lances" full_name="Storm Lances" base_cost="7" baseCount="3" full_cost="11" fullCount="5" qualification="Unit" fa="1">
+	<basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="5"/>
+	<weapons></weapons>
+</unit>
+<unit  id="YU11" name="Black 13th Gun Mage Strike Team" full_name="Black 13th Gun Mage Strike Team" base_cost="4" baseCount="3" full_cost="-" fullCount="-" qualification="Character Unit" fa="C">
+	<basestats name="Lynch" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5"/>
+	<weapons></weapons>
+<model  id="Ryan">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="5"/>
+</model>
+<model  id="Watts">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="5"/>
+</model>
+</unit>
+<unit  id="YU12" name="Precursor Knights" full_name="Precursor Knights" base_cost="5" baseCount="6" full_cost="8" fullCount="10" qualification="Unit" fa="2" has_unit_attachment="true">
+	<basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+<unit_attachment  id="YA06" name="Precursor Knight Officer &amp; Standard" full_name="Precursor Knight Officer &amp; Standard" fa="1" cost="2" qualification="Unit attachment">
+<model  id="Precursor Knight Officer">
+	<basestats name="Precursor Knight Officer" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="5"/>
+</model>
+<model  id="Precursor Knight Standard">
+	<basestats name="Precursor Knight Standard" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="0"/>
+</model>
+</unit_attachment>
+</unit>
+<unit  id="YU13" name="Rangers" full_name="Rangers" base_cost="5" baseCount="6" full_cost="-" fullCount="-" qualification="Unit" fa="2">
+	<basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+</unit>
+<unit  id="YU14" name="Trencher Commandos" full_name="Trencher Commandos" base_cost="6" baseCount="6" full_cost="10" fullCount="10" qualification="Unit" fa="2" has_weapon_attachment="true">
+	<basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+	<weapon_attachment  id="YA08" name="Trencher Commandos Scattergunner" full_name="Trencher Commandos Scattergunner" fa="2" cost="1" qualification="Unit attachment" max_wa="3">
+	    <model  id="Trencher Commandos Scattergunner">
+	<basestats name="Trencher Commandos Scattergunner" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="0"/>
+</model>
+</weapon_attachment>
+	
+</unit>
+<unit  id="YU15" name="Storm Tower" full_name="Storm Tower" fa="2" base_cost="2"  baseCount="2" full_cost="-" fullCount="-" qualification="Unit">
+	<basestats name="Storm Tower" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+</unit>
+<unit  id="YU16" name="Tempest Blazers" full_name="Tempest Blazers" base_cost="6" baseCount="3" full_cost="10" fullCount="5" qualification="Unit" fa="1">
+	<basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5"/>
+	<weapons></weapons>
+</unit>
+
+</units>	      
+<solos>
+<solo  id="YS01" name="Journeyman Warcaster" full_name="Journeyman Warcaster" cost="3" qualification="Cygnar solo" fa="1">
+	<basestats name="Journeyman Warcaster" spd="6" str="5" mat="5" rat="4" def="14" arm="14" cmd="7"  hitpoints="5" journeyman_warcaster="true" fearless="true"/>
+	<weapons>
+	    <melee_weapon p_plus_s="10" pow="5" name="Mechanika blade" magical="true"></melee_weapon>
+	    <ranged_weapon rng="12" name="Hand cannon" aoe="-" pow="12" rof="1"></ranged_weapon>
+	</weapons>
+	<capacity title="Journeyman warcaster">This model is not a warcaster but has the following warcaster special rules: Battelgroup Commender, Control Area, Focus Manipulation, Power Field, and Spellcaster.</capacity>
+	<capacity title="Focus">3</capacity>
+	<capacity title=""></capacity>
+	<capacity title=""></capacity>
+	<capacity title=""></capacity>
+</solo>
+<solo  id="YS02" name="Gun Mage Captain Adept" full_name="Gun Mage Captain Adept" cost="2" qualification="Cygnar arcane tempest solo" fa="2">
+	<basestats name="Gun Mage Captain Adept" spd="6" str="4" mat="5" rat="8" def="15" arm="11" cmd="9"  hitpoints="5" advance_deployment="true" commander="true"/>
+	<weapons>
+	    <melee_weapon p_plus_s="7" pow="3" name="Sword"></melee_weapon>
+	    <ranged_weapon rng="10" name="Magelock pistol" aoe="-" pow="10" rof="1" magical="true"></ranged_weapon>
+	</weapons>
+	<capacity title="Arcane Precision">If this model forfeits its movement during its activation to gain the aiming bonus, it ignores Stealth that activation.</capacity>
+	<capacity title="Attack Type">Each time this model makes a normal ranged attack, choose one of the following abilities:</capacity>
+	<capacity title="* Brutal damage">Gain an additional die on this weapon's damage rolls.</capacity>
+	<capacity title="* Phantom seeker">This model ignores LOS when making ranged attacks. This model ignores concealment and cover when resolving ranged attacks.</capacity>
+	<capacity title="* Snipe">This attack gains +4RNG.</capacity>
+</solo>
+<solo  id="YS03" name="Stormsmith Stormcaller" full_name="Stormsmith Stormcaller" cost="1" qualification="Solo" fa="3">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+	
+</solo>
+<solo  id="YS04" name="Captain Maxwell Finn" full_name="Captain Maxwell Finn" cost="3" qualification="Cygnar Trencher Character solo" fa="C">
+	<basestats name="Maxwell Finn" spd="6" str="6" mat="8" rat="7" def="13" arm="14" cmd="10"  hitpoints="5" advance_deployment="true" fearless="true" commander="true" tough="true" jack_marshal="true"/>
+	<weapons>
+	    <melee_weapon p_plus_s="9" pow="3" name="Trench Knife">
+	        <capacity title="Thresher (*Attack)">This model makes one melee attack with this weapon against each model in its LOS and this weapons's melee range. </capacity>
+	    </melee_weapon>
+	    <ranged_weapon rng="10" name="Mini slugger" aoe="-" pow="11" rof="1">
+	        <capacity title="Rapid Fire [D3]">When you decide to make initial attacks with this weapon at the beginning of this model's combat action, roll a d3. The total rolled is the number of initial attacks this model can make with this weapon during the combat action, ignoring ROF.</capacity>
+	    </ranged_weapon>
+	</weapons>
+	<capacity title="Anatomical precision">When this model's melee damage roll fails to exceed the ARM of living model hit, that model suffers 1 damage point.</capacity>
+	<capacity title="Desperate pace [trencher]" type="*Action">RNG CMD. Target Friendly Trencher unit. If the Trencher unit is in range, it gains +2" movement during its activation this turn.</capacity>
+	<capacity title="Dig in" type="*Action">This model gains cover, does not suffer blast damage, and does not block LOS. The model remains dug in until it moves, is placed, or engaged. This model cannot dig into solid rock or man-made constructions. This model can begin the game dug in.</capacity>
+	<capacity title="Smoke bombs" type="*Action">Place a 3" AOE cloud effect in play. Its center point must be within 1" of this model. This AOE remains in play for one round.</capacity>
+	<capacity title="Sprint">At the end of this model's activation, if it destroyed one or more enemy models with melee attacks this activation it can make a full advance.</capacity>
+	<capacity title="Veteran leader[trencher]">Friendly Trencher trooper models gain +2 attack rolls while this model is in their LOS.</capacity>
+	
+</solo>
+<solo  id="YS05" name="Major Katherine Laddermore" full_name="Major Katherine Laddermore" cost="5" qualification="Character Solo" fa="C">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="10"/>
+	<weapons></weapons>
+	
+</solo>
+<solo  id="YS06" name="Squire" full_name="Squire" cost="2" qualification="Solo" fa="1" warcaster_attachment="true">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="5"/>
+	<weapons></weapons>
+	
+</solo>
+<solo  id="YS07" name="Captain Arlan Strangewayes" full_name="Captain Arlan Strangewayes" cost="2" qualification="Cygnar Character solo" fa="C">
+	<basestats name="Arlan" spd="5" str="7" mat="5" rat="5" def="12" arm="16" cmd="8"  hitpoints="5" jack_marshal="true" immunity_electricity="true"/>
+	<weapons>
+	    <melee_weapon p_plus_s="12" pow="5" name="Fixer" reach="true"></melee_weapon>
+	    <ranged_weapon rng="SP8" name="Voltaic Gauntlet" aoe="-" pow="10" rof="1">
+	        <capacity title="Disruption">A warjack hit loses its focus points and cannot be allocated or channel spells for one round.</capacity>
+	    </ranged_weapon>
+	</weapons>
+	<capacity title="Evasive action" type="*Action">RNG5. Target friendly Faction warjack. If the warjack is in range, it gains Evasive for one round.(A model with Evasive cannot be targeted by free strikes. It can advance up to 2" immediatly after an enemy ranged attack that missed it is resolved unless it was missed while advancing.)</capacity>
+	<capacity title="Power booster" type="*Action">RNG5. Target friendly Faction warjack. If the warjack is in range,and has no focus points, it gains 1 focus point. If the warjack is Disrupted, it is no longer Disrupted.</capacity>
+	<capacity title="Repair[10]" type="*Action">This model can attempt repairs on any damaged friendly Faction warjack.To attempt repairs, this model must be B2B with the damaged warjack and make a skill check. If successful, remove d6 damage points from the warjack's damage grid.</capacity>
+	
+</solo>
+<solo  id="YS08" name="Trencher Master Gunner" full_name="Trencher Master Gunner" cost="2" qualification="Solo" fa="2">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="5"/>
+	<weapons></weapons>
+	
+</solo>
+<solo  id="YS09" name="Archduke Alain Runewood" full_name="Archduke Alain Runewood" cost="3" qualification="Character Solo" fa="C">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="5"/>
+	<weapons></weapons>
+	
+</solo>
+<solo  id="YA10" name="Captain Jonas Murdoch" full_name="Captain Jonas Murdoch" cost="2" qualification="Character Solo" fa="C" mercenary_attachment="true" >
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="5"/>
+	<weapons></weapons>
+</solo>
+</solos>  
+	    </army>	    
+		
+
+</armies>
+	
+		    
+</ruleset>

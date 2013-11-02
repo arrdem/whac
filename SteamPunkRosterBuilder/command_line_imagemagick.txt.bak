@@ -1,0 +1,18 @@
+convert focus_3_icon.png -resize 64x64 res/drawable-hdpi/focus_3_icon.png
+convert focus_4_icon.png -resize 64x64 res/drawable-hdpi/focus_4_icon.png
+convert focus_5_icon.png -resize 64x64 res/drawable-hdpi/focus_5_icon.png
+convert focus_6_icon.png -resize 64x64 res/drawable-hdpi/focus_6_icon.png
+convert focus_7_icon.png -resize 64x64 res/drawable-hdpi/focus_7_icon.png
+convert focus_8_icon.png -resize 64x64 res/drawable-hdpi/focus_8_icon.png
+convert focus_9_icon.png -resize 64x64 res/drawable-hdpi/focus_9_icon.png
+convert focus_10_icon.png -resize 64x64 res/drawable-hdpi/focus_10_icon.png
+
+
+
+convert btn_expand.png -resize 24x24 res/drawable-hdpi/btn_expand.png
+
+convert btn_dismiss.png -resize 18x18 res/drawable-mdpi/btn_dismiss.png
+convert btn_expand.png -resize 18x18 res/drawable-mdpi/btn_expand.png
+
+
+composite -quality 100 focus_3_icon.png texture_blanche.png output.jpg

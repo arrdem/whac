@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/populateBaseLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:baselineAligned="false"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/selection_zone"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:scaleType="center" >
+
+        <fragment
+            android:id="@+id/leftPaneFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            class="com.schlaf.steam.activities.selectlist.SelectionArmyFragment"
+            android:tag="SelectionArmyFragment" >
+        </fragment>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="2dip"
+        android:layout_height="fill_parent"
+        android:background="@color/White"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:scaleType="center" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/selected_zone"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:scaleType="center" >
+
+        <fragment
+            android:id="@+id/centerPaneFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            class="com.schlaf.steam.activities.selectlist.SelectedArmyFragment"
+            android:tag="SelectedArmyFragment" >
+        </fragment>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="2dip"
+        android:layout_height="fill_parent"
+        android:background="@color/White"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:scaleType="center" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/card_zone"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <!--
+        <fragment
+            android:id="@+id/rightPaneFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            class="com.schlaf.steam.activities.card.ViewCardFragment"
+            android:tag="ViewCardFragment" >
+        </fragment>        -->
+    </LinearLayout>
+
+</LinearLayout>

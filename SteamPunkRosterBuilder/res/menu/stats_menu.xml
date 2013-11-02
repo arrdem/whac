@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+ 
+    <item android:id="@+id/menu_sort_winner"
+          android:showAsAction="ifRoom"
+          android:icon="@drawable/sort_winner"
+          android:title="Sort by win/loss" />
+    
+    <item android:id="@+id/menu_sort_date"
+         android:showAsAction="ifRoom"
+        android:icon="@drawable/sort_date"
+          android:title="Sort by date" /> 
+          
+    
+    <item android:id="@+id/menu_sort_player"
+        android:showAsAction="ifRoom"
+          android:icon="@drawable/sort_player"
+          android:title="Sort by opponent" />
+    
+    <item android:id="@+id/menu_export_stats"
+        android:showAsAction="ifRoom"
+          android:icon="@drawable/export"
+          android:title="Export File" />
+    
+    <item android:id="@+id/menu_export_by_mail"
+        android:showAsAction="ifRoom"
+          android:icon="@drawable/ic_dialog_email"
+          android:title="Export by mail" />
+    
+    
+    
+    <item
+        android:id="@+id/menu_more"
+        android:icon="@drawable/abs__ic_menu_moreoverflow_normal_holo_dark"
+        android:showAsAction="always"
+        android:title="More"/>
+</menu>

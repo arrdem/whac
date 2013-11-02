@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_vertical"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:fadingEdge="horizontal"
+        android:fadingEdgeLength="40dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp" >
+
+         <Button
+            android:id="@+id/button_build_army"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startArmy"
+            android:drawableLeft="@drawable/ic_media_play"
+            android:text="@string/build_army" />
+
+        <Button
+            android:id="@+id/button_load_army"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="loadArmy"
+            android:drawableLeft="@drawable/edit_list_icon"
+            android:text="@string/load_army" />
+
+        <Button
+            android:id="@+id/button_card_library"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/stat_card"
+            android:onClick="cardLibrary"
+            android:text="@string/card_library" />
+        
+        
+        <!--
+        <Button
+            android:id="@+id/button_edit_army"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="editArmy"
+            android:text="@string/edit_army" />
+        -->
+
+        <Button
+            android:id="@+id/button_launch_battle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startBattle"
+            android:drawableLeft="@drawable/battle_icon"
+            android:text="@string/launch_battle" />
+
+        <Button
+            android:id="@+id/button_preferences"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="preferences"
+            android:drawableLeft="@drawable/ic_menu_preferences"
+            android:text="@string/preferences" />
+
+        <!--
+        <Button
+            android:id="@+id/button_launch_chrono"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="chrono"
+            android:text="Chrono" />
+                    -->
+
+        <Button
+            android:id="@+id/button_import_files"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="importDataFile"
+            android:drawableLeft="@drawable/import_content"
+            android:text="@string/import_data" />
+
+        <Button
+            android:id="@+id/button_battle_results"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="battleResults"
+            android:drawableLeft="@drawable/victory"
+            android:text="@string/battle_results" />
+        
+        <Button
+            android:id="@+id/button_version"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="version"
+            android:drawableLeft="@drawable/ic_menu_help"
+            android:text="@string/version" />
+    </LinearLayout>
+
+</ScrollView>

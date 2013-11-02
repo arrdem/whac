@@ -1,0 +1,89 @@
+
+
+
+
+convert btn_expand.png -resize 24x24 res/drawable-hdpi/btn_expand.png
+
+convert btn_dismiss.png -resize 18x18 res/drawable-mdpi/btn_dismiss.png
+convert btn_expand.png -resize 18x18 res/drawable-mdpi/btn_expand.png
+
+
+convert texture_blanche.png -resize 256x256! fond_focus.png
+
+
+composite -quality 100 focus_3_icon.png fond_focus.png output.png
+
+
+
+convert texture_blanche.png -resize 256x256! fond_focus.png
+
+composite -quality 100 focus_3_icon.png fond_focus.png focus_3_icon.png
+
+convert focus_10_icon.png -resize 64x64 res/drawable-hdpi/focus_10_icon.png
+
+
+convert -resize 72x72 fond_focus.png focus_3_icon.png -geometry 64x64+4+4 -composite  focus_3_icon.png 
+convert -resize 72x72 fond_focus.png focus_4_icon.png -geometry 64x64+4+4 -composite  focus_4_icon.png 
+convert -resize 72x72 fond_focus.png focus_5_icon.png -geometry 64x64+4+4 -composite  focus_5_icon.png 
+convert -resize 72x72 fond_focus.png focus_6_icon.png -geometry 64x64+4+4 -composite  focus_6_icon.png 
+convert -resize 72x72 fond_focus.png focus_7_icon.png -geometry 64x64+4+4 -composite  focus_7_icon.png 
+convert -resize 72x72 fond_focus.png focus_8_icon.png -geometry 64x64+4+4 -composite  focus_8_icon.png 
+convert -resize 72x72 fond_focus.png focus_9_icon.png -geometry 64x64+4+4 -composite  focus_9_icon.png 
+convert -resize 72x72 fond_focus.png focus_10_icon.png -geometry 64x64+4+4 -composite  focus_10_icon.png 
+convert -resize 72x72 fond_focus.png focus_11_icon.png -geometry 64x64+4+4 -composite  focus_10_icon.png 
+convert -resize 72x72 fond_focus.png focus_12_icon.png -geometry 64x64+4+4 -composite  focus_10_icon.png 
+convert -resize 72x72 fond_focus.png focus_13_icon.png -geometry 64x64+4+4 -composite  focus_10_icon.png 
+convert -resize 72x72 fond_focus.png focus_14_icon.png -geometry 64x64+4+4 -composite  focus_10_icon.png 
+
+convert focus_3_icon.png -resize 64x64 res/drawable-hdpi/focus_3_icon.png
+convert focus_4_icon.png -resize 64x64 res/drawable-hdpi/focus_4_icon.png
+convert focus_5_icon.png -resize 64x64 res/drawable-hdpi/focus_5_icon.png
+convert focus_6_icon.png -resize 64x64 res/drawable-hdpi/focus_6_icon.png
+convert focus_7_icon.png -resize 64x64 res/drawable-hdpi/focus_7_icon.png
+convert focus_8_icon.png -resize 64x64 res/drawable-hdpi/focus_8_icon.png
+convert focus_9_icon.png -resize 64x64 res/drawable-hdpi/focus_9_icon.png
+convert focus_10_icon.png -resize 64x64 res/drawable-hdpi/focus_10_icon.png
+
+
+
+
+
+convert tiers.png -trim -thumbnail 32x32 -background transparent -gravity center -extent 48x48 tiers_thumb.png
+
+convert tiers_trim.png -thumbnail 32x32 -background transparent -gravity center -extent 48x48 tiers_thumb.png
+
+convert tiers.png -trim -thumbnail 32x32 -background transparent -gravity center -extent 48x48 tiers_thumb.png
+
+
+
+convert -resize 72x72 fond_fury.png fury_3_icon.png -geometry 64x64+4+4 -composite  fury_3_icon.png 
+convert -resize 72x72 fond_fury.png fury_4_icon.png -geometry 64x64+4+4 -composite  fury_4_icon.png 
+convert -resize 72x72 fond_fury.png fury_5_icon.png -geometry 64x64+4+4 -composite  fury_5_icon.png 
+convert -resize 72x72 fond_fury.png fury_6_icon.png -geometry 64x64+4+4 -composite  fury_6_icon.png 
+convert -resize 72x72 fond_fury.png fury_7_icon.png -geometry 64x64+4+4 -composite  fury_7_icon.png 
+convert -resize 72x72 fond_fury.png fury_8_icon.png -geometry 64x64+4+4 -composite  fury_8_icon.png 
+
+
+convert fury_3_icon.png -resize 64x64 res/drawable-hdpi/fury_3_icon.png
+convert fury_4_icon.png -resize 64x64 res/drawable-hdpi/fury_4_icon.png
+convert fury_5_icon.png -resize 64x64 res/drawable-hdpi/fury_5_icon.png
+convert fury_6_icon.png -resize 64x64 res/drawable-hdpi/fury_6_icon.png
+convert fury_7_icon.png -resize 64x64 res/drawable-hdpi/fury_7_icon.png
+convert fury_8_icon.png -resize 64x64 res/drawable-hdpi/fury_8_icon.png
+
+convert fury_3_icon.png -resize 42x42 res/drawable-mdpi/fury_3_icon.png
+convert fury_4_icon.png -resize 42x42 res/drawable-mdpi/fury_4_icon.png
+convert fury_5_icon.png -resize 42x42 res/drawable-mdpi/fury_5_icon.png
+convert fury_6_icon.png -resize 42x42 res/drawable-mdpi/fury_6_icon.png
+convert fury_7_icon.png -resize 42x42 res/drawable-mdpi/fury_7_icon.png
+convert fury_8_icon.png -resize 42x42 res/drawable-mdpi/fury_8_icon.png
+
+
+
+convert abomination_icon.png -trim -thumbnail 32x32 -background transparent -gravity center -extent 48x48 res/hdpi/abomination_icon.png
+
+
+FOR %a in (*.png) DO convert %a -trim -thumbnail 36x36 -background transparent -gravity center -extent 48x48 res/drawable-hdpi/%a
+
+FOR %a in (*.png) DO convert %a -trim -thumbnail 48x48 -background transparent -gravity center -extent 64x64 res/drawable-xhdpi/%a
+

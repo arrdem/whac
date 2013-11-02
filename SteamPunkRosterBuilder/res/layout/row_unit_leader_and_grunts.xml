@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayoutUnitMembers"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:dividerPadding="@dimen/short_divider_size"
+    android:orientation="vertical"
+    android:showDividers="middle" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutUnitMember"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:dividerPadding="@dimen/short_divider_size"
+        android:showDividers="middle" >
+
+        <ImageView
+            android:id="@+id/spacerImage"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:contentDescription="@string/empty"
+            android:src="@drawable/empty"
+            android:text="@+id/def_arm_label" >
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="40"
+                android:text="Leader &amp; grunts"
+                android:textColor="@android:color/primary_text_dark"
+                android:textSize="@dimen/textview_small_height"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvDefArm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="def 12 / arm 18"
+                android:textColor="@android:color/primary_text_dark"
+                android:textSize="@dimen/textview_small_height"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutUnitDamages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:dividerPadding="@dimen/short_divider_size"
+            android:orientation="horizontal"
+            android:showDividers="middle" >
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

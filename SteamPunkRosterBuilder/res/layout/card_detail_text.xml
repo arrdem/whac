@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/texture_blanche"
+    android:padding="5dip" 
+    android:layout_margin="5dip">
+
+    <TextView
+        	android:id="@+id/detailText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="@string/feat"
+            android:textColor="@color/Black" >
+        </TextView>
+
+
+</LinearLayout>

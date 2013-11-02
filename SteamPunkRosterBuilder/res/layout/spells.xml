@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dip"
+    android:background="@drawable/texture_beige"
+    android:orientation="vertical"
+    android:padding="5dip"
+    tools:ignore="DuplicateIds" >
+
+<TableLayout 
+    android:id="@+id/spellTable"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="Spells"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/textview_small_height" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="COST"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/textview_small_height" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="RNG"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/textview_small_height" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="AOE"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/textview_small_height" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="POW"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/textview_small_height" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="UP"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/textview_small_height" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="OFF"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/textview_small_height" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/Black" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="2dp" />
+    </TableRow>    
+    
+    <include layout="@layout/spell_line_carac" android:id="@+id/toRemove1" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <include layout="@layout/spell_line_text"  android:id="@+id/toRemove2" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+</TableLayout>    
+
+</LinearLayout>

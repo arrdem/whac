@@ -1,0 +1,1211 @@
+Vice Scrutator Vindictus
+------------------------------
+
+FEAT: PENITENCE
+  Faction models are damaged by an enemy attack while in Vindictus' control area, immediately after the attack is resolved the attacker suffers 1 damage point. Penitence lasts for one round.
+
+
+® Pathfinder
+Death Toll [Holy Zealot] - When this model destroys a living enemy model with a melee attack, after the attack is resolved you can add one grunt to a friendly Holy Zealot unit in this model’s command range. The Grunt must be placed in formation and within 3“ of this model. The destroyed model is removed from play but does not provide a soul or corpse token
+Sacrificial Pawn [Holy Zealot] - When this model is directly hit by an enemy ranged attack, you can choose to have one friendly, non-incorporeal Holy Zealot model within 3" of this model directly hit instead. That model is automatically hit and suffers all damage and effects
+LAWGIVER -
+Magical Weapon
+Blessed — When making an attack with this weapon, ignore spell effects that add to a models ARM or DEF
+SOLACE
+Magical Weapon
+Chain Weapon — This attack ignores the Buckler and Shield weapon qualities and Shield Wall.
+
+
+
+DEFENDER’S WARD 2 6 — · YES NO
+Target friendly Faction model/unit gains +2DEF and ARM.
+IMMOLATION 2 8 — 12 N0 YES
+Immolation causes fire damage. On a critical hit, the model hit suffer the Fire continuous effect  
+RIFT 3 8 4 13 N0 YES
+The AOE is rough terrain and remains in play for one round.
+SACRIFICIAL LAMB 1 CTRL - — N0 N0
+Remove one friendly living Faction model in this model's control area from play to allocate l focus point to each warjack in this model's battlegroup that is currently in its control area. Sacrificial Lamb can be cast only once per turn.
+TRUE PATH 3 SELF CTRL - N0 N0
+Friendly Faction warrior models/units beginning their activations in the model's control area gain +2” movement and Pathfinder during their activations. True Path lasts for one turn.
+
+
+
+TACTICAL TIPS
+Death toll -·The added Grunt can activate norrnally this turn.
+SACRIFICIAL LAMB: - A warjack cannot exceed normal focus allocation limits as a result of Sacrificial Lamb.
+
+
+THYRA
+------------------------------
+
+7 6 8 4 17 14 9
+
+foc6 pv15 wj+6
+
+grief 5 11 magical weapon master
+lament 5 11 magical weapon master
+
+Shadows of Urcaen
+Immediately place Thyra anywhere completely within 2" of her current location. When a friendly Faction model activates
+in Thyra’s control area, at the start of its activation you can place it anywhere completely within 2” of its current location. Shadows of Urcaen lasts for one turn.
+
+THYRA
+Acrobatics - This model can advance through other models if it has enough movement to move completely past their bases. This model cannot be targeted by free strikes. This model ignores intervening models when declaring its charge target.
+Elite Cadre [Daughters of the Flame] — Friendly Daughters of the Flame models gain Vengeance. (During your Maintenance
+Phase, if one or more models in a unit with Vengeance were destroyed or removed from play by enemy attacks during your opponent’s last turn, each model in the unit can advance 3" and make one normal melee attack.)
+Overtake - When this model destroys one or more enemy warrior models with a normal melee attack, after the attack is resolved this model can immediately advance up to 1".
+
+
+CARNAGE 3 SELF CTRL ·— NO NO
+Friendly Faction models gain +2 to melee attack rolls against enemy models in this model's control area. Carnage lasts for one turn
+OCCULTATION 2 6 — - YES NO 
+Target friendly model/unit gains Stealth  
+PURSUIT 2 8 ·- — YES YES
+If target enemy model/unit advances during its activation, immediately after ending this movement one model in this model's battlegroup that is in its control area can make a full advance.
+SILENCE OF DEATH 2 6 —- - YES NO
+Target friendly model unit's melee weapons gain Grievous Wounds (When a model is hit by a weapon with Grievous Wounds, for one round it loses Tough, cannot heal or be healed, and cannot transfer damage.)
+STRANGLEHOLD 2 10 — 11 NO YES
+A model damaged by Stranglehold forfeits either its movement or its action during its next activation, as its controller chooses.
+
+
+TACTICAL TIP
+Pursuit — If an affected model made a full advance, ran, or charged during its activation, a model in this model's battlegroup gets to make a full advance.
+
+
+AMON
+--------------------
+
+AMON
+`GROUNDWORK - While knocked down, this model is not automatically
+hit by melee attacks and its DEF is not reduced.
+PERFECT BALANCE — This model cannot be targeted by combined
+melee attacks, combined ranged attacks, or free strikes. Models do not
+gain back strike bonuses against this model. When knocked down,
+this model can stand up during its activation without forfeiting its
+movement or action if it is able to forfeit its movement or action to
+stand up.
+OBLIVION
+CHAIN WEAPON — This attack ignores the Buckler and Shield weapon
+qualities and Shield Wall.
+SMITE (*ATTACK) — Instead of making a normal damage roll, the
+model hit is slammed d6" directly away from this model and suffers
+a damage roll with POW equal to this model’s current STR plus the
+POW of this weapon. The POW of collateral damage from this slam
+is equal to this model’s STR. V
+THRESHER (*ATTACK) — This model makes one melee attack with this
+weapon against each model in its LOS and this weapon’s melee range.
+
+
+CONVECTION 2 10 - 12 N0 YES
+When Convection destroys a living enemy model, allocate l focus point
+to a warjack in this model’s battlegroup that is in its control area.
+FLAGELLATION 2 SELF — - YES N0
+When making melee attacks, this model ignores both focus points
+overboosting the target’s Power Field and spell effects that add to its
+DEF or ARM. Models damaged by this model lose Tough and cannot
+be healed for one round.
+MOBILITY 2 SELF CTRL - N0 N0
+Models in this model’s battlegroup currently in its control area gain
++2 SPD and Pathfinder ® for one turn.
+SYNERGY 2 SELF CTRL - YES N0
+While in its control area, models in this model’s battlegroup gain a +1
+cumulative bonus on melee attack and melee damage rolls for each
+other model in the battlegroup that hit an enemy model with a melee *
+attack this turn while in this model’s control area.
+
+
+FEAT: UNION
+His spirit always centered even in the heat of battle,
+High Allegiant Amon Ad-Raza is able to open his mind
+utterbz to the warjacks rf his battlegroup. When the
+time comes, his calm erupts into a terrible storm that
+washes away all who would stand against him.
+
+While in Amon's control area, warjacks in Amon's battlegroup gain Perfect Balance. For each focus point Amon spends during his activation, allocate 1 focus point to a warjack in his battlegroup that was in his control area when he spent the focus. Union lasts for one round.
+
+
+
+
+FEURH, PRIESTESS UF THE FLHME
+----------------------------
+
+§BLAZING EFFIGY 4 8 * 14 N0 N0  
+  Enemy models within 2" of target friendly Faction warjack suffer a Q
+Q POW l4 fire damage roll  S
+  ENGINE OF DESTRUCTIUN 2 SELF — - N0 N0
+t This model gains +2 SPD, +4 STR, and +4 MAT for one round.
+i HEX HAMMER 3 SELF CTRL — YES N0
+_ When an enemy model casts a spell or uses an animus while in this
+; model’s control area, after the spell or animus has been cast or used
+_ the enemy model suffers d3 damage points.
+g IGNITE 2 6 — — YES N0 if
+g Target friendly model/ unit gains +2 to melee attack damage rolls.
+  Affected models gain Critical Fire   on their normal melee attacks. l
+  IMMOLATIDN 2 8 — 12 N0 YES ,
+  Immolation causes fire damage   On a critical hit, the model hit  
+  suffers the Fire continuous effect  ;
+  WALL OF FIRE 2 CTRL WALL — YES N0  
+ Place the wall template anywhere completely within this model’s  
+Q control area where it does not touch a model’s base, an obstruction,  
+it or an obstacle. When a model enters or ends its activation in the  
+wall area, it suffers an unboostable POW l2 fire damage roll ® and  
+T the Fire continuous effect  Models within the wall template gain  
+Econcealment.
+
+
+FEAT: SCORCHED EARTH
+Using her talent for controlling flame, Feora has learned
+how to j%eus her holv fury into a singular burst of j€ery
+wrath. The resulting conflagration, guided by her wilL
+enguy% any enemy unfortunate enough to be close by, j%rcing
+them to kel the smoldering hatred rf her prayers.
+Enemy models currently in Feora's control area
+suffer the Fire continuous effect
+
+FEORA
+[NSPIRATI0 N [FLAM EGUARD] — Friendly Flameguard m0dels/ units in
+this m0del’s command range never flee and immediately rally.
+
+
+
+FEURH. PRUTEGUR UF THE FLHME
+--------------------------------------
+
+
+FEAT: WILD FIRE
+The ultimate master of fire ’s all-consuming powen
+Feora can transmute flame into raw energy to strengthen
+her warjacks. She delivers her allies hom the blazes
+around her by siphoning the flames and sending them
+leaping across the battldield to her enemies.
+
+Feora gains l focus point for each enemy model currently in her control area suffering the Fire continuous effect and can immediately allocate that focus to warjacks in her battlegroup in her control area. Feora can then remove the Fire continuous effects from any number of models in her control area. For each Fire continuous effect Feora removes, choose one model in her control area to suffer the Fire continuous effect
+CLEANSING FIRE 3 8 3 14 N0 YES
+Cleansing Fire causes fire damage   On a critical hit, models hit
+suffer the Fire continuous effect  
+CONVECTION 2 10 - 12 N0 YES
+When Convection destroys a living enemy model, allocate l focus point
+to a warjack in this model’s battlegroup that is in its control area.
+ESCORT 2 SELF CTRL — YES N0
+Warjacks in this model’s battlegroup beginning their activations in its
+control area gain +2" movement. This model gains +2 ARM while
+one or more warjacks in its battlegroup are within 3" of it.
+FIRE STEP 2 SELF * 13 N0 N0
+Enemy models within 2" of this model suffer a POW l3 fire
+damage roll   After the damage is resolved, place this model
+completely within 3" of its current location. Fire Step can be cast
+only once per activation. I
+IGNITE 2 6 - - YES N0
+Target friendly model/ unit gains +2 to melee attack damage rolls.
+Affected models gain Critical Fire   on their normal melee attacks.
+
+i=EORA
+CAUSTIC PRESENCE [FIRE]- Fire continuous effects   that affect
+enemy models in this model’s control area cannot expire.
+INSPIRATION [FLAMEGUARD] - Friendly Flameguard models/ units in
+this model’s command range never flee and immediately rally
+RIGHTEOUS FLAMES — An enemy model that ends its activation within
+2" of this model suffers the Fire continuous effect 
+WARJACK BOND — One non—character warjack in Feora’s battlegroup
+begins the game bonded to her. When a model is hit by a ranged or
+melee attack made by the warjack while the warjack is in her control
+area, the model hit suffers the Fire continuous effect
+
+
+
+THE HHRBINGER UF MENUTH
+----------------------------------------
+
+FEAT: GODHEAD
+Calling upon Menoth’s blazing glory, the Harbinger
+becomes a radiant beacon on the battlefield that burns
+away the impurities of any heretic who dares to
+approach her sacrosanct form.
+For one round, advancing enemy models that end
+their movement in the Harbinger's control area
+closer to her than they began suffer an unboostable
+POW I4 fire damage roll
+
+
+HARBINGER
+
+SPD  TR MAT RAT DEF ARM A p,
+{6 4 :3 1 14 14 14 10
+
+foc 10 pv17
+
+providence pow8 p+s12 magical
+wj+5
+
+DIVINITY - This model cannot be knocked down and never suffers Blind. Its front arc extends to 360°.
+AWE - While in this model’s command range, living enemy models suffer -2 to attack rolls.
+MARTYRDOM - When a friendly Faction non—warcaster warrior model in this model’s command range is disabled, this model can suffer d3 damage points to cause the disabled model to heal l damage point.
+PROVIDENCE
+GUIDED - Attacks made with this weapon automatically hit.
+
+
+CATACLYSM 4 8 5 20 N0 YES
+Target enemy model is automatically hit. Reduce the base POW of
+Cataclysm by l for each full inch between the target and this model.
+Blast damage affects only enemy models. Cataclysm has no effect if
+the target model is out of range.
+CRUSADER’S CALL 3 SELF CTRL — N0 N0
+Friendly faction models beginning a charge while in this model's
+control area this turn gain +2" movement.
+FEAR 0F GOD 2 10 - — YES YES
+Target enemy model/ unit cannot give orders, receive orders, or make
+special attacks.
+GUIDED HAND 2 6 - - N0 N0
+Target friendly model/ unit gains an additional die on each model’s
+first melee attack roll this turn.
+PURIFICATIDN 3 SELF CTRL - N0 N0
+Continuous effects, animi, and upkeep spells in this model’s control
+area immediately expire.
+
+
+
+HIGH EXECUTIONER SERVATH REZNIK
+----------------------------------
+Foc 6 17pv wj+6
+
+ENGINE OF DESTRUCTION 2 SELF - - N0 N0 A
+This model gains +2 SPD, +4 STR, and +4 MAT for one round.
+HEX BLAST 3 10 3 13 N0 YES
+Enemy upkeep spells and animi on the model/ unit directly hit by Hex
+Blast immediately expire.
+IGNITE 2 6 — - YES N0
+Target friendly model/ unit gains +2 to melee attack damage rolls.
+Affected models gain Critical Fire @ on their normal melee attacks.
+IRON AGGRESSION 3 6 - - YES N0
+Target friendly warjack can run, charge, or make slam or trample
+power attacks without spending focus and gains boosted melee
+attack rolls.
+PERDITION 2 10 — 10 N0 YES
+When an enemy model is damaged by Perdition, immediately after  
+ the attack is resolved one warj ack in this model's battlegroup that
+is currently in this model’s control area can make a full advance ·
+toward the nearest enemy model. A model can advance as a result of .
+Perdition only once per turn. S
+
+SPD  TR MAT RAT DEF ARM 
+:5 7 7 4 14 17 7 (terror)
+
+
+CONFESSOR (reach, magical)
+POW P+S
+7 14
+
+REZNIK
+EXCRUCIATOR — Once per turn during this model’s activation, when it boxes a living enemy warrior model with a melee attack you can place a Wrack into play within 3" of this model. lf you do, remove the boxed model from play.
+WITCH HOUND - If a model in this model’s battlegroup in its control area is hit by an enemy magic attack, immediately after the attack is resolved one model in this model’s battlegroup in its control area can
+make a full advance and make one normal attack.
+CONFESSOR
+PURGATION - Gain an additional die on attack and damage rolls with this weapon against models with an enemy upkeep spell on them.
+
+
+FEAT: JUDGMENT DAY
+Heresy and blasphemy provoke the righteous wrath of High Executioner Servath Reznik, who delivers Menoth ’s final fire of judgment to those who would draw upon sorcerous power in defiance of the Lawgiver. Reznik strips away the arcane strength of his enemies and leaves them quaking and frail, awaiting the sentence of death.
+
+Enemy models currently in Reznik's control area lose all focus and fury points. While in Reznik's control area, enemy models cannot upkeep spells or be allocated focus and those casting spells suffer the Fire continuous effect. Judgment Day lasts for one round.
+
+
+
+
+GRAND EXEMPLAR KREOSS (epic)
+-----------------------
+
+SPD  TR MAT RAT DEF ARM  5
+5 6 7 4 14 16 3 9;
+
+JUSTIFIER (reach, magical)
+POW P+S
+8 14
+
+foc7 pv18
+
+
+CASTIGATE 2 SELF CTRL - N0 N0
+  For one round, enemy models lose the Arc Node advantage while in
+this model’s control area.
+CHASTEN 2 8 - 12 N0 YES
+Enemy upkeep spells and animi on target model/ unit damaged by
+Chasten expire.
+CLEANSING FIRE 3 8 3 14 N0 YES
+Cleansing Fire causes fire damage   On a critical hit, models hit
+suffer the Fire continuous effect  
+‘INVIOLABLE RESOLVE 2 6 — - YES N0
+Target friendly Faction model/ unit gains +2 ARM and Fearless  
+;SACROSANCT 2 6 - - YES N0
+Target a friendly Faction model/ unit. When an enemy non—vvarcaster,
+_non-vvarlock warrior model destroys one or more affected models
+F; with an attack, immediately after the attack is resolved the attacking
+model is knocked down.
+
+
+KREOSS
+AEGIS — This model is immune to continuous effects.
+ELITE CADRE [EXEMPLAR] - Friendly Exemplar models gain Aegis.
+IMPERISHABLE CONVICTION - When a friendly Faction model in its control area is destroyed by an enemy attack, this model heals 1 damage point.
+JUSTIFIER
+ARMOR PIERCING (*ATTACK) — When calculating damage from this attack, halve the base ARM stats of models hit that have medium or
+larger bases. This attack gains +2 to damage rolls against models with small bases.
+SMITE (*ATTACK) — Instead of making a normal damage roll, the model hit is slammed d6" directly away from this model and suffers a damage roll with POW equal to this model’s current STR plus the POW of this weapon. The POW of collateral damage from this slam is equal to this model’s STR.
+
+FEAT: STRENGTH OF ARMS
+In battle Grand Exemplar Kreoss issues commands underscored by a righteousness impossible to ignore. Following his divine example, Kreoss’forces push themselves beyond mortal limitations.
+
+When a friendly Faction model makes a melee attack against an enemy model while the enemy model is in Kreoss' control area, the attack automatically hits. While in Kreoss' control area, friendly Faction models can make one additional melee attack during their combat actions. Strength of Arms lasts for one turn.
+
+
+
+-------------------------
+hierarch severius
+-----------------------------
+protectorate epic warcaster
+pv 16 wj+6 faC
+
+SPD  TR MAT RAT DEF ARM CMD
+5 5 4 6 14 14 10;
+
+foc 8 
+
+Reign of fire 
+RNG RDF AOE POW 
+8 1 — 10 (fire, magical)
+
+staff of authority
+8 13 reach magical
+
+AWARENESS 3 SELF CTRL - N0 NO
+While in this model’s control area, the front arcs of models in its battlegroup are extended to 360° and when determining LOS those models ignore cloud effects, forests, and intervening models. Awareness lasts for one round.
+CREATOR’S WRATH 2 SELF — — YES N0 
+This model gains an additional die on melee attack and melee damage rolls. When making a melee attack, it ignores spell effects that add to the target’s DEF or ARM.
+FEAR OF GOD 2 10 - - YES YES
+Target enemy model/ unit cannot give orders, receive orders, or make special attacks.
+HEX BLAST 3 10 3 13 NO YES
+Enemy upkeep spells and animi on the model/ unit directly hit by Hex Blast immediately expire.
+HOLY WARD 2 6 — — YES NO
+Target friendly Faction model/ unit gains +2 DEF and cannot be targeted by enemy spells or animi.
+INFLUENCE 1 10 — — NO YES
+Take control of target enemy non-warcaster, non-warlock warrior model. The model immediately makes one normal melee attack, then Influence expires.
+
+FEAT: FIRES OF COMMUNION
+With his divinely appointed authority, Hierarch Severius can invoke the most sacred rites of his faith to call down curtains of holy fire·from on high. Unholy blasphemies are transfigured to ash. The living who have followed false gods feel overwhelmed by shame and are compelled to prostrate themselves before the hierarch and obey his commands.
+
+Either you take control of d3 + 3 living enemy Grunts currently in Severius' control area, or d3 +3 undead models currently in Severius' control area suffer a POW l2 fire damage roll. Decide before rolling. You choose the models affected. Controlled models become friendly solos for one turn.
+
+
+
+---------------------------
+jacks
+---------------------------
+
+DERVISH  - protectorate light warjack
+SPD  TR MAT RAT DEF ARM CMD
+5 9 6 4 13 16 
+
+xx..Lxx..LLMx...MMx...CCx..RRCxx..R
+
+Sword (*2) POW P+S
+4 13
+
+PC4 FAU
+
+Dervish  
+SIDE STEP — When this model hits with an initial attack or a special P]
+attack, it can advance 2" after the attack is resolved. This model cannot
+be targeted by free strikes during this movement.
+SWORD
+COMBO STRIKE (*ATTACK) — Make a melee attack. Instead of making
+a normal damage roll, the POW of the damage roll is equal to this
+model’s STR plus twice the POW of this weapon.
+
+
+
+Blessing of vengeance  - protectorate character light warjack
+----------------------------------------------------------------
+SPD  TR MAT RAT DEF ARM Q ) 
+5 9 7 4 12 17 
+
+arc node
+
+xx..Lxx..LLM...AMM...ACCx..RRCxx..R
+
+Repulsor shield
+1 10 shield
+
+Halberd 
+4 13 reach
+
+PC7 FAC
+
+BLESSING OF VENGEANCE  
+AFFINITY [SEVERIUS] - Once per turn, when Severius channels a spell through this model, he gains +2 to that spell’s damage rolls.
+DEFENSIVE STRIKE — Once per turn, when an enemy model advances into and ends its movement in this model’s melee range, this model can immediately make one normal melee attack against it.
+IMPRINT: BUSHWHACK — During its activation, this model can spend 1 focus point to gain Bushwhack this activation. (During its activation, a model with Bushwhack can make its combat action before its normal movement. If it does, it must make a full advance as its normal movement this activation.
+REPULSOR SHIELD
+REPEL — When this model hits an enemy model with this weapon during its activation, the model hit is pushed l" directly away from this model. When this model is hit with a melee attack made by a model in its front arc, after the attack is resolved the attacking model is pushed 1" directly away from this model. This model loses Repel while this weapon system is crippled or locked.  
+HALBERD 
+POWERFUL CHARGE — This model gains +2 to charge attack rolls with  this weapon
+
+
+
+Reckoner
+-------------------------------
+protectorate heavy warjack
+SPD  TR MAT RAT DEF ARM Q ) 
+5 11 6 5 10 19
+
+condemner 
+12 1 - 13 fire, critical fire
+consecrator
+6 17 reach
+
+pc8 faU
+
+RECKONER  
+ASHEN VEIL — While within 2" of this model, living enemy models suffer -2 to attack rolls. This model has concealment.
+ASSAULT — As part of a charge, after moving but before making its charge attack, this model can make one ranged attack targeting the model charged unless they were in melee with each other at the start of this model’s activation. When resolving an Assault ranged attack, the attacking model does not suffer the target in melee penalty. If the target is not in melee range after moving, this model can make the Assault ranged attack before its activation ends.
+CONDEMNER
+FLARE — Models hit by this weapon suffer -2 DEF for one round.
+
+
+Vanquisher
+-----------------------------
+BLAZING STAR
+CHAIN WEAPON — This attack ignores the Buckler and Shield weapon qualities and Shield Wall.
+THRESHER (* ATTACK) — This model makes one melee attack with this weapon against each model in its LOS and this weapon’s melee range.
+
+
+Revenger
+-------------------
+REPULSOR SHIELD  
+REPEL — When this model hits an enemy model with this weapon during its activation, the model hit is pushed 1" directly away from this model. When this model is hit with a melee attack made by a model in its front arc, after the attack is resolved the attacking model is pushed 1" directly away from this model. This model loses Repel while this weapon system is crippled or locked. 
+HALBERD 
+POWERFUL CHARGE — This model gains +2 to charge attack rolls with this weapon.
+
+
+DEVOUT
+-----------------------
+DEVOUT
+DEFENSIVE STRIKE — Once per turn, when an enemy model advances into and ends its movement in this model’s melee range, this model
+can immediately make one normal melee attack against it.
+SHIELD GUARD — Once per round, when a friendly model is directly hit by a ranged attack during your opponent’s turn while within 2"
+of this model, this model can become the target of the attack and be automatically hit instead. This model cannot use Shield Guard if it is incorporeal, knocked down, or stationary
+SPELL BARRIER — Anytime during its activation while B2B with its controlling warcaster, this model can spend 1 focus point to use Spell Barrier. If it does, the warcaster cannot be targeted by enemy spells for one round.
+
+
+fire of salvation
+----------------------
+protectorate character heavy warjack
+
+SPD  TR MAT RAT DEF ARM Q ) 
+5 11 7 5 10 19
+
+open fist 3 14
+absolver 7 18 continuous_fire
+
+pc9 faC
+
+
+FIRE OF SALVATION
+AFFINITY [KREOSS] — While this model is in Kreoss’ control area, its weapons gain Dispel. (When a weapon with Dispel hits a model/ unit, upkeep spells on that model/ unit immediately expire.)
+IMPRINT: HOLY FERVOR - During its activation, this model can spend 1 focus point to use Holy Fervor. This activation, this model’s
+melee attack rolls are boosted. When it destroys one or more enemy models with an attack with one of its melee weapons this activation, immediately after the attack is resolved this model can make one additional melee attack.
+RIGHTEOUS VENGEANCE - If one or more friendly Faction warrior models were destroyed or removed from play by enemy attacks while within 5" of this model during your opponent’s last turn, after resolving continuous effects during your Maintenance Phase, this
+model can make a full advance followed by one normal melee attack.
+
+
+templar
+----------------------
+protectorate heavy warjack
+
+SPD  TR MAT RAT DEF ARM Q ) 
+4 11 6 5 10 19
+
+open fist 3 14
+absolver 7 18 continuous_fire
+
+x...Lx...LLM....MM....CC...RRCx...Rx
+
+pc8 faU
+
+FLAIL
+Reach
+Beat Back - Immediately after a normal attack with this weapon is resolved during this model's combat action, the ennemy model hit can be pushed 1'' directly away from the attacking model. After the ennemy is pushed the attacking model can advance up to 1''.
+Chain Weapon - This attack ignores the Buckler and Shield weapon qualities and Shield Wall.
+
+guardian
+-------------------
+arcnode
+
+SPD  TR MAT RAT DEF ARM Q ) 
+4 11 6 5 10 19
+
+
+open fist L 3 14 
+flame pike R 6 17 reach
+
+....Lx...LLM...AMM...ACC...RRC....Rx
+
+FLAME PIKE
+CRITICAL PITCH — On a critical hit, instead of rolling damage normally you can choose to have this model throw the model hit. Treat the throw as if this model had hit with and passed the STR check of a throw power attack. The thrown model suffers a damage roll with POW equal to this model’s STR plus the POW of this weapon. The POW of collateral damage is equal to this model’s STR.
+POWERFUL CHARGE — This model gains +2 to charge attack rolls with this weapon.
+
+pc9 faU
+
+Repenter
+-------------------------
+WAR FLAIL
+CHAIN WEAPON — This attack ignores the Buckler and Shield weapon qualities and Shield Wall.
+
+pc4 faU
+
+---------------------------------
+solos
+---------------------------------
+
+allegiant of the order of the fist
+------------------------------------
+protectorate solo
+SPD  TR MAT RAT DEF ARM Q ) 
+7 7 7 4 15 12 9
+tough
+
+punching gauntlet *2
+2 9 weapon master
+
+pv5 fa2 pc2
+
+ALLEGIANT
+GROUNDWORK — While knocked down, this model is not automatically hit by melee attacks and its DEF is not reduced. 
+PERFECT BALANCE - This model cannot be targeted by combined melee attacks, combined ranged attacks, or free strikes. Models do not gain back strike bonuses against this model. When knocked down, this model can stand up during its activation without forfeiting its movement or action if it is able to forfeit its movement or action to stand up.
+SHIFTING SANDS STANCE - During its activation, this model can forfeit its movement or action to gain +2 DEF. If an enemy attack misses this model anytime except while it is advancing, after the attack is resolved it can immediately make a full advance. Shifting Sands Stance lasts for one round.
+ 
+
+
+
+high paladin dartan vilmon
+------------------------------------
+protectorate character solo
+SPD  TR MAT RAT DEF ARM Q ) 
+6 7 9 4 13 16 10
+fearless commander
+
+censure
+8 15 weapon master reach magical
+
+pv5 faC pc3
+
+VILMON
+ELITE CADRE [PALADINS 0F THE 0RDER OF THE WALL] - Friendly Paladin of the Order of the Wall models gain Impervious Wall. 
+IMPERVIOUS WALL — During its activation, this model can forfeit its normal movement or action to gain Impervious Wall for one round. A model with Impervious Wall is immune to continuous effects, does not suffer damage or effects from non-magical ranged or melee attacks, and cannot be knocked down.
+STONE-AND-MORTAR STANCE - During its activation, this model can forfeit its movement or action to gain +5 ARM. The affected model
+cannot be knocked down. Stone-and-Mortar Stance lasts for one round.
+
+
+
+
+
+paladin of the order of the wall
+------------------------------------
+protectorate solo
+SPD  TR MAT RAT DEF ARM Q ) 
+6 7 8 4 13 16 9
+fearless 
+
+firebrand
+7 14 weapon master magical critical fire
+
+pv5 fa2 pc2
+
+PALADIN
+STONE-AND-MORTAR STANCE — During its activation, this model can forfeit its movement or action to gain +5 ARM. The affected model
+cannot be knocked down. Stone-and-Mortar Stance lasts for one round.
+
+
+
+
+knights exemplar seneschal
+------------------------------------
+protectorate solo
+SPD  TR MAT RAT DEF ARM Q ) 
+6 6 8 4 13 15 9
+fearless commander
+
+relic blade X2
+5 11 weapon master magical
+
+pv5 fa2 pc3
+
+
+SENESCHAL
+AEGIS - This model is immune to continuous effects.
+RESTORATION — When a living friendly Faction model in this model’s command range is destroyed by an enemy attack, after the attack is resolved this model heals l damage point. When this model is disabled, it is knocked down instead of becoming boxed and its activation immediately ends. While this model is disabled, it cannot activate. If this model is disabled at the beginning of your
+Maintenance Phase, it is destroyed.
+RIGHTEOUS FURY - When one or more friendly Faction warrior models are destroyed by an enemy attack while in this model’s command
+range, this model gains +2 STR and ARM for one round.
+RELIC BLADE
+CHAIN ATTACK: SMITE — If this model hits the same model with both its initial attacks with this weapon, after resolving the attacks it can immediately make one additional melee attack against that model. If the additional attack hits, the target is slammed d6" directly away from this model. The POW of the slam damage roll is equal to the STR of this model + the POW of this weapon. The POW of collateral damage is equal to the STR of this model.
+
+
+
+
+exemplar errant seneschal
+------------------------------------
+protectorate solo
+SPD  TR MAT RAT DEF ARM Q ) 
+6 6 8 7 12 16 9
+fearless commander
+
+sword 3 9 weapon master 
+heavy crossbow 10 1 - 10 magical blessed
+
+pv5 fa2 pc2
+
+
+SENESCHAL
+@ Advance Deployment
+Q Commander
+@ Fearless
+Q Pathfinder
+Assault - As part of a charge, after moving but before making its charge attack, this model can make one ranged attack targeting the model charged unless they were in melee with each other at the start of this model's activation. When resolving an Assault ranged attack, the attacking model does not suffer the target in melee penalty : if the target is not in melee range after moving, this model can make the Assault ranged attack before its
+activation ends.
+
+Call to Sacrifice [Exemplar Errants] - If this model is disabled by an enemy attack, you can choose a non disabled trooper model of the type indicated in its command range to be destroyed. If another model is destroyed as a result of Call to Sacrifice, this model heals 1 damage point.
+
+Hunter - This model ignores forests, concealment, and cover when determining LOS or making a ranged attack. 
+Leadership [Exemplar Errants] - While in this model's command range, friendly Exemplar Errant models gain Hunter
+
+HEAVY CROSSBOW
+® Magical Weapon
+Blessed — When making an attack with this weapon, ignore spell effects that add to a model's ARM or DEF.
+SWORD 
+® Weapon Master
+
+TACTICAL TIPS
+Assalt — The assaulting model ignores the target in melee penalty even if it is not in melee range of its charge target after moving.
+
+
+
+
+reclaimer
+------------------------------------
+protectorate solo
+SPD  TR MAT RAT DEF ARM Q ) 
+5 5 6 4 13 13 8
+
+cinerator
+5 10 reach continuous fire
+
+pv5 fa2 pc2
+
+RECLAIMER
+COMMUNION (*ACTION) — RNG 5. Target friendly Faction warjack. If the warjack is in range, spend up to three soul tokens to allocate it 1 focus point for each soul token spent. 
+GATEKEEPER — This model gains one soul token for each friendly living Faction warrior model destroyed in its command range by a
+continuous effect, an enemy attack, or collateral damage of an enemy attack. This model can have up to five soul tokens at a time. During its activation, this model can spend soul tokens to gain additional attacks or to boost attack or damage rolls at one token per attack or boost.
+SOULSTORM — While this model has one or more soul tokens, enemy models entering or ending their activations within 2" of it immediately suffer l damage point.
+
+
+
+
+hierophant
+------------------------------------
+protectorate solo
+SPD  TR MAT RAT DEF ARM Q ) 
+5 5 5 4 13 13 7
+
+staff
+3 8 reach
+
+pv5 fa2 pc2
+
+HIEROPHANT
+ATTACHED — Before the start of the game, attach this model to a friendly Faction warcaster for the rest of the game. Each warcaster can have only one model attached to it.
+HARMONIOUS EXALTATION (*ACTION) — RNG 5. Target this model’s warcaster. If it is in range, once this turn when the warcaster casts a spell, reduce its COST by 1.
+HEAL (*ACTION) — Choose a friendly living model B2B with this model. That model heals d3 damage points.
+SPIRITUAL CONDUIT — While its warcaster is in this model’s command range, when the warcaster casts a spell and is the point of origin for the spell, the spell gains +2 RNG.
+
+
+
+
+
+
+
+high exemplar gravus
+------------------------------------
+protectorate dragoon character solo
+SPD  TR MAT RAT DEF ARM Q ) 
+8 5 8 4 12 17 9
+5 5 8 4 12 15 9
+fearless commander
+
+reverence
+6 11 weapon master reach magical
+
+mount 10
+
+pv10/5 faC pc5
+
+
+HIGH EXEMPLAR GRAVUS
+BR0THER’S KEEPER — While in this model’s command range, friendly Exemplar models cannot be knocked down or made stationary CRUSADER’S REQUIEM — This model gains one soul token for each friendly living Exemplar model destroyed in its command range by a
+continuous effect, an enemy attack, or collateral damage of an enemy attack. This model can have up to three soul tokens at a time. During its activation, this model can spend soul tokens to gain additional attacks or to boost attack or damage rolls at one token per attack or boost.
+DRAGOON — While mounted, this model has base SPD 8 and base ARM 17. While dismounted, it has base SPD 5 and base ARM l5.
+REVERENCE
+CHAIN WEAPON — This attack ignores the Buckler and Shield weapon qualitites and Shield Wall.
+DISPEL — When this weapon hits a model/ unit, upkeep spells on that model/ unit immediately expire.
+
+
+
+
+the covenant of menoth 
+------------------------------------
+protectorate character solo
+SPD  TR MAT RAT DEF ARM Q ) 
+5 5 4 4 12 12 10 fearless
+
+pv5 fa2 pc2
+
+
+COVENANT  
+ANCIENT SHROUD - When a damage roll against this model exceeds its 3 ARM, it suffers 1 damage point instead of the total rolled.
+FLAMES or wRATH (*ACTION) - Choose a friendly Faction model/unit. For one round, while affected models are in this model's command
+range, enemy models directly hit by their melee or ranged attacks suffer the Fire continuous effect  
+LAWGIVER’S CREED (*ACTION) — For one round, enemy models cannot cast spells while in this model’s command range.
+MAN-SIZED - This model is treated as a model with a small base and occupies the space from the bottom of its base to a height of 1.75".
+POWER OF FAITH (*ACTION) — For one round, friendly Faction models cannot be knocked down or made stationary while in this model’s
+command range.
+SPELL WARD — This model cannot be targeted by spells.
+
+
+
+
+
+
+
+
+vassal of menoth 
+------------------------------------
+protectorate solo
+SPD  TR MAT RAT DEF ARM Q ) 
+5 5 5 4 13 13 6
+
+pv5 fa2 pc2
+
+
+VASSAL
+IRON SENTINEL — While B2B with a friendly Faction warjack, this model gains +2 DEF and ARM and cannot be knocked down.
+MAGIC ABILITY [7] 
+ANCILLARY ATTACK (*ACTION) — RNG 5. Target friendly Faction warjack. If the warjack is in range, it immediately makes one
+normal melee or ranged attack. A warjack can make an Ancillary Attack special action only once per turn.
+ARCANE BOLT (*ATTACK) —Arcane Bolt is a RNG 12, POW 11 magic attack.
+ENLIVEN (*ACTION) — RNG 5. Target friendly Faction warjack. If the warjack is in range, the next time it suffers damage from
+an enemy attack while it is not advancing, immediately after the attack is resolved the warjack can make a full advance, then Enliven expires. The warjack cannot be targeted by free strikes during this movement. Enliven lasts for one round.
+
+
+
+
+
+
+
+wrack
+------------------------------------
+protectorate solo
+advance deployment
+
+SPD  TR MAT RAT DEF ARM Q ) 
+- 1 0 0 5 10 10
+
+3 wracks fa1 pc1
+
+WRACK 
+DEATH BLAST — When this model is disabled, center a 5" AOE on it, then remove this model from play. Models in the AOE suffer a POW
+14 blast damage roll.
+IMM0BILE — This model has no movement or action and cannot be knocked down or moved. Its front arc extends to 360°. It has no melee
+range, cannot engage, and is automatically hit by melee attacks.
+SUFFERING’S PRAYER — This model begins the game with 1 focus point. During your Control Phase during the focus allocation step,
+it receives l focus point if it does not have any. This model cannot have more than 1 focus point at a time. While this model has a
+focus point, ranged attacks targeting it automatically miss. During a friendly Faction warcaster’s activation, it can remove 1 focus point from this model in its control area and add that focus point to its own total. Each warcaster can do this only once per turn. When a focus point is removed from this model, roll a d6. On a 1, 2, or 3, this model explodes with the same effect as Death Blast and is removed from play. 
+
+
+
+
+
+
+
+
+--------------------------------
+units
+---------------------------------
+
+choir of menoth
+-------------
+protectorate unit
+6 4 4 4 12 12 8
+
+battle staff 2 6 reach 
+4/6 pc2/3 fa3
+
+LEADER And GRUNTS
+HYMN — RNG 3. Target friendly Faction warjack. When a model in this unit performs a Hymn special action, choose a hymn. Each activation, all models in this unit performing a hymn must perform the same one. lf the target warjack is in range, it is affected by the hymn. While affected by a hymn, a warjack cannot be affected by another hymn.
+BATTLE (*ACTION) — The warjack gains +2 to attack and damage rolls for one turn.
+PASSAGE (*ACTION) - The warjack cannot be targeted by non-magical ranged attacks. Passage lasts for one round.
+SHIELDING (*ACTION) — The warjack cannot be targeted by enemy spells. Shielding lasts for one round.
+
+
+
+daughters of the flame
+-------------
+protectorate flameguard unit
+7 5 6 4 15 12 8 
+advance deployment CMA
+
+sword *2 4 9
+6 pc5 fa2
+
+LEADER And GRUNTS
+ACROBATICS - This model can advance through other models if it has enough movement to move completely past their bases. This model
+cannot be targeted by free strikes. This model ignores intervening models when declaring its charge target.
+ANATOMICAL PRECISION - When this model’s melee damage roll fails to exceed the ARM of the living model hit, that model suffers 1
+damage point.
+
+deliverer sunburst crew
+-------------------------
+protectorate unit
+4 4 4 5 12 11 7
+
+leader
+4 4 4 5 12 11 7
+sunburst 16 1 4 16
+sword 3 7 
+
+grunts 
+4 4 4 5 12 11 7
+sword 3 7 
+
+SUNBURST
+LIGHT ARTILLERY — This weapon cannot be used to make attacks or special actions during activations this model moves. This model cannot gain the aiming bonus when attacking with this weapon and cannot charge. If this model attacks with this weapon during its
+activation, it cannot attack with any other weapons that activation.
+RANGE FINDER — While B2B with one or more grunts in this unit, this model gains +2 to attack rolls with this weapon.
+
+
+L+2G pc3 fa2
+
+
+
+deliverers
+-------------
+protectorate unit
+5 4 4 5 12 11 7
+
+skyhammer 16 1 3 12
+sword 3 7 
+6/10 pc5/8 fa1
+
+LEADER And GRUNTS
+ROCKET VOLLEY - Instead of making ranged attacks separately, two or more models in this unit can make a combined ranged attack. Do not add a damage bonus for the number of models participating in the combined ranged attack. If 3-5 models participate in the attack, it has base AOE 4" and base POW 14. If 6 or more models participate in the attack, it has base AOE 5" and base POW 16.
+SKYHAMMER
+INACCURATE — This model suffers -4 to attack rolls with this Weapon.
+
+
+
+exemplar bastions
+-------------
+protectorate unit
+4 7 7 4 11 16 9 fearless
+
+consecrated halberd 5 12 magical reach weapon master 
+3/5 pc5/8 fa2
+
+pv8
+
+LEADER And GRUNTS
+SANGUINE BOND — When this model would suffer damage from an enemy attack, you can choose one or more models in this unit to
+suffer any number of those damage points instead, divided as you choose. If you do, this model does not suffer that damage. A model
+cannot suffer more damage as a result of Sanguine Bond than it has unmarked damage boxes.
+CONSECRATED HALBERD
+BLESSED — When making an attack with this weapon, ignore spell effects that add to a model’s ARM or DEF
+
+
+
+exemplar cinerators
+-------------
+protectorate unit
+4 7 7 4 11 17 9 fearless
+
+blazing sword 5 12 magical weapon master 
+3/5 pc5/8 fa2
+
+pv8
+
+LEADER And GRUNTS
+Relentless Advance — When a model in this unit is damaged by an enemy attack, models in this unit gain +2 SPD for one round.
+
+blazing sword
+flame burst - when this boxes an enemy model with this weapon, enemy models within 1" of the boxed model suffer the Fire continuous effect.
+
+
+
+
+
+exemplar errants
+-------------
+protectorate unit
+5 6 7 6 12 16 9 fearless advance_deployment
+
+heavy crossbow 10 1 - 10 magical
+sword 3 9 weapon master 
+
+6/10 pc5/8 fa3
+
+LEADER And GRUNTS
+SELF-SACRIFICE - If this model is disabled by an enemy attack, you can choose another non-disabled model in this unit within 3" of this model to be destroyed. If another model is destroyed as a result of Self—Sacrifice, this model heals 1 damage point.
+HEAVY CROSSBOW
+BLESSED — When making an attack with this weapon, ignore spell effects that add to a model’s ARM or DEF.
+
+
+Exemplar errant officer and standard
+
+Officer 
+SELF-SACRIFICE - If this model is disabled by an enemy attack, you can choose another non-disabled model in this unit within 3" of this model to be destroyed. If another model is destroyed as a result of Self—Sacrifice, this model heals 1 damage point..
+Tactics: Pathfinder - Models in this unit gain Pathfinder.
+Tactics : Quick work - Models in this unit gain Quick Work (When a model with Quick Work destroys one on more ennemy models with a melee attack during its combat action, immediately after the attack is resolved it can make one normal ranged attack. Attacks gained from Quick Work do not count against a weapon's ROF.)
+
+Standard bearer 
+Purity - While this model is in formation, models in its unit cannot be targeted by ennemy spells.
+Self-Sacrifice - See above.
+
+HEAVY CROSSBOW
+BLESSED — When making an attack with this weapon, ignore spell effects that add to a model’s ARM or DEF.
+
+Tactical tips - Quick Work - A model can make this ranged attack only if it is no longer engaged after destroying the ennemy model.
+Officer - Because this model is an officer, when it is destroyed it does not replace a grunt in its unit. Instead the unit Leader becomes the unit commander.
+
+
+knights exemplar 
+-------------
+protectorate unit
+5 6 7 4 12 15 9 fearless 
+
+relic blade 5 11 weapon master 
+
+6 pc5 fa3
+
+LEADER And GRUNTS
+BOND OF BROTHERHOOD - Models in this unit gain +1STR and ARM for each model in this unit that has been destroyed or removed from play. The bonuses for a model are lost if it returns to play.
+
+Tactical tips - Do not apply these bonuses until after the attack and its damage resolve. If several Knights are affected by a simultaneous attack, the bonus do not increase until after damage has been dealt to all the models.
+
+
+
+
+exemplar vengers
+-------------
+protectorate cavalry unit
+8 6 7 4 12 17 9 fearless
+
+blessed lance 8 14 magical
+sword 3 9 weapon master
+mount 10
+
+3/5 pc7/11 fa1
+
+pv5
+
+
+LEADER And GRUNTS
+BATTLE-DRIVEN - When a model in this unit is damaged by an enemy attack, after the attack is resolved models in this unit gain +2 STR and ARM and Pathfinder for one round.
+BLESSED LANCE
+BLESSED — When making an attack with this weapon, ignore spell effects that add to a model’s ARM or DEF.
+LANCE — This weapon can be used only to make charge attacks. When this model charges, this weapon gains Reach until the
+charge is resolved.
+SWORD
+CLOSE COMBAT — This model cannot make an initial attack with this weapon during an activation it charged at least 3".
+
+
+flameguard cleansers
+-------------
+protectorate unit
+5 5 5 5 12 14 8 immunity_fire
+
+purifier SP8 1 - 12 fire continuous_fire
+purifier_blade 3 8
+
+6/10 pc5/8 fa2
+
+LEADER And GRUNTS
+INCINERATE (ORDER)- Models that received this order can participate in a combined range attack. The unit commander must be the primary attacker. This attack has RNG 8, AOE 4", and POW 12. This attack causes fire damage. The AOE remains in play for one round and is a cloud effect. Models entering or ending their activations in the AOE suffer a POW l2 fire damage roll  A unit can make only one Incinerate attack per activation.
+
+
+holy zealots
+-------------
+protectorate unit
+6 4 4 4 12 12 8
+
+fire bomb 5 1 3 12 fire critical_fire
+mace 3 7
+
+6/10 pc4/6 fa3
+
+LEADER And GRUNTS
+PRAYERS — The Leader of this unit can recite one of the following prayers each turn anytime during its unit’s activation. Each model in this unit gains the benefits listed.
+FERVOR — Affected models gain +2 to attack and damage rolls this activation.
+WARDING — Affected models cannot be targeted by enemy spells for one round.
+
+monolith bearer
+-------------
+protectorate holy zealot unit attachment
+6 6 5 5 12 12 9
+officer 
+
+mace 3 9
+
+pc2 fa1
+
+GRANTED : FEARLESS — While this model is in play, models in this unit gain Fearless.
+GREATER DESTINY - Once per game during it's unit activation, this model can use Greater Destiny. For one round, models in this unit in formation do not suffer damage except from spells and feats.
+HOLY MONOLITH - When one or more models in this unit are destroyed by an ennemy attack, after the attack is resolved models in this unit gain +4ARM for one turn.
+
+Tactical tips - Officer - Because this model is an officer, when it is destroyed it does not replace a grunt in its unit. Instead the unit Leader becomes the unit commander.
+
+
+idrians skirmishers 
+--------------------------
+protectorate idrian ally unit
+advance deployement, CRA, pathfinder
+
+6 6 6 5 13 12 8
+military rifle 	10 1 - 11
+kopis 4 10
+
+6/10 pc6/10 fa2
+
+Camouflage - This model gains an additionnal +2DEF when benefiting from concealment or cover.
+
+idrians skirmishers chieftain and guide
+--------------------------
+protectorate ally unit attachment
+advance deployement, CRA, pathfinder
+
+chieftain
+6 6 7 6 13 12 9
+military rifle 	10 1 - 11
+kopis x2 4 10
+pv5
+
+guide
+6 6 6 5 13 12 9
+military rifle 	10 1 - 11
+kopis  4 10
+pv5
+
+pc3 fa1
+
+Chieftain
+Camouflage - This model gains an additionnal +2DEF when benefiting from concealment or cover.
+Assault and battery - Before their normal movement, affected models can make one ranged attack. During their normal movement, affected models must charge or run. The ranged attack is made before declaring the charge target.
+Tactics : Combined Melee attack - Models in this unit gain Combined Melee Attack.
+
+Guide
+Camouflage - See above.
+Go to ground - Once per game while in formation during it's unit activation, this model can use Go To Ground. For one round or until they move, are placed, or are engaged, models in this unit in formation gain cover, do not suffer blast damage and do not block LOS.
+Huntsman - After deployment but before the first player's turn, choose an ennemy model/unit to be this unit's prey. While this model is in play, each model in this unit beginning it's activation within 10" of the prey gains +2" movement that activation. While this model is in play models in this unit gain +2 to attack and damage rolls againts the prey. When the prey is destroyed or removed from play, choose another model/unit as the prey
+
+Tactical tips : camouflage - If a model ignores Concealment or Cover, it also ignores concealment or cover's Camouflage bonus.
+Officer - Because this model is an officer, when it is destroyed it does not replace a grunt in its unit. Instead the unit Leader becomes the unit commander. Remember, only this model can issue the Assault and Battery order.
+
+
+
+temple flameguard
+-------------
+protectorate unit
+6 5 6 4 13 13 8
+
+
+flame spear 5 10
+
+6/10 pc4/6 fa3
+
+LEADER And GRUNTS
+Shield Wall (Order) ·- For one round, each affected model gains a +4 ARM bonus while B2B with another affected model in
+its unit. this bonus does not apply to damage originating in the models back arc. Models in this unit can begin the game affected by Shield Wall.
+
+FLAME SPEAR
+Set Defense - A model in this model's front arc suffers -2 on charge, slam power attack, and impact attack rolls against this model.
+
+temple flameguard officer & standard
+-------------
+protectorate unit attachment
+
+officer
+6 5 7 4 13 13 9
+pv5
+
+standard bearer
+6 5 6 4 13 13 8
+
+pc2 fa1
+
+Attachment [Temple Flameguard] - This attachment can be added to a Temple Flameguard unit.
+OFFICER
+@ Combined Melee Attack
+® Officer
+Granted: Ranked Attacks - While this model is in play, models in its unit gain Ranked Attacks (Friendly Faction models can ignore models with Ranked Attacks when determining LOS.)
+
+
+Iron Zeal - Once per game during its unit's activation, this model can use Iron Zeal. For one round, while in formation models in this unit gain +4 ARM and cannot become stationary or be knocked down. 
+
+'Tactics: Menoth's Howl - Models in this unit gain Terror and their melee weapons gain the Fire continuous effect 
+
+FLAME SPEAR
+Set Defense - A model in this model's front arc suffers -2 on charge, slam power attack, and impact attack rolls against this model.
+
+tactips : Officer - Because this model is an Officer; when it is destroyed it does not replace a Grunt in its unit. Instead the unit Leader becomes the unit commander. Remember this model can issue the Shield Wall order to its unit.
+
+
+
+
+visgoth juviah rhoven and honor guard
+-------------
+protectorate character unit
+
+visgoth roven commander fearless officer
+5 6 8 4 12 16 10
+
+staff of sulon 6 12 magical reach continuous_fire
+
+gus & cassian fearless
+5 6 8 4 12 16 9
+
+consecrated halberd 5 11 reach magical
+
+5pv each FAC pc4
+
+visgoth rhoven
+Battle·Driven - When a model in this unit is damaged by an enemy attack, after the attack is resolved models in this unit gain +2 STR and ARM and Pathfinder for one round.
+Cleanse (*Action) - Animi and continuous effects on models/units in this model's command range immediately expire.
+Menoth's Sight (*Action) — Choose an friendly Faction model. While in this model's command range, for one round the
+chosen model ignores Stealth and ignores cloud effects when determining LOS.
+Negation (*Action) - Remove 1 focus or fury point from enemy models currently in this model's command range.
+
+GIUS AND CASSIAN
+Fearless
+Battle-Driven —· See above.
+Exemplar - Gius and cassian are Exemplar models
+
+STAFF OF SULON
+Continuous Effect: Fire
+® Magical Weapon
+® Reach
+CONSECRATED HALBERD
+® Magical weapon
+@ Reach
+@ Weapon Master
+Blessed - When making an attack with this weapon, ignore spell effects that add to a model's ARM or DEF.
+Set Defense — A model in this model's front arc suffers -2 on charge, slam power attack and impact attack rolls against this model.
+
+TACTICAL TIPS
+Rhoven — Because this model is an Officer when it is destroyed it does not replace Gius or Cassian. Instead Gius or Cassian becomes the unit commander.
+
+

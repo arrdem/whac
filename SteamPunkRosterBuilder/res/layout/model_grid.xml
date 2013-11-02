@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <include
+        android:id="@+id/basestats"
+        android:layout_height="wrap_content"
+        layout="@layout/base_stat_grid" />
+
+    <!-- armes -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:contentDescription="@string/empty"
+            android:src="@drawable/focus_6_icon" />
+
+        <LinearLayout
+            android:id="@+id/layout_weapons"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@+id/weapon1"
+                android:layout_height="wrap_content"
+                layout="@layout/melee_weapon" />
+
+            <include
+                android:id="@+id/weapon2"
+                android:layout_height="wrap_content"
+                layout="@layout/ranged_weapon" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- damage grid -->
+    <com.schlaf.steam.activities.damages.MyrmidonDamageGridView
+        android:id="@+id/myrmidonView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp" />
+    
+    <com.schlaf.steam.activities.damages.WarjackDamageGridView
+        android:id="@+id/gridView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp" />
+    
+    <com.schlaf.steam.activities.damages.DamageSpiralView
+        android:id="@+id/spiralView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp" />
+
+    <LinearLayout
+        android:id="@+id/colossalView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal" >
+
+        <com.schlaf.steam.activities.damages.WarjackDamageGridView
+        android:id="@+id/gridViewLeft"
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginRight="5dp" />
+        
+        <com.schlaf.steam.activities.damages.WarjackDamageGridView
+        android:id="@+id/gridViewRight"
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginLeft="5dp"
+        />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/lineView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/texture_blanche"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/hit_points"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:text="@string/example"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/Black" />
+    </LinearLayout>
+
+</LinearLayout>

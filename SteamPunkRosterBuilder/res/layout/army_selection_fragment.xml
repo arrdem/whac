@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    android:scaleType="center" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/selection_army_title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/compendium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="@string/_1" />
+
+            <ImageView
+                android:id="@+id/contract_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sceau"
+                android:contentDescription="@string/contract_info"
+                android:onClick="displayContractInfo" />
+            
+            <TextView
+                android:id="@+id/tier_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/tier" />
+
+            <ImageView
+                android:id="@+id/tier_level_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tier_level_2"
+                android:contentDescription="@string/tier_level"
+                android:onClick="displayTierInfo" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ExpandableListView
+        android:id="@+id/army_list_selection"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:groupIndicator="@drawable/empty" >
+    </ExpandableListView>
+
+</LinearLayout>

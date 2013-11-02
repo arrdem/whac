@@ -1,0 +1,966 @@
+
+
+GRIM ANGus
+
+TROLLELOOD TROLLKI N WARLOCK
+
+pv 17 fury 6 wb+6
+
+cmu ANGUS ` `
+SPD STR MAT RAT DEF ARM CMD
+6 7 6 7 16 15 8  
+
+HEADHUNTER 13 1 â€” 13`
+
+SNARE GUN_ 8 1 - - 
+
+gun blade 5 12
+
+
+
+FEAT: SPREAD THE NET
+
+While in Grimâ€™s control area, enemy models suffer -3 DEF. Enemy models beginning their activations in Grimâ€™s control area suffer -3 SPD and cannot make special attacks. Spread the Net lasts for one round
+
+GRIM ANGUS
+@ Pamenaer
+Â® Tough
+Take Down â€” Models disabled by a melee attack made by this model carmot make a Tough roll. Models boxed by a melee attack made by this model are removed from play.
+
+True Sight- This model ignores concealment, Camouflage, and Stealth.
+HEADHUNTER
+Â® Magical Weapon
+Bait the Line â€” Warbeasts in this modelâ€™s battlegroup gain +2"
+of movement when charging a model damaged by this weapon
+this turn.
+
+SNARE GUN
+Cumbersome - lf this model attacks with this weapon during
+its activation, it cannot attack with another ranged weapon that
+activation. lf this model attacked with another ranged weapon
+this activation, it cannot attack with this weapon.
+Knockdown â€” When a model is hit by an attack with this
+weapon, it is knocked down.
+
+CROSSCOUNTRY 2 6 - - YES NO
+Target friendly Faction model /u.nit gains Pathfinder Â® and Hunter.
+(A model with Hunter ignores forests, concealment, and cover when
+determining LOS or making a ranged attack.)
+LOCK THE TARGET 2 10 â€” 10 NO YES
+A model damaged by Lock the Target cannot run, charge, or be placed for
+one round.
+MARKED FOR DEATH 2 8 - - YES YES
+Target enemy model! unit suffers -2 DEF and loses Incorporeal and
+Stealth and cannot gain those abilities while affected by Marked for Death.
+Friendly Faction models can target an affected model regardless of LOS.
+RETURN FIRE 1 6 â€” â€” N O N0
+When target friendly Faction model is targeted by an enemy ranged attack,
+after the attack is resolved the affected model can make one normal melee
+or ranged attack, then Return Fire expires. Return Fire lasts for one round.
+
+------------------------------------------
+
+GRISSEL BLOODSONG FELL CALLER
+TRO|.|.B|.00D TRO|.|.K1N wAR|.0cK
+
+6 7 6 5 15 16 9
+pv17 fury6 wb+5
+
+FEAT: FELL CHORUS
+
+Friendly Faction models currently in BLOODSONG's control area gain Fearless Â®, can make one additional melee attack during their activations this turn, and can make a full advance at the end of this turn after all friendly models have ended their activations. During this movement, affected models cannot be targeted by free strikes. While in Bloodsongâ€™s control area, enemy models/units cannot give or receive orders and cannot cast spells. Affected friendly models are considered to have been affected by a Fell Call this turn. A friendly model / unit that has already been affected by a Fell Call this turn is not affected by Fell Chorus. Fell Chorus lasts for one round.
+
+Sonic blast SP8 rof1 pow12
+
+resounder 7 14 magical
+
+Critical Smile - On a critical hit, this model can slam the
+model hit instead of rolling damage normally. The model hit
+is slammed d6" directly away from this model and suffers a
+damage roll with POW equal to this modelâ€™s STR plus the POW
+of this weapon. The POW of collateral damage is equal to this
+modelâ€™s STR.
+
+
+
+BDOODSONG
+Â® Tough
+Fell Calls â€” This model can make one of the following calls at
+any time during its activation. A friendly Faction model/unit
+canbe affected by only one call each tmn.
+Â· Cacophony â€” While in this model's command range, enemy
+models / units cannot give or receive orders and cannot cast
+spells. Cacophony lasts for one round.
+â€¢ Heroic Ballad â€”â€” RNG CMD. Target friendly nonÂ·warl0cl<
+Faction model/unit. lf the model / unit is in range, it gains
+Fearless Â® and affected models can make one additional
+melee attack during their activations this turn. Heroic Ballad
+lasts for one round.
+â€¢ Hoof It - RNC CMD. Target friendly non-warlock Faction
+model/ unit. lf the model / unit is in range, affected models can
+make a full advance at the end of this turn after all friendly
+models have ended their activations. Affected models cannot
+be targeted by free strikes during this movement
+
+CALAMITY 3 8 - - YES YES
+Friendly models gain +2 to attack and damage rolls against target enemy
+model/ unit.
+HALUOWED AVENGER Z 6 - - YES NO
+When an enemy attack destroys or removes from play one or more
+friendly Faction models within 5" of target warbeast in this modelâ€™s
+battlegroup, after the attack is resolved the affected warbeast can charge
+an enemy model, then Hallowed Avenger expires.
+RIFT 3 8 4 13 NO YES
+The AOE is rough terrain and remains in olav for one round.
+
+---------------------------------------------------------------------------
+
+HOARLUK DOOMSHAPER SHAMAN OF THE GNARLS
+
+fury 7 pv16 wb+7
+
+5 6 5 4 13 15 7 
+
+gnarlroot 6 12 magical reach
+
+FEAT;  DHUNIA'S WRATH
+
+Enemy models suffer
+d6 damage points for each focus or fury point they spend while in Doomshaperâ€™ s
+control area. Enemy warb-easts suffer d6 damage points for
+each fury point they receive as a result of being forced while in
+Doomshapef s control area. If a model is destroyed as a result of
+this damage while casting a spell or using an animus, the spell
+or animus does not take effect. lf a model is destroyed as a result
+of this damage while making an attack, the target model suffers
+no further damage or effects from the attack. Dhuniaâ€™s Wrath
+lasts for one round.
+DOOMSHAPER
+Â® rough
+Goad Â·â€” When a warbeast in this mode1â€™s battlegroup destroys
+one or more enemy models with a melee attack during its
+combat action, immediately after the attack is resolved this
+model can force the warbeast to advance up to 2".
+Great Power - During your Control Phase, this model can
+upkeep one spell without spending focus or fury.
+Scroll of the Will of Balasar â€” This model can use this ability
+once per game when a warbeast frenzies in its control area.
+When Scroll of the Will of Balasar is used, choose the frenzy
+target of the warbeast.
+
+BANISHING WARD 2 6 - â€” YES NO
+Enemy upkeep spells on target friendly model / unit expire. Affected
+models cannot be targeted by enemy spells or animi.
+FORTUNE 2 6 - - YES NO
+Target friendly Faction model! unit can reroll its missed attack rolls. Each
+attack roll can be rerolled only once as a result of Fortune.
+PURIFICATION 3 SELF CTRL - NO NO
+Continuous effects, animi, and upkeep spells in this modelâ€™s control area
+immediately expire.
+RAMPAGER 3 10 - - NO YES
+Take control of target enemy non-character warbeast. You can make one
+full advance with the warbeast and can then make one normal attack with
+it, then Rampager expires. While the warbeast is affected by Rampager,
+it cannot be forced and you cannot use its animus. Rampager can be cast
+only once per turn.
+STRANGLEHOLD 2 10 - ll NO YES
+A model damaged by Stranglehold forfeits either its movement or its
+action during its next activation, as its controller chooses.
+
+
+-------------------------------------------------------------------------
+
+HOARLuK DOOMSHPER RAGE OF DHUNIA
+TROLLBLOOD TROLLKIN EPIC WARLOCK
+
+5 7 5 4 13 15 7
+
+fury7 pc 16 wb+6
+
+
+FEAT: SCROLL OF GRIMMR
+Doomshaper and friendly Faction warbeasts in his battlegroup
+beginning their activations in his control area gain +3 SPD and
+can charge or make slam or trample power attacks without
+being forced. Scroll of Grimmr lasts for one turn.
+
+DOOMSHAPER
+Â® Tough
+Attuned Spirit [Dire Troll]- Once per activation, this model
+can cast the animus of a Dire TroH warbeast in its battlegroup as
+a spell without spending fury.
+Goad â€” When a warbeast in this modelâ€™s battlegroup destroys
+one or more enemy models with a melee attack during its
+combat action, immediately after the attack is resolved this
+model can force the warbeast to advance up to 2".
+Hyper Regeneration â€” This model automatically heals d3
+damage points at the start of each of its activations.
+
+willbreaker 6 13 magical reach
+Powerful Attack â€” When attacking with this weapon, this
+model can spend 1 fury point to boost all attack and damage
+rolls for the attack.
+
+AGITATION 3 SELF CTRL - NO NO
+Place 1 fury point on each enemy warbeast currently in this modelâ€™s
+control area. This spell can only be cast once per turn.
+PRIMAL SHOCK 2 CTRL - * NO YES
+Choose a friendly Faction warbeast in this modelâ€™s control area. Target an
+enemy model within 8" of the chosen warbeast and make a magic attack against
+it. The chosen warbeast is the attacl<'s point of origin. If the enemy model is hit,
+it suffers a damage roll with a POW equal to the warbeast's base STR.
+REFUGE 2 6 - - YES NO
+When target friendly Faction model hits an enemy model with an attack
+during its activation, immediately after its combat action ends the affected
+model can make a full advance. It cannot be targeted by free strikes during
+this movement.
+SUNDER SPIRIT 2 10 - 12 NO YES
+An enemy warbeast damaged by Sunder Spirit loses its animus for one round.
+WILD AGGRESSION 3 6 - - YES NO
+Target friendly living vvrbeast in this modelâ€™s battlegroup can run, charge,
+or make slam or trample power attacks without being forced and gains
+boosted melee attack rolls.
+
+
+----------------------------------------------------------------------
+
+MADRAK IRONHIDES THORNWOOD CHIEFTAIN
+TROLLBLOOD TROLLKIN WARLOCK
+
+6 8 7 3 14 16 9 
+fur5 pv18 wb+6
+
+FEAT: CRUSHER
+
+While in I ronhidds control
+area, friendly Faction models
+gain Overtake. Additionally,
+when a friendly Faction
+model destroys one or more
+enemy models with a melee
+
+attack while the enemy model is in Ironhideâ€™s control area, the
+friendly model can make an additional melee attack. (When a
+model with Overtake destroys one or more enemy warrior models
+with a normal melee attack, after the attack is resolved this model
+can immediately advance up to 1".)
+IRONHIDE
+Â® Tough
+Snap Fire â€” When this model destroys one or more enemy
+models with a ranged attack during its combat action,
+immediately after that attack is resolved this model can make
+one normal ranged attack. Attacks gained from Snap Fire do not
+cotmt against a weapon's ROF and cannot generate additional
+attacks from Snap Fire.
+Scroll of Grindarâ€™ s Perseverance - This model can use Scroll
+of G1Â·indar' s Perseverance once per game, when this model is
+directly hit by an attack. If this model uses the scroll, it suffers
+no damage roll from the attack. Declare use of the scroll after
+this model is hit but before the damage roll is made.
+Talisman of Subdual â€” This model cannot be charged or slam
+power attacked by a warbeast that began the charge or slam
+power attack in this model's front arc. If a warbeast frenzies
+and would normally charge or slam Ironhide, it makes a full
+advance toward him instead.
+
+
+thrown rathrok 8 1 - 7 magical
+Critical Grievous Wounds - On a critical hit, the model hit by
+this weapon loses Tough, cannot heal or be healed, and cannot
+transfer damage for one round.
+Thrown â€” Add this mode1's STR to the POW of this ranged attack.
+
+rathrok 7 15 magical reach
+
+Critical Grievous Wounds see above
+
+
+CARNAGE 3 SELF CTRL â€” NO NO
+Friendly Faction models gain +2 to melee attack rolls against enemy
+models in this mode1â€™s control area. Carnage lasts for one turn.
+STRANGLEHOLD 2 10 - 11 NO YES
+A model damaged by Stranglehold forteits either its movement or its
+action during its next activation, as its controller chooses.
+SURE FOOT 3 6 - - YES NO
+Target friendly Faction model gains +2 DEF and cannot be knocked down.
+While within 3" of the affected model, friendly Faction models also gain
++2 DEF and cannot be knocked down.
+
+
+
+
+MADRAK lRON|-uDEs WORLD ENDER
+TROLLBLOOD TROLLKIN EPIC WARLOCK
+
+6 8 8 6 14 17 9 
+
+fury5 pv18 wb+5
+
+FEAT: DESPERATE
+HOUR
+
+  Friendly Faction models
+currently in Ironhideâ€™s control area can immediately make one
+normal melee attack against each enemy model in melee range
+or one normal ranged attack ignoring ROF.
+
+
+
+IRONHIDE
+Â® Tough
+Grim Salvation- When this model is damaged by an enemy
+melee or ranged attack, it does not suffer the damage and effects
+triggered by taking damage from the attack. Instead, remove one
+friendly Trollkin warrior model within l" of this model from play.
+If there is not a friendly 1`rollkin warrior model within 1" of this
+model, it suffers the damage and effects of the attack normally.
+Tide of Death â€” When this model destroys one or more enemy
+models with an attack, immediately after the attack is resolved
+this model can spend l fury point to advance up to l".
+
+
+
+
+thrown rathrok 8 1 - 7 magical
+Critical Grievous Wounds - On a critical hit, the model hit by
+this weapon loses Tough, cannot heal or be healed, and cannot
+transfer damage for one round.
+Thrown â€” Add this mode1's STR to the POW of this ranged attack.
+Rathr0kâ€™s Awakening â€” This model gains 1 fury point each time
+it destroys a living enemy model with this weapon.
+
+
+rathrok 7 15 magical reach
+
+Critical Grievous Wounds see above
+Rathr0kâ€™s Awakening see above
+
+BLOOD FURY 2 6 - - YES NO
+Target friendly warrior model! unit gains an additional die on melee
+damage rolls but suffers Â·â€”2 DEF.
+KILLI NG GROUND 2 SELF CTRL - NO NO
+Friendly Faction models beginning a charge in this model's control area
+gain Pathfinder Â® . Warbeasts in this modelâ€™s battlegroup beginning their
+activations in this rnodelâ€™s control area can charge or make slam power
+attacks against enemy models without being forced. Killing Ground lasts
+for one turn.
+WARPATH 2 SELF CTRL â€” YES NO
+When a friendly Faction model in this model's control area destroys one
+or more enemy models with a melee or ranged attack during its activation,
+immediately after the attack is resolved, one warbcast in this m0del's
+battlegroup that is in its control area can advance up to 3". A warbeast can
+advance only once per turn as a result of Warpath.
+
+
+TACTI CAL TIPS
+ 
+Gmm SALVATION ~ Note that this is not optional.
+RAmx0x's Awamzwmc â€” This model can exceed its FURY in fury
+points as a result of Rathr0kâ€™s Awakening.
+
+
+----------------------------------------------------------------------
+
+CAPTAIN GuNNB.10RN
+TROLLBLOOD TROLLKIN WARLOCK
+
+6 7 6 6 15 16 9 
+
+fury6 pv17 wb+5
+
+
+bazooka 12 1 3 14
+axe 4 11
+
+FEAT; FORTIFICATION
+
+While in Gunnbjorn's control area, friendly Faction models gain cover, do not suffer blast damage,
+and cannot be knocked down. Fortification lasts for one round.
+
+GUNNBJORN
+Â® Tough
+BAZOOKA
+Critical Devastation â€” On a critical hit, instead of suffering
+a normal damage roll, each model in the AOE is thrown d6"
+directly away from the attacker regardless of its base size. Move
+models farthest from the attacker first. The model directly hit by
+the attack suffers a POW 14 damage roll. Other models hit by
+the attack suffer a POW 7 damage roll. The POW of collateral
+damage is equal to the POW of the damage roll suffered by the
+thrown model.
+
+EXPLOSIVO l 6 - Â· NO NO
+When target friendly model makes a normal attack with a non-spray
+ranged weapon, the weapon gains Magical Weapon. If the weapon
+was AOE- it becomes AOE 3. An affected model cannot participate in a
+combined ranged attack. Models in the AOE other than the model that was
+directly hit suffer blast damage but do not suffer any other effects of the
+attack. Explosivo expires immediately after resolving target model's next
+ranged attack. Explosivo lasts for one turn.
+GUIDED FIRE 3 SELF CTRL - NO NO
+While in this model's control area, models in its battlegroup gain boosted
+ranged attack rolls for one turn.
+ROCK WALL Z CTRL WALL - YES NO
+Place a wall template anywhere completely in this model's control area
+where it does not touch a model's base, an obstruction, or an obstacle. The
+wall is a linear obstacle that provides cover.
+SNIPE 2 6 â€” - YES NO
+Target friendly model's/unit's ranged weapons gain +4 RNG.
+
+
+
+
+
+
+----------------------------------------------------------------------
+
+CALANDRA TRUTHSAYER ORACLE OF THE GLIMMERWOOD
+TROLLELOOD TROLLKIN WARLOCK
+
+5 6 5 4 14 14 8 
+
+fury7 pv16 wb+5
+
+FEAT: GOOD OMENS
+
+When a friendly model rolls a 1 or 2 on an attack or damage roll while in Truthsayer's control area
+it can reroll the die. Each die can be rerolled once due to Good Omens. Good Omens lasts for one turn.
+TRUTHSAYER
+Â® Tough
+Fate Blessed â€” When a friendly Faction model makes an attack or
+damage roll during its activation while in this model's control area,
+this model can spend 1 fury point to allow the model to reroll that
+roll. Each roll can be rerolled only once due to Fate Blessed.
+SALT
+Â® Magical Weapon
+Mercy Killer - When attacking with this weapon, this model
+gains an additional die on damage rolls against damaged models.
+
+
+
+BEFUDDLE 2 10 - - NO YES
+On a hit, you can immediately advance target enemy non-warcaster/non-warlock model up to 3". 
+Affected models cannot be targeted by free strikes during this movement. A model can move only once per turn as a result of Befuddle.
+BULLET DODGER 2 G - - YES NO
+Target friendly model gains +2 DEF against ranged attack rolls and Dodge,
+(A model with Dodge can advance up to 2" immediately after an enemy
+attack that missed it is resolved unless it was missed while advancing. It
+cannot be targeted by free strikes during this movement.)
+FORCE BLOW 3 10 - 12 NO YES
+Models damaged by Force Blow are knocked down.
+SOOIHING SONG 1 SELF CTRL - NO NO
+Remove up to 1 fury point from each friendly living Faction warbeast
+currently in this model's control area, Soothing Song can only be cast once per turn.
+STAKCROSSED 3 SELF GIRL â€” NO NO
+While in this model's control area enemy models gain an additional die on
+attack rolls. Discard the highest die of each roll. Starcrossed lasts for one round.
+
+
+
+----------------------------------------------------------------------
+BORKA KEGSLAYER 8: KEG CARR1ER
+TROLLBLOOD TROLLKIN WARLOCK & CHARACTER SOLO
+
+6 9 7 5 14 17 8 
+fury5 pv18 wb+5
+
+FEAT: barroom blitz
+
+Friendly Faction models beginning a charge, slam power attack. or trample power attack in Kegslayer's Control area gain +2" movement. Warbeasts in Kegslayer's battlegroup beginning their activations in his control area can make power attacks without being forced and roll an additional die on power attack damage rolls and collateral damage rolls. Barroom Blitz lasts lor one turn.
+
+KEGSLAYER
+Q immimity; com
+Â® Tough
+Unyieldingâ€” While engaging an enemy model, this model gains +2 ARM.
+TRAUMA
+@ Magical Weapon
+@ Reach
+Brain Damage - A model damaged by an attack with this weapon cannot cast spells, upkeep spells, or use an animus for one round.
+
+IRON FLESH 2 6 - - YES NO
+Target friendly warrior model/unit gains +3 DEF but suffers -1 SPD.
+MOSH PIT 3 SELF CTRL - NO I NO
+While in this model's control area, friendly models gain Knockdown on their melee weapons. Mosh Pit lasts for one turn. (When a model is hit with an attack by a weapon with Knockdown, it is knocked down.)
+WIND WALL 3 SELF - - N0 NO
+This model cannot make ranged attacks, and non-magical ranged attacks targeting it automatically miss. While completely within 3" of dwis model, models cannot make ranged attacks and non-magical ranged attacks targeting them automatically miss. Wind Wall lasts for one round.
+
+
+Keg carrier
+5 5 5 4 13 12 6 
+
+keg bash 3 8
+pv5 faC
+tough
+
+Attached to [Borka Kegslayer] - This model is attached to Borka KEGSLAYER for the rest of the game. Each warlock can have only one model attached to it.
+Companion [Borka Kegslayer] - This model is included in any army that includes Borka Kegslayer. If Kegslayer is destroyed or removed from play remove this model from play. This model is part of Kegslayer's battlegroup,
+Party Foul - If this model is destroyed by an enemy attack, during your next Maintenance Phase one friendly Faction model/unit can advance and make one normal melee attack
+Top Off (*Action) - If this model is B2B with Borka Kegslayer, Borka Kegslayer gains 2 fury points and Sturnbling Drunk. Sturnbling Drunk lasts for one round. (A model with Sturnbling
+Drunk cannot be knocked down. If it is hit by an enemy attack anytime except while it is advancing, after the attack is resolved it is pushed d3" in a direction determined by the deviation
+template, then you can choose its facing.)
+
+
+
+----------------------------------------------------------------------
+pyre troll
+trollblood light warbeast
+5 9 5 4 12 16 6
+
+fury 3 th9 faU cost5
+
+spew fire H 8 1 3 12 fire continuuous_fire
+claw L 3 12 open_fist
+claw R 3 12 open_fist
+
+PYRE TROLL
+Q Inununity: Fire
+It Bums! â€”Â· 
+If this model is hit by a melee attack, immediately after the attack is resolved the attacking model suffers the Fire continuous effect unless this model was destroyed or removed from play by the attack. 
+
+Regeneration [d3] â€” This
+model can be forced to heal
+d3 damage points once
+per activation. This model
+cannot use Regeneration
+during an activation it runs.
+SPEW FIRE
+@ Continuous Effect: Eire
+O Damage Type: Fire
+CLAW
+@ Open Fist
+
+
+FLAMING FISTS 2 6 - - N0 NO
+Target friendly Faction model gains +2 to melee damage rolls and Immunity:Fire and its melee weapons gain Critical Fire. Flaming Fists lasts for one round.
+
+----------------------------------------------------------------------
+slag troll
+trollblood light warbeast
+5 10 6 5 12 17 5
+
+fury 3 th8 faU cost6
+
+
+spew acid H 8 2 - 12 corrosion continuuous_corrosion
+claw L 3 12 open_fist
+claw R 3 12 open_fist
+
+SLAG TROLL
+Q immunity corrosion
+Cast Iron Stomach - When this model destroys a construct with a melee attack, this model heals d6 damage points.
+Regeneration la:] - This
+mod el can be lorced to heal
+d3 damage points once
+per activation. This mudel
+cannot use Regeneration
+during im activation it runs.
+Vitriol- If this model is hit by a melee attack immediately after the attack is resolved the attacking model suffers 
+the Corrosion continuous effect unless this model was destroyed or removed from play by the attack.
+SPEW ACID
+@ continuous Effect; Corrosion
+Q Damage Typm carmtaa
+Erosion- This model rolls an additional die on this weapon's damage rolls against non-living models.
+
+
+ACIDIC TOUCH 2 6 - - NO NO
+Target friendly Faction model gains +2 to melee damage rolls
+and Immunity:Corrosion, and its melee weapons gain Critical
+Corrosion, Acidic Touch lasts for one round.
+
+----------------------------------------------------------------------
+
+swamp troll
+trollblood light warbeast
+5 9 5 5 12 15 6
+
+pathfinder
+
+fury 3 th9 faU cost4
+
+tongue lash H 8 1 - 10 
+claw L 3 12 open_fist
+claw R 3 12 open_fist
+
+Amphibious â€” This model
+ignores the effeds of deep
+and shallow water and can
+move through tlmm without
+penalty. While completely
+in deep wa ter, it cannot
+be targeted by ranged or
+magic attacks and can
+mak: attacks only against
+other models in deep water.
+While completely in deep
+water, this model does not
+block LOS.
+Camoullnge â€” This model
+gains nn additional l2
+DEF when benefi ting from
+cuncealment or cover.
+negenmunn [dsl - This
+model can be forced tu heal
+df! damage points once
+por activation. This model
+cannot use Regeneration
+during an artivation it runs
+TONGUE LASH Critical Consume â€” On an critical hit, if the attack hit a small-based non-warlock/warcaster model the model hit is removed from play.
+
+Drag - If this weapon damages an enemy model with an equal or smaller base, immediately after the attack is resolved the damaged model can be pushed any distance directly toward this model. After the damaged model is moved, this model can make one normal melee attack against the model pushed. After resolving this melee attack. this model can make additional melee attacks during its combat action.
+
+SWARM 
+Swarm 2 self - - no no
+This model has concealment. Living enemy models suffer -2 to attack rolls while within 2" of this model. Swarm lasts for one round.
+
+
+----------------------------------------------------------------------
+
+troll axer
+trollblood light warbeast
+5 9 6 4  12 18f 6
+
+great axe 5 14 reach
+
+fur3 th8 faU cost6
+
+Regeneration [D3] - This model can be forced to heal d3 damage points once per activation. This model cannot use Regeneration during an activation it runs.
+
+RUSH 2 6 - - NO N0
+Target friendly warbeast gains +2" movement and Pathfinder Rush lasts for one turn.
+
+----------------------------------------------------------------------
+
+troll bouncer
+trollblood light warbeast
+5 9 5 4 12 17 6
+
+ball & chain L 4 13 reach chain weapon
+shield R 1 10 shield
+
+fur3 th9 faU cost9
+
+Regeneration [D3] - This model can be forced to heal d3 damage points once per activation. This model cannot use Regeneration during an activation it runs.
+
+BUMP 2 6 - - NO N0
+
+When target friendly model is damaged by an enemy attack, after the attack is resolved  the enemy model is pushed 3" directly away from the affected model, then Bump expires. Bump lasts for one round.
+
+----------------------------------------------------------------------
+
+
+troll impaler
+trollblood light warbeast
+5 9 5 5 12 16 6
+
+thrown spear 8 1 - 4 
+battle spear 4 13 reach
+
+Critical Smite â€” 
+On a critical hit, this model can slam the model hit instead of rolling damage normally. The model hit is slammed
+d6" directly away from this model and suffers a damage roll with POW equal to this model's STR plus the POW
+of this weapon. The POW of collateral damage is equal to this model's STR.
+Thrown - Add Lhls m0delâ€™s
+STR to the POW of this
+ranged attack.
+
+
+
+fur3 th9 faU cost5
+
+Regeneration [D3] - This model can be forced to heal d3 damage points once per activation. This model cannot use Regeneration during an activation it runs.
+
+FAR STRIKE 2 6 - - NO NO
+Target friendly model's ranged weapons gain Snipe. Far Strike lasts for one turn. (An attack with a Snipe weapon gains +4 RNG.)
+
+----------------------------------------------------------------------
+
+
+winter troll
+trollblood light warbeast
+5 9 6 4 12 18 6
+
+fury 3 th8 faU cost6
+
+ice breath H SP8 1 - 12 cold critical_freeze
+claw L 3 12 open_fist
+claw R 3 12 open_fist
+
+WINTER TROLL
+Q immunity: cam
+Regeneration [d3I - This
+medel can be forced to heal
+ds demae points ence
+por activation. 'Il-tis model
+cannot use Regeneration
+during an ziriivation it runs.
+Rirne -1t1his model is
+hit by a melee attack, the
+attacking model beeemoe
+stationary for one mund
+at the end of the attacking
+models activation unless
+the attacking model has
+iinmunny; com Q oi
+this model was destroyed
+or removed from play by
+the end uf me attacking
+m0del's activation,
+ICE BREATH
+Q; Damage Type cold
+Critical Freeze - On a critical hit, the model hit becomes stationary for one round unless it has Immunity:cold.
+CLAW
+Â® Open Fist
+
+FREEZER 2 6 â€” Â» NO NO
+Target friendly Faction model gains Immunity:Cold   When
+an enemy model without Immunity:Cold ends its activation
+within 2" of the target model, the enemy model becomes
+stationary for one round. Freezer lasts for one round.
+
+----------------------------------------------------------------------
+DIRE TROLL BLITZER
+TROLLBLOOD HEAVY WARBEAST
+
+5 12 5 5 12 18 5 
+
+fury4 th9 faU pc9
+
+slugger 10 1 - 13
+claw L 3 15 open_fist
+claw R 3 15 open_fist
+
+BLITZER
+@ Gunfighter
+Regeneration [D3] - This model can be forced to heal d3 damage points once per activation. This model cannot use Regeneration during an activation it runs.
+Snacking - When this model boxes a Living model with a melee attack, this model can heal d3 damage points. It this model heals, the boxed model is removed from play,
+Virtuoso - This model can make melee and ranged attack during the same combat action. When this model makes its initial attacks, it can make both its initial ranged and melee attacks.
+SLUGGER
+Rapid Fire [d3] - When you decide to make initial attacks with this weapon at the beginning of this model's combat action, roll a d3. The total rolled is the number of initial attacks this model can make with this weapon during the combat action, ignoring ROF.
+
+ 
+Repulsion 2 self - - no no
+Enemy models currently within 2" of this model are immediately pushed 3" directly away from it in the order you choose.
+
+----------------------------------------------------------------------
+dire troll Mauler 
+
+TROLLBLOOD HEAVY WARBEAST
+
+5 12 6 3 12 18 5 
+
+fury5 th9 faU pc9
+
+Regeneration [D3] - This model can be forced to heal d3 damage points once per activation. This model cannot use Regeneration during an activation it runs.
+Snacking - When this model boxes a Living model with a melee attack, this model can heal d3 damage points. It this model heals, the boxed model is removed from play,
+
+Big meaty fist L 4 16 open_fist
+Big meaty fist R 4 16 open_fist
+
+Chain Attack: Grab & Smash - If this model hits the same model with both its initial attacks with this weapon, after resolving the attacks it can immediately make a double-hand
+throw, head-butt, headlock/weapon lock, push, or throw power attack against that target.
+
+RAGE 2 6 - - NO NO
+Target friendly Faction model gains +3 STR. Rage lasts for one round.
+
+----------------------------------------------------------------------
+dire troll Bomber 
+
+TROLLBLOOD HEAVY WARBEAST
+
+5 12 5 5  12 18 5 
+
+fury4 th9 faU pc10
+
+Regeneration [D3] - This model can be forced to heal d3 damage points once per activation. This model cannot use Regeneration during an activation it runs.
+Snacking - When this model boxes a Living model with a melee attack, this model can heal d3 damage points. It this model heals, the boxed model is removed from play,
+
+powder bomb 8 2 4 16
+claw L 3 15 open_fist
+claw R 3 15 open_fist
+
+Chain Attack: Grab & Smash - If this model hits the same model with both its initial attacks with this weapon, after resolving the attacks it can immediately make a doubleâ€”hand
+throw, head-butt, headlock/weapon lock, push, or throw power attack against that target.
+
+RAGE 2 6 - - NO NO
+Target friendly Faction model gains +3 STR. Rage lasts for one round.
+
+BOMB SHELTER 1 6 - - NO N0
+Target friendly model gains Girded. Bomb Shelter lasts for une round. (A model with Girded dues not suffer blast damage. Friendly models B2B with it do not suffer blast damage.)
+
+
+----------------------------------------------------------------------
+earthborn dire troll
+
+TROLLBLOOD HEAVY WARBEAST
+
+5 12 6 3 12 18 5 
+
+fury5 th10 faU pc10
+
+pathfinder
+
+claw L 3 15 open_fist
+claw R 3 15 open_fist
+
+Regeneration [D3] - This model can be forced to heal d3 damage points once per activation. This model cannot use Regeneration during an activation it runs.
+Snacking - When this model boxes a Living model with a melee attack, this model can heal d3 damage points. It this model heals, the boxed model is removed from play,
+
+Elemental communion - While within 2" of deep or shallow water, this model gains +2 DEF. While within 2" of an obstacle or obstruction this model gains +2 ARM. If this model begins its
+activation within 2" of rough terrain, it gains +2 SPD this activation.
+
+
+Claw - 
+Adaption â€” When this model hits with a normal melee attack with this weapon, it can replace the base POW of this weapon with the base POW of a melee weapon on a model in its melee range. After the attack is resolved, Adaption expires.
+
+TRANSMUTE 2 6 - - no no 
+Target friendly Faction model gains Elemental Communion. Transmute lasts for one round.
+
+----------------------------------------------------------------------
+Mulg the ancient
+
+TROLLBLOOD DIRE TROLL CHARACTER HEAVY WARBEAST
+
+4 13 7 3 11 19 6
+
+fury5 th10 faC pc12
+
+rune club 6 19 magical reach
+big meaty fist 4 17 open_fist
+
+Affinity[Doomshaper] - At the end of Mulg's combat action while in Doomshaper's control area, if the last model Mulg hit with a melee attack during it's combat action is still in Mulg's melee range, Mulg can immediately make one normal melee attack targeting that model
+
+Protective Fit - When this model's controlling warlock is damaged by an enemy attack, immediately after the attack is resolved this model can make a full advance toward the enemy model. After moving this model can make on melee attack targeting the enemy model.
+
+Regeneration [D3] - This model can be forced to heal d3 damage points once per activation. This model cannot use Regeneration during an activation it runs.
+
+Relentless - when this model is damaged by an enemy attack, it gains +2SPD for one round.
+
+Snacking - When this model boxes a Living model with a melee attack, this model can heal d3 damage points. It this model heals, the boxed model is removed from play,
+
+
+rune club : critical smite
+
+RUNEBREAKER 2 SELF Â· Â» NO NO
+Enemy animi within this model's command range expire. Enemy models cannot cast spells and enemy warbeasts lose their animi while in this model's command range. Runebreaker lasts for one round.
+
+----------------------------------------------------------------------
+kriel warriors
+trollblood trollkin unit
+5 6 5 4 12 15 8
+
+hand weapon 4 10
+
+fa3 cost 4/6 
+
+
+LEADER & GRUNTS
+@ Combined Melee Attack
+Â® Tough
+Prayers â€” The Leader of this unit can recite one ofthe following prayers each turn anytime during its unitâ€™s activation. Each model in this unit gain the benefits listed.
+â€¢ Fervor â€” Affected models gain +2 to attack and damage rolls this activation
+â€¢ Swift Foot - Affected models gain +2" movement this activation.
+
+----------------------------------------------------------------------
+
+kriel warriors standard & bearer
+trollblood trollkin unit attachment
+
+standard bearer
+5 6 5 4 12 15 8
+standard_bearer, tough
+
+piper
+5 6 5 4 12 15 8
+cma, tough
+
+Attachment [KiÂ·ie1 Warrior] â€”
+This attachment can be added
+to a Kriel Warrior unit.
+STANDARD BEARER
+Â® Standard Bearer
+Â® Tough
+Granted: Steady â€” While
+this model is in play
+models in its unit gain
+Steady (Models with
+Steady cannot be knocked
+down.)
+PIPER
+In Step - While this model is within 3" of it, the unit
+commander gains +3" to its command range.
+Take Up â€” If this model is destroyed or removed from play you
+can choose a Gruntin this unit within 1" of this model to take its
+place, Effects on this model expire, and it gains the effects on the
+chosen Grunt. Remove the Grunt from the table instead of this
+model. This model has the same number of unmarked damage
+boxes as the chosen Grunt.
+
+----------------------------------------------------------------------
+
+kriel warriors caber thrower
+trollblood trollkin weapon attachment
+
+thrower
+5 6 5 4 12 15 8
+tough
+
+caber 7 13
+
+FA3 1pc/each up to 3
+
+Attachment [Krie1 Warrior] - This attachment can be added to a Kriel warrior unit.
+THROWER
+Â® Tough
+Take Up - If this model is destroyed or removed from play you can choose a Grunt in this unit within 1" of this model to take its place. Effects on this model expire, and it gains the effects on the chosen Grunt. Remove the Grunt from the table instead of this model. This model has the same number of unmarked damage boxes as the chosen Grunt.
+CABER
+@ Reach
+Momenturn â€” Instead of suffering a normal damage roll, a small- or medium-based, non-incorporeal model hit by this attack is slammed d3" directly away from this model. The POW ofthe slam damage roll is equal to this model's STR plus the POW of this weapon. The POW of collateral damage is equal to the STR of this model. In addition to suffering a normal damage roll, largeâ€”based models hit by this attack are knocked down.
+
+
+
+----------------------------------------------------------------------
+pyg burrowers
+trollblood unit
+FA1 cost4/6
+
+advancedeployment tough
+
+6 5 4 4 13 12 7
+slug gun 4 1 - 14
+hand weapon 3 8 
+
+LEADER 8 GRUNTS
+Â® Advance Deployment
+Â® Tough
+Point Blank - During its activation, this model can make melee attacks with its ranged weapon, with a O.5" melee range. Do not add this modelâ€™s STR to damage rolls made with ranged weapons. Charge attacks made with ranged weapons are not boosted.
+Tunneling (Order) Before this unitâ€™s normal movement, replace the unit commander with the tunneling marker; then remove the remaining models in this unit from the table. Remove those that were not in formation from play. Effects on models in this unit expire. Then move the tunneling marker up to 5â€�. During your next Maintenance Phase, place models in this unit within 5" of the tunneling marker and remove it from the table. Models that cannot be placed are removed from play. This unit cannot receive the Tunneling order if it received it during its last activation.
+
+
+----------------------------------------------------------------------
+
+pyg bushwackers
+trollblood unit
+FA1 cost4/6
+
+advancedeployment tough cra pathfinder
+
+6 5 4 4 13 12 7
+rifle 14 1 - 10
+hand weapon 3 8
+
+fa2 cost5/8 
+
+Bushwhack (Order) - During this unit's activation, affected models make their combat actions before their normal movement. Affected models must make a full advance as their normal movement this activation.
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+
+

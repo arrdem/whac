@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <FrameLayout
+        android:id="@+id/fragment_player1_placeholder"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" />
+
+    <!--
+        <fragment
+            android:id="@+id/battleListFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="9"
+            class="com.schlaf.steam.activities.battle.BattleListFragment"
+            android:tag="battleListFragment" >
+        </fragment>    -->
+
+    <LinearLayout
+        android:id="@+id/layout_chrono_and_card"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:id="@+id/chrono_zone"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="50" >
+
+            <fragment
+                android:id="@+id/chronoFragment"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                class="com.schlaf.steam.activities.chrono.ChronoFragment"
+                android:tag="chronoFragment" >
+            </fragment>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/card_zone"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="50" />
+    </LinearLayout>
+
+    <!--
+        <fragment
+            android:id="@+id/bottomPaneFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            class="com.schlaf.steam.activities.card.ViewCardFragment"
+            android:tag="ViewCardFragment" >
+        </fragment>    -->
+
+    <FrameLayout
+        android:id="@+id/fragment_player2_placeholder"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" />
+
+</LinearLayout>

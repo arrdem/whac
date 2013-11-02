@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello</string>
+    <string name="app_name">WH army creator</string>
+    <string name="app_description">Une application de liste/bataille pour Warmachine et Hordes</string>
+    <string name="build_army">Créer une armée</string>
+    <string name="load_army">Charger une armée</string>
+    <string name="preferences">Préférences</string>
+    <string name="launch_battle">Lancer une bataille</string>
+    <string name="import_data">Importer des données</string>
+    
+    <string name="empty"></string>
+    
+    <string name="choose_faction">Choisissez une faction</string>
+    <string name="choose_tier">Choose tier</string>
+    <string name="choose_contract">Choose contract</string>
+    <string name="choose_warcaster">Choose warcaster</string>
+    <string name="choose_player2">Choose 2nd player army list</string>
+    <string name="field_promotion">Field promotion</string>
+    
+    
+    <string name="faction_icon">faction icon</string>
+    <string name="title">Example title</string>
+    <string name="description">Example description</string>
+    
+    
+    
+    <string name="carac_spd">SPD</string>
+    <string name="carac_str">STR</string>
+    <string name="carac_mat">MAT</string>
+    <string name="carac_rat">RAT</string>
+    <string name="carac_def">DEF</string>
+    <string name="carac_arm">ARM</string>
+    <string name="carac_foc">FOC</string>
+    <string name="carac_cmd">CMD</string>
+    
+    <string name="carac_pow">POW</string>
+    <string name="carac_p_plus_s">P+S</string>
+    <string name="carac_range">RNG</string>
+    <string name="carac_rof">ROF</string>
+    <string name="carac_aoe">AOE</string>
+    
+    <string name="feat">FEAT : </string>
+    
+    
+    
+    <string name="unit_name">Unit name</string>
+    <string name="field_allowance">FA</string>
+    <string name="base_cost">base cost</string>
+    <string name="full_cost">full cost</string>
+    
+    
+    <string name="choose_army">Choose army composition</string>
+    <string name="selected_army">Your army as selected</string>
+    <string name="tier">Tier</string>
+    <string name="tier_level">Tier level</string>
+    <string name="contract_info">Contract information</string>
+    
+    
+    <string name="min_size">Min. size</string>
+    <string name="max_size">Max. size</string>
+    
+    
+    <string name="plus">+</string>
+    <string name="moins">-</string>
+    
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="_4">4</string>
+    <string name="_5">5</string>
+    <string name="_6">6</string>
+    
+    <string name="add_ua">Add Unit Attachment</string>
+    <string name="add_wa">Add Weapon Attachment</string>
+    <string name="no_weapon">No weapon</string>
+    
+    
+    <string name="edit_army">Edit armies</string>
+    <string name="delete">Delete</string>
+    <string name="import_">Import</string>
+    <string name="copy">Duplicate</string>
+    <string name="rename">Rename</string>
+    <string name="exit">Exit</string>
+    <string name="cancel">Cancel</string>
+    
+    
+    <string name="entry_title">Entry title</string>
+    <string name="entry_fa">FA : 2/2 5/8PC</string>
+    <string name="entry_cost">8PC</string>
+    
+    <string-array name="caster_count">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+	<string-array name="army_size">
+        <item>15</item>
+        <item>25</item>
+        <item>35</item>
+        <item>50</item>
+        <item>75</item>
+        <item>100</item>
+        <item>150</item>
+        <item>200</item>
+    </string-array>
+    
+	<string-array name="use_tiers">
+        <item>yes</item>
+        <item>no</item>
+    </string-array>	
+
+	<string-array name="use_specialists">
+        <item>yes</item>
+        <item>no</item>
+    </string-array>	
+	
+	<string-array name="card_access_method">
+        <item>simple click</item>
+        <item>long click</item>
+    </string-array>
+
+	<string-array name="card_access_method_values">
+        <item>simple</item>
+        <item>long</item>
+    </string-array>
+	
+			
+	<string name="pref_timer_group">Timer settings</string>
+	<string name="pref_use_timer">Use timer by default</string>
+	<string name="pref_key_timer_minutes_summary">Default number of minutes on the clock = !replace!</string>
+	<string name="pref_key_timer_minutes">Number of minutes per player</string>
+	
+	<string name="pref_list_building_group">List building settings</string>
+	<string name="pref_list_building_army_size">Army default size</string>
+	<string name="pref_list_building_caster_count">Default caster count</string>
+	<string name="pref_list_building_use_specialists">Use specialists</string>
+	
+	<string name="pref_list_building_army_size_summary">Default size is !replace! points</string>
+	<string name="pref_list_building_caster_count_summary">Default caster(s) count is !replace!</string>
+	<string name="pref_list_building_use_specialists_summary">Use specialist = !replace!</string>
+	
+	
+	<string name="pref_list_ergonomy">Ergonomy</string>
+	<string name="pref_list_view_card_click_summary">Access card via single click</string>
+	<string name="pref_list_view_card_fullscreen_summary">Always show card full-screen</string>
+	<string name="pref_list_exit_silently_summary">Always exit silently (no confirmation asked)</string>
+	
+	<string name="casters">Casters</string>
+	<string name="units">Units</string>
+	<string name="solos">Solos</string>
+	<string name="battle_engines">Battle engines</string>
+	
+	<string name="example">example</string>
+	
+</resources>

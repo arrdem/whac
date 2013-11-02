@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="warmachine.xsd">    <armies>
+        <army faction="faction_khador" name="Khador">
+            <warcasters>
+              <warcaster id="Kw01" name="The Butcher of Khardov" full_name="The Butcher of Khardov" generation="P" qualification="warcaster" focus="6" warjack_points="6" fa="C">
+                    <basestats name="The Butcher of Khardov" spd="5" str="8" mat="9" rat="5" def="14" arm="18" cmd="7" hitpoints="20" />
+<weapons>
+<melee_weapon name="Lola" pow="8" p_plus_s="16" magical="true" reach="true" weapon_master="true"></melee_weapon>
+<ranged_weapon name="Blunderbuss" rng="8" rof="1" aoe="-" pow="12"></ranged_weapon>
+</weapons>
+<feat title="BLOOD FRENZY">While in the Butcher's control area, friendly Faction models gain an additional die on attack damage rolls this turn.</feat>
+<spell name="Fury" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">
+Target friendly model/unit gains +3 to melee damage rolls but suffers -1 DEF.
+</spell>
+<spell name="IRON FLESH" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">
+Target friendly warrior model/unit gains +3 DEF but suffers -1 SPD.
+</spell>
+<spell name="FULL THROTTLE" cost="3" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">
+Warjacks in this model's battlegroup beginning their activations in its control area can run, charge,
+or make slam or trample power attacks without spending focus that activation. While in this model's
+control area, models in its battlegroup gain boosted melee attack rolls. Full Throttle lasts for one turn.
+</spell>
+<spell name="OBLITERATION" cost="4" rng="10" aoe="4" pow="15" up="NO" off="YES">
+Target friendly warrior model/unit gains +3 DEF but suffers -1 SPD.
+</spell>
+      </warcaster>
+                <warcaster id="Kx01" name="Kommander Orsus Zoktavir" full_name="Kommander Orsus Zoktavir" generation="E" qualification="warcaster" focus="6" warjack_points="6" fa="C">
+                    <basestats name="Kommander Orsus Zoktavir" spd="5" str="8" mat="9" rat="5" def="14" arm="18" cmd="7" hitpoints="20" />
+                    <weapons>
+<melee_weapon name="Lola" pow="8" p_plus_s="16" magical="true" reach="true" weapon_master="true"></melee_weapon>
+<ranged_weapon name="Blunderbuss" rng="8" rof="1" aoe="-" pow="12"></ranged_weapon>
+</weapons>
+                    <feat title="FEEL THE HATE">
+Zoktavir gains one rage token each time an enemy model is destroyed in his control area.
+After all friendly models have completed their activations, no more tokens can be gained and
+Zoktavir can give up to three rage tokens to any friendly non-warcaster Faction model in his control area.
+Then remove any rage tokens remaining on Zoktavir. A model can spend one rage token once to make a full advance
+followed by one normal melee attack. Rage tokens can also be spent to make normal melee attacks or to boost melee
+attack or melee damage rolls at one token per attack or boost. Remove unspent rage tokens from play at the end of the turn.
+</feat>
+<spell name="BOUNDLESS CHARGE" cost="2" rng="6" aoe="-" pow="-" up="NO" off="NO">
+During its activation, target friendly model can charge without spending focus or being forced and gains +2˝ movement and
+Pathfinder when it charges. Boundless Charge lasts for one turn.
+</spell>
+<spell name="ELIMINATOR" cost="3" rng="8" aoe="3" pow="13" up="NO" off="YES">
+Immediately after this attack is resolved, this model can advance up to 2˝ for each enemy model destroyed by the attack.
+</spell>
+<spell name="FURY" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly model/unit gains +3 to melee damage rolls but suffers -1 DEF.</spell>
+<spell name="RAVAGER" cost="2" rng="6" aoe="-" pow="-" up="NO" off="NO">
+Target model in this model's battlegroup gains Berserk for one turn. While affected by Ravager, a model cannot make Chain Attacks. (When a model with Berserk destroys one or more models with a melee attack during its combat action, immediately after the attack is resolved it must make one additional melee attack against another model in its melee range.)</spell>
+<capacity title="Arcane Dementia"> For each round, Zoktavir's base FOCUS is d6+1, rolled at the beginning of the game and at the beginning each of your Control Phases before this model replenishes its focus. If he destroyed three or more enemy models with melee attacks since the beginning of your previous turn, do not roll to determine his base FOCUS; it is automatically 7. Zoktavir's control area is always 12". </capacity>
+<capacity title="Circular Vision">This model's front arc extends to 360°.</capacity>
+<capacity title="Conferred Rage">Warjacks in this model's battlegroup beginning their activations in its control area can charge or make power attacks without spending focus. When this model destroys one or more enemy models during its activation, warjacks in its battlegroup beginning their activations in its control area gain +2 SPD and MAT for one turn.</capacity>
+<capacity title="Homicidal Maniac"> When this model makes a normal melee attack during its activation, it makes one melee attack against each model in its LOS and melee range. If there are no enemy models in this model's melee range after resolving a normal melee attack in which it destroyed one or more, it can advance up to 1".</capacity>
+                </warcaster>
+                <warcaster id="Kw02" name="Kommander Sorscha" full_name="Kommander Sorscha" generation="P" qualification="warcaster" focus="6" warjack_points="5" fa="C">
+                    <basestats name="Kommander Sorscha" spd="6" str="6" mat="6" rat="5" def="16" arm="14" cmd="9" hitpoints="17" immunity_frost="true" />
+                    <weapons>
+<melee_weapon name="Frostfang" pow="7" p_plus_s="13" magical="true" reach="true">
+<capacity title="Critical Freeze">On a critical hit, the model hit becomes stationary for one round unless it has Immunity: Cold.</capacity>
+</melee_weapon>
+<ranged_weapon name="Hand Cannon" rng="12" rof="1" aoe="-" pow="12"></ranged_weapon>
+</weapons>
+<feat title="ICE GAZE">
+Enemy models without Immunity: Cold currently in Sorscha's control area and LOS become stationary for one round.
+</feat>
+<spell name="BOUNDLESS CHARGE" cost="2" rng="6" aoe="-" pow="-" up="NO" off="NO">
+During its activation, target friendly model can charge without spending focus or being forced and gains +2˝ movement and
+Pathfinder when it charges. Boundless Charge lasts for one turn.
+</spell>
+<spell name="Fog of War" cost="3" rng="SELF" aoe="CTRL" pow="-" up="YES" off="NO">
+Models gain concealment while in this model's control area.
+</spell>
+<spell name="FREEZING GRIP" cost="4" rng="8" aoe="-" pow="-" up="NO" off="YES">
+Target model/unit becomes stationary for one round unless it has Immunity: Cold.
+</spell>
+<spell name="RAZOR WIND" cost="2" rng="10" aoe="-" pow="12" up="NO" off="YES">
+Target model/unit becomes stationary for one round unless it has Immunity: Cold.
+</spell>
+<spell name="TEMPEST" cost="4" rng="8" aoe="4" pow="12" up="NO" off="YES">
+Models hit by Tempest are knocked down and suffer a POW 12 damage roll.
+</spell>
+<spell name="WIND RUSH" cost="2" rng="SELF" aoe="-" pow="-" up="NO" off="NO">
+This model can immediately make a full advance and gains +2 DEF for one round. Wind Rush can be cast only once per turn.
+</spell>
+                </warcaster>
+                <warcaster id="Kx02" name="Forward Kommander Sorscha" full_name="Forward Kommander Sorscha" generation="E" qualification="warcaster" focus="6" warjack_points="6" fa="C">
+                  <basestats name="Forward Kommander Sorscha" spd="6" str="6" mat="7" rat="5" def="16" arm="15" cmd="8" hitpoints="17" immunity_frost="true"  />
+                    <weapons>
+<melee_weapon name="Frostfang" pow="7" p_plus_s="13" magical="true" reach="true">
+<capacity title="Critical Freeze">
+On a critical hit, the model hit becomes stationary for one round unless it has Immunity: Cold.
+</capacity>
+</melee_weapon>
+<ranged_weapon name="Quad Iron" rng="10" rof="1" aoe="-" pow="10">
+<capacity title="Multi-Fire (*Attack)">
+Make an attack with this weapon. On a hit, after resolving the attack this model can immediately make one additional attack
+with this weapon targeting the last model hit or another model within 2˝ of the last model hit, ignoring ROF. This model can make
+up to four attacks during its activation as a result of Multi-Fire.
+</capacity>
+</ranged_weapon>
+</weapons>
+                    <feat title="WINTER'S CHILL">
+Damage to enemy models without Immunity: Cold currently in Sorscha's control area that exceeds ARM is doubled this turn.
+</feat>
+<spell name="BOUNDLESS CHARGE" cost="2" rng="6" aoe="-" pow="-" up="NO" off="NO">
+During its activation, target friendly model can charge without spending focus or being forced and gains +2˝ movement and
+Pathfinder when it charges. Boundless Charge lasts for one turn.
+</spell>
+<spell name="CYCLONE" cost="2" rng="SELF" aoe="-" pow="-" up="NO" off="NO">
+This model immediately makes a full advance. It cannot be targeted by free strikes during this movement.
+At the end of this movement, this model can make one melee attack against each model in its LOS that is in its melee range.
+Cyclone can be cast only once per turn.
+</spell>
+<spell name="FREEZING GRIP" cost="4" rng="8" aoe="-" pow="-" up="NO" off="YES">
+Target model/unit becomes stationary for one round unless it has Immunity: Cold.
+</spell>
+<spell name="IRON FLESH" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">
+Target friendly warrior model/unit gains +3 DEF but suffers -1 SPD.
+</spell>
+<spell name="RAZOR WIND" cost="2" rng="10" aoe="-" pow="12" up="NO" off="YES">
+Target model/unit becomes stationary for one round unless it has Immunity: Cold.
+</spell>
+<spell name="SHATTER STORM" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">
+When target friendly Faction model/unit directly hits and boxes an enemy model with a ranged or melee attack, center a
+3˝ AOE on the boxed model, then remove that model from play. Models in the AOE are hit and suffer an unboostable POW 8 blast damage roll.
+</spell>
+<capacity title="Desperate Pace [Winter Guard] (*Action)">
+RNG CMD. Target Friendly Winter Guard unit. If the Winter Guard unit is in range, it gains +2" movement during its activation this turn.
+</capacity>
+<capacity title="Elite Cadre [Winter Guard]">
+Friendly Winter Guard models gain Combined Arms. (When a model with Combined Arms misses an attack roll when making a combined
+ranged attack, it can reroll that attack roll. Each attack roll can be rerolled only once as a result of Combined Arms.)
+</capacity>
+<capacity title="Warjack Bond (Epic Sorscha)">
+One non-character warjack in Sorscha's battlegroup begins the game bonded to her. The warjack gains Immunity: Cold. When an enemy model
+ends its activation within 2˝ of the bonded warjack, the enemy model becomes stationary for one round unless that model has Immunity: Cold.
+</capacity>
+                </warcaster>
+                <warcaster id="Kw03" name="Vladimir, The Dark Prince" full_name="Vladimir, The Dark Prince" generation="P" generation_id="vlad" qualification="warcaster" focus="6" warjack_points="5" fa="C">
+                    <basestats name="Vladimir, The Dark Prince" spd="6" str="6" mat="7" rat="5" def="15" arm="16" cmd="9" hitpoints="18" />
+                    <weapons>
+<melee_weapon name="Skirmisher" pow="7" p_plus_s="13" magical="true">
+<capacity title="Blood Boon">
+Once per activation, immediately after resolving an attack in which it destroyed a living enemy model with this weapon, this model
+can cast a spell with COST 3 or less without spending focus.
+</capacity>
+</melee_weapon>
+<melee_weapon name="Ruin" pow="4" p_plus_s="10" magical="true"></melee_weapon>
+</weapons>
+                    <feat title="FORCED MARCH">
+Warjacks in Vladimir's battlegroup beginning their activations in his control area double their base SPD and can run or charge without spending focus. Forced March lasts for one turn.
+</feat>
+<spell name="BLOOD OF KINGS" cost="4" rng="SELF" aoe="-" pow="-" up="NO" off="NO">
+Vladimir gains +3 SPD, STR, MAT, DEF, and ARM for one round.
+</spell>
+<spell name="BOUNDLESS CHARGE" cost="2" rng="6" aoe="-" pow="-" up="NO" off="NO">
+During its activation, target friendly model can charge without spending focus or being forced and gains +2˝ movement and
+Pathfinder when it charges. Boundless Charge lasts for one turn.
+</spell>
+<spell name="RAZOR WIND" cost="2" rng="10" aoe="-" pow="12" up="NO" off="YES">
+Target model/unit becomes stationary for one round unless it has Immunity: Cold.
+</spell>
+<spell name="SIGNS &amp; PORTENS" cost="4" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">
+While in this model's control area, friendly Faction models gain an additional die on attack and damage rolls.
+Discard the lowest die in each roll. Signs &amp; Portents lasts for one turn.
+</spell>
+<spell name="WINDWALL" cost="3" rng="SELF" aoe="-" pow="-" up="NO" off="NO">
+This model cannot make ranged attacks, and non-magical ranged attacks targeting it automatically miss. While completely within 3˝ of this model, models cannot make ranged attacks and
+non-magical ranged attacks targeting them automatically miss. Wind Wall lasts for one round.
+</spell>
+<capacity title="Parry">
+This model cannot be targeted by free strikes.
+</capacity>
+                </warcaster>
+                <warcaster id="Kx03" name="Vladimir Tzepesci, the Dark Champion" full_name="Vladimir Tzepesci, the Dark Champion" generation="E" generation_id="vlad" qualification="warcaster" focus="6" warjack_points="5" fa="C">
+                    <basestats name="Vladimir Tzepesci, the Dark Champion" spd="6" str="6" mat="7" rat="5" def="15" arm="16" cmd="9" hitpoints="18" />
+                    <weapons>
+<melee_weapon name="Dominion" pow="8" p_plus_s="14" magical="true" reach="true">
+<capacity title="Balefire">
+Gain an additional damage die on this weapon's damage rolls against undead models.
+</capacity>
+</melee_weapon>
+</weapons>
+                    <feat title="BLOOD LEGACY">
+Choose d3+3 friendly Faction non-character warrior models currently in Vladimir's control area.
+Those models gain +3 SPD, STR, MAT, RAT, DEF, ARM, and CMD for one round.
+</feat>
+<spell name="ASSAIL" cost="3" rng="6" aoe="-" pow="-" up="YES" off="NO">
+Target friendly Faction warjack can charge or make slam or trample power attacks without spending focus.
+The warjack gains +2˝ movement when it charges or makes a slam or trample power attack. Models slammed by the warjack are moved +2˝.
+</spell>
+<spell name="HAND OF FATE" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">
+Target friendly Faction model/unit gains an additional die on attack and damage rolls. Discard the low die in each roll.
+</spell>
+<spell name="MARTIAL PARAGON" cost="2" rng="SELF" aoe="-" pow="-" up="YES" off="NO">
+This model gains an additional die on melee attack rolls and cannot be targeted by free strikes.
+</spell>
+<spell name="RAZOR WIND" cost="2" rng="10" aoe="-" pow="12" up="NO" off="YES">
+Target model/unit becomes stationary for one round unless it has Immunity: Cold.
+</spell>
+<spell name="TRANSFERENCE" cost="2" rng="SELF" aoe="CTRL" pow="-" up="YES" off="NO">
+While in this model's control area, friendly Faction non-warcaster warrior models can spend 1 focus point on this model to boost a melee attack or melee damage roll.
+</spell>
+<spell name="WIND BLAST" cost="2" rng="CTRL" aoe="5" pow="-" up="NO" off="NO">
+Place a 5˝ AOE anywhere completely in this model's control area. Cloud effects overlapping the AOE expire. Models suffer -3 RAT while within the AOE.
+The AOE remains in play for one round.
+</spell>
+<capacity title="Blood Trials">
+When this model suffers 1 or more damage points from an enemy attack, it gains one blood token. During your next Control Phase, after this model replenishes its
+focus but before it allocates focus, replace each blood token with 1 focus point.
+</capacity>
+<capacity title="Defensive Strike">
+Once per turn, when an enemy model advances into and ends its movement in this model's melee range, this model can immediately make one normal melee attack against it.
+</capacity>
+<capacity title="Might of Kings">
+When Vladimir is first damaged, he gains +1 SPD, STR, DEF, and CMD for the rest of the game. If he is reduced to 10 or fewer unmarked damage boxes, this bonus increases
+to +2 for the rest of the game. If he is reduced to 5 or fewer, this bonus increases to +3 for the rest of the game. These benefits remain even if Vladimir heals.
+If a friendly model damages him with an attack, Vladimir loses Might of Kings for the rest of the game.
+</capacity>
+                </warcaster>
+                <warcaster id="Kz03" name="Vladimir Tzepesci, Great Prince of Umbrey" full_name="Vladimir Tzepesci, Great Prince of Umbrey" generation="EE" generation_id="vlad" qualification="warcaster" focus="6" warjack_points="5" fa="C">
+<basestats name="Vladimir Tzepesci, Great Prince of Umbrey" spd="6" str="6" mat="7" rat="5" def="15" arm="17" cmd="9" hitpoints="18" />
+                    <weapons>
+<melee_weapon name="Horselord's Spear" pow="6" p_plus_s="12" magical="true" reach="true">
+<capacity title="Brutal Charge">
+This model gains +2 to charge attack damage rolls with this weapon.
+</capacity>
+</melee_weapon>
+<melee_weapon name="Huntsman" pow="7" p_plus_s="13" magical="true">
+<capacity title="Chain Weapon">
+This attack ignores the Buckler and Shield weapon qualities and Shield Wall.
+</capacity>
+</melee_weapon>
+<mount_weapon pow="12">
+<capacity title="Critical Knockdown">On a critical hit, the model hit is knocked down.</capacity>
+                            </mount_weapon>
+</weapons>
+                    <feat title="CHARGE OF THE HORSE LORDS">
+While in Vladimir's control area, friendly Faction warjacks and cavalry models gain Side Step and Sprint. Charge of the Horse Lords lasts for one turn.
+(When a model with Side Step hits an enemy model with an initial melee attack or a non-power attack special attack, after the attack is resolved it can advance 2".
+A model with Side Step cannot be targeted by free strikes during this movement.) (At the end of its activation, if it destroyed one or more enemy models with melee attacks
+during its activation, a model with Sprint can make a full advance.)
+</feat>
+<spell name="DASH" cost="2" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">
+While in this model's control area, friendly Faction warrior models cannot be targeted by free strikes. This model and friendly Faction warrior models activating in its control
+area gain +1 SPD. Dash lasts for one turn.
+</spell>
+<spell name="FLASHING BLADE" cost="1" rng="SELF" aoe="-" pow="-" up="NO" off="NO">
+This model immediately makes one normal attack with one of its melee weapons against each enemy model in its LOS that is in the weapon's melee range.
+These attacks are simultaneous.
+</spell>
+<spell name="HAND OF FATE" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">
+Target friendly Faction model/unit gains an additional die on attack and damage rolls. Discard the low die in each roll.
+</spell>
+<spell name="INFERNAL MACHINE" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">
+Target Warjack in this model's battlegroup gains Terror and +2 MAT.
+</spell>
+<spell name="RAZOR WIND" cost="2" rng="10" aoe="-" pow="12" up="NO" off="YES">
+Target model/unit becomes stationary for one round unless it has Immunity: Cold.
+</spell>
+<spell name="WINDWALL" cost="3" rng="SELF" aoe="-" pow="-" up="NO" off="NO">
+This model cannot make ranged attacks, and non-magical ranged attacks targeting it automatically miss. While completely within 3˝ of this model, models cannot make ranged attacks and
+non-magical ranged attacks targeting them automatically miss. Wind Wall lasts for one round.
+</spell>
+<capacity title="Blood-Quenched">
+This model gains a cumulative +1 STR and ARM for each living enemy model it destroys with a melee attack during its activation. This bonus lasts for one round.
+</capacity>
+<capacity title="Combat Rider">
+During a combat action it did not make a charge attack., this model can make one melee attack with its Mount.
+</capacity>
+<capacity title="Relentless Charge">
+This model gains Pathfinder during activations it charges.
+</capacity>
+                </warcaster>
+                <warcaster id="Kw04" name="Kommandant Irusk" full_name="Kommandant Irusk" generation="P" generation_id="irusk" qualification="warcaster" focus="6" warjack_points="6" fa="C">
+                    <basestats name="Kommandant Irusk" spd="6" str="6" mat="7" rat="6" def="15" arm="15" cmd="10" hitpoints="17" />
+                    <weapons>
+<melee_weapon name="Onslaught" pow="6" p_plus_s="12" magical="true"></melee_weapon>
+<ranged_weapon name="Sword Cannon" rng="10" rof="2" aoe="-" pow="13"></ranged_weapon>
+</weapons>
+                    <feat title="UNDYING LOYALTY">
+While in Irusk's control area, friendly Faction warrior models/units gain Fearless, Tough, and +2 to melee and ranged attack rolls and cannot be knocked down.
+When a friendly Faction warrior model makes a Tough roll of 4, 5, or 6 while in Irusk's control area, that model heals 1 damage point. Undying Loyalty lasts for one round
+</feat>
+<spell name="AIRBURST" cost="3" rng="CTRL" aoe="3" pow="8" up="NO" off="YES">
+Target any model in this model's control area, ignoring LOS. When resolving Airburst, ignore cover, concealment, elevation, and Stealth. Models hit suffer a POW 8 blast damage roll.
+</spell>
+<spell name="BATTLE LUST" cost="3" rng="6" aoe="-" pow="-" up="NO" off="NO">
+Target friendly Faction warrior model/unit gains Fearless and gains an additional die on melee damage rolls for one round.
+</spell>
+<spell name="GRIND" cost="3" rng="10" aoe="-" pow="14" up="NO" off="YES">
+When a warjack is hit by Grind, it suffers 1 damage point to its first available Movement system box.
+</spell>
+<spell name="INHOSPITABLE GROUND" cost="3" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">
+Target any model in this model's control area, ignoring LOS. When resolving Airburst, ignore cover, concealment, elevation, and Stealth. Models hit suffer a POW 8 blast damage roll.
+</spell>
+<spell name="IRON FLESH" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">
+Target friendly warrior model/unit gains +3 DEF but suffers -1 SPD.
+</spell>
+<spell name="SUPERIORITY" cost="3" rng="6" aoe="-" pow="-" up="YES" off="NO">
+Target friendly Faction warjack gains +2 SPD, MAT, and DEF and cannot be knocked down.
+</spell>
+<capacity title="Assault">
+As part of a charge, after moving but before making its charge attack, this model can make one ranged attack targeting the model charged unless they were in melee with each other at the start of this model's activation.
+When resolving an Assault ranged attack, the attacking model does not suffer the target in melee penalty. If the target is not in melee range after moving, this model can make the Assault ranged attack before its activation ends.
+</capacity>
+<capacity title="Quick Work">
+When this model destroys one or more enemy models with a melee attack during its combat action, immediately after that attack is resolved this model can make one normal ranged attack. Attacks gained from
+Quick Work do not count against a weapon's ROF.
+</capacity>
+                </warcaster>
+                <warcaster id="Kx04" name="Supreme Kommandant Irusk" full_name="Supreme Kommandant Irusk" generation="E" generation_id="irusk" qualification="warcaster" focus="6" warjack_points="5" fa="C">
+                  <basestats name="Supreme Kommandant Irusk" spd="6" str="6" mat="7" rat="6" def="15" arm="15" cmd="10" hitpoints="17" />
+                    <weapons>
+<melee_weapon name="Endgame" pow="7" p_plus_s="13" magical="true"></melee_weapon>
+<ranged_weapon name="Hand Cannon" rng="12" rof="1" aoe="-" pow="12"></ranged_weapon>
+</weapons>
+                    <feat title="DESPERATE GROUND">
+Friendly Faction models currently in Irusk's control area ignore cloud effects and forests when determining LOS and gain Pathfinder. Affected models currently knocked down immediately stand up.
+Enemy models/units beginning their activations in Irusk's control area suffer -2 SPD and cannot give or receive orders. Desperate Ground lasts for one round.
+</feat>
+<spell name="AIRBURST" cost="3" rng="CTRL" aoe="3" pow="8" up="NO" off="YES">
+Target any model in this model's control area, ignoring LOS. When resolving Airburst, ignore cover, concealment, elevation, and Stealth. Models hit suffer a POW 8 blast damage roll.
+</spell>
+<spell name="ARTIFICE OF DEVIATION" cost="3" rng="CTRL" aoe="5" pow="-" up="NO" off="NO">
+Place a 5˝ AOE anywhere completely in this model's control area. While in the AOE, friendly models gain Pathfinder and can advance through obstructions and other models if they have enough movement to move completely past them.
+Enemy models treat the AOE as rough terrain. Artifice of Deviation lasts for one round.
+</spell>
+<spell name="BATTLE LUST" cost="3" rng="6" aoe="-" pow="-" up="NO" off="NO">
+Target friendly Faction warrior model/unit gains Fearless and gains an additional die on melee damage rolls for one round.
+</spell>
+<spell name="ENERGIZER" cost="-" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">
+This model spends up to 3 focus points to cast Energizer. Models in its battlegroup that are currently in its control area can immediately advance up to 1˝ for each focus point spent.
+Energizer can be cast only once per turn.
+</spell>
+<spell name="FIRE FOR EFFECT" cost="3" rng="6" aoe="-" pow="-" up="YES" off="NO">
+Boost the attack and damage rolls of target friendly Faction model's first ranged attack each activation.
+</spell>
+<spell name="TACTICAL SUPREMACY" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">
+Target friendly Faction warjack gains +2 SPD, MAT, and DEF and cannot be knocked down.
+</spell>
+<capacity title="Martial Discipline">
+Friendly living Faction warrior models with small or medium bases can ignore friendly Faction warrior models in this model's command range when determining LOS and
+can advance through friendly Faction warrior models in this model's command range if they have enough movement to move completely past them.
+</capacity>
+<capacity title="Total Obedience">
+While in this model's command range, friendly living non-warcaster Faction warrior models gain Tough.
+</capacity>
+<capacity title="Warjack Bond (Epic Irusk)">
+One non-character warjack in Irusk's battlegroup begins the game bonded to him. The warjack gains +2 DEF and cannot be knocked down.
+</capacity>
+                </warcaster>
+                <warcaster id="KW05" name="Karchev the Terrible" full_name="Karchev the Terrible" generation="P" qualification="warcaster" focus="6" warjack_points="5" fa="C">
+                    <basestats name="Karchev the Terrible" spd="4" str="12" mat="7" rat="5" def="12" arm="19" cmd="8" hitpoints="34" />
+                    <weapons>
+<melee_weapon name="Sunder" pow="7" p_plus_s="19" magical="true" reach="true"></melee_weapon>
+<melee_weapon name="Open Fist" pow="3" p_plus_s="15" open_fist="true"></melee_weapon>
+<ranged_weapon name="Fissure" rng="SP10" rof="1" aoe="-" pow="12">
+<capacity title="Knockdown">When a model is hit by an attack with this weapon, it is knocked down.</capacity>
+</ranged_weapon>
+</weapons>
+                    <feat title="TOTAL WAR">Models in Karchev's battlegroup currently in his control area gain Pathfinder and can charge or make power attacks without spending focus.
+At the start of their activations, affected models can turn to face any direction before their normal movement. Total War lasts for one turn.
+</feat>
+<spell name="ERUPTION" cost="3" rng="8" aoe="3" pow="14" up="NO" off="YES">
+Models hit suffer a POW 14 fire damage roll. The AOE is a cloud effect that remains in play for one round.
+Models entering or ending their activation in the AOE suffer an unboostable POW 14 fire damage roll.
+</spell>
+<spell name="GROUND ZERO" cost="3" rng="SELF" aoe="5" pow="13" up="NO" off="NO">
+Center a 5˝ AOE on this model. Each other model in the AOE is hit and suffers a POW 13 damage roll.
+Each model damaged by Ground Zero is pushed d6˝ directly away from this model in the order you choose.
+</spell>
+<spell name="SIDEARMS" cost="2" rng="SELF" aoe="CTRL" pow="-" up="YES" off="NO">
+While in this model's control area and B2B with one or more models in this model's battlegroup, models in this model's battlegroup
+cannot be knocked down and gain +1 DEF for each other model in the battlegroup with which they are B2B.
+</spell>
+<spell name="TOW" cost="2" rng="SELF" aoe="-" pow="-" up="YES" off="NO">
+If during its normal movement this model advances within 2˝ of a friendly warjack, at the end of that movement you can place the warjack B2B with it, completely within its back arc.
+Up to three warjacks can be placed by Tow each time this model ends its normal movement.
+</spell>
+<spell name="UNEARTHLY RAGE" cost="3" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">
+While in this model's control area, this model and warjacks in its battlegroup gain boosted melee attack and melee damage rolls,
+and their melee weapons gain Magical Weapon ICON. Unearthly Rage lasts for one turn.
+</spell>
+<capacity title="Arcantrik Turbine">
+At the start of this model's activation, it gains either +2˝ movement and Pathfinder for one turn or 1 focus point.
+</capacity>
+<capacity title="Man in the Machine">
+Karchev is a living model, but he is neither a warjack nor a warrior model. He has a damage grid and suffers damage like a warjack. Karchev can make slam, trample, throw,
+headlock/weapon lock, and push power attacks without spending focus. Karchev cannot make throws or headlock/weapon locks while his Open Fist is crippled. Effects modifying
+the amount of damage to or the manner in which damage is applied to a warjack also apply to him. The B boxes of Karchev's damage grid represent his Body system.
+Friendly Faction models with the Repair skill can attempt to repair Karchev like a warjack but cannot repair his Body system. When Karchev spends focus points to heal damage,
+he can heal damage only to his Body system. If another model heals Karchev through a means other than repair, damage can be removed only from his Body system.
+While his Body system is crippled, he cannot allocate focus. Karchev is affected by deep water like a warrior model.
+Apply damage he suffers from deep water only to his Body system.
+</capacity>
+                </warcaster>
+                <warcaster id="KW06" name="Zerkova" full_name="Zerkova" generation="P" qualification="warcaster" focus="6" warjack_points="6" fa="C">
+                    <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="16" />
+                    <weapons />
+                    <feat title=""/>
+                </warcaster>
+                <warcaster id="KW07" name="Old Witch" full_name="Old Witch" generation="P" qualification="warcaster" focus="6" warjack_points="3" fa="C" companionId="Scrapjack">
+                    <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="16" />
+                    <weapons />
+                    <feat title=""/>
+                </warcaster>
+                <warcaster id="KW08" name="Strakhov" full_name="Strakhov" generation="P" qualification="warcaster" focus="6" warjack_points="6" fa="C">
+                    <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="17" />
+                    <weapons />
+                    <feat title=""/>
+                </warcaster>
+                <warcaster id="KW09" name="Harkevich" full_name="Harkevich" generation="P" qualification="warcaster" focus="6" warjack_points="5" fa="C">
+                    <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="18" />
+                    <weapons />
+                    <feat title=""/>
+                </warcaster>
+            </warcasters>
+            <warjacks>
+                <warjack id="Scrapjack" name="Scrapjack" full_name="Scrapjack" damage_grid="xxxxxxxx..xxx....x......MCAACMxMCCMx" cost="0" qualification="Heavy Warjack" fa="C">
+                    <basestats name="Scrapjack" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+                    <weapons />
+                    <restricted_to id="KW07" />
+                </warjack>
+                <warjack id="KJ01" name="Destroyer" full_name="Destroyer" damage_grid="...................L..R.LLMCRRxMMCCx" cost="9" qualification="Heavy Warjack" fa="U">
+                    <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+                    <weapons />
+                </warjack>
+                <warjack id="KJ02" name="Juggernaut" full_name="Juggernaut" damage_grid="...................L..R.LLMCRRxMMCCx" cost="7" qualification="Heavy Warjack" fa="U">
+                    <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+                    <weapons />
+                </warjack>
+                <warjack id="KJ03" name="Marauder" full_name="Marauder" damage_grid="...................L..R.LLMCRRxMMCCx" cost="7" qualification="Heavy Warjack" fa="U">
+                    <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+                    <weapons />
+                </warjack>
+                <warjack id="KJ04" name="Berserker" full_name="Berserker" damage_grid="x....x.............L..R.LLMCRRxMMxCx" cost="6" qualification="Heavy Warjack" fa="U">
+                    <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+                    <weapons />
+                </warjack>
+                <warjack id="KJ05" name="Devastator" full_name="Devastator" damage_grid="...................L..R.LLMCRRxMMCCx" cost="9" qualification="Heavy Warjack" fa="U">
+                    <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+                    <weapons />
+                </warjack>
+                <warjack id="KJ06" name="Kodiak" full_name="Kodiak" damage_grid="...................L..R.LLMCRRxMMCCx" cost="8" qualification="Heavy Warjack" fa="U">
+                    <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+                    <weapons />
+                </warjack>
+                <warjack id="KJ07" name="Behemoth" full_name="Behemoth" damage_grid="....................SS..LLMCRRLMMCCR" cost="13" qualification="Heavy Character Warjack" fa="C">
+                    <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+                    <weapons />
+                </warjack>
+                <warjack id="KJ08" name="Spriggan" full_name="Spriggan" damage_grid="...................L..R.LLMCRRxMMCCx" cost="10" qualification="Heavy Warjack" fa="U">
+                    <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+                    <weapons />
+                </warjack>
+                <warjack id="KJ09" name="Beast-09" full_name="Beast-09" damage_grid="...................L..R.LLMCRRxMMCCx" cost="11" qualification="Heavy Character Warjack" fa="C">
+                    <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+                    <weapons />
+                </warjack>
+                <warjack id="KJ10" name="Drago" full_name="Drago" damage_grid="x....x.............L..R.LLMCRRxMMCCx" cost="8" qualification="Heavy Character Warjack" fa="C">
+                    <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+                    <weapons />
+                </warjack>
+                <warjack id="KJ11" name="Decimator" full_name="Decimator" damage_grid="...................L..R.LLMCRRxMMCCx" cost="9" qualification="Heavy Warjack" fa="U">
+                    <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+                    <weapons />
+                </warjack>
+                <warjack id="KJ12" name="Torch" full_name="Torch" damage_grid="...................L..R.LLMCRRxMMCCx" cost="10" qualification="Heavy Character Warjack" fa="C">
+                    <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+                    <weapons />
+                </warjack>
+                <warjack id="KJ13" name="Demolisher" full_name="Demolisher" damage_grid="...................L..R.LLMCRRxMMCCx" cost="9" qualification="Heavy Warjack" fa="U">
+                    <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+                    <weapons />
+                </warjack>
+                <warjack id="KJ14" name="Black Ivan" full_name="Black Ivan" damage_grid="...................L..R.LLMCRRxMMCCx" cost="10" qualification="Heavy Character Warjack" fa="C">
+                    <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+                    <weapons />
+                </warjack>
+            </warjacks>
+            <colossals>
+                <colossal id="KJ15" name="Conquest" full_name="Conquest" damage_grid_left="xxx...xx........SS.LLLSCLLCCCCLCMMMM" damage_grid_right="...xxx....xxSS....CSRRR.CCCCRRMMMMCR" cost="19" qualification="Colossal" fa="2">
+                    <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+                    <weapons />
+                </colossal>
+            </colossals>
+            <units>
+                <unit id="KU01" name="Battle Mechaniks" full_name="Battle Mechaniks" base_cost="2" baseCount="4" full_cost="3" fullCount="6" qualification="Unit" fa="3" has_unit_attachment="true">
+                    <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" jack_marshal="true" />
+                    <weapons />
+                    <unit_attachment id="KA08" name="Battle Mechanik Officer" full_name="Battle Mechanik Officer" fa="2" cost="2" qualification="Unit attachment">
+                        <model id="Battle Mechanik Officer">
+                            <basestats name="Battle Mechanik Officer" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="8" />
+                        </model>
+                    </unit_attachment>
+                </unit>
+                <unit id="KU02" name="Doom Reavers" full_name="Doom Reavers" base_cost="6" baseCount="6" full_cost="-" fullCount="-" qualification="Unit" fa="2" has_unit_attachment="true">
+                    <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+                    <weapons />
+                    <unit_attachment id="KA06" name="Greylord Escort" full_name="Greylord Escort" fa="1" cost="2" qualification="Unit attachment">
+                        <model id="Greylord Escort">
+                            <basestats name="Greylord Escort" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+                        </model>
+                    </unit_attachment>
+                </unit>
+                <unit id="KU03" name="Iron Fang Pikemen" full_name="Iron Fang Pikemen" base_cost="5" baseCount="6" full_cost="8" fullCount="10" qualification="Unit" fa="2" has_unit_attachment="true">
+                    <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+                    <weapons />
+                    <unit_attachment id="KA01" name="Iron Fang Pikemen Officer &amp; Standard" full_name="Iron Fang Pikemen Officer &amp; Standard" fa="1" cost="2" qualification="Unit attachment">
+                        <model id="Iron Fang Pikemen Officer">
+                            <basestats name="Iron Fang Pikemen Officer" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+                        </model>
+                        <model id="Iron Fang Pikemen Standard">
+                            <basestats name="Iron Fang Pikemen Standard" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="0" />
+                        </model>
+                    </unit_attachment>
+                </unit>
+                <unit id="KU04" name="Man-o-war Shocktroopers" full_name="Man-o-war Shocktroopers" base_cost="6" baseCount="3" full_cost="9" fullCount="5" qualification="Unit" fa="3">
+                    <basestats name="Leader &amp; grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="8" />
+                    <weapons />
+                </unit>
+                <unit id="KU05" name="Widowmakers" full_name="Widowmakers" base_cost="4" baseCount="4" full_cost="-" fullCount="-" qualification="Unit" fa="1">
+                    <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+                    <weapons />
+                </unit>
+                <unit id="KU06" name="Winter Guard Infantry" full_name="Winter Guard Infantry" base_cost="4" baseCount="6" full_cost="6" fullCount="10" qualification="Unit" fa="3" has_unit_attachment="true" has_weapon_attachment="true">
+                    <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+                    <weapons />
+                    <unit_attachment id="KA02" name="Winter Guard Inf. Officer &amp; Standard" full_name="Winter Guard Inf. Officer &amp; Standard" fa="1" cost="2" qualification="Unit attachment">
+                        <model id="Winter Guard Infantry Officer">
+                            <basestats name="Winter Guard Infantry Officer" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+                        </model>
+                        <model id="Winter Guard Infantry Standard">
+                            <basestats name="Winter Guard Infantry Standard" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="0" />
+                        </model>
+                    </unit_attachment>
+                    <weapon_attachment id="KA03" name="Winter Guard Infantry Rocketeer" full_name="Winter Guard Infantry Rocketeer" fa="2" cost="1" qualification="Unit attachment" max_wa="3">
+                        <model id="Winter Guard Infantry Rocketeer">
+                            <basestats name="Winter Guard Infantry Rocketeer" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="0" />
+                        </model>
+                    </weapon_attachment>
+                </unit>
+                <unit id="KU07" name="Greylord Ternion" full_name="Greylord Ternion" base_cost="4" baseCount="3" full_cost="-" fullCount="-" qualification="Unit" fa="3">
+                    <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+                    <weapons />
+                </unit>
+                <unit id="KU08" name="Kossite Woodsmen" full_name="Kossite Woodsmen" base_cost="4" baseCount="6" full_cost="6" fullCount="10" qualification="Unit" fa="2">
+                    <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+                    <weapons />
+                </unit>
+                <unit id="KU09" name="Winter Guard Mortar Crew" full_name="Winter Guard Mortar Crew" base_cost="3" baseCount="2" full_cost="-" fullCount="-" qualification="Unit" fa="2">
+                    <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+                    <weapons />
+                </unit>
+                <unit id="KU10" name="Assault Kommandos" full_name="Assault Kommandos" base_cost="5" baseCount="6" full_cost="8" fullCount="10" qualification="Unit" fa="2">
+                    <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+                    <weapons />
+                    <weapon_attachment id="KA05" name="Assault Kommando Flame Thrower" full_name="Assault Kommando Flame Thrower" fa="2" cost="1" qualification="Unit attachment" max_wa="3">
+                        <model id="Assault Kommando Flame Thrower">
+                            <basestats name="Assault Kommando Flame Thrower" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+                        </model>
+                    </weapon_attachment>
+                </unit>
+                <unit id="KU11" name="Iron Fang Uhlans" full_name="Iron Fang Uhlans" base_cost="7" baseCount="3" full_cost="11" fullCount="5" qualification="Unit" fa="1">
+                    <basestats name="Leader &amp; grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+                    <weapons />
+                </unit>
+                <unit id="KU12" name="Man-o-war Demolition Corps" full_name="Man-o-war Demolition Corps" base_cost="6" baseCount="3" full_cost="9" fullCount="5" qualification="Unit" fa="3">
+                    <basestats name="Leader &amp; grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="8" />
+                    <weapons />
+                </unit>
+                <unit id="KU13" name="Winter Guard Field Gun Crew" full_name="Winter Guard Field Gun Crew" base_cost="2" baseCount="2" full_cost="-" fullCount="-" qualification="Unit" fa="2">
+                    <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+                    <weapons />
+                </unit>
+                <unit id="KU14" name="Great Bears of Gallowswood" full_name="Great Bears of Gallowswood" base_cost="5" baseCount="3" full_cost="-" fullCount="-" qualification="Character Unit" fa="C">
+                    <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+                    <weapons />
+                    <model id="Volkov">
+                        <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+                    </model>
+                    <model id="Kolsk">
+                        <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+                    </model>
+                    <model id="Yarovich">
+                        <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+                    </model>
+                </unit>
+                <unit id="KU15" name="Kayazy Assassins" full_name="Kayazy Assassins" base_cost="5" baseCount="6" full_cost="8" fullCount="10" qualification="Unit" fa="2">
+                    <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+                    <weapons />
+                    <unit_attachment id="KA04" name="Kayazy Assassin Underboss" full_name="Kayazy Assassin Underboss" qualification="khador ally unit attachment" fa="1" cost="2">
+                        <model id="KA04" name="Kayazy Assassin Underboss" full_name="Kayazy Assassin Underboss">
+                            <basestats name="Underboss" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+                        </model>
+                    </unit_attachment>
+                </unit>
+                <unit id="KU16" name="Man-o-war Bombardiers" full_name="Man-o-war Bombardiers" base_cost="7" baseCount="3" full_cost="11" fullCount="5" qualification="Unit" fa="1">
+                    <basestats name="Leader &amp; grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="8" />
+                    <weapons />
+                </unit>
+                <unit id="KU17" name="Winter Guard Rifle Corps" full_name="Winter Guard Rifle Corps" base_cost="5" baseCount="6" full_cost="8" fullCount="10" qualification="Unit" fa="3">
+                    <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+                    <weapons />
+                </unit>
+                <unit id="KU18" name="Kayazy Eliminators" full_name="Kayazy Eliminators" base_cost="3" baseCount="2" full_cost="-" fullCount="-" qualification="Unit" fa="2">
+                    <basestats name="Leader" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+                    <weapons />
+                    <model id="Eliminator B">
+                        <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+                    </model>
+                </unit>
+                <unit id="KU19" name="Greylord Outriders" full_name="Greylord Outriders" base_cost="6" baseCount="3" full_cost="9" fullCount="5" qualification="Unit" fa="1">
+                    <basestats name="Leader &amp; grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+                    <weapons />
+                </unit>
+            </units>
+            <solos>
+                <solo id="KS01" name="Manhunter" full_name="Manhunter" cost="2" qualification="Solo" fa="2">
+                    <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+                    <weapons />
+                </solo>
+                <solo id="KS02" name="Man-o-war Kovnik" full_name="Man-o-war Kovnik" cost="3" qualification="Solo" fa="2">
+                    <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="8" jack_marshal="true" />
+                    <weapons />
+                </solo>
+                <solo id="KS03" name="Kovnik Jozef Grigorovich" full_name="Kovnik Jozef Grigorovich" cost="2" qualification="Character Solo" fa="C">
+                    <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+                    <weapons />
+                </solo>
+                <solo id="KS04" name="Man-o-war Drakhun" full_name="Man-o-war Drakhun" cost="4" qualification="Solo" fa="1" dragoon="true" dismount_cost="5" dismount_option="true">
+                    <basestats name="Drakhun (mounted)" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="10" />
+                    <weapons />
+                    <model id="KS04_dismount" name="Drakhun (dismounted)" full_name="Drakhun (dismounted)">
+                        <basestats name="Drakhun (dismounted)" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+                    </model>
+                </solo>
+                <solo id="KS05" name="Fenris" full_name="Fenris" cost="5" qualification="Character Solo" fa="C">
+                    <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="10" />
+                    <weapons />
+                </solo>
+                <solo id="KS06" name="Koldun Lord" full_name="Koldun Lord" cost="2" qualification="Solo" fa="1">
+                    <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" jack_marshal="true" />
+                    <weapons />
+                </solo>
+                <solo id="KS07" name="Kovnik Markov" full_name="Kovnik Markov" cost="4" qualification="Character Solo" fa="C">
+                    <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="10" />
+                    <weapons />
+                </solo>
+                <solo id="KS08" name="War Dog" full_name="War Dog" cost="1" qualification="Solo" fa="1">
+                    <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+                    <weapons />
+                </solo>
+                <solo id="KS09" name="Yuri the Axe" full_name="Yuri the Axe" cost="3" qualification="Character Solo" fa="C">
+                    <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+                    <weapons />
+                </solo>
+                <solo id="KS10" name="Widowmaker Marksman" full_name="Widowmaker Marksman" cost="2" qualification="Solo" fa="1">
+                    <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+                    <weapons />
+                </solo>
+                <solo id="KA07" name="Koldun Kapitan Valachev" full_name="Koldun Kapitan Valachev" fa="C" cost="2" qualification="Character Unit attachment" mercenary_attachment="true">
+                    <basestats name="Koldun Kapitan Valachev" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+                </solo>
+            </solos>
+        </army>
+    </armies>
+</ruleset>  

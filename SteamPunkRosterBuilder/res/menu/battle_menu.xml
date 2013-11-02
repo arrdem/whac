@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_add_army"
+        android:icon="@drawable/add_user"
+        android:showAsAction="ifRoom"
+        android:title="Add 2nd player"/>
+    
+    <item
+        android:id="@+id/menu_chrono"
+        android:icon="@drawable/clock"
+        android:showAsAction="ifRoom"
+        android:title="Chrono"/>
+    
+    <item
+        android:id="@+id/menu_card_reference"
+        android:icon="@drawable/stat_card"
+        android:showAsAction="ifRoom"
+        android:title="Search card library"/>
+    
+    <item
+        android:id="@+id/menu_end"
+        android:icon="@drawable/end"
+        android:showAsAction="ifRoom"
+        android:title="End battle"/>
+    
+    
+    <item android:id="@+id/startBeddernet"
+          android:icon="@drawable/bluetooth_init"
+          android:title="Open bluetooth channel"
+          android:showAsAction="ifRoom|withText" />
+    
+    <item android:id="@+id/secure_connect_scan"
+          android:icon="@drawable/bluetooth_connect"
+          android:title="@string/secure_connect"
+          android:showAsAction="ifRoom|withText" />
+
+    <item android:id="@+id/discoverable"
+          android:icon="@android:drawable/ic_menu_mylocation"
+          android:title="@string/discoverable"
+          android:showAsAction="ifRoom|withText" />
+    
+    
+    <item
+        android:id="@+id/menu_more"
+        android:icon="@drawable/abs__ic_menu_moreoverflow_normal_holo_dark"
+        android:showAsAction="always"
+        android:title="More"/>
+    
+</menu>

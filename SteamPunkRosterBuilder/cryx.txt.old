@@ -1,0 +1,1200 @@
+iron lich asphyxious
+cryx warcaster
+6 7 6 3 15 16 7 undead terror
+
+foc7 pv18 faC wj+6
+
+soulsplitter 8 15 reach magical
+
+BREATH 0F CORRUPTION 3 8 3 12 N0 YES
+Models hit suffer a POW l2 corrosion damage roll. The AOE is a cloud effect that remains in play for one round. Models entering or ending their activation in the AOE suffer 1 point of corrosion damage  
+HELLFIRE 3 10 - 14 N0 YES
+A model/ unit hit by Hellfire must pass a command check or flee.
+PARASITE 3 8 - - YES YES
+Target model/unit suffers -3 ARM and this model gains +1 ARM.
+SCYTHING TOUCH 2 6 — - YES N0
+Target friendly model/unit gains +2 to melee attack damage rolls. Affected models gain Critical Corrosion on their normal melee attacks.
+TELEPORT 2 SELF - - N0 N0 
+Place this model anywhere completely within 8" of its current location, then its activation ends.
+
+Consuming Blight
+Living enemy models currently in Asphyxious' control area suffer an unboostable POW 5 damage roll. Asphyxious gains up to 7 focus points. He cannot have more focus points than his current FOCUS as a result of Consuming Blight.
+
+ASPHYXIOUS 
+CULL SOUL — This model gains one soul token for each living enemy model destroyed within 2" of it. When this model replenishes its focus during your next Control Phase, replace each soul token on it with 1 focus point.
+SOULSPLITTER
+SUSTAINED ATTACK — During this model’s activation, when it makes an attack with this weapon against the last model hit by the weapon this activation, the attack automatically hits.
+
+
+-----------------------------------
+lich lord asphyxious
+cryx warcaster
+6 7 6 3 15 16 8 undead terror
+
+foc7 pv18 faC wj+6
+
+daemortus 8 15 reach magical
+
+CAUSTIC MIST 2 CTRL 3 — N0 N0 `
+Place a 3" AOE cloud effect completely within this model’s control area. A model entering or ending its activation in the AOE suffers 1 point of corrosion damage   Caustic Mist lasts for one round. 
+DEATH KNELL 4 8 4 10 N0 YES
+Before dealing damage, count the number of models in the AOE. Add the result to each Death Knell damage roll.
+EXCARNATE 3 10 — 13 N0 YES
+When a living enemy warrior model is boxed by Excarnate, remove it from play. You can then add one Grunt to a friendly Faction small-based undead unit in this model’s control area. The Grunt must be placed in formation and within 3" of this model.
+HELLBOUND 3 SELF ic - YES N0
+This model cannot be targeted by charges. While within 5" of this model, enemy models treat open ground as rough terrain. 
+PARASITE 3 8 - - YES YES
+Target model/unit suffers -3 ARM and this model gains +1 ARM. 
+TELEPORT 2 SELF - - N0 N0 »
+Place this model anywhere completely within 8" of its current location, then its activation ends
+
+
+
+ASPHYXIOUS  
+CULL SOUL — This model gains one soul token for each living enemy model destroyed within 2" of it. When this model replenishes its focus during your next Control Phase, replace each soul token on it with 1 focus point.
+DAEAMORTUS
+SOUL REAPER (*ACTION) — Place a 5" AOE anywhere completely within this model’s control area. The AOE remains in play for one round. When a living enemy model is destroyed in the AOE, this model gains one soul token. While the AOE is in play, this model cannot attack with Daeamortus and has no melee range.
+
+Spectral legion
+Return up to 10 friendly destroyed non-warcaster Faction warrior models to play, placing them within 3" of Asphyxious. Returned models gain Undead and Incorporeal, become solos, and cannot be attacked or damaged for one turn. Returned models must charge during their activations and leave play at the end of this turn.
+
+
+-----------------------------------
+warwitch deneghra
+cryx warcaster
+7 5 5 4 16 14 8 stealth
+
+sliver 7 12 reach magical
+
+foc7 pv16 faC wj+5
+
+CRIPPLING GRASP 3 8 - — YES YES  
+Target model/unit suffers -2 SPD, STR, DEF, and ARM and cannot run or make special attacks.
+GHOST WALK 3 6 — - N0 N0
+Target friendly model/unit gains Ghostly for one turn. (When it advances, a model with Ghostly ignores movement penalties from terrain and obstacles and can advance through obstructions if it has enough movement to move completely past them. An affected model cannot be targeted by free strikes.)
+INFLUENCE 1 10 - — N0 YES
+Take control of target enemy non—warcaster, non-warlock warrior model. The model immediately makes one normal melee attack, then Influence expires.
+PARASITE 3 8 - — i YES YES  
+Target model/ unit suffers -3 ARM and this model gains +1 ARM.  
+SCOURGE 4 8 3 13 N0 YES
+All models hit by Scourge are knocked down.
+VENOM 2 SP8 - 10 N0 YES 2
+Venom causes corrosion damage. Models hit suffer the Corrosion continuous effect   
+
+DENEGHRA  
+CULL SOUL — This model gains one soul token for each living enemy model destroyed within 2" of it. When this model replenishes its focus during your next Control Phase, replace each soul token on it with 1 focus point.
+PARRY — This model cannot be targeted by free strikes.
+SLIVER
+SHADOW BIND — A model hit by this weapon suffers -3 DEF and when it advances it cannot move except to change facing. Shadow Bind expires after one round.
+
+the Withering
+Enemy models currently in Deneghra’s control area suffer -2 to their SPD, STR, MAT, RAT, DEF, ARM, and FOCUS and cannot run or make special attacks. The Withering lasts for one round.
+
+
+-----------------------------------
+wraith witch deneghra
+cryx warcaster
+7 5 5 4 16 14 8 undead
+
+eclipse 7 12 reach magical
+
+foc7 pv16 faC wj+6
+
+CURSE OF SHADOWS 3 8 - - YES YES
+Target model/ unit suffers -2 ARM and cannot make free strikes. A model can advance through an affected model if it has enough movement to move completely past its base.
+GHOST WALK 3 6 - — N0 N0
+Target friendly model/unit gains Ghostly for one turn. (A model with Ghostly can advance through terrain and obstacles without penalty and can advance through obstructions if it has enough movement to move completely past them. An affected model cannot be targeted by free strikes.)
+HELLMOUTH 4 8 * 12 N0 YES
+If this attack misses, nothing happens. If it hits, before making the damage roll, push models within 3" of the model hit 3" directly toward it in the order you choose. Then center a 3" AOE on the model hit. Models hit suffer a POW 12 damage roll. Models boxed by Hellmouth are removed from play.
+MARKED FDR DEATH 2 8 — — YES YES
+Target enemy model/ unit suffers -2 DEF and loses lncorporeal and Stealth and cannot gain those abilities while affected by Marked for Death. Friendly Faction models can target an affected model regardless of LOS.
+PURSUIT 2 8 - — YES YES
+If target enemy model/ unit advances during its activation, immediately after ending this movement one model in this model’s battlegroup that is in its control area can make a full advance.
+VENOM 2 SP 8 - 10 N0 YES
+Venom causes corrosion damage. Models hit suffer the Corrosion continuous effect
+
+DENEGHRA  
+CULL SOUL - This model gains one soul token for each living enemy  model destroyed within 2" of it. When this model replenishes its focus during your next Control Phase, replace each soul token on it with 1 focus point.
+PARRY — This model cannot be targeted by free strikes.
+SEDUCTION (*ACTION) — Take control of a living enemy non-warcaster, non-warlock warrior model B2B with this model. You can immediately make a full advance with the enemy model followed by a normal melee attack, then Seduction expires. The enemy model cannot be targeted by free strikes during this movement.
+WRAITH WALKER - At the end of your Control Phase, this model can gain Incorporeal for one round unless it gained Incorporeal during the last round.
+
+Eclipse
+DARK BANISHMENT — When this model damages an enemy model with this weapon during its activation, after the attack is resolved you can place the enemy model anywhere completely within d6" of its current location, plus 1" for each focus point on this model.
+
+Web of shadows
+Enemy models currently in Deneghra's control area suffer Shadow Bind for one round. (A model affected by Shadow Bind suffers -3 DEF and for one round when it advances it cannot move except to change facing.) 
+
+
+
+----------------------------------
+goreshade the bastard
+cryx warcaster
+
+6 7 7 4 15 16 7 undead terror
+bloodcleaver 7 14 reach magical
+
+foc7 pv17 faC wj+6
+
+BLOODCLEAVER
+DEATHWALK - When this model boxes a living enemy warrior model  with an attack with this weapon and the Deathwalker is not in play, remove the boxed model from play and replace it with the Deathwalker.
+
+BLEED 2 8 — 10 N0 YES 
+When Bleed destroys a living enemy model, this model heals d3 damage points.
+HEX BLAST 3 10 3 13 N0 YES
+Enemy upkeep spells and animi on the model/ unit directly hit by Hex Blast immediately expire.
+MAGE BLIGHT 5 SELF CTRL - N0 N0
+While in this model’s control area, living enemy models cannot cast spells or use feats. Mage Blight lasts for one round.
+SHADOWMANCER 3 SELF CTRL — N0 N0
+Models in this model’s battlegroup gain Dark Shroud and Stealth while in its control area. Shadowmancer lasts for one round. (While in the melee range of a model with Dark Shroud, enemy models suffer -2 ARM.)
+SOUL GATE 3 CTRL - — N0 N0
+Remove a friendly trooper model in this model’s control area from play and replace it with target warjack in this model’s battlegroup that is in its control area. LOS to that target is not required. The warjack cannot activate this turn after being placed by Soul Gate.
+
+Dark summons
+Goreshade summons a unit of Bane Thralls. Place one Leader and five Grunts within 3" of Goreshade.
+
+
+
+----------------------------------
+goreshade the cursed
+cryx epic warcaster
+
+6 7 7 4 15 16 7 undead terror
+voass 8 15 reach magical
+
+foc7 pv17 faC wj+5
+
+CURSE OF SHADOWS 3 8 - - YES YES  
+Target model/ unit suffers -2 ARM and cannot make free strikes. A model can advance through an affected model if it has enough movement to move completely past its base.  
+HEX BLAST 3 10 3 13 N0 YES  
+Enemy upkeep spells and animi on the model/ unit directly hit by Hex Blast immediately expire.  
+OCCULTATION 2 6 - - YES N0  
+Target friendly model/ unit gains Stealth.
+PHANTOM HUNTER 2 6 — — YES N0  
+Target model in this model’s battlegroup ignores LOS when making charges, slams, and attacks. That model ignores concealment and cover when resolving attacks.  
+SUDDEN DEATH 2 6 - - YES N0  
+When an enemy model advances and ends its movement within 6" of target friendly Faction non—warcaster warrior model and the affected model is not engaged, the affected model can immediately charge the enemy model, then Sudden Death expires. A trooper model that charges as a result of Sudden Death ignores unit formation while resolving the charge. If the trooper model is out of formation after the charge attack is resolved, it is destroyed before Sudden Death expires.
+
+Reanimator
+Remove one or more friendly Faction warrior models currently in Goreshade's control area from play. For each model removed, return one destroyed non-character friendly Faction warrior model to play completely within Goreshade’s control area. Place returned trooper models in formation with their original units. Returned models forfeit their
+actions the turn they return to play.
+
+
+GORESHADE
+ARCANE CONSUMPTION — When an enemy model casts a spell or uses an animus while in this model’s control area, after the spell is cast or animus is used the enemy model suffers 1 damage point and this model heals 1 damage point.
+ELITE CADRE [BANE THRALLS] - When a friendly Bane Thrall model in this model’s control area destroys a living enemy warrior model, you can add one Grunt to the Bane Thrall’s unit. The Grunt must be placed completely within this model’s control area and in formation. Bane Thralls put into play by this ability cannot activate the turn they
+are put in play.
+
+VOASS
+FREEZE — A model hit by this weapon becomes stationary for one round unless it has Immunity:Cold  
+
+
+
+
+
+-----------------
+deathwalker
+6 3 4 3 13 12 6 undead
+
+
+DEATHWALKER
+BREATH TAKER — Living enemy models suffer —2 STR and DEF while within 5" of this model.
+COMPANION [GORESHADE THE BASTARD] - This model is included in any army that includes Goreshade the Bastard. If Goreshade the Bastard is destroyed or removed from play, remove this model from play. This model is part of Goreshade the Bastard’s battlegroup.
+DARK RESTORATION [GORESHADE THE BASTARD] — If Goreshade the Bastard is disabled while within 3" of this model, this model is destroyed and Goreshade the Bastard heals 1 damage point.
+TETHER [GORESHADE] - If this model ends its activation outside Goreshade’s command range, it is destroyed.
+
+
+
+
+
+
+
+
+
+
+
+----------------------------------
+master necrotech mortenebra
+cryx warcaster
+6 7 6 4 15 16 8 pathfinder undead terror
+scavengers x2 5 12 reach magical
+
+foc7 pv16 wj+4 faC
+
+
+DOOM SPIRAL 2 8 - 12 N0 YES
+When Doom Spiral damages a warjack that is part of a battlegroup, its controller suffers d3 damage points.
+JUMP START 1 SELF CTRL — N0 N0
+Models in this model’s battlegroup that are currently in its control area can immediately turn to face any direction. Affected models that are stationary or knocked down are no longer stationary and stand up. Models that were knocked down this turn are not affected by Jump Start.
+OVERRUN 2 6 — — N0 N0
+When target model in this model’s battlegroup destroys one or more enemy models with an attack, immediately after the attack is resolved one model in this model’s battlegroup that is in its control area can make a full advance, then Overrun expires. Overrun can be cast only once per turn and lasts for one turn
+SPECTRAL STEEL 3 6 - - YES N0
+Target warjack in this model’s battlegroup gains +2 ARM and Ghostly. (A model with Ghostly can advance through terrain and obstacles without penalty and can advance through obstructions if it has enough movement to move completely past them. An affected model cannot be targeted by free strikes.)
+TERMINAL VELOCITY 3 SELF CTRL — N0 N0
+Warjacks in this model’s battlegroup that are currently in its control area can charge or make power attacks without spending focus and gain boosted melee attack rolls against living models. When an affected model targets a living model with a charge or slam power attack, it gains +2" movement. Terminal Velocity lasts for one turn. 
+VOID GATE 4 10 4 13 YES YES
+While in the AOE, enemy models cannot channel spells, be allocated focus, or be forced. The AOE remains in play as long as its upkeep is paid.
+
+Recalibration
+While in Mortenebra's control area, friendly Faction models can reroll attack and damage rolls this turn. Each roll can be rerolled only once as a result of Recalibration.
+
+
+
+MORTENEBRA
+CULL SOUL — This model gains one soul token for each living enemy model destroyed within 2" of it. When this model replenishes its focus during your next Control Phase, replace each soul token on it with 1 focus point.
+INTERFACE - While B2B with this model, a warjack in its battlegroup can spend focus points on this model.
+REPAIR [10] (*ACTION) — This model can attempt repairs on any damaged friendly Faction warjack. To attempt repairs, this model must be B2B with the damaged warjack and make a skill check. If successful, remove d6 damage points from the warjack’s damage grid.
+STEADY — This model cannot be knocked down.
+
+
+
+
+deryliss
+cryx skarlock thrall character solo
+6 6 5 3 14 14 8 officer undead
+mechano claws 4 10 
+
+DERYLISS
+ARCANE EXTENSION [MASTER NECROTECH MORTENEBRA] - During your Control Phase, while this model is in Master Necrotech Mortenebra’s control area Mortenebra can allocate focus to warjacks in her battlegroup that are in this model’s command range.
+ATTACHED TO [MASTER NECROTECH MORTENEBRA] — This model is attached to Master Necrotech Mortenebra for the rest of the game.Each warcaster can have only one model attached to it.
+COMPANION [MASTER NECROTECH MORTENEBRA] — This model is included in any army that includes Master Necrotech Mortenebra.If Mortenebra is destroyed or removed from play, remove this model from play. This model is part of Mortenebra’s battlegroup.
+SOUL TAKER — This model gains one soul token when a living enemy model is destroyed within 2" of it. This model can have up to three soul tokens at a time. During its activation, this model can spend soul tokens to gain additional attacks or to boost attack or damage rolls at one token per attack or boost.
+SPELL SLAVE (*ACTION) — This model must be in its warcaster’s control area to make the Spell Slave special action. When it does, it casts one of its warcaster’s spells with a COST of 3 or less. The warcaster is considered to have cast that spell but this model is its point of origin. When making a magic attack roll, this model uses its warcaster’s FOCUS. This model cannot cast spells with a RNG: of SELF or CTRL.
+
+
+   
+
+
+----------------------------------
+pirate queen skarre
+cryx satyxis warcaster
+7 6 7 4 16 15 9 
+takkaryx 7 13 magical
+bloodwyrm 3 9 magical
+great rack 4 10 
+
+foc6 pv16 wj+6 faC
+
+BACKLASH 3 8 - - YES YES
+When target enemy warjack that is part of a battlegroup is damaged, its controller suffers l damage point
+BLOOD RAIN 3 8 3 12 NO YES
+Blood Rain causes corrosion damage. Models hit suffer the Corrosion continuous effect 
+DARK GUIDANCE 4 SELF CTRL - NO NO
+While in this model’s control area, friendly Faction models gain an additional die on their melee attack rolls this turn.
+HELLFIRE 3 10 — 14 NO YES
+A model/unit hit by Hellfire must pass a command check or flee.
+RITUAL SACRIFICE 2 6 - — NO NO
+Remove target friendly warrior model from play. Skarre gains d6 additional focus points during your next Control Phase. Ritual Sacrifice can be cast only once per turn.
+
+Skarre suffers up to 5 damage points. While in her control area, friendly Faction models gain +1 STR and ARM for each damage point she suffers as a result of Blood Magic. Blood Magic lasts for one round.
+
+SKARRE  
+SACRIFICIAL STRIKE (*ACTION) - RNG CMD. Target a model in this model’s LOS. If that model is in range, remove one friendly Faction trooper model within 1" of this model from play. The target model suffers a magical damage roll with POW equal to the base ARM of the removed model.
+TAKKARYX
+LIFE TRADER — When an attack with this weapon hits, this model can suffer 1 damage point to gain an additional die on the damage roll against the model hit. Life Trader can be used once per attack.
+BLOODWYRM
+LIFE DRINKER — When it destroys a living enemy model with this weapon, immediately after the attack is resolved this model heals d3 damage points.
+GREAT RACK
+KNOCKDOWN — When a model is hit by an attack with this weapon, it is knocked down.  
+
+
+
+
+----------------------------------
+skarre queen of the broken coast
+cryx epic satyxis warcaster
+7 6 7 4 16 15 9 
+hand canon 12 1 - 12 magical
+takkaryx 7 13 magical
+great rack 4 10 
+gun blade 3 9
+
+foc7 pv16 wj+6 faC
+
+
+ADMONITION 2 6 - - YES NO
+When an enemy model advances and ends its movement within 6" of target model in this model’s battlegroup, the affected model can immediately advance up to 3", then Admonition expires. The affected
+model cannot be targeted by free strikes during this movement.
+BACKLASH 3 8 — — YES YES
+When target enemy warjack that is part of a battlegroup is damaged, its controller suffers 1 damage point.
+BLACK SPOT 2 8 — — YES YES
+Target enemy warrior model/ unit suffers -2 DEF. When a friendly Faction model destroys one or more affected models with a melee or ranged attack during its activation, immediately after the attack is
+resolved it can make one additional melee or ranged attack regardless of ROF. Attacks gained from Black Spot cannot generate additional attacks from Black Spot.
+BLOOD RAIN 3 8 3 12 NO YES
+Blood Rain causes corrosion damage. Models hit suffer the Corrosion continuous effect 
+DEATH WARD 2 6 — — YES NO _
+Target friendly Faction model/ unit gains +2 ARM. If an affected warjack is damaged, you choose which column suffers the damage.
+PERDITION 2 10 — 10 NO YES
+When an enemy model is damaged by Perdition, immediately after the attack is resolved one warjack in this model’s battlegroup that is currently in this model’s control area can make a full advance toward the nearest enemy model. A model can advance as a result of Perdition only once per turn.
+
+BLOOD TRADE — This model can upkeep spells by suffering 1 damage point per spell instead of spending focus.
+INSPIRATION [SATYXIS] — Friendly Satyxis models/ units in this model’s command range never flee and immediately rally.
+SEAS OF FATE — Models in this model’s battlegroup that are in its control area can boost attack and damage rolls after seeing the result of the roll.
+TAKKARYX
+LIFE TRADER - When an attack with this weapon hits, this model can suffer 1 damage point to gain an additional die on the damage roll against the model hit. Life Trader can be used once per attack.
+GREAT RACK
+RAM — When an enemy model is hit by this weapon, it is knocked down and can be pushed 1" directly away from this model. If it is pushed, this model can immediately advance directly toward the pushed model up to the distance that model was moved.
+
+
+feat : Fate Weaver
+Skarre suffers up to 5 damage points. For each damage point she suffers, one model currently in her control area can be affected by Fate Weaver. An affected friendly model cannot be charged or targeted by enemy attacks for one round. An affected enemy model cannot make attacks for one round.
+
+
+----------------------------------
+lich lord terminus
+cryx  warcaster
+6 9 7 5 14 18 10 undead terror
+dragon fire sp10 1 - 14 corrosion continuous_corrosion
+doomsayer 7 16 magical reach
+scything claw 5 14 
+
+
+foc6 pv20 wj+4 faC
+
+ANNIHILATION 4 10 3 10 N0 YES  
+Models hit suffer a POW 10 damage roll. Models boxed by Annihilation are removed from play. This model gains a soul token for each living non—soulless enemy model removed from play this way.
+HELLFIRE 3 10 — 14 N0 YES
+A model/unit hit by Hellfire must pass a command check or flee.
+MALEDICTION 2 SELF * — YES N0
+While within 2" of this model, enemy models suffer -2 DEF and ARM.
+RAVAGER 2 6 — — N0 N0
+Target model in this model’s battlegroup gains Berserk for one turn. While affected by Ravager, a model cannot make Chain Attacks. When a model with Berserk destroys one or more models with a melee attack during its combat action, immediately after the attack is resolved it must make one additional melee attack against another model in its melee range.
+
+TERMINUS  
+CULL SOUL — This model gains one soul token for each living enemy model destroyed within 2" of it. VVhen this model replenishes its focus during your next Control Phase, replace each soul token on it with 1
+focus point.
+FLIGHT - This model can advance through terrain and obstacles without penalty and can advance through obstructions and other models if it has enough movement to move completely past them. This model ignores
+intervening models when declaring its charge target.
+SACRIFICIAL PAWN [UNDEAD MODEL]- When this model is directly hit by an enemy ranged attack, you can choose to have one friendly, non—incorporeal Undead Model model within 3" of this model directly
+hit instead. That model is automatically hit and suffers all damage and effects.
+SHADOW OF DEATH — While in this model’s command range, friendly undead Faction models gain Tough 
+SCYTHING CLAW  
+CRITICAL PITCH — On a critical hit, instead of rolling damage normally you can choose to have this model throw the model hit. Treat the throw as if this model had hit with and passed the STR check of a
+throw power attack. The thrown model suffers a damage roll with POW equal to this model’s STR plus the POW of this weapon. The POW of collateral damage is equal to this model’s STR.
+
+
+
+feat : dragon's call
+Terminus gains one soul token for each living enemy model destroyed in his control area. Terminus gains +1 ARM for each soul token on him. Dragon’s Call lasts for one round.
+
+----------------------------------
+the witch coven of garlghast
+cryx  warcasters
+6 4 5 4 16 12 8 
+ritual blades 3 7 magical
+
+foc*  wj+5 faC
+
+helleana 8pv
+morgaen 8pv
+selene 8pv
+
+egregore cryx character solo 
+6 1 1 1 13 17 - 
+construct pathfinder stealth 
+
+CURSE OF SHADOWS 3 8 - — YES YES A
+Target model/unit suffers -2 ARM and cannot make free strikes. A model can advance through an affected model if it has enough movement to move completely past its base.
+GHOST WALK 3 6 — - N 0 N0
+Target friendly model/ unit gains Ghostly for one turn. (A model with Ghostly can advance through terrain and obstacles without penalty and can advance through obstructions if it has enough movement to
+move completely past them. An affected model cannot be targeted by free strikes.)
+INFERNAL MACHINE 2 6 — - YES N0
+Target warjack in this model’s battlegroup gains Terror and +2 MAT and SPD.
+OCCULTATION 2 6 - — YES N0
+Target friendly model/ unit gains Stealth
+STYGIAN ABYSS 3 10 - 12 N0 YES
+On a critical hit, the model hit suffers Shadow Bind for one round. (A model suffering Shadow Bind suffers -3 DEF, and for one round when it advances it cannot move except to change facing.)
+VEIL OF MISTS 3 CTRL 4 - YES N0
+Place a 4" AOE cloud effect anywhere completely within this model’s control area. This AOE does not block friendly Faction models’ LOS. While in the AOE, friendly Faction models gain Pathfinder and can move through obstructions and other models if they have enough movement to move completely past them.  
+
+
+HELLEANA, MORGAEN, AND SELENE  
+ARCANE NEXUS - When a Witch casts a spell, the Egregore is the spell’s point of origin. The Witch must have LOS to her target, but the Egregore does not. All LOS modifiers are based on the LOS of the Witch. Witches can channel spells normally. The Coven can have up to one attached model; this model is attached to the Coven, not to an individual Witch. The Coven can have only one of each of their upkeep spells in play at a time.
+COVEN — The Witch Coven of Garlghast shares a single focus pool, and Witches do not receive focus individually. The Coven’s base FOCUS is three times the number of Witches in play. When the Coven replenishes its focus, the Egregore receives those focus points. The Coven’s control area is measured from the Egregore. Any Witch in the Coven’s control area can spend focus points on the Egregore. The Egregore cannot be affected by focus-reducing or focus—removing effects. Each focus point on the Egregore gives each Witch in the Coven’s control area a cumulative +1 ARM. Effects that ignore focus points overboosting the target’s Power Field also ignore this bonus. The Coven can use their feat only once.  
+PERFECT CONJUNCTION — A Perfect Conjunction is established anytime the Egregore is completely within the triangular area between all three Witches and each Witch has LOS to each other Witch. During a Perfect Conjunction, reduce the COST of spells cast by a Witch by 1.  
+
+Feat : nightfall
+While in the Coven's control area, enemy models suffer -2 MAT and RAT and their LOS is reduced to 5". Nightfall lasts for one round.
+ 
+
+EGREGORE  
+BLACK MANTLE — While B2B with this model, friendly Faction models gain Stealth.
+CIRCULAR VISION — This model’s front arc extends to 360°.
+COMPANION [WITCH COVEN OF GARLGHAST] - This model is included in any army that includes the Witch Coven of Garlghast. If the Witch Coven of Garlghast is destroyed or removed from play, remove this model from play. This model is part of the Witch Coven of Garlghast’s battlegroup.
+STEADY — This model cannot be knocked down.
+SYMPATHETIC LINK — When this model would suffer damage, you must assign that damage to one or more Witches instead, divided as you choose. A Witch cannot be assigned more damage points than she has unmarked damage boxes. This model does not suffer the damage assigned to a Witch.
+
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+jacks   jacks   jacks   jacks   jacks   jacks   jacks   jacks   jacks   
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+
+-----------------------------
+deathjack
+cryx character helljack
+
+6 12 8 4 13 19 - terror advance_deployment
+
+necroclaw 6 18 L open_fist
+necroclaw 6 18 R open_fist
+horns 3 15 
+
+x...Lx...LLM....MM....CC...RRCx...Rx
+
+pc12 faC
+
+DEATHJACK
+CULL SOUL — This model gains one soul token for each living enemy model destroyed within 2" of it. When this model replenishes its focus during your next Control Phase, replace each soul token on it with 1
+focus point.
+NECROMANCY — While this model is in its controller’s control area, it can spend focus points to cast its controller’s spells. When this model casts its controller’s spells, the controller is considered to have cast them but this model is their point of origin. When making a magic attack roll, this model uses its controller’s FOCUS. This model cannot cast spells with a RNG of SELF or CTRL
+RENDERING — When this model gains a soul token, it can immediately spend that token to remove d6 damage points.
+SKULLS OF HATE — During your Control Phase, after focus allocation this model gains 1 focus point for each of its arm systems that is currently not crippled. While this model has one or more non-crippled
+arm systems, its front arc extends to 360°. .
+
+
+
+
+
+---------------------------
+cankerworm 
+cryx character bonejack
+
+6 8 7 5 14 16 advance_deployment pathfinder stealth
+bite H 3 11 
+replicator 5 13 
+xx..HHxx..CHxx..CHxx..CMxx..CMxx..MM
+
+
+pc5 faC
+
+CANKERWORM  
+AFFINITY [ASPHYXIOUS] — When Cankerworm ends its activation in Asphyxious’ control area, it can make a full advance.  
+IMPRINT SALVAGE - At anytime during its activation, if it is in base contact with a wreck marker this model can spend 1 focus point to use Salvage. Remove the wreck marker from play, then remove d6 damage points from this model. If it was a heavy warjack wreck marker, remove +3 damage points.
+PARRY — This model cannot be targeted by free strikes.
+BITE
+ARMOR PIERCING (*ATTACK) — When calculating damage from this attack, halve the base ARM stats of models hit that have medium or larger bases. This attack gains +2 to damage rolls against models with small bases. 
+REPLICATOR
+ADAPT — When Cankerworm uses Salvage, you can adapt the Replicator. The Replicator gains the special rules and weapon qualities of one of the destroyed warjack’s weapons. The Replicator becomes the type of weapon adapted (melee or ranged) and uses that weapon’s RNG, ROF, AOE, and POW. This effect lasts until Cankerworm uses Adapt again.
+
+-------------------------
+deathripper
+cryx bonejack
+7 7 6 5 15 14 arc_node
+pc4 faU
+
+mandible H 6 13
+
+xxx.HHxxx.HCxx..CCxx..AMxxx.AMxxx.MM
+
+MANDIBLE
+SUSTAINED ATTACK — During this model’s activation, when it makes at attack with this weapon against the last model hit by the weapon this activation, the attack automatically hits.
+
+-------------------------
+defiler
+cryx bonejack
+7 7 6 5 15 14 arc_node
+pc5 faU
+
+sludge cannon SP8 1 - 12 corrosion continuous_corrosion 
+bash 0 7
+
+xxx.HHxxx.HCxx..CCxx..AMxxx.AMxxx.MM
+
+
+-------------------------
+harrower
+cryx helljack
+5 12 6 5 12 18 pathfinder
+pc10 faU
+
+mortifier L 10 1 3 14 
+perisher R 4 16 reach
+
+
+x...Lxx..LLM....MM....CCx..RRCx...Rx
+
+Harrower
+AMPHIBIOUS — This model ignores the effects of deep and shallow water and can move through them without penalty. While completely within deep water, it cannot be targeted by ranged or magic attacks
+and can make attacks only against other models in deep water. While completely in deep water, this model does not block LOS.
+SOUL TAKER - This model gains one soul token when a living enemy model is destroyed within 2" of it. This model can have up to three soul tokens at a time. During its activation, this model can spend soul
+tokens to gain additional attacks or to boost attack or damage rolls at one token per attack or boost.
+STEADY — This model cannot be knocked down. 
+MORTIFIER
+GHOST SHOT — This model ignores LOS when making attacks with this weapon. When resolving attacks with this weapon, ignore concealment and cover.
+PERISHER 
+Tresher (*kATTACK) - This model makes one melee attack with this weapon against each model in its LOS and this weapon’s melee range.
+
+-------------------------
+helldiver
+cryx bonejack
+5 8 6 5 14 15
+pc3 faU
+
+jaws H 5 13
+
+xxx.HHxx..CHxx..CHxx..CMxx..CMxxx.MM
+
+HELLDIVER
+BURROW (*ACTION) — Place the burrow marker in base contact with this model anywhere in its front arc, then remove this model from the table. Effects on this model expire. This model cannot burrow into
+solid rock or man—made constructions and cannot burrow while its Movement system is crippled. Return this model to the table during your next Control Phase after models replenish their focus but before
+focus is allocated. When it returns, place it anywhere within 3" of the burrow marker. If there is no room to place this model, remove the burrow marker from the table and remove this model from play.
+
+
+-------------------------
+leviathan
+cryx helljack
+5 12 6 5 12 18 pathfinder
+pc9 faU
+
+spiker L 13 3 - 13
+crushing claw R 5 17 open_fist
+
+
+x...Lxx..LLM....MM....CCx..RRCx...Rx
+
+LEVIATHAN
+AMPHIBIOUS — This model ignores the effects of deep and shallow water and can move through them without penalty. While completely within deep water, it cannot be targeted by ranged or magic attacks
+and can make attacks only against other models in deep water. While completely in deep water, this model does not block LOS.
+STEADY - This model cannot be knocked down.
+SPIKER
+BURST FIRE — Gain +1 to damage rolls with this weapon against models with medium bases and +2 to damage rolls against models with large bases.
+
+
+-------------------------
+nightwretch
+cryx bonejack
+7 7 6 5 15 14 arc_node
+pc4 faU
+
+doomspitter H 6 1 - 14 corrosion continuous_corrosion 
+bash 0 7
+
+xxx.HHxxx.HCxx..CCxx..AMxxx.AMxxx.MM
+
+DOOMSPITTER
+BLASTER — When this model makes an attack with this weapon, before the attack roll it can spend 1 focus point to give the attack a 3" AOE.
+
+-------------------------
+nightmare
+cryx character helljack
+6 10 8 5 13 18
+pc10 faU
+
+wicked claw L 6 16 open_fist reach
+wicked claw R 6 16 open_fist reach
+tusks 2 12
+
+xx..Lxx..LLM....MM....CCx..RRCxx..Rx
+
+NIGHTMARE
+AFFINITY [DENEGHRA] — While Nightmare is in Deneghra’s control area, it gains Stealth.
+IMPRINT: GHOSTLY — During its activation, this model can spend 1 focus point to gain Ghostly for one turn. (A model with Ghostly can advance through terrain and obstacles without penalty and can
+advance through obstructions if it has enough movement to move completely past them. A model with Ghostly cannot be targeted by free strikes.)
+PREY — After deployment but before the first player’s turn, choose an enemy model/unit to be this model/unit’s prey. This model gains +2 to attack and damage rolls against its prey. When this model begins its
+activation within lO" of its prey, it gains +2" movement that activation. When the prey is destroyed or removed from play, choose another model/unit to be the prey.
+WICKED CLAW
+COMBO STRIKE (*ATTACK) — Make a melee attack. Instead of making a normal damage roll, the POW of the damage roll is equal to this model’s STR plus twice the POW of this weapon.
+
+-------------------------
+reaper
+cryx helljack
+6 10 7 5 13 17
+pc7 faU
+
+harpoon L 8 1 - 12
+helldriver R 6 16 reach
+tusks 2 12
+
+xx..Lxx..LLM....MM....CCx..RRCxx..Rx
+
+HARPOON
+DRAG — If this weapon damages an enemy model with an equal or smaller base, immediately after the attack is resolved the damaged model can be pushed any distance directly toward this model. After
+the damaged model is moved, this model can make one normal melee attack against themodel pushed. After resolving this melee attack, this model can make additional melee attacks during its combat action.
+HELLDRIVER
+SUSTAINED ATTACK — During this model’s activation, when it makes an attack with this weapon against the last model hit by the weapon this activation, the attack automatically hits.
+
+
+-------------------------
+seether
+cryx helljack
+6 10 8 5 13 17 terror
+pc9 faU
+
+deathclaw L 6 16 open_fist
+deathclaw R 6 16 open_fist
+tusks 2 12
+
+xx..Lxx..LLM....MM....CCx..RRCxx..Rx
+
+SEETHER
+AGGRESSIVE — This model can run or charge without spending focus or being forced.
+SOUL DRIVE — This model is allocated l additional focus point during your Control Phase.
+DEATH CLAW
+CHAIN ATTACK: GRAB & SMASH — If this model hits the same model with both its initial attacks with this weapon, after resolving the attacks it can immediately make a double-hand throw, head—butt, headlock/weapon lock, push, or throw power attack against that target.
+
+
+-------------------------
+slayer
+cryx helljack
+6 10 7 5 13 17 
+pc6 faU
+
+deathclaw L 6 16 open_fist
+deathclaw R 6 16 open_fist
+tusks 2 12
+
+xx..Lxx..LLM....MM....CCx..RRCxx..Rx
+
+COMBO STRIKE (*ATTACK) — Make a melee attack. Instead of making a normal damage roll, the POW of the damage roll is equal to this model’s STR plus twice the POW of this weapon.
+
+-------------------------
+stalker
+cryx bonejack
+7 7 7 4 16 13 pathfinder stealth
+
+pc4 faU
+
+eviscerator L 5 12
+eviscerator R 5 12  
+
+xxx.Lxxx.LLMxxx.MMxxx.CCxx.RRCxxx.Rx
+
+STALKER
+ARCANE ASSASSIN — When making attacks, ignore focus points overboosting the target’s Power Field and spell effects adding to its ARM or DEE
+EXTENDED CONTROL RANGE - When checking to see if this model is in its controller’s control area for focus allocation, double the area.
+EVISCERATOR
+GRIEVOUS WOUNDS — When a model is hit by this weapon, for one round it loses Tough, cannot heal or be healed, and cannot transfer damage.
+
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+solos   solos   solos   solos   solos   solos   solos   solos   solos   solos   solos   
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+
+bane lord tartarus
+cryx character solo
+
+6 7 7 4 13 17 9 commander stealth terror undead
+
+rivener 5 12 reach weapon_master
+8pv
+pc4 faC
+
+TARTARUS
+CURSE [BANE] — RNG CMD. Target enemy model/unit. If the model/unit is in range, it is cursed. A friendly Bane model charging a cursed model gains +2" movement. Friendly Bane models gain +2 to attack rolls against cursed models. Curse can be used once per activation and lasts for one turn.
+DARK SHROUD — While in this model’s melee range, enemy models suffer -2 ARM.
+DEATH TOLL [SMALL-BASED BANE] - When this model destroys a living enemy model with a melee attack, after the attack is resolved you can add one Grunt to a friendly small—based Bane unit in this model’s
+command range. The Grunt must be placed in formation and within 3" of this model. The destroyed model is removed from play but does not provide a soul or corpse token.
+GHOSTLY — This model can advance through terrain and obstacles without penalty and can advance through obstructions if it has enough movement to move completely past them. This model cannot be
+targeted by free strikes.
+RIVENER
+THRESHER (*ATTACK) — This model makes one melee attack with this weapon against each model in its LOS and this weapon’s melee range.
+
+
+-------------------------------
+bloat thrall
+cryx solo
+4 7 5 4 10 14 5 undead
+
+pc2 fa2 8pv
+
+despoiler 12 1 5 14 corrosion
+bludgeon 3 10
+
+BLOAT THRALL
+DEATH BLAST — When this model is disabled, center a 5" AOE on it, then remove this model from play. Models in the AOE suffer a POW 14 blast damage roll.
+STEADY — This model cannot be knocked down. 
+DESPOILER
+ARCING FIRE - When attacking with this weapon, this model can ignore intervening models except those within 1" of the target.
+
+----------------------------------
+captain rengrave
+cryx revenant character solo
+
+6 7 7 6 14 14 9 commander terror undeaad
+
+misery 12 1 - 12 magical
+fathom 6 13 magical
+
+pc2 fa2 pv8
+
+RENGRAVE
+DEATH TOLL [REVENANT CREW OF THE ATRAMENTOUS] - When this model destroys a living enemy model with a melee or ranged attack, after the attack is resolved you can add one Grunt to a friendly Revenant Crew of the Atramentous unit in this model’s command range. The Grunt must be placed in formation and within 3" of this model. The destroyed model is removed from play but does not provide a soul or corpse token.
+POINT BLANK — During its activation, this model can make melee attacks with its ranged weapon, with a O.5" melee range. Do not add this model’s STR to damage rolls made with ranged weapons. Charge
+attacks made with ranged weapons are not boosted.
+SACRIFICIAL PAWN [REVENANT] - When this model is directly hit by an enemy ranged attack, you can choose to have one friendly, non-incorporeal Revenant model within 3" of this model directly hit instead. That model is automatically hit and suffers all damage and effects.
+VETERAN LEADER [REVENANT] — Friendly Revenant trooper models gain +2 to attack rolls while this model is in their LOS. 
+MISERY
+GHOST SHOT — This model ignores LOS when making attacks with this weapon. When resolving attacks with this weapon, ignore concealment and cover.
+
+
+------------------------------------
+darragh wrathe
+cryx light cavalry dragoon character solo
+
+8/6 7 7 4 14 17/15 9 commander fearless
+
+necro-scythe 6 13 magical reach
+mount 12
+
+p4 faC pv 10+5
+
+WRATH
+BATTLE WIZARD — Once per turn, when this model destroys one or more enemy models with a melee attack during its activation, immediately after the attack is resolved it can make one Magic Ability
+special attack or special action.
+DRAGOON — While mounted, this model has base SPD 8 and base ARM 17. While dismounted, it has base SPD 6 and base ARM 15. 
+LEADERSHIP [SOULHUNTERS] — Friendly Soulhunter models activating while in this model’s command range gain Incorporeal that activation.
+MAGIC ABILITY [7]
+• BEYOND DEATH (*ACTION) — While in this model’s command range, living enemy models suffer -2 to damage rolls. Beyond Death lasts for one round.
+• DEATH RIDE (*ACTION) - Friendly undead Faction models currently in this model’s command range can immediately advance up to 1".
+• HELLFIRE (*ATTACK) — Hellfire is a RNG 10, POW 14 magic attack. A model/unit hit by Hellfire must pass a command check or flee.
+
+----------------------------------------
+general gerlak slaughterborn
+cryx blighted trollkin character solo
+
+5 8 8 4 12 17 9 commander fearless terror tough
+
+great axe 5 13 reach
+
+pc3 faC pv8
+
+SLAUGHTERBORN
+BLOOD THIRST — When it charges a living model, this model gains +2" movement.
+FINISHER - This model gains an additional die on damage rolls against damaged models.
+KILLING SPREE — When this model destroys one or more enemy models with a melee attack during its combat action, after that attack is resolved this model can move up to 1" and make one additional melee attack.
+LEADERSHIP [BLOODGORGERS] — While in this model’s command range, friendly Bloodgorger models gain Overtake. (When a model with Overtake destroys one or more enemy warrior models with a normal melee attack, after the attack is resolved this model can immediately advance up to 1".)
+NO SLEEPING ON THE JOB [BLOODGORGERS] — This model and friendly Bloodgorgers models in its command range cannot be knocked down.
+
+---------------------------------------
+machine wraith
+cryx solo
+7 4 6 0 14 12 7 incorporeal undead
+
+mechano-claws 4 8 
+pc1 fa3
+
+MACHINE WRAITH
+MACHINE MELD (*ACTION) — RNG 1. Target enemy non—character warjack with a functional Cortex system or an inert non-character warjack with a functional Cortex system. If the warjack is in range, take control of it and remove this model from the table. Effects on this model when it is removed from the table expire. You cannot activate the warjack this turn. 
+
+If the melded warjack was part of a battlegroup, while it is in its former controller’s control area during the former controller’s activation the former controller can spend focus points to attempt to regain control of it at 1 focus point per attempt. If it does so, the former controller and this model each roll a d6 and add their CMD. If the former controller’s total is higher, it regains control of the warjack and this model exits the warjack. If the former controller’s total is not higher, you maintain control of the warjack. 
+
+After resolving an attack in which the melded warjack suffered 1 or more damage points, this model must make a command check. If it fails this check, it exits the warjack after resolving continuous effects during your next Maintenance Phase. You can choose to have this model exit the warjack after resolving continuous effects during your Maintenance Phase. 
+If this model exits the warjack for any reason, control of the warjack returns its former controller. Place this model within 3" of the warjack. If the warjack was inert when this model melded with it, the warjack becomes autonomous.
+
+This model is destroyed if the melded warjack is destroyed before it exits the warjack.
+
+
+------------------------------------------
+necrotech
+cryx solo
+5 6 6 3 12 13 7 undead
+
+vise claw 4 10 reach
+
+pc1 fa3 pv5 (1 necrotech + 1 scrapthrall)
+
+NECROTECH
+CREATE SCRAP THRALL [8] (*ACTION) — To use this special action, this model must be in base contact with a wreck marker. Make a skill check. If it passes, d3 Scrap Thralls are created from a light wreck marker or d6 from a heavy wreck marker. Remove the wreck marker from play and place the Scrap Thralls within 3" of this model. Placed Scrap Thralls cannot activate this turn.
+REPAIR [8] (*ACTION) — This model can attempt repairs on any damaged friendly Faction warjack. To attempt repairs, this model must be B2B with the damaged warjack and make a skill check. If successful, remove d6 damage points from the warjack’s damage grid.
+STEADY — This model cannot be knocked down.
+
+
+------------------------------------------
+scrap thrall
+cryx solo
+5 4 5 3 11 12 1 
+undead
+
+mechano claw 4 8  pc1 fa3 3scrapthrall
+
+THRALL
+THRALL BOMB - When this model is disabled, center a 4" AOE on it and then remove this model from play. Models in the AOE are hit and suffer a POW 8 blast damage roll.
+
+MECHANO-CLAW
+DEATH BURST (*ATTACK) — This model makes a melee attack. If that attack hits, instead of dealing damage normally, center a 4" AOE on the model hit and remove this model from play. The model hit suffers
+a POW 16 damage roll. If the attack misses, center the AOE on this model and remove this model from play. Models in the AOE other than the model directly hit are hit and suffer a POW 8 blast damage roll. Blast damage from this attack is not considered to have been caused by a melee attack.
+
+-------------------------------------------
+pistol wraith
+cryx solo
+6 4 4 7 14 12 7 gunfighter incorporeal undead
+
+wraithlock pistol x2 10 1 - 12 magical
+
+pc3 fa2 pv5
+
+PISTOL WRAITH
+BODY COUNT - This model gains one soul token each time it destroys a living enemy model. It can have up to three soul tokens at a time. During its activation, this model can spend soul tokens to boost attack or damage rolls at one token per boost.
+WRAITHLOCK PISTOLS
+CHAIN ATTACK: DEATH CHILL. - If this model hits the same model with both its initial attacks with this weapon, after resolving the attacks it can immediately make one additional ranged attack against that
+model ignoring ROF. If the additional attack hits, it does not inflict damage but the model hit must forfeit either its movement or action on its next activation.
+
+------------------------------------------
+skarlock thrall
+cryx solo
+6 4 3 3 14 12 6 undead
+
+claw 2 6
+
+pc2 fa1 pv5
+
+SKARLOCK THRALL
+ATTACHED — Before the start of the game, attach this model to a friendly Faction warcaster for the rest of the game. Each warcaster can have only one model attached to it.
+SOUL TAKER — This model gains one soul token when a living enemy model is destroyed within 2" of it. This model can have up to three soul tokens at a time. During its activation, this model can spend soul
+tokens to gain additional attacks or to boost attack or damage rolls at one token per attack or boost.
+SPELL SLAVE (*ACTION) - This model must be in its warcaster’s control area to make the Spell Slave special action. When it does, it casts one of its warcaster’s spells with a COST of 3 or less. The warcaster is considered to have cast that spell but this model is its point of origin. When making a magic attack roll, this model uses its warcaster’s FOCUS. This model cannot cast spells with a RNG of SELF or CTRL.
+
+
+-------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------
+units   units   units   units   units   units   units   units   units   units   units   units   units   
+-------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------
+
+------------------------
+bane knights
+cryx unit
+5 7 6 4 12 16 8 undead
+
+bane lance 4 11 reach weapon_master
+
+pc6/10 fa3
+
+LEADER 8 GRUNTS
+GHOSTLY — This model can advance through terrain and obstacles without penalty and can advance through obstructions if it has enough movement to move completely past them. This model cannot be targeted by free strikes.
+VENGEANCE — During your Maintenance Phase, if one or more models in this unit were destroyed or removed from play by enemy attacks during your opponent’s last turn, each model in the unit can advance 3" and make one normal melee attack,
+
+------------------------
+bane thralls
+cryx unit
+5 7 6 4 12 15 8 undead stealth
+
+war axe 4 11 weapon_master
+
+pc5/8 fa3
+
+DARK SHROUD — While in this model’s melee range, enemy models suffer -2 ARM.
+
+-----------------------------
+bile thralls
+cryx unit
+5 4 2 3 10 13 7 undead
+
+bile cannon sp8 1 - 12 corrosion continuous_corrosion
+
+PURGE (*ATTACK) - Each model within 6" of this model that is in its front arc is automatically hit unless this model’s LOS to it is blocked by terrain. Models hit suffer a POW 12 corrosion damage roll and the Corrosion continuous effect. After this attack is resolved, remove this model from play. Purge is a ranged attack.
+
+
+-------------------------------
+black ogrun boarding party
+cryx unit
+6 9 7 5 12 15 9 terror cra
+
+harpoon 8 1 - 12 
+hand weapon 4 13
+
+l+2G 4pc l+4G 6pc fa2 8pv each
+
+
+HARPOON
+DRAG — If this weapon damages an enemy model with an equal or smaller base, immediately after the attack is resolved the damaged model can be pushed any distance directly toward this model. After the damaged model is moved, this model can make one normal melee attack against the model pushed. After resolving this melee attack, this model can make additional melee attacks during its combat action.
+
+-------------------------------
+blackbane's ghost raiders
+cryx revenant character unit
+
+blackbane pv5
+7 6 7 4 13 12 8 incorporeal officer undead
+cutlass 4 10 magical continuous_fire
+
+grunts 
+7 6 6 4 13 12 7 incorporeal undead
+cutlass 4 10 magical continuous_fire
+
+l+5 6pc; l+9 9pc faC
+
+BLACKBANE
+GRANTED: REANIMATION — While this model is in play, models in its unit gain Reanimation. (When a model with Reanimation boxes a living enemy warrior model with a melee attack, add one Grunt to this unit and then remove the boxed model from play. The Grunt must be placed in formation and within 3" of this model. The Grunt cannot activate this turn.)
+
+------------------------------
+bloodgorgers
+cryx blighted trollkin unit
+
+5 7 6 4 12 15 8 fearless terror tough
+handweapon x2 4 11
+
+l+5 5pc; l+9 8pc fa2
+
+BLOOD THIRST — When it charges a living model, this model gains +2" movement.
+GANG - When making a melee attack targeting an enemy model in melee range of another model in this unit, this model gains +2 to melee attack and melee damage rolls.
+
+
+
+
+------------------------------
+brute thrall
+cryx mecanithrall unit attachment
+
+6 9 6 4 12 14 5 undead
+
+heavy steamfist x2 5 14
+
+8pv fa3, pc1, up to 3 WA
+
+ATTACHMENT [MECHANITHRALL] — This attachment can be added to a Mechanithrall unit.
+
+HEAVY STEAMFISTS
+COMBO STRIKE (*ATTACK) — Make a melee attack. Instead of making a normal damage roll, the POW of the damage roll is equal to this model’s STR plus twice the POW of this weapon.
+
+
+------------------------------
+Cephalyx mind slaver &amp; Drudges
+cryx ally unit
+
+mind slaver
+5 6 6 4 14 13 9 fearless officer pathfinder
+
+Prosthetic blades 5 11
+
+pv5
+
+Drudge grunts
+5 8 5 2 11 15 4 fearless eyeless tough
+
+Drudge weapons 5 13
+
+
+l+5 4pc; l+9 6pc fa2
+
+SELECTIVE - This unit can be included only in mercenary contract armies that list Cephalyx as possible members.
+
+MIND SLAVER
+ANATOMICAL PRECISION - When this model’s melee damage roll fails to exceed the ARM of the living model hit, that model suffers 1 damage point.
+GRANTED: COMBINED MELEE ATTACK - While this model is in play, models in its unit gain Combined Melee Attack  
+REANIMATION — When this model boxes a living enemy warrior model with a melee attack, add one Grunt to this unit and then remove the boxed model from play. The Grunt must be placed in formation and
+within 3" of this model. The Grunt cannot activate this turn.
+SACRIFICIAL PAWN [DRUDGE GRUNT] — When this model is directly hit by an enemy ranged attack, you can choose to have one friendly, non—incorporeal Drudge Grunt model within 3" of this model directly
+hit instead. That model is automatically hit and suffers all damage and effects. 
+
+------------------------------
+Cephalyx Overlords
+cryx ally unit
+
+6 6 6 4 14 13 9 fearless pathfinder
+
+Prosthetic blades 5 11
+
+5pv each
+
+l+2 4pc fa1
+
+SELECTIVE — This unit can be included only in mercenary contract armies that list Cephalyx as possible members.
+
+LEADER &amp; GRUNTS
+ANATOMICAL PRECISION — When this model’s melee damage roll fails to exceed the ARM of the living model hit, that model suffers 1 damage point.
+DEATH TOLL [CEPHALYX MIND SLAVER & DRUDGES] — When this model destroys a living enemy model with a melee attack, after the attack is resolved you can add one Grunt to a friendly Cephalyx Mind Slaver
+& Drudges unit in this model’s command range. The Grunt must be placed in formation and within 3" of this model. The destroyed model is removed from play but does not provide a soul or corpse token.
+MAGIC ABILITY [7]
+• INFLUENCE (*ATTACK) — Influence is a RNG 10 magic attack. Take control of target enemy non—warcaster, non-Warlock warrior model hit. The model immediately makes one normal melee attack, then Influence expires.
+• PSYCHIC ASSAULT (*ATTACK) — Psychic Assault is a RNG SP8 magic attack. This attack ignores LOS. Models hit suffer a POW 12 damage roll.
+SACRIFICIAL PAWN [DRUDGE GRUNT] — When this model is directly hit by an enemy ranged attack, you can choose to have one friendly, non-incorporeal Drudge Grunt model within 3" of this model directly hit instead. That model is automatically hit and suffers all damage and effects.
+
+
+
+
+------------------------------
+Mecanithralls
+cryx unit
+
+6 7 5 4 12 12 6 undead
+
+steamfist x2 4 11 
+
+l+5 3pc; l+9 5pc fa3
+
+COMBO STRIKE (*ATTACK) - Make a melee attack. Instead of making a normal damage roll, the POW of the damage roll is equal to this model’s STR plus twice the POW of this weapon.
+
+------------------------------
+Necrosurgeon &amp; stitch thralls
+cryx unit
+
+necrosurgeon
+6 6 5 4 14 12 8 officer fearless
+pv5
+
+Gutsplitter 5 11
+
+Stitch thrall grunts
+6 4 3 4 14 12 6 undead
+
+
+l+3 2pc fa2
+
+BODY SNATCHER - This model gains one corpse token each time a Mechanithrall or living model is destroyed within 5" of it or a Grunt in its unit.
+NECROSURGERY (*ACTION) — Remove up to three corpse tokens from this model to add one Grunt to a friendly Mechanithrall unit in this model’s command range per token removed. The Grunt must be placed in formation and within 3" of this model.
+SACRIFICIAL PAWN [STITCH THRALL GRUNT OR MECHANITHRALL] — When this model is directly hit by an enemy ranged attack, you can choose to have one friendly, non-incorporeal Stitch Thrall Grunt or Mechanithrall model within 3" of this model directly hit instead. That model is automatically hit and suffers all damage and effects.
+SURGERY (*ACTION) — Choose a friendly Faction warrior model B2B with this model. That model heals d6 damage points.
+
+
+
+
+------------------------------
+Revenant cannon crew
+cryx weapon crew unit
+
+Leader
+4 6 5 4 13 12 7 undead
+
+Ghost cannon 14 1 3 14 magical
+cutlass 3 9 
+
+
+Grunts
+4 6 5 4 13 12 7 undead
+pistol 8 1 - 10
+cutlass 3 9 
+
+l+2 3pc fa2
+
+GHOST CANNON
+DAMNATION — When an attack made by this weapon boxes a living enemy warrior model, remove that model from play. Add one Grunt to this unit for each model removed from play this way. Place the Grunt in formation. This unit cannot have more Grunts as a result of Damnation than it had at the beginning of the game.
+GHOST SHOT - This model ignores LOS when making attacks with this weapon. When resolving attacks with this weapon, ignore concealment and cover.
+LIGHT ARTILLERY — This weapon cannot be used to make attacks or special actions during activations this model moves. This model cannot gain the aiming bonus when attacking with this weapon and cannot charge. If this model attacks with this weapon during its activation, it cannot attack with any other weapons that activation.
+RANGE FINDER - G
+
+
+
+
+------------------------------
+Revenant crew of the Atramentous
+cryx unit
+
+6 6 5 4 13 12 7 undead
+
+pistol 8 1 - 10
+cutlass 3 9 
+
+l+5 6pc; l+9 9pc fa2
+
+DEATHBOUND — Grunts in this unit that are destroyed while in formation return to play at the beginning of your next Maintenance Phase. Place the returned Grunts within 3" of the unit commander. If the unit commander leaves play, remove from play all destroyed Grunts not yet returned to play and then choose a new unit commander.
+GANG — When making a melee attack targeting an enemy model in melee range of another model in this unit, this model gains +2 to melee attack and melee damage rolls.
+POINT BLANK - During its activation, this model can make melee attacks with its ranged weapon, with a O.5" melee range. Do not add this model’s STR to damage rolls made with ranged weapons. Charge attacks made with ranged weapons are not boosted.
+
+
+
+
+------------------------------
+Satyxis Raiders
+cryx unit
+
+7 5 6 4 14 12 8 advance_deployment cma
+
+Horns 3 8
+Lacerator 4 9 reach
+
+l+5 5pc; l+9 8pc fa2
+
+CHAIN WEAPON — This attack ignores the Buckler and Shield weapon qualities and Shield Wall.
+CRITICAL KNOCKDOWN - On a critical hit, the model hit is knocked down. 
+FEEDBACK — If this weapon damages a warjack that is part of a battlegroup, its controller suffers 1 damage point.
+
+------------------------------
+Soulhunters
+cryx light cavalry unit
+
+8 7 6 4 14 15 8 undead
+
+Scythe 6 13 reach
+Sickle 4 11
+mount 10
+
+5pv each
+
+l+2 6pc; l+4 9pc fa1
+
+IEADER 8 GRUNTS
+BODY COUNT — This model gains one soul token each time it destroys a living enemy model. It can have up to three soul tokens at a time. During its activation, this model can spend soul tokens to boost attack or damage rolls at one token per boost.
+SICKLE
+LIFE DRINKER — When it destroys a living enemy model with this weapon, immediately after the attack is resolved this model heals d3 damage points.
+
+------------------------------
+The withershadow combine
+cryx character unit
+
+Maelovus
+6 7 7 4 14 16 9 undead terror officer
+5pv
+
+Lich claws 6 13 
+
+Admonia
+6 7 6 4 14 16 9 undead terror 
+5pv
+Lich claws 6 13 
+
+Tremulus
+6 7 6 4 14 16 9 undead terror 
+5pv
+Lich claws 6 13 
+
+l+2 5pc faC
+
+
+Maelovus
+DISMANTLE - When this model hits a warjack with a melee attack, roll an additional damage die.
+GRANTED: DARK INDUSTRIES - While this model is in play, when a model in its unit wrecks an enemy warjack with an attack while the warjack is in melee range of all three models in this unit, instead of
+replacing the warjack with a wreck marker you can replace it with a friendly autonomous Cryx warjack. Remove the enemy warjack from play. If it was a light warjack, you can replace it with a non—character
+bonejack. If it was a heavy warjack, you can replace it with a non-character helljack.
+GRANTED: STEALTH - While this model is in play, models in its unit gain Stealth.
+MAGIC ABILITY [7]
+• DARK FIRE (*ATTACK) — Dark Fire is a RNG l0, POW 12 magic attack. When a living enemy model is destroyed by Dark Fire, this model gains its soul token regardless of the proximity of other models.
+SOUL TAKER - This model gains one soul token when a living enemy model is destroyed within 2" of it. This model can have up to three soul tokens at a time. During its activation, this model can spend soul tokens to gain additional attacks or to boost attack or damage rolls at tone token per attack or boost.
+
+Admonia .
+BLACK ARTS — A friendly Faction warcaster with this model in its control area can upkeep one spell without spending focus.
+DISMANTLE — When this model hits a warjack with a melee attack, roll an additional damage die.
+MAGIC ABILITY [7]
+· DARK FIRE (*ATTACK) - Dark Fire is a RNG 10, POW 12 magic attack. When a living enemy model is destroyed by Dark Fire, this model gains its soul token regardless of the proximity of other models.
+• UNBINDING (*ACTION) — Enemy upkeep spells on models/units within 5" of this model expire. Models suffer d3 damage points for each of those spells they controlled.
+SOUL TAKER - This model gains one soul token when a living enemy model is destroyed within 2" of it. This model can have up to three soul tokens at a time. During its activation, this model can spend soul tokens to gain additional attacks or to boost attack or damage rolls at one token per attack or boost.
+
+TREMULUS
+DISMANTLE — See above.
+MAGIC ABILITY [7]
+• DARK FIRE (·A·ATTACK) - See above.
+• PUPPET MASTER (*ACTION OR ATTACK)- Puppet Master is a RNG 10 spell. When it targets an enemy model/ unit, it is a magic attack. You can have one affected model reroll one or more dice of your choice  rolled for a command check, attack, or damage roll, then Puppet Master expires. Puppet Master lasts for one round. 
+SOUL TAKER - See above.
+
+
+
+
+------------------------------
+Satyxis Raider Sea Witch
+cryx unit attachment
+
+7 5 7 5 14 12 9
+
+Hand cannon 12 1 - 12
+Horns 3 8
+Piercer 4 9 reach
+
+5pv 2PC FA1
+
+ATTACHMENT [SATYXIS RAIDERS] - This attachment can be added to a Satyxis Raiders unit.
+SEA WITCH
+GRANTED: FORCE BARRIER - While this model is in play, models in its unit gain Force Barrier. (A model with Force Barrier gains +2 DEF against ranged attack rolls and does not suffer blast damage.)
+POWER SWELL - Once per game during its unit’s activation, this model can use Power Swell. During this activation, models in this unit gain an additional die on melee damage rolls.
+TACTICS: PATHFINDER — Models in this unit gain Pathfinder  
+
+PIERCER
+FEEDBACK — If this weapon damages a warjack that is part of a battlegroup, its controller suffers 1 damage point.
+
+
+
+
+
+
+
+

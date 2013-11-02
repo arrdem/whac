@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/factionLogo"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/cygnar" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/texture_beige"
+        android:orientation="vertical"
+        android:padding="3dip" >
+
+        <TextView
+            android:id="@+id/card_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Commander Coleman Striker"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/Black" />
+
+        <TextView
+            android:id="@+id/card_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cygnar Warcaster"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/Black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+			
+			<TextView
+			    android:id="@+id/card_fa"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1"
+			    android:text="FA : C"
+			    android:textAppearance="?android:attr/textAppearanceSmall"
+			    android:textColor="@color/Black" />
+            
+			<TextView
+			    android:id="@+id/card_unit_size"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1"
+			    android:text="1 leader &amp; 5 grunts"
+			    android:textAppearance="?android:attr/textAppearanceSmall"
+			    android:textColor="@color/Black" />
+			
+            <TextView
+                android:id="@+id/card_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="WJ : +6"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/Black" />
+            
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

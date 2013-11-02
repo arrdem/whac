@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/countDown_zone1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="50"
+        android:visibility="visible" >
+
+        <com.schlaf.steam.activities.chrono.CountDownView
+            android:id="@+id/countDownView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="2dp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/player1TimeZone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="10:52"
+                android:textColor="@color/ChronoRed" >
+            </TextView>
+
+            <ImageButton
+                android:id="@+id/buttonStartPause1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/empty"
+                android:contentDescription="@string/delete"
+                android:src="@drawable/ic_media_play" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <!-- 
+            <ImageButton
+                android:id="@+id/buttonChronoConfig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:background="@drawable/empty"
+                android:src="@drawable/ic_lock_idle_alarm" />
+                
+                 -->
+
+            <ImageButton
+                android:id="@+id/expandButton"
+                android:layout_width="fill_parent"
+                android:layout_height="22dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_weight="1"
+                android:background="@drawable/empty"
+                android:contentDescription="@string/empty"
+                android:onClick="expandChrono"
+                android:paddingBottom="1dp"
+                android:src="@drawable/btn_expand" >
+
+                            </ImageButton>
+                
+            <ImageButton
+                android:id="@+id/pauseButton"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_weight="1"
+                android:background="@drawable/empty"
+                android:contentDescription="@string/empty"
+                android:onClick="pauseChrono"
+                android:paddingBottom="1dp"
+                android:src="@drawable/ic_media_pause" >
+
+            </ImageButton>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/player2TimeZone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/buttonStartPause2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/empty"
+                android:contentDescription="@string/delete"
+                android:src="@drawable/ic_media_play" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="10:52"
+                android:textColor="@color/ChronoBlue" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/countDown_zone2"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="50"
+        android:visibility="visible" >
+
+        <com.schlaf.steam.activities.chrono.CountDownView
+            android:id="@+id/countDownView2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="2dp" />
+    </FrameLayout>
+
+    <ImageButton
+        android:id="@+id/shrinkButton"
+        android:layout_width="fill_parent"
+        android:layout_height="22dp"
+        android:background="@drawable/bordure_basse"
+        android:contentDescription="@string/empty"
+        android:onClick="shrinkChrono"
+        android:paddingBottom="1dp"
+        android:src="@drawable/btn_shrink" >
+    </ImageButton>
+
+</LinearLayout>

@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="warmachine.xsd">
+	<armies>
+
+	    <army name="Everblight" faction="faction_everblight">
+	        <warlocks>
+<warlock  id="Ew01" name="Lylyth, Herald of Everblight" full_name="Lylyth, Herald of Everblight" generation="P"  generation_id="Lylyth" qualification="warlock" fury="5" warbeast_points="6" fa="C">
+<basestats name="Lylyth" spd="7" str="4" mat="5" rat="7" def="16" arm="14" cmd="8" hitpoints="15" />
+
+<weapons>
+	<melee_weapon name="Bow Blade" pow="3" p_plus_s="7" magical="false" reach="false">
+	     <capacity title=""></capacity>
+	</melee_weapon>
+        <ranged_weapon name="HELLSINGER" rng="12" rof="2" aoe="-" pow ="12" magical="true">
+	     <capacity title="WITCH MARK">if this attack hits an enemy model during this model's activation, this model can target and automatically hit that model with spell, ignoring RNG and LOS, until the end of this models activation</capacity>
+	     <capacity title="BLOOD LURE">warbeasts in this model's battlegroup can charge enemy models hit by this weapon this turn without being forced.</capacity>
+	</ranged_weapon>
+   </weapons>
+<feat title="">While in Lylyth's control area, friendly faction models roll an additional die on attack roll this turn.</feat>
+
+<spell name="BAD BLOOD" cost="2" rng="10" aoe="-" pow ="-" up="YES" off="YES">A warlock leaching from target war beast suffers 1 damage point for each fury point leached. The affected war beast cannot be healed or have damage transferred to it and loses Regenerate</spell>
+
+<spell name="PARASITE" cost="3" rng="8" aoe="-" pow ="-" up="YES" off="YES">
+Target model/unit suffers -3 ARM and this model gain +1 ARM</spell>
+
+
+<spell name="ERUPTION OF SPINES" cost="3" rng="10" aoe="-" pow ="10" up="NO" off="YES">If target model is hit, D6 nearest models within 5" of it suffer a POW 10 damage roll.</spell>
+
+</warlock>
+
+
+
+
+<warlock  id="Ex01" name="Lylyth, Shadow of Everblight" full_name="Lylyth, Shadow of Everblight" generation="E"  generation_id="Lylyth" qualification="warlock" fury="5" warbeast_points="5" fa="C">
+	<basestats name="Lylyth" spd="7" str="4" mat="5" rat="8" def="16" arm="14" cmd="8" hitpoints="15" />
+	<weapons>
+        <ranged_weapon name="WHISPER" rng="12" rof="2" aoe="-" pow ="12" magical="true">
+	</ranged_weapon>
+	</weapons>
+<feat title="DECIMATION">While in Lylyth's control area, friendly Faction model's ranged weapons gain snipe. While in Lylyth's control area , models in her battlegroup can make one additional ranged attack during theit activations. Attacks gained from Decimation de not count against a weapon ROF. Decimation lasts for one turn. ( Ranges weapons with Snipe gain +4 RNG).</feat>
+		<spell name="PIN CUSHION" cost="2" rng="10" aoe="-" pow ="-" up="YES" off="YES">Friendly faction models gain an additional die on ranged attack and ranged attack damage rolls against target enemy model/unit. Discard the lowest die in each roll.</spell>
+
+
+	<spell name="PURSUIT" cost="2" rng="8" aoe="-" pow ="-" up="YES" off="YES">If target enemy model/unit advances during this its activation, imediately after ending this movement one model in this model's battle group that is in its control area can make a full advance.</spell>
+
+
+
+	<spell name="SHADOW PACK" cost="3" rng="SELF" aoe="CTRL" pow ="-" up="YES" off="NO">Models in this models battle group gain stealth while in its control area.</spell>
+
+
+
+        <capacity title="SNAP FIRE">When this model destroy one or more enemy models with a ranged attack during its combat action, immediately afer that attack is resolved this model can make one normal ranged attack. Attack gained from Snap Fire do not count against a weapon's ROF and cannot generate additional attacks from Snap Fire.</capacity>
+        <capacity title="SWIFT HUNTER">When this model destroy an enemy model with a normal ranged attack, immediately after the attack is resolved it can advance up to 2".</capacity>
+        <capacity title="EVASIVE">This model cannot be targeted by free strikes. This model can advance up to 2" immediately after an enemy ranged attack that missed it is resolved unless it was missed while advancing.</capacity>
+        <capacity title="RANGE AMPLIFIER">When this model casts a spell and is the point of origin for the spell, the spell gains +5 RNG.</capacity>
+
+</warlock>
+
+
+
+
+
+<warlock  id="Ez01" name="Lylyth, Reckoning of Everblight" full_name="Lylyth, Reckoning of Everblight" generation="EE"  generation_id="Lylyth" qualification="warlock" fury="5" warbeast_points="5" fa="C">
+	<basestats name="Lylyth" spd="9" str="8" mat="6" rat="8" def="14" arm="16" cmd="8" hitpoints="18" />
+	<weapons>
+        <melee_weapon name="SCYTHING BLADE [R]" pow="4" p_plus_s="12" magical="false" reach="false">
+	     <capacity title="THRESHING BLADES">This model can add this weapon's POW to its trample power attack damage rolls.</capacity>
+		</melee_weapon>
+        <melee_weapon name="SCYTHING BLADE [L]" pow="4" p_plus_s="12" magical="false" reach="false">
+	     <capacity title="THRESHING BLADES">This model can add this weapon's POW to its trample power attack damage rolls.</capacity>
+	</melee_weapon>
+        
+        <ranged_weapon name="WHISPER" rng="12" rof="2" aoe="-" pow ="12" magical="true">
+           <capacity title="BLOOD BOON">Once per activation, immediately afer resolving an attack in witch it destroyed a living  model with this weapon, this model can cast a spell with COST 3 or less without spending fury.</capacity>
+           <capacity title="REAR ATTACK">When declaring and resolving attacks with this weapon, this model's front arc extends to 360 ° </capacity>
+           <capacity title="AUTO FIRE[3]">Make  3 ranged attacks targeting a primary target and any number of secondary targets within 2" of the first target. Ignore intervening models when declaring secondary targets. A secondary target cannot be targeted by more attacks than the primary target. Auto Fire counts as one attack for ROF.</capacity>
+	</ranged_weapon>
+	<mount_weapon name="MOUNT" pow="12"/>
+        	        	
+</weapons>
+<feat title="THE REAPING">When an enemy model is directly hit by a ranged attack made by a friendly faction model while the friendly faction model is in Lylyth's contrl area, the enemy model suffers Death Chill. The Reaping last for one turn. (A model suffering Death Chill must forfeit either its movement or action on its next activation.)</feat>
+ 
+<spell name="ESCORT" cost="2" rng="SELF" aoe="CTRL" pow ="-" up="YES" off="NO">Warbeast in this model's battlegroup beginning their activations in its control area gain +2" movement. This model gains +2 ARM while one or more warbeast in its battlegroup are within 3" of it.</spell>
+
+
+<spell name="FROST HAMMER" cost="2" rng="SP8" aoe="-" pow ="12" up="NO" off="YES">Frost Hammer causes cold damage. On a critical hit, a model become stationary for one round unless it has immunity : Cold</spell>
+
+
+<spell name="WIND WALL" cost="3" rng="SELF" aoe="-" pow ="-" up="NO" off="NO"></spell>
+
+
+
+	        <capacity title="WEAPON PLATFORM">This model can make melee and ranged attack in the same activation. When this model makes its initial melee attacks or a power attack, it can also make its initial ranged attacks. This model can make ranged attacks even while in melee.</capacity>
+        <capacity title="POWER ATTACK TRAMPLE">This model can make trample power attack.</capacity>
+        <capacity title="BATTLE ENGINE">This model is a battle engine and is not a warrior model</capacity>
+
+</warlock>
+<warlock  id="Ew02" name="Thagrosh, Prophet of Everblight" full_name="Thagrosh, Prophet of Everblight" generation="P" qualification="warlock" fury="6" warbeast_points="5" fa="C">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="18" />
+	<weapons></weapons>
+	<feat title=""></feat>
+	
+</warlock>
+<warlock  id="Ex02" name="Thagrosh, the Messiah" full_name="Thagrosh, the Messiah" generation="E" qualification="warlock" fury="6" warbeast_points="3" fa="C">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="20" />
+	<weapons></weapons>
+	<feat title=""></feat>
+	
+</warlock>
+<warlock  id="Ew03" name="Vayl, Disciple of Everblight" full_name="Vayl, Disciple of Everblight" generation="P" qualification="warlock" fury="6" warbeast_points="6" fa="C">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="14" />
+	<weapons></weapons>
+	<feat title=""></feat>
+	
+</warlock>
+<warlock  id="Ex03" name="Vayl, Consul of Everblight" full_name="Vayl, Consul of Everblight" generation="E" qualification="warlock" fury="6" warbeast_points="6" fa="C">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="14" />
+	<weapons></weapons>
+	<feat title=""></feat>
+	
+</warlock>
+<warlock  id="EW04" name="Rhyas" full_name="Rhyas" generation="P" qualification="warlock" fury="6" warbeast_points="6" fa="C">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="16" />
+	<weapons></weapons>
+	<feat title=""></feat>
+	
+</warlock>
+<warlock  id="EW05" name="Saeryn" full_name="Saeryn" generation="P" qualification="warlock" fury="6" warbeast_points="5" fa="C">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="16" />
+	<weapons></weapons>
+	<feat title=""></feat>
+	
+</warlock>
+<warlock  id="EW06" name="Absylonia" full_name="Absylonia" generation="P" qualification="warlock" fury="6" warbeast_points="5" fa="C">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="16" />
+	<weapons></weapons>
+	<feat title=""></feat>
+	
+</warlock>
+<warlock  id="EW07" name="Bethayne" full_name="Bethayne" generation="E" qualification="warlock" fury="6" warbeast_points="3" fa="C">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="14" />
+	<weapons></weapons>
+	<feat title=""></feat>
+	
+</warlock>
+<warlock  id="EW08" name="Kallus" full_name="Kallus" generation="P" qualification="warlock" fury="6" warbeast_points="5" fa="C">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="18" />
+	<weapons></weapons>
+	<feat title=""></feat>
+	
+</warlock>
+</warlocks>
+<warbeasts>
+<warbeast  id="EB01" name="Harrier" full_name="Harrier" damage_spiral="4-4-5" fury="0" threshold="0" cost="2" qualification="Lesser Warbeast" fa="U">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+	
+</warbeast>
+<warbeast  id="EB02" name="Shredder" full_name="Shredder" damage_spiral="4-4-5" fury="0" threshold="0" cost="2" qualification="Lesser Warbeast" fa="U">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+	
+</warbeast>
+<warbeast  id="EB03" name="Nephilim Protector" full_name="Nephilim Protector" damage_spiral="8-7-7" fury="0" threshold="0" cost="5" qualification="Light Warbeast" fa="U">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+	
+</warbeast>
+<warbeast  id="EB04" name="Nephilim Soldier" full_name="Nephilim Soldier" damage_spiral="8-7-7" fury="0" threshold="0" cost="5" qualification="Light Warbeast" fa="U">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+	
+</warbeast>
+<warbeast  id="EB05" name="Raek" full_name="Raek" damage_spiral="6-7-7" fury="0" threshold="0" cost="4" qualification="Light Warbeast" fa="U">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+	
+</warbeast>
+<warbeast  id="EB06" name="Teraph" full_name="Teraph" damage_spiral="6-7-7" fury="0" threshold="0" cost="5" qualification="Light Warbeast" fa="U">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+	
+</warbeast>
+<warbeast  id="EB07" name="Seraph" full_name="Seraph" damage_spiral="8-9-8" fury="0" threshold="0" cost="8" qualification="Heavy Warbeast" fa="U">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+	
+</warbeast>
+<warbeast  id="EB08" name="Angelius" full_name="Angelius" damage_spiral="8-9-8" fury="0" threshold="0" cost="9" qualification="Heavy Warbeast" fa="U">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+	
+</warbeast>
+<warbeast  id="EB09" name="Carnivean" full_name="Carnivean" damage_spiral="8-12-10" fury="0" threshold="0" cost="11" qualification="Heavy Warbeast" fa="U">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+	
+</warbeast>
+<warbeast  id="EB10" name="Typhon" full_name="Typhon" damage_spiral="10-10-10" fury="0" threshold="0" cost="12" qualification="Heavy Character Warbeast" fa="C">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+	
+</warbeast>
+<warbeast  id="EB11" name="Scythean" full_name="Scythean" damage_spiral="8-12-10" fury="0" threshold="0" cost="9" qualification="Heavy Warbeast" fa="U">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+	
+</warbeast>
+<warbeast  id="EB12" name="Stinger" full_name="Stinger" damage_spiral="4-4-5" fury="0" threshold="0" cost="2" qualification="Lesser Warbeast" fa="U">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+	
+</warbeast>
+<warbeast  id="EB13" name="Ravagore" full_name="Ravagore" damage_spiral="8-12-10" fury="0" threshold="0" cost="10" qualification="Heavy Warbeast" fa="U">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+	
+</warbeast>
+<warbeast  id="EB14" name="Nephilim Bolt Thrower" full_name="Nephilim Bolt Thrower" damage_spiral="8-7-7" fury="0" threshold="0" cost="6" qualification="Light Warbeast" fa="U">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+	
+</warbeast>
+<warbeast  id="EB15" name="Proteus" full_name="Proteus" damage_spiral="8-12-10" fury="0" threshold="0" cost="11" qualification="Heavy Character Warbeast" fa="C">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+	
+</warbeast>
+<warbeast  id="EB16" name="Naga Nightlurker" full_name="Naga Nightlurker" damage_spiral="7-5-7" fury="0" threshold="0" cost="5" qualification="Light Warbeast" fa="U">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+	
+</warbeast>
+<warbeast  id="EB17" name="Archangel" full_name="Archangel" damage_spiral="13-18-15" fury="0" threshold="0" cost="20" qualification="Heavy Warbeast" fa="2">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+	
+</warbeast>
+<warbeast  id="EB18" name="Nephilim Bloodseer" full_name="Nephilim Bloodseer" damage_spiral="8-6-8" fury="0" threshold="0" cost="5" qualification="Light Warbeast" fa="U">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+	
+</warbeast>
+<warbeast  id="EB19" name="Afflictor" full_name="Afflictor" damage_spiral="6-5-9" fury="0" threshold="0" cost="4" qualification="Light Warbeast" fa="U">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+	
+</warbeast>    
+</warbeasts>
+<battleEngines>
+    <battleEngine id="EE01" name="Throne of Everblight" full_name="Throne of Everblight" cost="9" qualification="Solo" fa="2">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="24"/>
+	<weapons></weapons>
+	
+</battleEngine>
+</battleEngines>
+<units>
+    <unit  id="EU01" name="Blighted Nyss Archers" full_name="Blighted Nyss Archers" base_cost="5" baseCount="6" full_cost="8" fullCount="10" qualification="Unit" fa="2">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+	
+</unit>
+<unit  id="EU02" name="Blighted Nyss Legionnaires" full_name="Blighted Nyss Legionnaires" base_cost="4" baseCount="6" full_cost="6" fullCount="10" qualification="Unit" fa="2">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+	
+</unit>
+<unit  id="EU03" name="Blighted Nyss Swordsmen" full_name="Blighted Nyss Swordsmen" base_cost="5" baseCount="6" full_cost="8" fullCount="10" qualification="Unit" fa="2">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+	
+</unit>
+<unit  id="EU04" name="Blighted Nyss Raptors" full_name="Blighted Nyss Raptors" base_cost="6" baseCount="3" full_cost="10" fullCount="5" qualification="Unit" fa="1">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="5"/>
+	<weapons></weapons>
+	
+</unit>
+<unit  id="EU05" name="Blighted Nyss Scather Crew" full_name="Blighted Nyss Scather Crew" base_cost="3" baseCount="3" full_cost="-" fullCount="-" qualification="Unit" fa="2">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+	
+</unit>
+<unit  id="EU06" name="Spawning Vessel" full_name="Spawning Vessel" base_cost="2" baseCount="4" full_cost="3" fullCount="6" qualification="Unit" fa="1">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+	
+</unit>
+<unit  id="EU07" name="Blighted Nyss Striders" full_name="Blighted Nyss Striders" base_cost="6" baseCount="6" full_cost="-" fullCount="-" qualification="Unit" fa="2">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+	
+</unit>
+<unit  id="EU08" name="Blighted Ogrun Warmongers" full_name="Blighted Ogrun Warmongers" base_cost="5" baseCount="3" full_cost="8" fullCount="5" qualification="Unit" fa="3">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="8"/>
+	<weapons></weapons>
+	
+</unit>
+<unit  id="EU09" name="Blighted Ogrun Warspears" full_name="Blighted Ogrun Warspears" base_cost="5" baseCount="3" full_cost="8" fullCount="5" qualification="Unit" fa="3">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"   hitpoints="8"/>
+	<weapons></weapons>
+	
+</unit>
+<unit  id="EU10" name="Blighted Nyss Grotesques" full_name="Blighted Nyss Grotesques" base_cost="4" baseCount="6" full_cost="6" fullCount="10" qualification="Unit" fa="2">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+	
+</unit>
+<unit  id="EU11" name="Blighted Nyss Hex Hunters" full_name="Blighted Nyss Hex Hunters" base_cost="5" baseCount="6" full_cost="8" fullCount="10" qualification="Unit" fa="2">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+	
+</unit>
+<unit  id="EU12" name="Blackfrost Shard" full_name="Blackfrost Shard" base_cost="5" baseCount="3" full_cost="-" fullCount="-" qualification="Character Unit" fa="C">
+	<basestats name="Sevryn" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="5"/>
+	<weapons></weapons>
+	
+<model  id="Rhylyss">
+	<basestats name="Rhylyss" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="5"/>
+</model>
+<model  id="Vysarr">
+	<basestats name="Vysarr" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="5"/>
+</model>
+</unit>
+</units>
+<solos>
+    <solo  id="ES01" name="Blighted Nyss Sorceress and Hellion" full_name="Blighted Nyss Sorceress and Hellion" cost="4" qualification="Solo" fa="2">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="10"/>
+	<weapons></weapons>
+	
+</solo>
+<solo  id="ES02" name="Incubus" full_name="Incubus" cost="5" qualification="Solo" fa="2">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+	
+</solo>
+<solo  id="ES03" name="Blighted Nyss Shepherd" full_name="Blighted Nyss Shepherd" cost="1" qualification="Solo" fa="2">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+	
+</solo>
+<solo  id="ES04" name="Strider Deathstalker" full_name="Strider Deathstalker" cost="2" qualification="Solo" fa="2">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="5"/>
+	<weapons></weapons>
+	
+</solo>
+<solo  id="ES05" name="The Forsaken" full_name="The Forsaken" cost="2" qualification="Solo" fa="2">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="5"/>
+	<weapons></weapons>
+	
+</solo>
+<solo  id="ES06" name="Warmonger War Chief" full_name="Warmonger War Chief" cost="3" qualification="Solo" fa="2">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="8"/>
+	<weapons></weapons>
+	
+</solo>
+<solo  id="ES07" name="Spell Martyr" full_name="Spell Martyr" cost="1" qualification="Solo" fa="1">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+	
+</solo>
+<solo  id="ES08" name="Annyssa Ryvaal, Talon of Everblight" full_name="Annyssa Ryvaal, Talon of Everblight" cost="4" qualification="Character Solo" fa="C">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="8"/>
+	<weapons></weapons>
+	
+</solo>
+<solo  id="ES09" name="Succubus" full_name="Succubus" cost="2" qualification="Solo" fa="1">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="5"/>
+	<weapons></weapons>
+	
+</solo>
+<solo  id="ES10" name="Beast Mistress" full_name="Beast Mistress" cost="3" qualification="Solo" fa="2">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="5"/>
+	<weapons></weapons>
+	
+</solo>
+    
+</solos>		    
+		    
+		    
+		</army>	    
+	    
+		
+
+</armies>
+	
+		    
+</ruleset>

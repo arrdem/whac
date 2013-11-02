@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <fragment
+        android:id="@+id/chronoFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        class="com.schlaf.steam.activities.chrono.ChronoFragment"
+        android:tag="chronoFragment" >
+    </fragment>
+
+    <ViewSwitcher
+        android:id="@+id/viewSwitcher1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="9"
+        android:inAnimation="@android:anim/fade_in"
+        android:outAnimation="@android:anim/fade_out" >
+
+        <LinearLayout
+            android:id="@+id/player1_zone"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:scaleType="center" >
+
+            <FrameLayout
+                android:id="@+id/fragment_player1_placeholder"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                 />
+
+
+            <ImageButton
+                android:id="@+id/toRightButton"
+                android:layout_width="22dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/bordure_gauche"
+                android:onClick="toPlayer2"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:src="@drawable/to_right_icon" >
+            </ImageButton>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/player2_zone"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:scaleType="center" >
+
+            <ImageButton
+                android:id="@+id/toLeftButton"
+                android:layout_width="20dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/bordure_droite"
+                android:onClick="toPlayer1"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:src="@drawable/to_left_icon" >
+            </ImageButton>
+
+            <FrameLayout
+                android:id="@+id/fragment_player2_placeholder"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" />
+            <!-- 
+            <fragment
+                android:id="@+id/battleListFragment"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                class="com.schlaf.steam.activities.battle.BattleListFragment"
+                android:tag="battleListFragment" >
+            </fragment>
+             -->
+        </LinearLayout>
+    </ViewSwitcher>
+
+</LinearLayout>

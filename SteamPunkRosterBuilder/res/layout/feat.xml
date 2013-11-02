@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/texture_beige"
+    android:padding="5dip"
+    android:layout_margin="5dip" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/texture_blanche" >
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="@string/feat"
+            android:textColor="@color/Black" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/featTitle"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="@string/feat"
+            android:textColor="@color/Black" >
+        </TextView>
+    </LinearLayout>
+
+    <TextView
+        	android:id="@+id/featTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="@string/feat"
+            android:textColor="@color/Black" >
+        </TextView>
+
+</LinearLayout>

@@ -1,0 +1,382 @@
+bilethralls fa3 pc5/8
+black ogrun 8pv each medium base
+
+
+VENHHRAX
+SPD STR MAT RAT DEF ARM CMD
+6 7 8 4 15 16   _
+
+fa:c pv:18 wj+6 focus7
+
+VENETHRAX
+SPD STR MAT RAT DEF ARM CMD
+6 7 8 4 15 16   _
+
+When a model is destroyed in Venethrax’s control area, before removing the model from the table center a  3"AOE cloud effect over it. The destroyed model does not provide a corpse token, Models with Eyeless Sight do not ignore these cloud effects, models entering a Charnel Flames AOE suffer 1 point of Fire damage. Charnel Flames lasts for one round
+
+VENETHRAX
+® Terror
+Q Undead
+Caustic Presence [Corrosion] — Corrosion continuous effects that affect enemy models in this models control area cannot expire.
+Cull Soul — This model gains one soul token for each living enemy model destroyed within 2" of it. When this model
+replenishes its focus during your next Control Phase, replace
+catch soul token on it with 1 locus point.
+Dismember — When this model hits a warbeast with a melee attack, roll an additional damage die.
+WYRMBANE
+@ Magical Weapon
+@ Reach
+
+ 
+BLOOD RAIN 3 8 3 1.2 NO YES
+Blood Rain causes corrosion damage. Models hit suffer the Corrosion continuous effect  
+DRAGON SLAYER 3 SELF — - YES NO
+This model gains +2 STR and ARM. Models cannot reave fury from warbeasts destroyed by this model. When this model destroys an enemy model with fury points on it with an attack, this model gains a number of
+focus points equal to the fury points on the destroyed model.
+HELLFIRE 3 10 - 14 NO YES
+A model/unithit by Hellfire must pass a command check or flee.
+LAMENTATION 3 SELF CTRL — YES NO
+Enemy models pay double the focus or fury point cost to cast or upkeep spells while in this models control area.
+SOUL HARVESTER 2 6 — — YES N0
+When target friendly Faction model/unit destroys a living enemy model with a melee attack, this model gains the destroyed model’s soul token regardless of the proximity of other models.
+
+
+
+Corruptor
+6 10 7 5 13 17 
+
+faU pc8 large base
+
+Necrosludge cannon 12 1 - 14 L
+Necrojector 5 15 R open_fist
+
+CORRUPTOR
+Q Immunity: Corrosion
+Attack Type — Each time this model makes a normal melee or ranged attack, choose one of the following abilities:
+· Burster — When this attack boxes a living model, center a 3" AOE on that model, then remove the model from play. Models in the AOE are hit and suffer an unboostable POW 1O corrosion damage roll  
+• Distillation -— When a living enemy model is destroyed by this attack while this model is in its warcaster’s control area, immediately after the attack is resolved the warcaster heals d3 damage points,
+• Psycho Venom —— When a living enemy model is boxed by this attack, it heals 1 damage point. For the rest of the turn, this model's controlling warcaster can channel spells through the enemy model as if it were a model in his battlegroup with the Arc Node ability. At the end ofthe turn, the enemy model is destroyed.
+
+
+Satyxis blood witches
+7 5 6 4 13 13 8 
+
+fa:2 pc:4/6 
+
+Blood razor 5 10 magical
+Horns 3 8 
+
+Gang — When making a melee attack targeting an enemy model in melee range of another model in this unit, this model gains +2 to melee attack and melee damage rolls.
+BLOOD RAZOR
+® Magical Weapon
+Bloodletting — When this model makes an attack with this weapon during its activation, choose one of the following abilities:
+• Blood Mist—If this attack boxes a living model, center a 3" AOE cloud effect on the boxed model and remove it from play. The cloud effect remains in play for one round.
+· Death Strike - If this attack destroys a living model, after resolving the attack choose a model within 4" of this model. The chosen model suffers a damage roll with a POW equal to the STR of the model destroyed by the attack.
+
+Satyxis Blood Hag
+fa:1 pc2 hp:5
+officer stealth
+attachment(blood witches)
+5 5 7 4 13 13 9 
+Blood razor 5 10 magical
+Horns 3 8 
+
+Blood Shadow — Once per game during its unit's activation, this model can use Blood Shadow. At the end of this activation, models in this unit gain Incorporeal for one round.
+Entropic Force — While in this models command range, enemy models lose Tough, cannot heal or be healed, and cannot transfer damage.
+Gang - When making a melee attack targeting an enemy model in melee range of another model in this unit, this model gains +2 to melee attack and melee damage rolls.
+
+BLOOD RAZOR
+® Magical Weapon
+Bloodletting — When this model makes an attack with this weapon during its activation, choose one of the following abilities:
+• Blood Mist—If this attack boxes a living model, center a 3" AOE cloud effect on the boxed model and remove it from play. The cloud effect remains in play for one round.
+· Death Strike - If this attack destroys a living model, after resolving the attack choose a model within 4" of this model. The chosen model suffers a damage roll with a POW equal to the STR of the model destroyed by the attack.
+Dispel - When this weapon hits a model/ unit, upkeep spells on that model/unit immediately expire.
+
+
+
+Satyxis Raider Captain
+7 5 8 6 14 12 9 
+fa:2 pc:2 hp:5
+
+RAIDER CAPTAIN
+® Advance Deployment
+© Commander
+® Pathfinder
+
+Hand cannon 12 1 - 12 
+Lacerator 4 9 reach weapon_master
+Horns 3 8
+
+Desperate Pace [Satyxis Raider] (*Acti0n) — RNG CMD. Target Friendly Satyxis Raider unit. If the Satyxis Raider unit is in range, it gains +2" movement during its activation this turn.
+No Sleeping on the job [Satyxis] - This model and friendly Satyxis models in its command range cannot be knocked down.
+Sprint- At the end of this mode1’s activation, if it destroyed one or more enemy models with melee attacks this activation it can make a full advance.
+LACERATOR
+® Reach
+@ Weapon Master
+chain weapon — This attack ignores the Buckler and Shield weapon qualides and Shield Wall,
+Critical Knockdown — On a critical hit, the model hit is knocked down.
+Feedback - If this weapon damages a warjack that is part of a attlegroup, its controller suffers 1 damage point.
+
+
+
+
+
+Warwitch Siren
+7 5 5 4 15 13 9 
+fa:2 pc:2 hp:5
+
+stealth
+
+SIREN
+® Stealth
+Magic Ability [7]
+• Power Booster (*A¤ti0n) — RNG 5. Target friendly Faction warjack, It the target warjack is in range and has no focus points, it gains 1 focus point. It the warjack is Disrupted, it is no longer Disrupted.
+· Seduction (*A•:ti0n) - Take control of a living enemy non-warcaster, non-warlock warrior model B2B with this model. You can immediately make a full advance with the enemy model followed by a normal melee attack, then Seduction expires. The enemy model cannot be targeted by free strikes during this movement.
+• Venom (*Attack) - Venom is a RNG SP 8 magic attack. Models hit suffer a POW 10 corrosion damage roll and the Corrosion continuous effect  
+
+Parry - This model cannot be targeted by free strikes.
+
+SHADOW BLADE
+® Magical Weapon
+@ Reach
+Shadow Bind —· A model hit by this weapon suffers —3 DEF and when it advances it cannot move except to change facing. Shadow Bind expires after one round.
+
+Shadow blade 6 11 
+
+
+
+
+
+
+
+Lord Exhumator Scaverous
+Cryx warcaster
+6 8 6 4 14 17 7
+fa:C wj+5 hp18 focus7
+
+feat : Black Gate
+
+While in this model's control area, friendly Faction models gain boosted magic attack rolls. When Scaverous casts a spell, reduce the COST of the spell by 1. When an enemy model casts a spell or uses an animus while in Scaverous' control area, increase the COST by 1. Black Gate lasts for one round,
+
+SCAVEROUS
+® Terror
+Q Undead
+Cull Soul - This model gains one soul token for each living enemy model destroyed within 2' of lt. When this model replenishes its focus during your next Control Phase, replace each soul token on it with 1 focus point.
+AVERNUS
+@ Magical weapon
+@ Reach
+Thresher (*Atfack) — This model makes one melee attack with this weapon against each model in its LOS and this weapon's melee range.
+
+avernus 6 14 
+
+DEATH WARD 2 6 - - YES NO
+Target friendly Faction model/unit gains +2 ARM. If an affected warjack is damaged, you choose which column suffers the damage.
+EXCARNATE 3 10 — 13 N O YES
+When a living enemy warrior model is boxed by Excarnate, remove it from play, You can then add one Grunt to a friendly Faction small·based undead unit in this model's control area. The Grunt must be placed in formation and within 3" of this model
+FEAST OF WORMS 4 10 4 12 YES YES
+While in the AOE, enemy models suffer -2 ARM. The AOE remains in play as long as upkeep is paid
+GHOST WALK 3 6 - - NO NO
+Target friendly model/unit gains Ghostly for one turn. (A model with Ghostly can advance through terrain and obstacles without penalty and can advance through obstructions if it has enough movement to move
+completely past them. An affected model cannot be targeted by free strikes.)
+ICY GRIP 2 8 - - YES YES
+Target enemy warrior model/unit without Immunity: Cold suffers -2 DEF and cannot run or make special attack.
+TELEKINESIS 2 8 - — NO *:
+Place target model completely within 2" of it's current location. When Telekinesis targets an enemy model, it is an offensive spell and requires a magic attack roll. A model can be affected by Telekinesis only once per turn.
+
+
+Scavenger
+cryx bonejack
+7 7 7 4 16 13 
+
+fa:U pc:4 medium base
+
+finisher : this model gains an additional die on damage rolls against damaged models
+Flight : 
+Sprint
+
+snapping jaws H 4 11
+
+
+
+
+
+DESECRATOR
+cryx helljack
+5 12 6 5 12 18
+faU pc9 large base
+
+Plague bringer L 9 1 4 12 corrosion
+Scatter - This attacks AOE remains in play for one round. Enemy models and non-Faction friendly models entering or ending their activations in the AOE suffer 1 point of corrosion damage.
+
+
+Vivisector R 5 17
+Critical Shred — On a critical hit, after the attack is resolved this model can make one additional attack against the model hit.
+
+@ pathfinder
+Accumulator [Bane] ~ When this model begins its activation within 3" of one or more friendly Bane models, it is allocated 1 focus point.
+Amphibious — This model ignores the effects of deep and shallow water and can move through them without penalty. While completely in deep water, it cannot be targeted by ranged or magic attacks and can make attacks only against other models in deep water. While completely in deep water, this model does not block LOS.
+Steady -This model cannot be knocked down.
+
+
+
+Wraith Engine
+cryx battle engine
+terror undead
+6 10 7 4 10 18 
+
+fa2 pc9 hp20 huge base
+ 
+Scything blade L 5 15 reach
+Scything blade R 5 15 reach
+
+Apparition - During your Control Phase, place this model anywhere completely within 2" of its current location.
+Dark Shroud - While in this model's melee range, enemy models suffer -2 ARM. 
+Ectoplasm — During this model's activation, it can spend one or more soul tokens to place 3" AOE cloud effects on the table anywhere completely within its command range, one AOE per soul token spent. The cloud effect remains in play for one round.
+
+Soul Collector- This model gains one soul token when a living enemy model is destroyed in its command range. This model can have up to three soul tokens at a time. During its activation, this model can spend soul tokens to gain additional attacks or to boost attack or damage rolls at one token per attack or boost 
+Unhallowed — While another friendly Faction model is Incorporeal and in this model’s command range, the other friendly Faction model gains +2 ARM and does not suffer blast damage.
+Wraith Walker-· At the end of your Control Phase, this model can gain Incorporeal for one round unless it gained Incorporeal during the last round.
+
+
+Asphyxious
+6 8 6 3 15 17 9 
+foc7 faC wj+4 hp18
+terror undead
+
+Rites of Shadow
+When an enemy model is forced, casts a spell, and/ or spends 1 
+or more focus or fury points while in Asphyxious' control area, 
+Asphyxious heals d3 damage points and gains one soul token. 
+Rites of Shadow lasts for one round. 
+
+Cull Soul- This model gains one soul token for each living
+enemy model destroyed within 2" of it. When this model
+replenishes its focus during your next Control Phase, replace
+each soul token on it with 1 focus point.
+
+
+Daimonion 8 16 magical reach
+Blood Boon- Once per activation, immediately after resolving
+an attack in which it destroyed a living enemy model with this
+weapon, this model can cast a spell with COST 3 or less without
+spending focus.
+
+ASHEN VEIL
+2 6 - - YES NO
+Target friendly model / unit gains concealment. Living enemy models
+suffer -2 to attack rolls while within 2" of an affected model.
+
+BONE SHAKER
+2
+8
+12
+NO YES
+When this spell boxes a living or undead non-warcaste1~ non-warlock
+enemy warrior model, you can immediately make a full advance with the
+enemy model followed by a normal melee attack, then the boxed model
+is removed from play. The boxed model cannot be targeted by free strikes
+during this movement.
+
+CARNAGE
+3
+SELF CTRL
+NO NO
+Friendly Faction models gain +2 to melee attack rolls against enemy
+models in this model's control area. Carnage lasts for one turn.
+
+HEX BLAST
+3
+10
+3
+13
+NO YES
+Enemy upkeep spells and animi cin the model / unit directly hit by Hex
+Blast immediately expire.
+
+MOBILITY 2 SELF CTRL - NO NO
+Models in this model's battlegroup currently in its control area gain +2
+SPD and Pathfinder ~ for one turn.
+
+SCYTHING TOUCH 2 6 - - YES NO
+Target friendly model / unit gains +2 to melee attack damage rolls. Affected
+models gain Critical Corrosion
+on their normal melee attacks.
+
+tactical tips
+BoNE SHAKER- Because a boxed model is removed from play
+before being destroyed, it does not generate a soul or corpse token.
+Cuu Som-A model can have more focus points than its FOCUS
+as a result of Cull Soul.
+·
+HEx BLAST- Because they expire immediately, upkeep spells and
+animi that had an effect when the model I unit was hit or damaged
+will have no effect.
+RITEs OF SHADOW- Cull Soul converts tokens gained from Rites
+of Shadow into focus points. If a model casts a spell by spending
+focus or fury, Rites of Shadow triggers only once.
+
+
+
+
+Vociferon
+6 5 5 3 13 16 9 
+arc node commander undead
+
+FIELD ALLOWANCE C
+SMALL BASE
+
+Claws 3 8
+
+DAMAGE 5
+Arcane Extension [Asphyxious the Hellbringer] 
+- During your Control Phase, while this model is in Asphyxious the Hellbringer's control area
+Asphyxious the Hellbringer
+can allocate focus to warjacksin-ru5battlegroup that are in this
+model's command range.
+Attached to [Asphyxious the Hellbringer] -This model is attached to Asphyxious the Hellbringer for the rest of the game. Each warcaster can have only one model attached to it.
+Companion [Asphyxious the Hellbringer] -This model is included in any army that includes Asphyxious the Hellbringer. I£ Asphyxious is destroyed or removed from play, remove this model from play. This model is part of Asphyxious' battlegroup.
+Death Harvest- If this model is in its warcaster' s control range during your Maintenance Phase, you can take any number of soul tokens from this model and place them on the warcaster.
+Ghost Shield- This model gains +1 ARM for each soul token currently on it.
+Soul Collector- This model gains one soul token when a living enemy model is destroyed in its command range. This model can have up to three soul tokens at a time. During its activation, this model can spend soul tokens to gain additional attacks or to boost attack or damage rolls at one token per attack or boost.
+
+
+KRAKEN
+5 15 6 5 10 19
+fa2 pc19 huge base
+
+Hellblaster S 16 1 4 14  
+Flayer - 12 1 - 12
+
+Harvester L 3 18
+Harvester R 3 18  
+
+Amphibious- This model ignores the effects of deep and shallow water and can move through them without penalty. While completely in deep water, it cannot be targeted by ranged or magic attacks and can make attacks only against other models in deep water. While completely in deep water, this model does not block LOS.
+
+Collector - If this model has fewer than three corpse tokens when it boxes a living enemy model as the result of a melee attack, remove the boxed model from play and give this model a corpse token. During your Control Phase, you can spend up to three corpse tokens to allocate this model1 focus point for each corpse token spent.
+
+Kill Shot- Once per activation, when a living enemy model is destroyed or removed from play as a result of a melee attack made by this model during its activation, immediately after that attack is resolved this model can make one normal ranged attack ignoring ROF.
+Meat-Fueled- This model gains+ 1 STR for each corpse token on it.
+HELL BLASTER
+Doom Driver - For each corpse token on this model, this weapon gains +1 to damage rolls.
+FLAYER
+Rapid Fire [d3+1]- When you decide to make initial attacks with this weapon at the beginning of this model's combat action, roll d3+ 1. The total rolled is the number of initial attacks this model can make with this weapon during the combat action, ignoring ROF.
+HARVESTER
+{i) Open Fist
+Chain Strike -This weapon has a 4" melee range during this
+model's activation.
+Chain Weapon- This attack ignores the Buckler and Shield
+weapon qualities and Shield Wall.
+
+
+TACTICAL TIPS
+I AMPHIBIOUS- This model can attack other models that are in
+deep water.
+'
+--...___
+CHAIN WEAPON- Chain weapon does not modify the melee range
+of power attacks made by this model.
+CoLLECTOR - Because a boxed model is removed from play before
+being destroyed, it does not generate a soul token. This model
+cannot exceed its focus allocation limit as a result of Collector.
+
+
+

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_collapse"
+        android:icon="@drawable/collapse"
+        android:showAsAction="always"
+        android:title="Collapse"/>
+    
+    <item
+        android:id="@+id/menu_save"
+        android:icon="@drawable/ic_menu_save"
+        android:showAsAction="always"
+        android:title="Save"/>
+    <item
+        android:id="@+id/menu_battle"
+        android:icon="@drawable/battle_icon"
+        android:showAsAction="ifRoom"
+        android:title="Launch battle"/>
+    <item
+        android:id="@+id/menu_tiers"
+        android:icon="@drawable/ic_menu_tier"
+        android:showAsAction="ifRoom"
+        android:title="Choose Tier"/>
+    <item
+        android:id="@+id/menu_contract"
+        android:icon="@drawable/sceau"
+        android:showAsAction="ifRoom"
+        android:title="Choose Contract"/>
+    <item
+        android:id="@+id/menu_save_as"
+        android:icon="@drawable/ic_menu_save"
+        android:title="Save as ..."/>
+    <item
+        android:id="@+id/menu_cancel"
+        android:icon="@drawable/ic_menu_close_clear_cancel"
+        android:title="Clear list"/>
+    <item
+        android:id="@+id/menu_prefs"
+        android:icon="@drawable/ic_menu_preferences"
+        android:showAsAction="ifRoom"
+        android:title="Army settings"/>
+    
+    <item
+        android:id="@+id/menu_card_reference"
+        android:icon="@drawable/stat_card"
+        android:showAsAction="ifRoom"
+        android:title="Search card library"/>
+    
+    <item
+        android:id="@+id/menu_more"
+        android:icon="@drawable/abs__ic_menu_moreoverflow_normal_holo_dark"
+        android:showAsAction="always"
+        android:title="More"/>
+
+</menu>

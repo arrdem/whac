@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<contractslist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="contracts_schema.xsd" >
+
+    <contract
+        name="Four star syndicate"
+        contractId="four_stars"
+        faction="faction_mercs" 
+        description="Models that work for Cryx, Khador, and the following: Rhupert Carvolo and Sam MacHorne &amp; the Devil Dogs.">
+        <only>
+            <!-- casters -->
+            <entry id="Mw01" />
+            <entry id="Mx01" />
+            <entry id="MW02" />
+            <entry id="MW03" />
+            <entry id="MW05" />
+            <entry id="MW06" />
+            <entry id="MW08" />
+            <entry id="MW09" />
+            <entry id="MW10" />
+
+           	<!-- jacks -->
+           	
+           	<entry id="MJ02" />
+			<entry id="MJ03" />
+            <entry id="MJ04" />
+            <entry id="MJ05" />
+            <entry id="MJ06" />
+            <entry id="MJ07" />
+            <entry id="MJ08" />
+            <entry id="MJ09" />
+            <entry id="MJ10" />
+            <entry id="MJ11" />
+            <entry id="MJ12" />
+            <entry id="MJ13" />
+            <entry id="MJ14" />
+            <entry id="MJ15" />
+            <entry id="MJ16" />
+            <entry id="MJ17" />
+            <entry id="MJ18" />
+            <entry id="YJ17_mercs" />
+            
+            <!-- units -->
+            <entry id="MU01" />
+            <entry id="MU02" />
+            <entry id="MU03" />
+            <entry id="MU04" />
+            <entry id="MU05" />
+            <entry id="MU06" />
+            <entry id="MU08" />
+            <entry id="MU09" />
+            <entry id="MU11" />
+            <entry id="MU12" />
+            <entry id="MU13" />
+            <entry id="MU14" />
+            <entry id="MU15" />
+            <entry id="MU16" />
+            <entry id="MU18" />
+            <entry id="KU15_mercs"/>
+            <entry id="KU18_mercs"/>
+            <!-- ua -->
+            <entry id="MA01"/>
+            <entry id="MA02"/>
+            <entry id="MA03"/>
+            <entry id="KA04_mercs"/>
+            
+            
+			<!-- solos -->
+            <entry id="IW03_mercs" />
+            <entry id="Brine_mercs" />
+            <entry id="IW04_mercs" />
+            <entry id="Snapjaw_mercs" />
+            <entry id="MS01" />
+            <entry id="MS02" />
+            <entry id="MS03" />
+            <entry id="MS04" />
+            <entry id="MS05" />
+            <entry id="MS06" />
+            <entry id="MS07" />
+            <entry id="MS08" />
+            <entry id="MS09" />
+            <entry id="MS10" />
+            <entry id="MS11" />
+            <entry id="MS12" />
+            <entry id="MS13" />
+            <entry id="MS15" />
+            <entry id="MS16" />
+            <entry id="MS17" />
+            <entry id="MS18" />
+            <entry id="MS20" />
+            <entry id="MS21" />
+            <entry id="MS22" />
+            <entry id="MS23" />
+            <entry id="MS24" />
+            <entry id="IS01_mercs" />
+            <entry id="IS03_mercs" />
+            <entry id="IS04_mercs" />
+            <entry id="IS06_mercs" />
+            <entry id="IS12_mercs" />
+        </only>
+        <benefits>
+            <ingameeffect label="Sorry, no benefit :-("/>
+        </benefits>
+    </contract>
+    
+    <contract
+        name="Highborn Covenant"
+        contractId="Highborn_Covenant"
+        faction="faction_mercs" 
+        description="The Highborn Covenant represents the resistance of Llael to the Khadoran invasion.">
+        <only>
+            <!-- casters -->
+            <!-- casters -->
+            <entry id="MW02" />
+            <entry id="MW03" />
+            <entry id="MW04" />
+            <entry id="MW05" />
+            <entry id="MW06" />
+            <entry id="MW08" />
+            <entry id="MW09" />
+            <entry id="MW10" />
+            <entry id="YX09_mercs" />
+
+           	<!-- jacks -->
+           	
+           	<entry id="MJ02" />
+			<entry id="MJ03" />
+            <entry id="MJ04" />
+            <entry id="MJ05" />
+            <entry id="MJ06" />
+            <entry id="MJ07" />
+            <entry id="MJ08" />
+            <entry id="MJ09" />
+            <entry id="MJ10" />
+            <entry id="MJ11" />
+            <entry id="MJ12" />
+            <entry id="MJ13" />
+            <entry id="MJ14" />
+            <entry id="MJ15" />
+            <entry id="MJ16" />
+            <entry id="MJ17" />
+            <entry id="MJ18" />
+            <entry id="YJ17_mercs" />
+            
+            <!-- units -->
+            <entry id="MU01" />
+            <entry id="MU02" />
+            <entry id="MU03" />
+            <entry id="MU05" />
+            <entry id="MU06" />
+            <entry id="MU07" />
+            <entry id="MU08" />
+            <entry id="MU09" />
+            <entry id="MU11" />
+            <entry id="MU12" />
+            <entry id="MU13" />
+            <entry id="MU14" />
+            <entry id="MU15" />
+            <entry id="MU02" />
+            <entry id="MU16" />
+            <entry id="YU01_mercs"/>
+            <entry id="YU12_mercs" />
+            <entry id="YU02_mercs"/>
+            
+            <entry id="MU17" />
+            <entry id="MU18" />
+            <entry id="MU19" />
+            <!-- ua -->
+            <entry id="MA01"/>
+            <entry id="MA02"/>
+            <entry id="YA06_mercs"/>
+            <entry id="YA01_mercs"/>
+            <entry id="YA07_mercs"/>
+            <entry id="MA03"/>
+            
+			<!-- solos -->
+            <entry id="IW03_mercs" />
+            <entry id="Brine_mercs" />
+            <entry id="MS01" />
+            <entry id="MS02" />
+            <entry id="MS03" />
+            <entry id="MS04" />
+            <entry id="MS05" />
+            <entry id="MS07" />
+            <entry id="MS08" />
+            <entry id="MS09" />
+            <entry id="MS10" />
+            <entry id="MS11" />
+            <entry id="MS12" />
+            <entry id="MS13" />
+            <entry id="MS14" />
+            <entry id="MS16" />
+            <entry id="MS17" />
+            <entry id="MS18" />
+            <entry id="MS19" />
+            <entry id="MS20" />
+            <entry id="MS21" />
+            <entry id="MS22" />
+            <entry id="MS23" />
+            <entry id="MS24" />
+            <entry id="IS01_mercs" />
+            <entry id="IS03_mercs" />
+            <entry id="IS04_mercs" />
+            <entry id="IS05_mercs" />
+            <entry id="IS12_mercs" />
+            
+        </only>
+        <benefits>
+            <ingameeffect label="all solos included in the army gain Advance Deployment"/>
+        </benefits>
+    </contract>
+    
+    <contract
+        name="Talion Charter"
+        contractId="Talion_Charter"
+        faction="faction_mercs" 
+        description="If you don't like a bunch of pirates, then you won't like the Talion Charter">
+        <only>
+            <!-- casters -->
+            <!-- casters -->
+            <entry id="MW05" />
+            <entry id="MW06" />
+            <entry id="MW07" />
+
+           	<!-- jacks -->
+           	
+           	<entry id="MJ02" />
+			<entry id="MJ03" />
+            <entry id="MJ04" />
+            <entry id="MJ09" />
+            <entry id="MJ10" />
+            <entry id="MJ11" />
+            <entry id="MJ12" />
+            <entry id="MJ13" />
+            <entry id="MJ16" />
+            <entry id="MJ17" />
+            <entry id="MJ18" />
+            
+            <!-- units -->
+            <entry id="MU10" />
+            <entry id="MU11" />
+            <entry id="MU12" />
+            <entry id="MU13" />
+            <entry id="MU14" />
+            <!-- ua -->
+            <entry id="MA01"/>
+            <entry id="MA02"/>
+            
+			<!-- solos -->
+            <entry id="MS07" />
+            <entry id="MS08" />
+            <entry id="MS09" />
+            <entry id="MS10" />
+            <entry id="MS11" />
+            <entry id="MS12" />
+            <entry id="MS13" />
+            
+        </only>
+        <benefits>
+            <ingameeffect label="all solos included in the army gain Advance Deployment"/>
+        </benefits>
+    </contract>
+     <contract
+        name="Searforge Commission"
+        contractId="Searforge_Commission"
+        faction="faction_mercs" 
+        description="The Searforge Commission is the contract taken to protect the interests of the nation of Rhul.">
+        <only>
+            <!-- casters -->
+            <entry id="MW02" />
+            <entry id="MW03" />
+            <entry id="MW10" />
+            <!-- jacks -->
+            <entry id="MJ05" />
+            <entry id="MJ06" />
+            <entry id="MJ07" />
+            <entry id="MJ08" />
+            <entry id="MJ14" />
+            <entry id="MJ15" />
+            <!-- units -->
+            <entry id="MU02" />
+            <entry id="MA03" />
+            <entry id="MU06" />
+            <entry id="MU07" />
+            <entry id="MU17" />
+            <entry id="MU19" />
+            <entry id="MU52" />
+			<!-- solos -->
+            <entry id="MS05" />
+            <entry id="MS12" />
+            <entry id="MS17" />
+            <entry id="IS03_mercs" />
+            <entry id="IW01_mercs"/>
+            <entry id="Lug_mercs"/>
+        </only>
+        <benefits>
+            <ingameeffect label="all solos included in the army gain Advance Deployment"/>
+            <alterFA entryId="MU06" bonus="1"/>
+            <alterFA entryId="MA03" bonus="1"/>
+            <alterFA entryId="MU07" bonus="1"/>
+            <alterFA entryId="MU17" bonus="1"/>
+            <alterFA entryId="MU19" bonus="1"/>
+            <alterFA entryId="MS05" bonus="1"/>
+        </benefits>
+    </contract>   
+    
+    <contract
+        name="Blindwater Congregation"
+        contractId="Blindwater_Congregation"
+        faction="faction_minions" 
+        description="only croco!">
+
+        <only>
+            <entry id="IW06" />
+            <entry id="IW07" />
+            <entry id="IW09" />
+            <entry id="IW12" />
+            
+            
+            <entry id="IB03" />
+            <entry id="IB04" />
+            <entry id="IB05" />
+            <entry id="IB07" />
+            <entry id="IB08" />
+            
+            <entry id="IU01" />
+            <entry id="IU04" />
+            <entry id="IU05" />
+            <entry id="IU08" />
+            
+            <entry id="IS02" />
+            <entry id="IS05_minion" />
+            <entry id="IS07" />
+            <entry id="IS08" />
+            <entry id="IS09" />
+            <entry id="IS11" />
+            
+            <entry id="IW04_minion"/>
+            <entry id="Snapjaw_minion"/>
+            
+        </only>
+        <benefits>
+            <ingameeffect label="the FA of non-character Gatormen increases by 1 ; you can place two AOE 3 shallow water templates 20&quot; from the back of your deployment zone"/>
+            <alterFA entryId="IU04" bonus="1"/>
+            <alterFA entryId="IU08" bonus="1"/>
+            <alterFA entryId="IS11" bonus="1"/>
+        </benefits>
+    </contract>
+    
+    <contract
+        name="Thornfall Alliance"
+        contractId="Thornfall_Alliance"
+        faction="faction_minions" 
+        description="Ever wondered what it would be like to run an army of pigs? Well, it's your lucky day!">
+
+        <only>
+            <entry id="IW05" />
+            <entry id="IW08" />
+            <entry id="IW10" />
+            <entry id="IW11" />
+            <entry id="IB01" />
+            <entry id="IB02" />
+            <entry id="IB06" />
+            <entry id="IB09" />
+            <entry id="IU02" />
+            <entry id="IU03" />
+            <entry id="IU06" />
+            <entry id="IU07" />
+            <entry id="IS01_minion" />
+            <entry id="IS03_minion" />
+            <entry id="IS05_minion" />
+            <entry id="IS06_minion" />
+            <entry id="IS10" />
+            <entry id="IW03_minion" />
+            <entry id="Brine_minion"/>
+        </only>
+        <benefits>
+            <alterFA entryId="IU02" bonus="1"/>
+            <alterFA entryId="IU03" bonus="1"/>
+            <alterFA entryId="IU06" bonus="1"/>
+            <alterFA entryId="IU07" bonus="1"/>
+        </benefits>
+    </contract>
+    
+    
+</contractslist>

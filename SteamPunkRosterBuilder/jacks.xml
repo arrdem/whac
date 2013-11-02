@@ -1,0 +1,43 @@
+<warjack id="REDEEMER" name="REDEEMER" full_name="REDEEMER" qualification="PROTECTORATE LIGHT WARJACK" fa="U" cost="6" damage_grid="xxxxxxx....x.......L..R.LLMCRRxMMCCx">
+    <basestats name="REDEEMER" spd="5" str="9" mat="6" rat="5" def="12" arm="17" cmd="0" baseSize="MEDIUM" livingStatus="CONSTRUCT">
+    </basestats>
+     <weapons>
+		<melee_weapon name="Battle mace" pow="4"  p_plus_s="13" location="R" />
+		<ranged_weapon name="Skyhammer" rng="16" rof="3" aoe="3" pow="12" location="L"/>
+	</weapons>
+    <full_text><![CDATA[
+<u><B>Skyhammer</B></u><br>
+<B>Inaccurate</B> - This model suffers -4 on attack rolls with this weapon. 
+    ]]></full_text>
+    </warjack>
+
+<warjack id="REPENTER" name="REPENTER" full_name="REPENTER" qualification="PROTECTORATE LIGHT WARJACK" fa="U" cost="4" damage_grid="xxxxxxx....x.......L..R.LLMCRRxMMCCx">
+    <basestats name="REPENTER" spd="5" str="9" mat="6" rat="5" def="12" arm="17" cmd="0" baseSize="MEDIUM" livingStatus="CONSTRUCT">
+    </basestats>
+     <weapons>
+		<melee_weapon name="War flail" pow="4"  p_plus_s="13" location="R"/>
+		<ranged_weapon name="Flame Thrower" rng="SP8" rof="1" aoe="-" pow="12" location="L" fire="true" continuous_fire="true"/>
+	</weapons>
+    <full_text><![CDATA[
+<u><B>War flail</B></u><br>
+<B>Chain weapon</B> - This attack ignores shields and Shield Wall 
+    ]]></full_text>
+                </warjack>
+                
+<warjack id="revenger" name="Revenger" full_name="Revenger" qualification="PROTECTORATE LIGHT WARJACK" fa="U" cost="6" damage_grid="xx..xxx....x.......LAAR.LLMCRRxMMCCx">
+    <basestats name="Revenger" spd="4" str="11" mat="6" rat="4" def="10" arm="19" cmd="0" baseSize="LARGE" livingStatus="CONSTRUCT">
+    </basestats>
+    <weapons>
+    	<melee_weapon name="Repulsor shield" pow="1" p_plus_s="10" shield="true" location="L"/>
+    	<melee_weapon name="Halberd" pow="4" p_plus_s="13" reach="true" location="R"/>
+	</weapons>
+          <full_text>
+<![CDATA[
+<u><B>Repulsor shield</B></u><br>
+<B>Repel</B> - When this model hits with this weapon during its activation, the model hit is pushed 1? directly away from this model.
+When this model is hit with a melee attack made by a model in its front arc, after the attack is resolved the attacking model is
+pushed 1? directly away from this model. This model loses Repel while this weapon system is crippled or locked.<br>
+<u><B>Halberd</B></u><br>
+<B>Powerful Charge</B> - This model gains +2 to charge attack rolls with this weapon.]]>                    
+    </full_text>
+</warjack>
