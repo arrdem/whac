@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.schlaf.steam"
-    android:versionCode="9"
-    android:versionName="1.0.6" >
+    android:versionCode="10"
+    android:versionName="1.0.7" >
     
 <!--
 1.0.3 - 
@@ -21,6 +21,13 @@ export battle results as CSV file
 added ranking officer
 added forgotten cygnar entries (murdoch, storm strider)
 change clock icon (stop stealing graphism from internet, it's bad!)
+
+1.0.7
+added bluetooth support
+corrected ordering in list creation
+corrected "FA:U" bonus in tiers
+enhanced display of battle entries (ordering, def/arm)
+corrected spinner "popup keyboard" bug
  -->    
 
     <uses-sdk
@@ -181,6 +188,7 @@ change clock icon (stop stealing graphism from internet, it's bad!)
                   android:theme="@style/Theme.Sherlock"
                   android:configChanges="orientation|keyboardHidden" />
         <service android:name=".bluetooth.MyBeddernetService"></service>
+        <activity android:theme="@style/WhacTheme" android:name=".activities.collection.MyCollectionActivity"></activity>
     </application>
 
 </manifest>

@@ -67,11 +67,22 @@ public class SelectionUnit extends SelectionEntry implements Serializable {
 		// FA(<font color=\"white\"><B>2</B></font>) &nbsp Cost(<font color=\"white\"><B>5/8</B></font>
 		
 		StringBuffer sb = new StringBuffer();
-		sb.append("<font color=\"white\">");
-		if (isVariableSize()) {
-			sb.append(minCost).append("/").append(maxCost);
+		
+		int discount = 0;
+		if (alteredCost != baseCost) {
+			discount = baseCost - alteredCost;
+		}
+		
+		if (discount > 0) {
+			sb.append("<font color=\"blue\">");
 		} else {
-			sb.append(minCost);
+			sb.append("<font color=\"white\">");
+		}
+		
+		if (isVariableSize()) {
+			sb.append(minCost-discount).append("/").append(maxCost-discount);
+		} else {
+			sb.append(minCost-discount);
 		}
 		sb.append("</font><font color=\"grey\">PC</font>");
 		return sb.toString();

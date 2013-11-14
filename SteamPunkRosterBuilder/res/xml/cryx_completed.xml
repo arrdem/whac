@@ -1019,12 +1019,12 @@ When checking to see if this model is in its controller’s control area for foc
 					<basestats name="Kraken" spd="5" str="15" mat="6"
 						rat="5" def="10" arm="19" cmd="0" />
 					<weapons>
-						<melee_weapon name="Harvester" pow="3" p_plus_s="18" location="R" open_fist="true">
-						    <capacity title="CHAIN WEAPON">This attack ignores shields and Shield Wall.</capacity>
+						<melee_weapon name="Harvester" pow="3" p_plus_s="18" location="R" open_fist="true" chain="true">
+						    <capacity title="CHAIN WEAPON">This attack ignores the Buckler and Shield weapon qualities and Shield Wall.</capacity>
 		                    <capacity title="CHAIN STRIKE">This weapon has a 4" melee range during this model's activation.		                    </capacity>
 						    </melee_weapon>
-						<melee_weapon name="Harvester" pow="3" p_plus_s="18" location="R" open_fist="true">
-						    <capacity title="CHAIN WEAPON">This attack ignores shields and Shield Wall.</capacity>
+						<melee_weapon name="Harvester" pow="3" p_plus_s="18" location="R" open_fist="true" chain="true">
+						    <capacity title="CHAIN WEAPON">This attack ignores the Buckler and Shield weapon qualities and Shield Wall.</capacity>
 		                    <capacity title="CHAIN STRIKE">This weapon has a 4" melee range during this model's activation.		                    </capacity>
 						    </melee_weapon>
 						<ranged_weapon name="Hellblaster" rng="16" rof="1"

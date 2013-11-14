@@ -6,37 +6,37 @@
         <warcaster id="RW01" name="Adeptis Rahn Shyeel" full_name="Adeptis Rahn Shyeel" generation="P" qualification="warcaster" focus="6" warjack_points="6" fa="C">
           <basestats name="Adeptis Rahn Shyeel" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="16" />
           <weapons />
-          <feat />
+          <feat title=""></feat>
         </warcaster>
         <warcaster id="Rw02" name="Dawnlord Vyros" full_name="Dawnlord Vyros" generation="P" qualification="warcaster" focus="6" warjack_points="6" fa="C">
           <basestats name="Dawnlord Vyros" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="18" />
           <weapons />
-          <feat />
+          <feat title=""></feat>
         </warcaster>
         <warcaster id="Rx02" name="Vyros, Incissar of the Dawnguard" full_name="Vyros, Incissar of the Dawnguard" generation="E" qualification="warcaster" focus="6" warjack_points="5" fa="C">
           <basestats name="Vyros, Incissar of the Dawnguard" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="18" />
           <weapons />
-          <feat />
+          <feat title=""></feat>
         </warcaster>
         <warcaster id="RW03" name="Garryth, Blade of Retribution" full_name="Garryth, Blade of Retribution" generation="P" qualification="warcaster" focus="6" warjack_points="5" fa="C">
           <basestats name="Garryth, Blade of Retribution" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="16" />
           <weapons />
-          <feat />
+          <feat title=""></feat>
         </warcaster>
         <warcaster id="RW04" name="Kaelyssa, Night's Whisper" full_name="Kaelyssa, Night's Whisper" generation="P" qualification="warcaster" focus="6" warjack_points="7" fa="C">
           <basestats name="Kaelyssa, Night's Whisper" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="16" />
           <weapons />
-          <feat />
+          <feat title=""></feat>
         </warcaster>
         <warcaster id="RW05" name="Ravyn, Eternal Light" full_name="Ravyn, Eternal Light" generation="P" qualification="warcaster" focus="6" warjack_points="6" fa="C">
           <basestats name="Ravyn, Eternal Light" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="16" />
           <weapons />
-          <feat />
+          <feat title=""></feat>
         </warcaster>
         <warcaster id="RW06" name="Ossyan" full_name="Ossyan" generation="P" qualification="warcaster" focus="6" warjack_points="6" fa="C">
           <basestats name="Ossyan" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="16" />
           <weapons />
-          <feat />
+          <feat title=""></feat>
         </warcaster>
       </warcasters>
       <warjacks>
@@ -90,7 +90,7 @@
         </warjack>
       </warjacks>
       <colossals>
-        <colossal id="RJ13" name="Hyperion" full_name="Hyperion" damage_grid_left="xxxxxxxxx...x..GGG.LLGCCLLCCCCLCMMMM" damage_grid_right="xxxxxx...xxxGGG..xCCGRR.CCCCRRMMMMCR" cost="18" qualification="Heavy Warjack" fa="2">
+        <colossal id="RJ13" name="Hyperion" full_name="Hyperion" damage_grid_left="xxxxxxxxx...x..GGG.LLGCCLLCCCCLCMMMM" damage_grid_right="xxxxxx...xxxGGG..xCCGRR.CCCCRRMMMMCR" cost="18" qualification="Heavy Warjack" fa="2" is_myrmidon="true" force_field="12">
           <basestats name="Hyperion" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
           <weapons />
         </colossal>
@@ -177,9 +177,18 @@
         </unit>
       </units>
       <solos>
-        <solo id="RA04" name="Soulless Escort" full_name="Soulless Escort" fa="3" cost="1" qualification="Unit attachment">
+        <solo id="RA04" name="Soulless Escort" full_name="Soulless Escort" fa="3" cost="1" qualification="Unit attachment" unit_attachment="true">
           <basestats name="Soulless Escort" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
           <weapons />
+			<restricted_to id="RU01"/>               
+			<restricted_to id="RU02"/>               
+			<restricted_to id="RU03"/>               
+			<restricted_to id="RU04"/>               
+			<restricted_to id="RU05"/>               
+			<restricted_to id="RU06"/>               
+			<restricted_to id="RU07"/>               
+			<restricted_to id="RU08"/>               
+			<restricted_to id="RU09"/>      
         </solo>
         <solo id="RS01" name="Arcanist" full_name="Arcanist" cost="1" qualification="Solo" fa="2">
           <basestats name="Arcanist" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />

@@ -8,6 +8,7 @@ import java.util.List;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Html;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
@@ -58,7 +59,7 @@ public class ChooseAttachActivity extends Activity implements OnCheckedChangeLis
 		
 		for (SelectedEntry entry : modelsToAttach) {
 			RadioButton newRadioButton = new RadioButton(this);
-			newRadioButton.setText(entry.toFullString());
+			newRadioButton.setText(Html.fromHtml(entry.toFullString()));
 			newRadioButton.setId(modelsToAttach.indexOf(entry));
 			radiogroup.addView(newRadioButton, layoutParams);
 		}

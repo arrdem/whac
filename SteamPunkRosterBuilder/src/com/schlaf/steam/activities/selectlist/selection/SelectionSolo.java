@@ -19,6 +19,9 @@ public class SelectionSolo extends SelectionEntry {
 	 */
 	private boolean mercenaryUnitAttached;
 	
+	/** can be attached to some unit, not specifically to one. see "restrictions" to see which unit can have the solo */
+	private boolean genericUnitAttached;
+	
 	/** this solo is a dragoon with mounted/dismount option */
 	private boolean dragoon;
 	
@@ -34,6 +37,7 @@ public class SelectionSolo extends SelectionEntry {
 		super(baseUnit);
 		this.warcasterAttached = baseUnit.isWarcasterAttached();
 		this.mercenaryUnitAttached = baseUnit.isMercenaryUnitAttached();
+		this.genericUnitAttached = baseUnit.isGenericUnitAttached();
 		
 		if (baseUnit.isDragoon() && baseUnit.isDismountOption()) {
 			setDragoon(true);
@@ -110,6 +114,16 @@ public class SelectionSolo extends SelectionEntry {
 
 	public void setMercenaryUnitAttached(boolean mercenaryUnitAttached) {
 		this.mercenaryUnitAttached = mercenaryUnitAttached;
+	}
+
+
+	public boolean isGenericUnitAttached() {
+		return genericUnitAttached;
+	}
+
+
+	public void setGenericUnitAttached(boolean genericUnitAttached) {
+		this.genericUnitAttached = genericUnitAttached;
 	}
 
 }

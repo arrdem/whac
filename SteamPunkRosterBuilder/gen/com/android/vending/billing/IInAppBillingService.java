@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: /home/seb/workspace/SteamPunkRosterBuilder/src/com/android/vending/billing/IInAppBillingService.aidl
+ * Original file: /home/seb/git/whac/SteamPunkRosterBuilder/src/com/android/vending/billing/IInAppBillingService.aidl
  */
 package com.android.vending.billing;
 /**

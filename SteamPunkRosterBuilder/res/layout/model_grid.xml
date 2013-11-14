@@ -19,6 +19,11 @@
         android:baselineAligned="false"
         android:orientation="horizontal" >
 
+        <LinearLayout
+            android:id="@+id/layout_fury_focus_thr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
         <ImageView
             android:id="@+id/imageView1"
             android:layout_width="wrap_content"
@@ -26,6 +31,16 @@
             android:layout_marginRight="5dp"
             android:contentDescription="@string/empty"
             android:src="@drawable/focus_6_icon" />
+        
+        <ImageView
+            android:id="@+id/imageViewThreshold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:contentDescription="@string/empty"
+            android:src="@drawable/thr_6_icon" />
+        </LinearLayout>
 
         <LinearLayout
             android:id="@+id/layout_weapons"
@@ -77,8 +92,13 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
-        android:orientation="horizontal" >
+        android:orientation="vertical" >
 
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+            
         <com.schlaf.steam.activities.damages.WarjackDamageGridView
         android:id="@+id/gridViewLeft"
         android:layout_width="0dip"
@@ -95,6 +115,14 @@
         android:layout_gravity="right"
         android:layout_marginLeft="5dp"
         />
+        </LinearLayout>
+        
+        <com.schlaf.steam.activities.damages.DamageLineView
+        android:id="@+id/damageLineForceField"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:layout_gravity="center_vertical" />
+        
     </LinearLayout>
     
     <LinearLayout

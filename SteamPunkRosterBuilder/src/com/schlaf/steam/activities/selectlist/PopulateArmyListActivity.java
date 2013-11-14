@@ -689,6 +689,16 @@ public class PopulateArmyListActivity extends SherlockFragmentActivity implement
 					} else {
 						Toast.makeText(getApplicationContext(), "Sorry, there is actually no mercenary unit to attach this entry", Toast.LENGTH_SHORT).show();
 					}
+				} else if (solo.isGenericUnitAttached()) {
+					int candidatesCount =  SelectionModelSingleton.getInstance().modelsToWhichAttach(entry).size();
+					if (candidatesCount > 1) {
+						askWhoToAttach(entry);
+						// return of dialog is treated in onActivityResult() method
+					} else if (candidatesCount == 1 ){
+						SelectionModelSingleton.getInstance().addAttachedElementByDefault(entry);
+					} else {
+						Toast.makeText(getApplicationContext(), "Sorry, there is actually no unit to attach this entry", Toast.LENGTH_SHORT).show();
+					}
 				} else if (solo.isDragoon()) {
 					askForDismountOption(solo);
 				} else {

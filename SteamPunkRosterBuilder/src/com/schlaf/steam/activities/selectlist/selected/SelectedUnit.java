@@ -44,6 +44,9 @@ public class SelectedUnit extends SelectedEntry implements Serializable {
 	/** ranking officer (for mercs units only) */
 	private SelectedRankingOfficer rankingOfficer;
 	
+	/** generic attachment, like the soulless escort */
+	private SelectedSolo soloAttachment;
+	
 	/** the unique unit attachment */
 	private SelectedUA unitAttachment;
 	
@@ -59,6 +62,9 @@ public class SelectedUnit extends SelectedEntry implements Serializable {
 		List<SelectedEntry> result = new ArrayList<SelectedEntry>();
 		if (rankingOfficer != null) {
 			result.add(rankingOfficer);
+		}
+		if (soloAttachment != null) {
+			result.add(soloAttachment);
 		}
 		if (unitAttachment != null) {
 			result.add(unitAttachment);
@@ -189,6 +195,9 @@ public class SelectedUnit extends SelectedEntry implements Serializable {
 	
 	
 	public int getCost() {
+		if (isTiersAltered()) {
+			return getRealCost();
+		}
 		return ModelCostCalculator.getUnitCost(getId(), minSize);
 	}
 
@@ -309,6 +318,14 @@ public class SelectedUnit extends SelectedEntry implements Serializable {
 
 	public void setRankingOfficer(SelectedRankingOfficer rankingOfficer) {
 		this.rankingOfficer = rankingOfficer;
+	}
+
+	public SelectedSolo getSoloAttachment() {
+		return soloAttachment;
+	}
+
+	public void setSoloAttachment(SelectedSolo soloAttachment) {
+		this.soloAttachment = soloAttachment;
 	}
 
 

@@ -2365,7 +2365,16 @@
 	<entry id="PS12"/>
 </only>
 <benefits>
-<ingameeffect label="empty" />	<alterFA bonus="3" entryId="PS05"/> <alterCost entryId="PJ12" bonus="1"/> </benefits>
+<ingameeffect label="empty" />	
+<alterFA bonus="1" entryId="PS05">
+    <forEach>
+        <entry id="PU03"/>
+        <entry id="PU02"/>
+        <entry id="PU06"/>
+        <entry id="PU07"/>
+    </forEach>
+</alterFA> 
+<alterCost entryId="PJ12" bonus="1"/> </benefits>
 </level>
 <level number="2">
 <!-- Must have  3PS05-->
@@ -2374,7 +2383,7 @@
 	<entry id="PS05"/>
 </entrygroup></must_have>
 <benefits>
-<ingameeffect label="empty" />Reclaimer solos each begin with one soul token</benefits>
+<ingameeffect label="empty">Reclaimer solos each begin with one soul token</ingameeffect></benefits>
 </level>
 <level number="3">
 <!-- Must have  2PU07-->
@@ -2382,8 +2391,9 @@
 <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2" >
 	<entry id="PU07"/>
 </entrygroup></must_have>
+
 <benefits>
-<ingameeffect label="empty" />Flameguard cleanser units gain Advance Move</benefits>
+<ingameeffect label="empty">Flameguard cleanser units gain Advance Move</ingameeffect></benefits>
 </level>
 <level number="4">
 <!-- Must have in battlegroup  2(PJ07 PJ08 PJ09 PJ10 PJ12 PJ14 PJ17)-->
@@ -2398,13 +2408,13 @@
 	<entry id="PJ17"/>
 </entrygroup></must_have>
 <benefits>
-<ingameeffect label="empty" />
+<ingameeffect label="empty">
 For each heavy warjack, place one 3" AOE cloud
 effect anywhere completely within 20" of the back edge of
 High Rec1aimer's deployment zone after both players have
 finished deploying their armies but before the first player
 takes his first turn. These cloud effects leave play after the
-first round of the game.</benefits>
+first round of the game.</ingameeffect></benefits>
 </level>
 </tiers>
 
@@ -2439,7 +2449,7 @@ first round of the game.</benefits>
 	<entry id="PS10"/>
 </only>
 <benefits>
-<ingameeffect label="empty" />Holy zealots units gains Advance Deployment.</benefits>
+<ingameeffect label="empty">Holy zealots units gains Advance Deployment.</ingameeffect></benefits>
 </level>
 <level number="2">
 <!-- Must have  2PU09-->
@@ -2448,7 +2458,7 @@ first round of the game.</benefits>
 	<entry id="PU09"/>
 </entrygroup></must_have>
 <benefits>
-<ingameeffect label="empty" />You gain +1 on your starting roll for the game</benefits>
+<ingameeffect label="empty">You gain +1 on your starting roll for the game</ingameeffect></benefits>
 </level>
 <level number="3">
 <!-- Must have  2PU13-->
@@ -2466,7 +2476,7 @@ first round of the game.</benefits>
 	<entry id="PJ11"/>
 </entrygroup></must_have>
 <benefits>
-<ingameeffect label="empty" />Models/units gains Incorporeal during your first turn of the game.</benefits>
+<ingameeffect label="empty">Models/units gains Incorporeal during your first turn of the game.</ingameeffect></benefits>
 </level>
 </tiers>
 
@@ -2984,7 +2994,7 @@ round of the game.</ingameeffect></benefits>
 	<entry id="PE01"/>
 </only>
 <benefits>
-<ingameeffect label="empty" /></benefits>
+<ingameeffect label="empty">Deliverer Sunburst Crews gain Advance Deployment</ingameeffect></benefits>
 </level>
 <level number="2">
 <!-- Must have  1(MU08 MU18)-->
@@ -2994,7 +3004,14 @@ round of the game.</ingameeffect></benefits>
 	<entry id="MU18"/>
 </entrygroup></must_have>
 <benefits>
-<ingameeffect label="empty" /><freeModel><entry id="PA05"/></freeModel></benefits>
+<ingameeffect label="empty" />
+<freeModel>
+    <entry id="PA05"/>
+    <forEach>
+        <entry id="MU08"/>
+        <entry id="MU18"/>
+    </forEach>
+</freeModel></benefits>
 </level>
 <level number="3">
 <!-- Must have  2(PS10 PS12)-->
@@ -3004,7 +3021,11 @@ round of the game.</ingameeffect></benefits>
 	<entry id="PS12"/>
 </entrygroup></must_have>
 <benefits>
-<ingameeffect label="empty" /></benefits>
+<ingameeffect label="empty">
+Friendly models/units can begin the game affected by Reznik's upkeep spells.
+These spells and their targets must be declared before either players sets up models.
+Reznik does not pay focus to upkeep these spells during your first turn    
+</ingameeffect></benefits>
 </level>
 <level number="4">
 <!-- Must have  3(PJ07 PJ08 PJ09 PJ10 PJ12 PJ14 PJ16 PJ17)-->
@@ -3020,7 +3041,7 @@ round of the game.</ingameeffect></benefits>
 	<entry id="PJ17"/>
 </entrygroup></must_have>
 <benefits>
-<ingameeffect label="empty" /></benefits>
+<ingameeffect label="empty">Your deployment zone is extended 2" forward</ingameeffect></benefits>
 </level>
 </tiers>
 
@@ -8977,7 +8998,7 @@ round of the game.</ingameeffect></benefits>
 	<entry id="TU11"/>
 	<entry id="TU03"/>
 	<entry id="TU04"/>
-	<entry id="MU16"/>
+	<entry id="MU16_minion"/>
 	<entry id="TS07"/>
 	<entry id="IS01_minion"/>
 </only>
@@ -8988,7 +9009,7 @@ round of the game.</ingameeffect></benefits>
 <!-- Must have  MU16-->
 <must_have>
 <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1" >
-	<entry id="MU16"/>
+	<entry id="MU16_minion"/>
 </entrygroup></must_have>
 <benefits>
 <ingameeffect label="empty" /></benefits>
@@ -9000,7 +9021,7 @@ round of the game.</ingameeffect></benefits>
 	<entry id="TU11"/>
 	<entry id="TU03"/>
 	<entry id="TU04"/>
-	<entry id="MU16"/>
+	<entry id="MU16_minion"/>
 </entrygroup></must_have>
 <benefits>
 <ingameeffect label="empty" /></benefits>
@@ -9171,8 +9192,8 @@ round of the game.</ingameeffect></benefits>
 	<entry id="TS04"/>
 	<entry id="TS02"/>
 	<entry id="TE01"/>
-	<entry id="MU01"/>
-	<entry id="IS03_mercs"/>
+	<entry id="MU01_minion"/>
+	<entry id="IS03_minion"/>
 </only>
 <benefits>
 <ingameeffect label="empty" />	<alterFA bonus="1" entryId="TU12"/>	<alterFA bonus="1" entryId="TU06"/>	<alterFA bonus="1" entryId="TS04"/></benefits>

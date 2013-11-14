@@ -190,7 +190,7 @@ public class XmlExtractor {
 
 	private static final String BUCKLER_ATTRIBUTE = "buckler";
 	
-	int[] XML_FILES = new int[] {R.xml.cygnar_completed_angus, R.xml.khador, R.xml.menoth, R.xml.cryx_completed,
+	int[] XML_FILES = new int[] {R.xml.cygnar, R.xml.khador, R.xml.menoth, R.xml.cryx,
 			R.xml.retribution, R.xml.cyriss, R.xml.mercenaries_corrected,
 			R.xml.orboros, R.xml.skorne, R.xml.everblight, R.xml.skorne, R.xml.trollbloods, R.xml.minions 	};
 
@@ -960,8 +960,10 @@ public class XmlExtractor {
 		
 		String warcaster_attachment = xpp.getAttributeValue(null, "warcaster_attachment");
 		String mercenary_attachment = xpp.getAttributeValue(null, "mercenary_attachment");
+		String unit_attachment = xpp.getAttributeValue(null, "unit_attachment");
 		solo.setWarcasterAttached(Boolean.valueOf(warcaster_attachment));
 		solo.setMercenaryUnitAttached(Boolean.valueOf(mercenary_attachment));
+		solo.setGenericUnitAttached(Boolean.valueOf(unit_attachment));
 		
 		String dragoon = xpp.getAttributeValue(null, "dragoon");
 		solo.setDragoon(Boolean.valueOf(dragoon));
@@ -1006,6 +1008,10 @@ public class XmlExtractor {
 
 			if (eventType == XmlPullParser.START_TAG && WORKS_FOR_TAG.equals(xpp.getName())) {
 				loadWorksFor(xpp, solo);
+			}
+			
+			if (eventType == XmlPullParser.START_TAG && RESTRICTED_TO_TAG.equals(xpp.getName())) {
+				loadRestrictedTo(xpp, solo);
 			}
 
 			if (eventType == XmlPullParser.START_TAG && MODEL_TAG.equals(xpp.getName())) {
@@ -1372,9 +1378,18 @@ public class XmlExtractor {
 		String cost = xpp.getAttributeValue(null, COST_TAG);
 		String damage_grid_left = xpp.getAttributeValue(null, DAMAGE_GRID_LEFT_ATTRIBUTE);
 		String damage_grid_right = xpp.getAttributeValue(null, DAMAGE_GRID_RIGHT_ATTRIBUTE);
+		String is_myrmidon = xpp.getAttributeValue(null, IS_MYRMIDON_ATTRIBUTE);
+		String force_field = xpp.getAttributeValue(null, "force_field");
+		
 		colossal.setBaseCost(extractFromString(cost));
 		colossal.setRightGrid(damage_grid_right);
 		colossal.setLeftGrid(damage_grid_left);
+		
+		colossal.setMyrmidon(Boolean.valueOf(is_myrmidon));
+		if (colossal.isMyrmidon()) {
+			colossal.setForceField(extractFromString(force_field));
+		}
+		
 
 		SingleModel model = new SingleModel();
 		
@@ -1423,6 +1438,11 @@ public class XmlExtractor {
 		rightGrid.fromString(damage_grid_right);
 		grid.setLeftGrid(leftGrid);
 		grid.setRightGrid(rightGrid);
+		
+		if (colossal.isMyrmidon()) {
+			ModelDamageLine forceFieldGrid = new ModelDamageLine(colossal.getForceField(), 0);
+			grid.setForceFieldGrid(forceFieldGrid);
+		}
 		
 		model.setHitpoints(grid);
 
@@ -1746,7 +1766,7 @@ public class XmlExtractor {
 		if (eventType == XmlPullParser.START_TAG
 				&& RESTRICTED_TO_TAG.equals(xpp.getName())) {
 			String casterId = xpp.getAttributeValue(null, RESTRICTED_TO_ID_ATTRIBUTE);
-			entry.getAllowedCastersToWorkFor().add(casterId);
+			entry.getAllowedEntriesToAttach().add(casterId);
 		}		
 	}		
 	

@@ -28,6 +28,12 @@ public class WarjackDamageGrid extends WarjackLikeDamageGrid {
 	private DamageColumn[] columns = new DamageColumn[6];
 	
 	/**
+	 * keep tracks of boxes with damages, usefull for damage deletion.
+	 */
+	private List<DamageBox> justDamagedBoxes = new ArrayList<DamageBox>();
+
+	
+	/**
 	 * total number of hit points
 	 */
 	private int hitPoints;
@@ -42,7 +48,7 @@ public class WarjackDamageGrid extends WarjackLikeDamageGrid {
 	public WarjackDamageGrid(SingleModel jack) {
 		this.model = new MiniModelDescription(jack);
 		for (int i = 0; i < columns.length; i++) {
-			columns[i] = new DamageColumn();
+			columns[i] = new DamageColumn(this);
 			columns[i].setId(i);
 		}
 	}
@@ -225,38 +231,47 @@ public class WarjackDamageGrid extends WarjackLikeDamageGrid {
 				}
 			}
 		} else {
-			// funky.. search for continuous damage from base column, then remove damages backward...
-			ArrayList<DamageBox> damagedBoxToCleanList = new ArrayList<DamageBox>();
 			
-			// start with column at current column number...
-			for (DamageColumn column : columns) {
-				if (column.getId() >= colNumber) {
-					for (DamageBox box : column.getBoxes()) {
-						if (box.isCurrentlyChangePending() && box.isDamagedPending()) {
-							damagedBoxToCleanList.add(box);
-						}
-					}
-				}
-			}
-			// and continue from first column...
-			for (DamageColumn column : columns) {
-				if (column.getId() < colNumber) {
-					for (DamageBox box : column.getBoxes()) {
-						if (box.isCurrentlyChangePending() && box.isDamagedPending()) {
-							damagedBoxToCleanList.add(box);
-						}
-					}
-				}
+			for (int i = justDamagedBoxes.size() - 1; i >=0 && damageAmount < 0 ; i--) {
+				justDamagedBoxes.get(i).setCurrentlyChangePending(false);
+				justDamagedBoxes.get(i).setDamagedPending(false);
+				damageAmount++;
+				dmgApplied++;
+				justDamagedBoxes.remove(i);
 			}
 			
-			for (int i = damagedBoxToCleanList.size() -1; i >=0; i--) {
-				DamageBox box = damagedBoxToCleanList.get(i);
-				if (dmgApplied < -damageAmount) {
-					box.setCurrentlyChangePending(false);
-					box.setDamagedPending(false);
-					dmgApplied ++;	
-				}
-			}
+//			// funky.. search for continuous damage from base column, then remove damages backward...
+//			ArrayList<DamageBox> damagedBoxToCleanList = new ArrayList<DamageBox>();
+//			
+//			// start with column at current column number...
+//			for (DamageColumn column : columns) {
+//				if (column.getId() >= colNumber) {
+//					for (DamageBox box : column.getBoxes()) {
+//						if (box.isCurrentlyChangePending() && box.isDamagedPending()) {
+//							damagedBoxToCleanList.add(box);
+//						}
+//					}
+//				}
+//			}
+//			// and continue from first column...
+//			for (DamageColumn column : columns) {
+//				if (column.getId() < colNumber) {
+//					for (DamageBox box : column.getBoxes()) {
+//						if (box.isCurrentlyChangePending() && box.isDamagedPending()) {
+//							damagedBoxToCleanList.add(box);
+//						}
+//					}
+//				}
+//			}
+//			
+//			for (int i = damagedBoxToCleanList.size() -1; i >=0; i--) {
+//				DamageBox box = damagedBoxToCleanList.get(i);
+//				if (dmgApplied < -damageAmount) {
+//					box.setCurrentlyChangePending(false);
+//					box.setDamagedPending(false);
+//					dmgApplied ++;	
+//				}
+//			}
 			
 		}
 		
@@ -281,6 +296,8 @@ public class WarjackDamageGrid extends WarjackLikeDamageGrid {
 				}
 			}
 		}
+		
+		justDamagedBoxes = new ArrayList<DamageBox>();
 		notifyCommit();
 	}
 
@@ -294,6 +311,7 @@ public class WarjackDamageGrid extends WarjackLikeDamageGrid {
 				}
 			}
 		}
+		justDamagedBoxes = new ArrayList<DamageBox>();
 	}
 
 	@Override
@@ -315,6 +333,10 @@ public class WarjackDamageGrid extends WarjackLikeDamageGrid {
 
 	public String getDamageGridString() {
 		return damageGridString;
+	}
+
+	public List<DamageBox> getJustDamagedBoxes() {
+		return justDamagedBoxes;
 	}
 
 }

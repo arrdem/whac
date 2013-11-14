@@ -470,36 +470,36 @@ public class BattleActivity extends SherlockFragmentActivity implements BattleLi
     		menu.findItem(R.id.menu_add_army).setVisible(true);
     	}
     	
-    	if (FAKE_BT) {
-    		menu.findItem(R.id.discoverable).setVisible(false);	
-    		menu.findItem(R.id.secure_connect_scan).setVisible(true);
-    	} else {
-    		
-    		if (beddernetService == null) {
-    			menu.findItem(R.id.startBeddernet).setVisible(true);
-        		menu.findItem(R.id.discoverable).setVisible(false);
-        		menu.findItem(R.id.secure_connect_scan).setVisible(false);
-    		} else {
-    			menu.findItem(R.id.startBeddernet).setVisible(false);
-        		menu.findItem(R.id.discoverable).setVisible(true);
-        		menu.findItem(R.id.secure_connect_scan).setVisible(true);
-    		}
-    		
-        	if ( BluetoothAdapter.getDefaultAdapter() == null) {
-            	// no bluetooth...
-            } else {
-            	
-//            	if ( mBluetoothAdapter == null || mBluetoothAdapter.getScanMode() !=
-//                        BluetoothAdapter.SCAN_MODE_CONNECTABLE_DISCOVERABLE) {
-//            		menu.findItem(R.id.discoverable).setVisible(true);	
-//            		menu.findItem(R.id.secure_connect_scan).setVisible(false);
-//            	}
-//            	if (mBluetoothAdapter != null && mBluetoothAdapter.getScanMode() == BluetoothAdapter.SCAN_MODE_CONNECTABLE_DISCOVERABLE) {
-//            		menu.findItem(R.id.discoverable).setVisible(false);
-//            		menu.findItem(R.id.secure_connect_scan).setVisible(true);
-//            	}
-            }    		
-    	}
+//    	if (FAKE_BT) {
+//    		menu.findItem(R.id.discoverable).setVisible(false);	
+//    		menu.findItem(R.id.secure_connect_scan).setVisible(true);
+//    	} else {
+//    		
+//    		if (beddernetService == null) {
+//    			menu.findItem(R.id.startBeddernet).setVisible(true);
+//        		menu.findItem(R.id.discoverable).setVisible(false);
+//        		menu.findItem(R.id.secure_connect_scan).setVisible(false);
+//    		} else {
+//    			menu.findItem(R.id.startBeddernet).setVisible(false);
+//        		menu.findItem(R.id.discoverable).setVisible(true);
+//        		menu.findItem(R.id.secure_connect_scan).setVisible(true);
+//    		}
+//    		
+//        	if ( BluetoothAdapter.getDefaultAdapter() == null) {
+//            	// no bluetooth...
+//            } else {
+//            	
+////            	if ( mBluetoothAdapter == null || mBluetoothAdapter.getScanMode() !=
+////                        BluetoothAdapter.SCAN_MODE_CONNECTABLE_DISCOVERABLE) {
+////            		menu.findItem(R.id.discoverable).setVisible(true);	
+////            		menu.findItem(R.id.secure_connect_scan).setVisible(false);
+////            	}
+////            	if (mBluetoothAdapter != null && mBluetoothAdapter.getScanMode() == BluetoothAdapter.SCAN_MODE_CONNECTABLE_DISCOVERABLE) {
+////            		menu.findItem(R.id.discoverable).setVisible(false);
+////            		menu.findItem(R.id.secure_connect_scan).setVisible(true);
+////            	}
+//            }    		
+//    	}
     	
 
     	
@@ -561,25 +561,25 @@ public class BattleActivity extends SherlockFragmentActivity implements BattleLi
 	        case R.id.menu_more:
 	        	openOptionsMenu();
 	        	return true;
-	        case R.id.startBeddernet: 
-				bindService(new Intent(this, MyBeddernetService.class), mConnection,
-	        	        Context.BIND_AUTO_CREATE);
-	        	startService(new Intent(BattleActivity.this, MyBeddernetService.class));
-	        case R.id.secure_connect_scan:
-				if (beddernetService == null) {
-					Toast.makeText(BattleActivity.this, "Not connected to BlueTooth service", Toast.LENGTH_SHORT).show();
-				} else {
-					beddernetService.findNeighbors();	
-				}
-	            return true;
-	        case R.id.discoverable:
-	            // Ensure this device is discoverable by others
-	        	if (beddernetService == null) {
-	        		Toast.makeText(BattleActivity.this, "Not connected to BlueTooth service", Toast.LENGTH_SHORT).show();
-	        	} else {
-	        		beddernetService.setDiscoverable(true);	
-	        	}
-	            return true;
+//	        case R.id.startBeddernet: 
+//				bindService(new Intent(this, MyBeddernetService.class), mConnection,
+//	        	        Context.BIND_AUTO_CREATE);
+//	        	startService(new Intent(BattleActivity.this, MyBeddernetService.class));
+//	        case R.id.secure_connect_scan:
+//				if (beddernetService == null) {
+//					Toast.makeText(BattleActivity.this, "Not connected to BlueTooth service", Toast.LENGTH_SHORT).show();
+//				} else {
+//					beddernetService.findNeighbors();	
+//				}
+//	            return true;
+//	        case R.id.discoverable:
+//	            // Ensure this device is discoverable by others
+//	        	if (beddernetService == null) {
+//	        		Toast.makeText(BattleActivity.this, "Not connected to BlueTooth service", Toast.LENGTH_SHORT).show();
+//	        	} else {
+//	        		beddernetService.setDiscoverable(true);	
+//	        	}
+//	            return true;
 	        default:
 	            return super.onOptionsItemSelected(item);
 	    }

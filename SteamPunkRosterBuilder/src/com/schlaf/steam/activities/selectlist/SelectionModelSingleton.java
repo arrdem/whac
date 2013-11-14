@@ -44,6 +44,7 @@ import com.schlaf.steam.data.Contract;
 import com.schlaf.steam.data.Faction;
 import com.schlaf.steam.data.FactionNamesEnum;
 import com.schlaf.steam.data.ModelTypeEnum;
+import com.schlaf.steam.data.Restrictable;
 import com.schlaf.steam.data.Tier;
 import com.schlaf.steam.data.TierBenefit;
 import com.schlaf.steam.data.TierCostAlteration;
@@ -450,6 +451,8 @@ public class SelectionModelSingleton {
 				unit.setUnitAttachment(null);
 			} else if (unit.getRankingOfficer() != null && unit.getRankingOfficer().equals(child)) {
 				unit.setRankingOfficer(null);
+			} else if (unit.getSoloAttachment() != null && unit.getSoloAttachment().equals(child)) {
+				unit.setSoloAttachment(null);
 			} else if (unit instanceof SelectedUnitMarshall){
 				SelectedUnitMarshall unitMarshall = (SelectedUnitMarshall) unit;
 				if (unitMarshall.getJacks().contains(child)) {
@@ -517,6 +520,11 @@ public class SelectionModelSingleton {
 				SelectedRankingOfficer rankingOfficer = new SelectedRankingOfficer(entry.getId(), entry.getFullLabel());
 				addedEntry = rankingOfficer;
 				((SelectedUnit) candidates.get(0)).setRankingOfficer(rankingOfficer);
+			} else if ( ((SelectionSolo) entry).isGenericUnitAttached() ) {
+				List<SelectedEntry> candidates = modelsToWhichAttach(entry);
+				SelectedSolo genericAttachment = new SelectedSolo(entry.getId(), entry.getFullLabel());
+				addedEntry = genericAttachment;
+				((SelectedUnit) candidates.get(0)).setSoloAttachment(genericAttachment);
 			} else {
 				throw new UnsupportedOperationException("addAttachedElementByDefault - can not attach " + entry.getFullLabel() + " - model is not attachable");
 			}
@@ -604,7 +612,13 @@ public class SelectionModelSingleton {
 				SelectedRankingOfficer rankingOfficer = new SelectedRankingOfficer(entry.getId(), entry.getFullLabel());
 				addedEntry = rankingOfficer;
 				((SelectedUnit) parent).setRankingOfficer(rankingOfficer);
-			} else {
+			} else if ( ((SelectionSolo) entry).isGenericUnitAttached() ) {
+				SelectedSolo genericAttachment = new SelectedSolo(entry.getId(), entry.getFullLabel());
+				addedEntry = genericAttachment;
+				((SelectedUnit) parent).setSoloAttachment(genericAttachment);
+			} 
+			
+			else {
 				throw new UnsupportedOperationException("addAttachedElementByDefault - can not attach " + entry.getFullLabel() + " - model is not attachable");
 			}
 		}
@@ -660,13 +674,13 @@ public class SelectionModelSingleton {
 
 			// check caster restrictions
 			List<SelectedEntry> candidates = null;
-			if ( jack.getAllowedCastersToWorkFor().isEmpty()) {
+			if ( jack.getAllowedEntriesToAttach().isEmpty()) {
 				candidates = selectedEntries;
 			} else {
 				candidates = new ArrayList<SelectedEntry>();
 				List<SelectedEntry> allEntries = getSelectedEntriesIncludingChildren(); // must include UA...
 				for (SelectedEntry entry : allEntries) {
-					if ( jack.getAllowedCastersToWorkFor().contains(entry.getId())) {
+					if ( jack.getAllowedEntriesToAttach().contains(entry.getId())) {
 						candidates.add(entry);	
 					}
 				}
@@ -741,13 +755,13 @@ public class SelectionModelSingleton {
 
 			// check caster restrictions
 			List<SelectedEntry> candidates = null;
-			if ( beast.getAllowedCastersToWorkFor().isEmpty()) {
+			if ( beast.getAllowedEntriesToAttach().isEmpty()) {
 				candidates = selectedEntries;
 			} else {
 				candidates = new ArrayList<SelectedEntry>();
 				List<SelectedEntry> allEntries = getSelectedEntriesIncludingChildren(); // must include UA...
 				for (SelectedEntry entry : allEntries) {
-					if ( beast.getAllowedCastersToWorkFor().contains(entry.getId())) {
+					if ( beast.getAllowedEntriesToAttach().contains(entry.getId())) {
 						candidates.add(entry);	
 					}
 				}
@@ -801,6 +815,21 @@ public class SelectionModelSingleton {
 					if (entry instanceof SelectedUnit ) {
 						if ( getSelectionEntryById(entry.getId()).isMercenaryOrMinion()) {
 							if (((SelectedUnit) entry).getRankingOfficer() == null) {
+								// may attach only if unit has no attachment
+								result.add(entry);
+							}
+						}
+					}
+				}
+			}  else if (((SelectionSolo) selection).isGenericUnitAttached()) {
+				// attach only to faction unit, see restricted list
+				ArmyElement solo = ArmySingleton.getInstance().getArmyElement(selection.getId());
+				ArrayList<String> attachableTo = ((Restrictable) solo).getAllowedEntriesToAttach();
+				for (SelectedEntry entry : selectedEntries) {
+					if (attachableTo.contains(entry.getId())) {
+						if (entry instanceof SelectedUnit ) {
+							if (((SelectedUnit) entry).getUnitAttachment() == null &&
+									((SelectedUnit) entry).getSoloAttachment() == null) {
 								// may attach only if unit has no attachment
 								result.add(entry);
 							}
@@ -995,6 +1024,11 @@ public class SelectionModelSingleton {
 					SelectionEntry ua = getSelectionEntryById(unit.getUnitAttachment().getId());
 					ua.addOne();
 				}
+				
+				if (unit.getSoloAttachment() != null) {
+					SelectionEntry solo = getSelectionEntryById(unit.getSoloAttachment().getId());
+					solo.addOne();
+				}
 
 				if (unit.getWeaponAttachments().size() > 0 ) {
 					SelectionWA wa = (SelectionWA) getSelectionEntryById(unit.getWeaponAttachments().get(0).getId());
@@ -1175,14 +1209,31 @@ public class SelectionModelSingleton {
 						if (alteration instanceof TierFAAlteration) {
 							TierFAAlteration faAlter = (TierFAAlteration) alteration;
 							
-							SelectionEntry alteredEntry = getSelectionEntryById(faAlter.getEntry().getId());
 							
-							if (faAlter.getFaAlteration() == ArmyElement.MAX_FA) {
-								// sets FA to U
-								alteredEntry.setAlteredFA(ArmyElement.MAX_FA);
+							if (faAlter.getForEach() != null && faAlter.getForEach().size() > 0) {
+								// FA alteration depends on other entries...
+								int nbSelected = 0;
+								for ( TierEntry requiredEntry : faAlter.getForEach()) {
+									SelectionEntry selected = getSelectionEntryById(requiredEntry.getId());
+									nbSelected += selected.getCountSelected();
+								}
+								
+								// apply n times FA alteration
+								SelectionEntry alteredEntry = getSelectionEntryById(faAlter.getEntry().getId());
+								alteredEntry.setAlteredFA(alteredEntry.getBaseFA() + faAlter.getFaAlteration() * nbSelected);
 							} else {
-								alteredEntry.setAlteredFA( alteredEntry.getBaseFA() + faAlter.getFaAlteration());	
+								// alteration basic : does not 
+								SelectionEntry alteredEntry = getSelectionEntryById(faAlter.getEntry().getId());
+								
+								if (faAlter.getFaAlteration() == ArmyElement.MAX_FA) {
+									// sets FA to U
+									alteredEntry.setAlteredFA(ArmyElement.MAX_FA);
+								} else {
+									alteredEntry.setAlteredFA( alteredEntry.getBaseFA() + faAlter.getFaAlteration());	
+								}
 							}
+							
+							
 						}
 					}
 				}
@@ -1246,6 +1297,13 @@ public class SelectionModelSingleton {
 					if (! selected.isTiersAltered()) {
 						selected.setRealCost(alteredEntry.getAlteredCost());
 						selected.setTiersAltered(true);
+						
+						if (alteredEntry instanceof SelectionUnit) {
+							alteredEntry.setAlteredCost(costAlter.getCostAlteration());
+							int baseCostDependingSize = ModelCostCalculator.getUnitCost(alteredEntry.getId(), ((SelectedUnit) selected).isMinSize());
+							selected.setRealCost( baseCostDependingSize - costAlter.getCostAlteration() );
+						}
+						
 					}
 				}
 			}
@@ -1253,7 +1311,19 @@ public class SelectionModelSingleton {
 		
 		for (TierFreeModel freebie : benefit.getFreebies()) {
 			
-			boolean bonusAlreadyUsed = false;
+			int bonusAlreadyUsedCount = 0;
+			
+			int bonusUsableCount = 0;
+			if (freebie.getForEach() != null && freebie.getForEach().size() > 0) {
+				// free model depends on another model/unit selection --> ONE free model PER entry selected of the given type
+				for (TierEntry requiredEntry : freebie.getForEach()) {
+					SelectionEntry selected = getSelectionEntryById(requiredEntry.getId());
+					bonusUsableCount += selected.getCountSelected();
+				}
+			} else {
+				// free model does not depend on another model/unit selection --> ONE free model
+				bonusUsableCount = 1;
+			}
 			
 			for (TierEntry freeModel : freebie.getFreeModels()) {
 				
@@ -1264,18 +1334,20 @@ public class SelectionModelSingleton {
 					if (selectedEntry.getId().equals(freeModel.getId()) && selectedEntry.isTiersAltered() 
 						&& selectedEntry.getRealCost() == 0 ) {
 						// this entry already added at 0 cost
-						bonusAlreadyUsed = true;
+						bonusAlreadyUsedCount++;
 					}
 				}
 			}
 			
-			if (!bonusAlreadyUsed) {
+			
+			if (bonusAlreadyUsedCount < bonusUsableCount) {
+				// set cost to 0 for free models
 				for (TierEntry freeModel : freebie.getFreeModels()) {
 					SelectionEntry alteredEntry = getSelectionEntryById(freeModel.getId());
 					alteredEntry.setAlteredCost(0);
 					// add 1 to FA to make sure the entry can be selected
 					if (alteredEntry.getBaseFA() != ArmyElement.MAX_FA && ! alteredEntry.isUniqueCharacter()) {
-						alteredEntry.setAlteredFA( alteredEntry.getBaseFA() + 1);	
+						alteredEntry.setAlteredFA( alteredEntry.getBaseFA() + bonusAlreadyUsedCount);	
 					}
 				}
 			} else {
@@ -1284,7 +1356,7 @@ public class SelectionModelSingleton {
 					SelectionEntry alteredEntry = getSelectionEntryById(freeModel.getId());
 					alteredEntry.setAlteredCost(alteredEntry.getBaseCost());
 					// add 1 to FA to make sure the entry can be selected
-					alteredEntry.setAlteredFA( alteredEntry.getBaseFA() + 1);
+					alteredEntry.setAlteredFA( alteredEntry.getBaseFA() + bonusAlreadyUsedCount);
 				}
 			}
 		}
@@ -1561,7 +1633,7 @@ public class SelectionModelSingleton {
 				boolean jackAllowed = false;
 				List<SelectedEntry> candidates = getSelectedEntriesIncludingChildren();
 				for (SelectedEntry wannabeMercCasterOrMarshall : candidates) {
-					if (jack.getAllowedCastersToWorkFor().contains(wannabeMercCasterOrMarshall.getId())) {
+					if (jack.getAllowedEntriesToAttach().contains(wannabeMercCasterOrMarshall.getId())) {
 						jackAllowed = true;
 					} 
 				}
@@ -1586,7 +1658,7 @@ public class SelectionModelSingleton {
 				boolean beastAllowed = false;
 				List<SelectedEntry> candidates = getSelectedEntriesIncludingChildren();
 				for (SelectedEntry wannabeMercCasterOrMarshall : candidates) {
-					if (beast.getAllowedCastersToWorkFor().contains(wannabeMercCasterOrMarshall.getId())) {
+					if (beast.getAllowedEntriesToAttach().contains(wannabeMercCasterOrMarshall.getId())) {
 						beastAllowed = true;
 					} 
 				}

@@ -17,6 +17,7 @@ import android.widget.TextView;
 
 import com.actionbarsherlock.app.SherlockFragment;
 import com.schlaf.steam.R;
+import com.schlaf.steam.activities.damages.DamageLineView;
 import com.schlaf.steam.activities.damages.DamageSpiralView;
 import com.schlaf.steam.activities.damages.WarjackDamageGridView;
 import com.schlaf.steam.activities.damages.ModelDamageLine;
@@ -34,6 +35,7 @@ import com.schlaf.steam.data.RangedWeapon;
 import com.schlaf.steam.data.SingleModel;
 import com.schlaf.steam.data.Spell;
 import com.schlaf.steam.data.Unit;
+import com.schlaf.steam.data.Warbeast;
 import com.schlaf.steam.data.WarbeastDamageSpiral;
 import com.schlaf.steam.data.Warcaster;
 import com.schlaf.steam.data.WarjackDamageGrid;
@@ -374,6 +376,7 @@ public class ViewCardFragment extends SherlockFragment {
 	
 		// generate focus/fury
 		ImageView image = (ImageView) container.findViewById(R.id.imageView1);
+		ImageView imageThr = (ImageView) container.findViewById(R.id.imageViewThreshold);
 		Log.d("ViewCardFragment", "army element class = " + parent.getClass().getName());
 		if (firstModel) {
 			if (parent instanceof Warcaster ) {
@@ -398,7 +401,8 @@ public class ViewCardFragment extends SherlockFragment {
 				default:
 					image.setImageDrawable(getResources().getDrawable(R.drawable.empty));
 				}
-			} else if (parent instanceof Warlock) {
+				imageThr.setImageDrawable(getResources().getDrawable(R.drawable.empty));
+			} else if (parent instanceof Warlock ) {
 				switch ( ((Warlock) parent).getFury()) {
 				case 3: 
 					image.setImageDrawable(getResources().getDrawable(R.drawable.fury_3_icon)); break;
@@ -415,11 +419,55 @@ public class ViewCardFragment extends SherlockFragment {
 				default:
 					image.setImageDrawable(getResources().getDrawable(R.drawable.empty));
 				}
-			} else {
+				imageThr.setImageDrawable(getResources().getDrawable(R.drawable.empty));
+			} else if (parent instanceof Warbeast) {
+				switch ( ((Warbeast) parent).getFury()) {
+				case 2: 
+					image.setImageDrawable(getResources().getDrawable(R.drawable.fury_2_icon)); break;
+				case 3: 
+					image.setImageDrawable(getResources().getDrawable(R.drawable.fury_3_icon)); break;
+				case 4:
+					image.setImageDrawable(getResources().getDrawable(R.drawable.fury_4_icon)); break;
+				case 5:
+					image.setImageDrawable(getResources().getDrawable(R.drawable.fury_5_icon)); break;
+				case 6:
+					image.setImageDrawable(getResources().getDrawable(R.drawable.fury_6_icon)); break;
+				case 7:
+					image.setImageDrawable(getResources().getDrawable(R.drawable.fury_7_icon)); break;
+				case 8:
+					image.setImageDrawable(getResources().getDrawable(R.drawable.fury_8_icon)); break;
+				default:
+					image.setImageDrawable(getResources().getDrawable(R.drawable.empty));
+				}
+				switch ( ((Warbeast) parent).getThreshold()) {
+				case 3: 
+					imageThr.setImageDrawable(getResources().getDrawable(R.drawable.thr_3_icon)); break;
+				case 4:
+					imageThr.setImageDrawable(getResources().getDrawable(R.drawable.thr_4_icon)); break;
+				case 5:
+					imageThr.setImageDrawable(getResources().getDrawable(R.drawable.thr_5_icon)); break;
+				case 6:
+					imageThr.setImageDrawable(getResources().getDrawable(R.drawable.thr_6_icon)); break;
+				case 7:
+					imageThr.setImageDrawable(getResources().getDrawable(R.drawable.thr_7_icon)); break;
+				case 8:
+					imageThr.setImageDrawable(getResources().getDrawable(R.drawable.thr_8_icon)); break;
+				case 9:
+					imageThr.setImageDrawable(getResources().getDrawable(R.drawable.thr_9_icon)); break;
+				case 10:
+					imageThr.setImageDrawable(getResources().getDrawable(R.drawable.thr_10_icon)); break;
+				case 11:
+					imageThr.setImageDrawable(getResources().getDrawable(R.drawable.thr_11_icon)); break;
+				default:
+					imageThr.setImageDrawable(getResources().getDrawable(R.drawable.empty));
+				}
+			}else {
+				imageThr.setImageDrawable(getResources().getDrawable(R.drawable.empty));
 				image.setImageDrawable(getResources().getDrawable(R.drawable.empty));
 			}			
 		} else {
 			image.setImageDrawable(getResources().getDrawable(R.drawable.empty));;
+			imageThr.setImageDrawable(getResources().getDrawable(R.drawable.empty));
 		}
 
 		
@@ -471,8 +519,20 @@ public class ViewCardFragment extends SherlockFragment {
 				LinearLayout gridView = (LinearLayout) layoutGrid.findViewById(R.id.colossalView1);
 				WarjackDamageGridView leftGrid = (WarjackDamageGridView) gridView.findViewById(R.id.gridViewLeft);
 				WarjackDamageGridView rightGrid = (WarjackDamageGridView) gridView.findViewById(R.id.gridViewRight);
+				DamageLineView forceFieldGrid = (DamageLineView) gridView.findViewById(R.id.damageLineForceField);
 				leftGrid.setGrid( ((ColossalDamageGrid) element.getHitpoints()).getLeftGrid());
 				rightGrid.setGrid( ((ColossalDamageGrid) element.getHitpoints()).getRightGrid());
+				
+				if ( ((ColossalDamageGrid) element.getHitpoints()).getForceFieldGrid() != null) {
+					forceFieldGrid.setVisibility(View.VISIBLE);
+					forceFieldGrid.setForceField(true);
+					forceFieldGrid.setDamageLine(((ColossalDamageGrid) element.getHitpoints()).getForceFieldGrid());
+					forceFieldGrid.setEdit(false);
+				} else {
+					forceFieldGrid.setVisibility(View.GONE);
+				}
+				
+				
 			} else {
 				LinearLayout gridView = (LinearLayout) layoutGrid.findViewById(R.id.colossalView1);
 				gridView.setVisibility(View.GONE);
@@ -695,8 +755,12 @@ public class ViewCardFragment extends SherlockFragment {
 				.findViewById(R.id.text_weapon_name);
 		TextView weaponPow = (TextView) mountWeaponView
 				.findViewById(R.id.carac_pow_value);
-	
+		TextView weaponCapacities = (TextView) mountWeaponView
+				.findViewById(R.id.weaponCapacitiesText);
+		
+		
 		generateWeaponName(weapon, weaponTitle);
+		generateWeaponCapacities(weapon, weaponCapacities);
 	
 		weaponPow.setText(convertCaracToString(weapon.getPow()));
 	

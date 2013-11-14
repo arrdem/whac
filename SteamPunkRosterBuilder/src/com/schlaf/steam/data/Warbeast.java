@@ -61,7 +61,7 @@ public class Warbeast extends ArmyElement implements Serializable, Restrictable,
 	}
 
 	@Override
-	public ArrayList<String> getAllowedCastersToWorkFor() {
+	public ArrayList<String> getAllowedEntriesToAttach() {
 		return allowedCastersToWorkFor;
 	}
 

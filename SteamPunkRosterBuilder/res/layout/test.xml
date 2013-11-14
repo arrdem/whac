@@ -81,4 +81,9 @@
         android:layout_height="fill_parent"
         android:src="@drawable/gradient_background_solo" />
 
+    <com.schlaf.steam.activities.damages.DamageSpiralView
+        android:id="@+id/damageSpiralView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
 </LinearLayout>

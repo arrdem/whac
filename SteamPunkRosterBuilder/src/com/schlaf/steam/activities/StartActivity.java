@@ -35,6 +35,7 @@ import com.schlaf.steam.activities.battleselection.BattleSelector;
 import com.schlaf.steam.activities.card.CardLibraryActivity;
 import com.schlaf.steam.activities.card.ViewCardActivity;
 import com.schlaf.steam.activities.chrono.ChronoActivity;
+import com.schlaf.steam.activities.collection.MyCollectionActivity;
 import com.schlaf.steam.activities.importation.ImportSelector;
 import com.schlaf.steam.activities.managelists.ManageArmyListsActivity;
 import com.schlaf.steam.activities.preferences.PreferenceActivity;
@@ -431,6 +432,10 @@ public class StartActivity extends SherlockFragmentActivity implements ChangeFac
 
 	}
 	
+	public void collection(View v) {
+		Intent intent = new Intent(this, MyCollectionActivity.class);
+		startActivity(intent);
+	}
 
 	@Override
 	public void onDestroy() {

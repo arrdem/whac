@@ -4,5 +4,5 @@ import java.util.ArrayList;
 
 public interface Restrictable {
 
-	public ArrayList<String> getAllowedCastersToWorkFor();
+	public ArrayList<String> getAllowedEntriesToAttach();
 }

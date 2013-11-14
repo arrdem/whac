@@ -111,5 +111,15 @@
             </TableRow>
         </TableLayout>
     </LinearLayout>
+    
+    <TextView
+        android:id="@+id/weaponCapacitiesText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:text="TextView"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/textview_small_height" />
 
 </LinearLayout>

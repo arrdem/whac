@@ -206,12 +206,11 @@ public class Tier implements Comparable<Tier>, ModelRestrictor {
 					sb.append("<b>Must have : </b>");
 					for (TierEntryGroup entryGroup :  level.getMustHaveModels()) {
 						sb.append("<br>");
-						sb.append(entryGroup.getMinCount()).append("+ : ");
-						sb.append("{");
+						sb.append(entryGroup.getMinCount()).append(" among {");
 						boolean first = true;
 						for (TierEntry entry :  entryGroup.getEntries()) {
 							if (!first) {
-								sb.append(" - ");
+								sb.append(", ");
 							}
 							first = false;
 							sb.append(ArmySingleton.getInstance().getArmyElement(entry.getId()).getFullName());
@@ -221,7 +220,9 @@ public class Tier implements Comparable<Tier>, ModelRestrictor {
 				}
 				
 				sb.append("<br><b>Benefits : </b>");
+				boolean described = false; // at least one benefit described... 
 				for (TierFACostBenefit alteration : level.getBenefit().getAlterations()) {
+					described = true;
 					sb.append("<br>");
 					sb.append(ArmySingleton.getInstance().getArmyElement(alteration.getEntry().getId()).getFullName());
 					if (alteration instanceof TierCostAlteration) {
@@ -237,6 +238,7 @@ public class Tier implements Comparable<Tier>, ModelRestrictor {
 					}
 				}
 				for (TierFreeModel freeModel : level.getBenefit().getFreebies()) {
+					described = true;
 					sb.append("<br>One of (");
 					boolean first = true;
 					for (TierEntry entry : freeModel.getFreeModels()) {
@@ -247,9 +249,26 @@ public class Tier implements Comparable<Tier>, ModelRestrictor {
 						sb.append(ArmySingleton.getInstance().getArmyElement(entry.getId()).getFullName());
 					}
 					sb.append(") for free");
+					if (freeModel.getForEach() != null && freeModel.getForEach().size() > 0) {
+						sb.append(" for each of (");
+						boolean firstA = true;
+						for (TierEntry entry : freeModel.getForEach()) {
+							if (!firstA) {
+								sb.append(", ");
+							}
+							firstA = false;
+							sb.append(ArmySingleton.getInstance().getArmyElement(entry.getId()).getFullName());
+						}
+						sb.append(")");
+					}
 				}
-				if (level.getBenefit().getInGameEffect() != null) {
+				if (level.getBenefit().getInGameEffect() != null && level.getBenefit().getInGameEffect().trim().length() > 0) {
 					sb.append("<br>").append(level.getBenefit().getInGameEffect());
+					described = true;
+				}
+				
+				if (!described) {
+					sb.append("<br>Ingame effect");
 				}
 				
 				sb.append("<br>");

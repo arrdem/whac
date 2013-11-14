@@ -17,10 +17,6 @@ public class ModelCostCalculator {
 	public static int getUnitCost(String elementId, boolean minSize) {
 		ArmyElement element = ArmySingleton.getInstance().getArmyElement(elementId);
 		
-//		SelectionUnit unit = (SelectionUnit) SelectionModelSingleton.getInstance().getSelectionEntryById(elementId);
-//		return element.getAlteredCost();
-
-		
 		if (minSize) {
 			return ((Unit)element).getBaseCost();
 		} else {

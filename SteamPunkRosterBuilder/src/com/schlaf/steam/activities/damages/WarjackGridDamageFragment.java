@@ -137,12 +137,12 @@ public class WarjackGridDamageFragment extends SherlockDialogFragment implements
 	
     public void addDamage(int i) {
     	grid.applyFakeDamages( damageGridView.getCurrentColumn() , i);
-    	damageNumberPicker.setMaxValue(grid.getDamageStatus().getRemainingPoints());
+    	// damageNumberPicker.setMaxValue(grid.getDamageStatus().getRemainingPoints());
     }
     
     public void removeDamage(int i) {
     	grid.applyFakeDamages(damageGridView.getCurrentColumn() , -i);
-    	damageNumberPicker.setMaxValue(grid.getDamageStatus().getRemainingPoints());
+    	// damageNumberPicker.setMaxValue(grid.getDamageStatus().getRemainingPoints());
     }
 
 
@@ -154,15 +154,30 @@ public class WarjackGridDamageFragment extends SherlockDialogFragment implements
 //			damageNumberPicker.setMaxValue(grid.getDamageStatus().getRemainingPoints());
 //			damageNumberPicker.setWrapSelectorWheel(false);
 //		}
+		updateDamagePicker();
 	}
 	
 	@Override
 	public void onChangeColumn(ColumnChangeNotifier gridView) {
-		Log.d("ColossalGridDamageFragment", "onChangeColumn");
 		damageNumberPicker.setValue(0);
+		updateDamagePicker();
+	}
+	
+	
+	private void updateDamagePicker() {
+		
+		
+		int damageableBoxCount = 0;
+		damageNumberPicker.setMinValue(0);
+		damageableBoxCount += ((WarjackDamageGrid) grid).getDamagePendingStatus().getRemainingPoints();
+		// set at least max value to current value...
+		damageNumberPicker.setMaxValue( damageableBoxCount +  damageNumberPicker.getValue());
+		damageNumberPicker.setWrapSelectorWheel(false);
+
+		
 		damageNumberPicker.setMaxValue(((WarjackDamageGrid) grid).getDamagePendingStatus().getRemainingPoints());
 		damageNumberPicker.setWrapSelectorWheel(false);
 	}
-	
+
 
 }

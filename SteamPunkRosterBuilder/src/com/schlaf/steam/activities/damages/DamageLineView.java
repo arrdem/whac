@@ -28,8 +28,11 @@ public class DamageLineView extends DamageBaseView implements
 	List<Coords> coords = new ArrayList<DamageLineView.Coords>();;
 
 	private Drawable textureFond;
+	private Drawable textureFondForceField;
 	
 	Paint paint;
+
+	private boolean forceField = false;
 	
 	/**
 	 * association d'une case de dommage à son centre, permet de trouver où l'on
@@ -110,6 +113,7 @@ public class DamageLineView extends DamageBaseView implements
 		}
 		
 		textureFond = context.getResources().getDrawable(R.drawable.texture_beige);
+		textureFondForceField = context.getResources().getDrawable(R.drawable.forcefield_texture_colossal);
 		paint = new Paint();
 	}
 
@@ -149,10 +153,19 @@ public class DamageLineView extends DamageBaseView implements
 
 		// make the entire canvas with background
 		Rect clipbounds = new Rect(0, 0, w, h);
-		textureFond.setBounds(clipbounds);
+		if (forceField) {
+			textureFondForceField.setBounds(clipbounds);
+		} else {
+			textureFond.setBounds(clipbounds);	
+		}
+		
 		
 		if (!isInEditMode()) {
-			textureFond.draw(canvas);
+			if (forceField) {
+				textureFondForceField.draw(canvas);
+			} else {
+				textureFond.draw(canvas);	
+			}
 		}
 
 		
@@ -229,6 +242,10 @@ public class DamageLineView extends DamageBaseView implements
 
 	public void setEdit(boolean edit) {
 		this.edit = edit;
+	}
+	
+	public void setForceField(boolean forceField) {
+		this.forceField = forceField;
 	}
 
 	public ModelDamageLine getDamageLine() {

@@ -13,7 +13,15 @@ public class DamageColumn implements Serializable {
 	/** serial */
 	private static final long serialVersionUID = 7108244888127130419L;
 	int id;
+	
+	private WarjackLikeDamageGrid parent;
+	
+	
 	List<DamageBox> boxes = new ArrayList<DamageBox>();
+	
+	public DamageColumn(WarjackLikeDamageGrid parentGrid) {
+		this.parent = parentGrid;
+	}
 	
 	public int getId() {
 		return id;
@@ -41,6 +49,7 @@ public class DamageColumn implements Serializable {
 						WarmachineDamageSystemsEnum.EMPTY)) {
 					if (!box.isDamaged()) {
 						box.setDamaged(true);
+						parent.getJustDamagedBoxes().add(box);
 						dmgApplied++;
 					}
 
@@ -65,6 +74,7 @@ public class DamageColumn implements Serializable {
 						if (!box.isDamaged() && !box.isDamagedPending()) {
 							box.setDamagedPending(true);
 							box.setCurrentlyChangePending(true);
+							parent.getJustDamagedBoxes().add(box);
 							dmgApplied++;
 						}
 
@@ -72,22 +82,7 @@ public class DamageColumn implements Serializable {
 				}
 			}
 		} else {
-			// remove
-			for (int i = boxes.size() - 1; i >= 0; i--) {
-				DamageBox box = boxes.get(i);
-				if (dmgApplied < - dmgApplied) {
-					if (box.isDamaged() && ! box.isCurrentlyChangePending()) {
-						box.setCurrentlyChangePending(true);
-						box.setDamagedPending(false);
-						dmgApplied ++;
-					}
-					if (box.isDamagedPending() && box.isCurrentlyChangePending()) {
-						box.setCurrentlyChangePending(false);
-						box.setDamagedPending(false);
-						dmgApplied ++;
-					}
-				}
-			}
+			// do nothing, this is done from parent...
 		}
 		return dmgApplied;
 	}

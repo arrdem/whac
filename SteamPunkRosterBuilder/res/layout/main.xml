@@ -94,6 +94,14 @@
             android:drawableLeft="@drawable/victory"
             android:text="@string/battle_results" />
         
+         <Button
+            android:id="@+id/button_collection"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="collection"
+            android:drawableLeft="@drawable/collection"
+            android:text="@string/my_collection" />
+        
         <Button
             android:id="@+id/button_version"
             android:layout_width="fill_parent"

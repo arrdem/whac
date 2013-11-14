@@ -5,6 +5,7 @@ import java.util.List;
 
 import com.schlaf.steam.activities.battle.MiniModelDescription;
 import com.schlaf.steam.activities.damages.DamageStatus;
+import com.schlaf.steam.activities.damages.ModelDamageLine;
 
 public class ColossalDamageGrid extends WarjackLikeDamageGrid {
 
@@ -15,6 +16,14 @@ public class ColossalDamageGrid extends WarjackLikeDamageGrid {
 	
 	private WarjackDamageGrid leftGrid;
 	private WarjackDamageGrid rightGrid;
+	private ModelDamageLine forceFieldGrid; // optionnal!
+	
+	/**
+	 * keep tracks of boxes with damages, usefull for damage deletion.
+	 */
+	private List<DamageBox> justDamagedBoxes = new ArrayList<DamageBox>();
+
+	
 	
 	public ColossalDamageGrid(SingleModel jack) {
 		this.model = new MiniModelDescription(jack);
@@ -30,19 +39,81 @@ public class ColossalDamageGrid extends WarjackLikeDamageGrid {
 		// no usage without column
 		return 0;
 	}
-	@Override
-	public int applyFakeDamages(int column, int damageAmount) {
-		if (column >=0 && column < 6) {
-			return leftGrid.applyFakeDamages(column, damageAmount);
-		} else if (column >=6 && column <12 ) {
-			return rightGrid.applyFakeDamages(column-6, damageAmount);
+
+	public int applyFakeDamages(int column, int damageAmount, int secondaryColumn) {
+		
+		int applied = 0;
+		if (damageAmount > 0) {
+			
+			if (forceFieldGrid != null && forceFieldGrid.getDamagePendingStatus().getRemainingPoints() > 0) {
+				// apply first to forcefield;
+				applied = forceFieldGrid.applyFakeDamages(damageAmount);
+				// just add the latest boxes.
+				for (DamageBox dmgBox : forceFieldGrid.getJustDamagedBoxes()) {
+					if (! justDamagedBoxes.contains(dmgBox)) {
+						justDamagedBoxes.add(dmgBox);
+					}
+				}
+			}
+			
+			if (applied < damageAmount) {
+				if (column >=0 && column < 6) {
+					applied += leftGrid.applyFakeDamages(column, damageAmount);
+					for (DamageBox dmgBox : leftGrid.getJustDamagedBoxes()) {
+						if (! justDamagedBoxes.contains(dmgBox)) {
+							justDamagedBoxes.add(dmgBox);
+						}
+					}
+					if (applied == damageAmount) {
+						return applied;
+					}
+				} else if (column >=6 && column <12 ) {
+					applied += rightGrid.applyFakeDamages(column-6, damageAmount);
+					for (DamageBox dmgBox : rightGrid.getJustDamagedBoxes()) {
+						if (! justDamagedBoxes.contains(dmgBox)) {
+							justDamagedBoxes.add(dmgBox);
+						}
+					}
+					if (applied == damageAmount) {
+						return applied;
+					}
+				} else {
+					return 0;
+				}
+			}
+			
+			if (applied < damageAmount) {
+				// still damages to apply
+				if (getDamagePendingStatus().getRemainingPoints() > 0) {
+				// propagate damages to other side
+					if (secondaryColumn != -1) {
+						// only if secondary column chosen!
+						applyFakeDamages(secondaryColumn, damageAmount - applied, -1);
+					}
+				}
+			}
+			
+			return applied;
 		} else {
-			return 0;
+			// heal
+			for (int i = justDamagedBoxes.size() - 1; i >=0 && damageAmount < 0 ; i--) {
+				justDamagedBoxes.get(i).setCurrentlyChangePending(false);
+				justDamagedBoxes.get(i).setDamagedPending(false);
+				damageAmount++;
+				applied++;
+				justDamagedBoxes.remove(i);
+			}
+			return applied;
 		}
+		
+		
 	}
 
 	@Override
 	public void commitFakeDamages() {
+		if (forceFieldGrid != null) {
+			forceFieldGrid.commitFakeDamages();
+		}
 		leftGrid.commitFakeDamages();
 		rightGrid.commitFakeDamages();
 		
@@ -51,20 +122,31 @@ public class ColossalDamageGrid extends WarjackLikeDamageGrid {
 	}
 	@Override
 	public void resetFakeDamages() {
+		if (forceFieldGrid != null) {
+			forceFieldGrid.resetFakeDamages();
+		}
 		leftGrid.resetFakeDamages();
 		rightGrid.resetFakeDamages();
 	}
 	@Override
 	public int getTotalHits() {
-		return leftGrid.getTotalHits() + rightGrid.getTotalHits();
+		return forceFieldGrid!=null?forceFieldGrid.getTotalHits():0 + leftGrid.getTotalHits() + rightGrid.getTotalHits();
 	}
 	
 	@Override
 	public DamageStatus getDamageStatus() {
+		
 		DamageStatus leftDmg = leftGrid.getDamageStatus();
 		DamageStatus rightDmg = rightGrid.getDamageStatus();
 		int hitPoints = leftDmg.getHitPoints() + rightDmg.getHitPoints();
 		int damagedPoints = leftDmg.getDamagedPoints() + rightDmg.getDamagedPoints();
+		
+		if (forceFieldGrid != null) {
+			DamageStatus ffDmg = forceFieldGrid.getDamageStatus();	
+			hitPoints += ffDmg.getHitPoints();
+			damagedPoints += ffDmg.getDamagedPoints();
+		}
+		
 		return new DamageStatus(hitPoints, damagedPoints, "");
 	}
 	
@@ -73,6 +155,12 @@ public class ColossalDamageGrid extends WarjackLikeDamageGrid {
 		DamageStatus rightDmg = rightGrid.getDamagePendingStatus();
 		int hitPoints = leftDmg.getHitPoints() + rightDmg.getHitPoints();
 		int damagedPoints = leftDmg.getDamagedPoints() + rightDmg.getDamagedPoints();
+		
+		if (forceFieldGrid != null) {
+			DamageStatus ffDmg = forceFieldGrid.getDamagePendingStatus();
+			hitPoints += ffDmg.getHitPoints() ;
+			damagedPoints += ffDmg.getDamagedPoints();
+		}
 		return new DamageStatus(hitPoints, damagedPoints, "");
 	}
 	
@@ -109,10 +197,19 @@ public class ColossalDamageGrid extends WarjackLikeDamageGrid {
 				}
 			}
 		}
+
+		if (forceFieldGrid != null) {
+			result.add(WarmachineDamageSystemsEnum.FORCE_FIELD);
+		}
 		return result;	
 	}
 
 	public DamageStatus getNbHitPointsSystem(WarmachineDamageSystemsEnum system) {
+		
+		if (system == WarmachineDamageSystemsEnum.FORCE_FIELD) {
+			return forceFieldGrid.getDamageStatus();
+		}
+		
 		DamageStatus leftDmg = leftGrid.getNbHitPointsSystem(system);
 		DamageStatus rightDmg = rightGrid.getNbHitPointsSystem(system);
 		int hitPoints = leftDmg.getHitPoints() + rightDmg.getHitPoints();
@@ -125,5 +222,23 @@ public class ColossalDamageGrid extends WarjackLikeDamageGrid {
 	public void copyStatusFrom(DamageGrid damageGrid) {
 		// TODO Auto-generated method stub
 		
+	}
+
+	public ModelDamageLine getForceFieldGrid() {
+		return forceFieldGrid;
+	}
+
+	public void setForceFieldGrid(ModelDamageLine forceFieldGrid) {
+		this.forceFieldGrid = forceFieldGrid;
+	}
+
+	@Override
+	public List<DamageBox> getJustDamagedBoxes() {
+		return justDamagedBoxes;
+	}
+
+	@Override
+	public int applyFakeDamages(int column, int damageAmount) {
+		return applyFakeDamages(column, damageAmount, -1);
 	}
 }

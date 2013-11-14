@@ -12,7 +12,7 @@ import java.util.List;
  * @author S0085289
  *
  */
-public abstract class ArmyElement implements Serializable {
+public abstract class ArmyElement implements Serializable, Comparable<ArmyElement> {
 
 	/** if FA = MAX_FA, then FA = "U" 
 	 * @see unlimitedFA
@@ -209,6 +209,20 @@ public abstract class ArmyElement implements Serializable {
 
 	public String toString() {
 		return fullName;
+	}
+
+	@Override
+	public int compareTo(ArmyElement another) {
+		
+		int result = 0;
+		result = faction.compareTo(another.getFaction());
+		if (result == 0) {
+			result = getModelType().compareTo(another.getModelType());
+			if (result == 0) {
+				result = getFullName().compareTo(another.getFullName());
+			}
+		}
+		return result;
 	}
 	
 }

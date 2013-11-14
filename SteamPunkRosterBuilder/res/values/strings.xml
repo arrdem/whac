@@ -11,9 +11,8 @@
     <string name="launch_battle">Launch battle</string>
     <string name="import_data">Import data files</string>
     <string name="battle_results">Battle results</string>
+    <string name="my_collection">My collection</string>
     <string name="version">Version</string>
-    <string name="currentVersion">1.0.6</string>
-    
     
     <string name="empty"></string>
     
@@ -92,6 +91,9 @@
     <string name="rename">Rename</string>
     <string name="exit">Exit</string>
     <string name="cancel">Cancel</string>
+    
+    <string name="owned">Owned</string>
+    <string name="painted">Painted</string>
     
     
     <string name="entry_title">Entry title</string>

@@ -10,6 +10,9 @@ public class Colossal extends Warjack {
 	
 	private String leftGrid;
 	private String rightGrid;
+	private boolean myrmidon;
+	/** number of boxes in force field */
+	private int forceField;
 	
 	@Override
 	public ModelTypeEnum getModelType() {
@@ -30,5 +33,21 @@ public class Colossal extends Warjack {
 
 	public void setRightGrid(String rightGrid) {
 		this.rightGrid = rightGrid;
+	}
+
+	public boolean isMyrmidon() {
+		return myrmidon;
+	}
+
+	public void setMyrmidon(boolean myrmidon) {
+		this.myrmidon = myrmidon;
+	}
+
+	public int getForceField() {
+		return forceField;
+	}
+
+	public void setForceField(int forceField) {
+		this.forceField = forceField;
 	}
 }

@@ -6,10 +6,12 @@ import java.io.FileOutputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.PrintStream;
+import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 
@@ -20,7 +22,6 @@ import android.os.SystemClock;
 import android.preference.PreferenceManager;
 import android.util.Log;
 
-import com.schlaf.steam.R;
 import com.schlaf.steam.activities.PreferenceConstants;
 import com.schlaf.steam.activities.battle.BattleEntry;
 import com.schlaf.steam.activities.battle.BattleResult;
@@ -30,12 +31,14 @@ import com.schlaf.steam.activities.battle.JackEntry;
 import com.schlaf.steam.activities.battle.KarchevEntry;
 import com.schlaf.steam.activities.battle.MultiPVUnit;
 import com.schlaf.steam.activities.battle.SingleDamageLineEntry;
+import com.schlaf.steam.activities.collection.CollectionSingleton;
 import com.schlaf.steam.activities.selectlist.SelectionModelSingleton;
 import com.schlaf.steam.activities.selectlist.selected.BeastCommander;
 import com.schlaf.steam.activities.selectlist.selected.JackCommander;
 import com.schlaf.steam.activities.selectlist.selected.SelectedArmyCommander;
 import com.schlaf.steam.activities.selectlist.selected.SelectedEntry;
 import com.schlaf.steam.activities.selectlist.selected.SelectedRankingOfficer;
+import com.schlaf.steam.activities.selectlist.selected.SelectedSolo;
 import com.schlaf.steam.activities.selectlist.selected.SelectedUA;
 import com.schlaf.steam.activities.selectlist.selected.SelectedUnit;
 import com.schlaf.steam.activities.selectlist.selected.SelectedWA;
@@ -46,6 +49,7 @@ import com.schlaf.steam.data.ArmyElement;
 import com.schlaf.steam.data.ArmySingleton;
 import com.schlaf.steam.data.BattleEngine;
 import com.schlaf.steam.data.FactionNamesEnum;
+import com.schlaf.steam.data.ModelTypeEnum;
 import com.schlaf.steam.data.Solo;
 import com.schlaf.steam.data.Unit;
 import com.schlaf.steam.data.Warbeast;
@@ -693,6 +697,16 @@ public class StorageManager {
 						entries.add(raEntry);
 					}
 					
+					if ( ((SelectedUnit) entry).getSoloAttachment() != null) {
+						SelectedSolo solo = ((SelectedUnit) entry).getSoloAttachment();
+						ArmyElement soloDescription = ArmySingleton.getInstance().getArmyElement(solo.getId());
+						BattleEntry soloEntry = new MultiPVUnit(solo, (ArmyElement) soloDescription, entryCounter++);
+						soloEntry.setAttached(true);
+						soloEntry.setParentId(bEntry.getUniqueId());
+						//bEntry.getChilds().add(raEntry);
+						entries.add(soloEntry);
+					}
+					
 					if ( ((SelectedUnit) entry).getUnitAttachment() != null) {
 						SelectedUA ua = ((SelectedUnit) entry).getUnitAttachment();
 						ArmyElement uaDescription = ArmySingleton.getInstance().getArmyElement(ua.getId());
@@ -1062,6 +1076,131 @@ public class StorageManager {
 
 		Log.d(TAG, "exportStats ended");
 		return filename;
+	}
+
+	/**
+	 * export the collection as text file
+	 * @param applicationContext
+	 * @return filename created
+	 */
+	public static String exportCollection(Context applicationContext) {
+		Log.d(TAG, "exportCollection" );
+		String filename = "";
+		
+		File externalStorageDir = Environment.getExternalStorageDirectory ();
+		String whacExternalDirPath = externalStorageDir.getPath() + WHAC_SUBDIR;
+		File whacExternalDir = new File(whacExternalDirPath);
+
+		FileOutputStream fos = null;
+		Date date = new Date();
+		
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd", Locale.getDefault());
+
+		String validArmyName = "collection-" + sdf.format(date) + ".txt";
+		
+		PrintStream ps; 
+		
+		try {
+			File fileToSave = new File(whacExternalDir, validArmyName);
+			fileToSave.createNewFile();
+			
+			filename = fileToSave.getPath();
+			fos = new FileOutputStream(fileToSave);
+			ps = new PrintStream(fos);
+			
+			ps.println("my collection : " + DateFormat.getDateTimeInstance().format(date));
+			
+			generateCollectionText(ps);
+			
+			ps.close();
+			
+		} catch (Exception e) {
+			Log.w(TAG, e);
+			e.printStackTrace();
+		} finally {
+			try {
+				if (fos != null)
+					fos.close();
+			} catch (Exception e) { /* do nothing */
+				e.printStackTrace();
+			}
+		}
+
+		Log.d(TAG, "exportCollection ended");
+		return filename;
+	}
+
+	public static void generateCollectionText(PrintStream ps) {
+		HashMap<String, Integer> owned = CollectionSingleton.getInstance().getOwnedMap();
+		HashMap<String, Integer> painted = CollectionSingleton.getInstance().getPaintedMap();
+		
+		HashMap<FactionNamesEnum, Integer> factionOwned = new HashMap<FactionNamesEnum, Integer>();
+		HashMap<FactionNamesEnum, Integer> factionPainted = new HashMap<FactionNamesEnum, Integer>();
+		
+		List<ArmyElement> elementsToExport = new ArrayList<ArmyElement>();
+		HashMap<String, String> exportData = new HashMap<String, String>();
+		
+		int totalOwned = 0;
+		int totalPainted = 0;
+		
+		for (String key : owned.keySet()) {
+			ArmyElement entry = ArmySingleton.getInstance().getArmyElement(key);
+			
+			if ( factionOwned.get(entry.getFaction()) == null) {
+				factionOwned.put(entry.getFaction(), Integer.valueOf(0));
+				factionPainted.put(entry.getFaction(), Integer.valueOf(0));
+			}
+			
+			int ownedCount = owned.get(key).intValue();
+			if (ownedCount > 0) {
+				// don't export empty data... 
+				totalOwned += ownedCount;
+				factionOwned.put(entry.getFaction(), factionOwned.get(entry.getFaction()).intValue() + ownedCount);
+				int paintedCount;
+				if (painted.get(key) != null) {
+					paintedCount = painted.get(key).intValue();
+					totalPainted += paintedCount;
+					factionPainted.put(entry.getFaction(), factionPainted.get(entry.getFaction()).intValue() + paintedCount);
+				} else {
+					paintedCount = 0; 
+				}
+				StringBuffer sb = new StringBuffer(128);
+				
+				sb.append(entry.getFullName());
+				sb.append(" : " );
+				sb.append(paintedCount);
+				sb.append("/");
+				sb.append(ownedCount);
+				
+				elementsToExport.add(entry);
+				exportData.put(key, sb.toString());
+			}
+		}
+		
+		ps.println("owned total : " + totalOwned);
+		ps.println("painted total : " + totalPainted);
+		ps.println("completion : " + totalPainted * 100 / totalOwned + "%");
+		ps.println("");
+		ps.println("format : [entry name : painted / owned]");
+		
+		Collections.sort(elementsToExport);
+		FactionNamesEnum previousFaction = null;
+		ModelTypeEnum previousType = null;
+		for (ArmyElement element : elementsToExport) {
+			
+			if (element.getFaction() != previousFaction) {
+				previousFaction = element.getFaction();
+				previousType = element.getModelType();
+				ps.println("--------------" + previousFaction.name() + "--------------");
+				ps.println("faction progress : painted " +  factionPainted.get(previousFaction) + " / " + factionOwned.get(previousFaction) + " completion = " + factionPainted.get(previousFaction) * 100 / factionOwned.get(previousFaction) + "%" );
+				ps.println("[--" + previousType.getTitle() + "--]");
+			}
+			if (element.getModelType() != previousType) {
+				previousType = element.getModelType();
+				ps.println("[--" + previousType.getTitle() + "--]");
+			}
+			ps.println(exportData.get(element.getId()));
+		}
 	}
 	
 }

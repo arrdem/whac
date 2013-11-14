@@ -26,8 +26,11 @@ public class ColossalGridDamageFragment extends SherlockDialogFragment implement
 	ColossalDamageGrid grid;
 	WarjackDamageGridView leftDamageGridView;
 	WarjackDamageGridView rightDamageGridView;
+	DamageLineView forceFieldView;
 	WarjackDamageGrid leftGrid;
 	WarjackDamageGrid rightGrid;
+	ModelDamageLine forceFieldGrid;
+	
 	
 	int selectedSide = NONE;
 	static final int NONE = 0;
@@ -47,6 +50,8 @@ public class ColossalGridDamageFragment extends SherlockDialogFragment implement
 		grid = (ColossalDamageGrid) listener.getCurrentDamageGrid();
 		leftGrid = grid.getLeftGrid();
 		rightGrid = grid.getRightGrid();
+		forceFieldGrid = grid.getForceFieldGrid();
+		
 		
 		// Use the Builder class for convenient dialog construction
 		AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
@@ -59,13 +64,13 @@ public class ColossalGridDamageFragment extends SherlockDialogFragment implement
 		// clone the inflater using the ContextThemeWrapper
 		LayoutInflater localInflater = inflater.cloneInContext(context);
 		// inflate using the cloned inflater, not the passed in default	
-		View view = localInflater.inflate(R.layout.damage_dialog_colossal_fragment, null);
+		View view = localInflater.inflate(R.layout.damage_dialog_ff_colossal_fragment, null);
 		
 
 		leftDamageGridView = (WarjackDamageGridView) view.findViewById(R.id.damageGridViewLeft);		
 		leftDamageGridView.setGrid((WarjackDamageGrid) leftGrid);
 		leftDamageGridView.setEdit(true);
-		leftDamageGridView.setCurrentColumn(-1);
+		leftDamageGridView.setCurrentColumn(0);
 		leftDamageGridView.registerColumnObserver(this);
 		leftGrid.registerObserver(leftDamageGridView);
 		leftGrid.registerObserver(this);
@@ -78,11 +83,22 @@ public class ColossalGridDamageFragment extends SherlockDialogFragment implement
 		rightGrid.registerObserver(rightDamageGridView);
 		rightGrid.registerObserver(this);
 
+		forceFieldView = (DamageLineView) view.findViewById(R.id.damageLineForceField);
+		if (forceFieldGrid != null) {
+			forceFieldView.setForceField(true);
+			forceFieldView.setDamageLine(forceFieldGrid);
+			forceFieldView.setEdit(true);
+			forceFieldGrid.registerObserver(forceFieldView);
+			forceFieldGrid.registerObserver(this);
+		} else {
+			forceFieldView.setVisibility(View.GONE);
+		}
+		
 		
 		damageNumberPicker = (NumberPicker) view.findViewById(R.id.numberPickerDamage);
 		damageNumberPicker.setOnValueChangedListener(this);
 		damageNumberPicker.setDescendantFocusability(NumberPicker.FOCUS_BLOCK_DESCENDANTS);
-		selectedSide = NONE;
+		selectedSide = LEFT;
 		updateDamagePicker();
 		
 		view.findViewById(R.id.buttonCancel).setOnClickListener(new OnClickListener() {
@@ -104,6 +120,7 @@ public class ColossalGridDamageFragment extends SherlockDialogFragment implement
 		view.findViewById(R.id.buttonApply).setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
+				damageNumberPicker.setValue(0);
 				updateDamagePicker();
 				grid.commitFakeDamages();
 			}
@@ -146,21 +163,41 @@ public class ColossalGridDamageFragment extends SherlockDialogFragment implement
 	}
 	
     public void addDamage(int i) {
-    	// Log.d("ColossalGridDamageFragment", "addDamage " + i + " to side" + (selectedSide==LEFT?"left":"right"));
-    	if (selectedSide == LEFT) {
-    		leftGrid.applyFakeDamages( leftDamageGridView.getCurrentColumn() , i);
-    	} else {
-    		rightGrid.applyFakeDamages( rightDamageGridView.getCurrentColumn() , i);
-    	}
-    	// updateDamagePicker();
+    	int column = -1;
+    	int secondaryColumn = -1;
+//    	if (forceFieldGrid != null && forceFieldGrid.getDamagePendingStatus().getRemainingPoints() > 0) {
+//    		 column = -1;
+//    	} else {
+        	if (selectedSide == LEFT || selectedSide == NONE) {
+        		column = leftDamageGridView.getCurrentColumn();
+        		secondaryColumn = rightDamageGridView.getCurrentColumn() + 6;
+        	} else {
+        		column = rightDamageGridView.getCurrentColumn() + 6 ;
+        		secondaryColumn = leftDamageGridView.getCurrentColumn();
+        	}
+//    	}
+    	
+    	grid.applyFakeDamages(column, i, secondaryColumn);
+    	
+//    	if (forceFieldGrid.getDamagePendingStatus().getHitPoints() > 0) {
+//    		forceFieldGrid.applyFakeDamages(i);
+//    	} else {
+//        	// Log.d("ColossalGridDamageFragment", "addDamage " + i + " to side" + (selectedSide==LEFT?"left":"right"));
+//        	if (selectedSide == LEFT) {
+//        		leftGrid.applyFakeDamages( leftDamageGridView.getCurrentColumn() , i);
+//        	} else {
+//        		rightGrid.applyFakeDamages( rightDamageGridView.getCurrentColumn() , i);
+//        	}
+//    	}
     }
     
     public void removeDamage(int i) {
-    	if (selectedSide == LEFT) {
-    		leftGrid.applyFakeDamages( leftDamageGridView.getCurrentColumn() , -i);
-    	} else {
-    		rightGrid.applyFakeDamages( rightDamageGridView.getCurrentColumn() , -i);
-    	}
+    	grid.applyFakeDamages(-1, -i);
+//    	if (selectedSide == LEFT) {
+//    		leftGrid.applyFakeDamages( leftDamageGridView.getCurrentColumn() , -i);
+//    	} else {
+//    		rightGrid.applyFakeDamages( rightDamageGridView.getCurrentColumn() , -i);
+//    	}
     	// updateDamagePicker();
     }
 
@@ -170,9 +207,11 @@ public class ColossalGridDamageFragment extends SherlockDialogFragment implement
 		// updateDamagePicker();
 		
 		// propagate damage to colossal grid if message comes from one on L/R grid
-		if (notifyingGrid == leftGrid || notifyingGrid == rightGrid) {
+		if (notifyingGrid == leftGrid || notifyingGrid == rightGrid || notifyingGrid == forceFieldGrid) {
 			grid.notifyBoxChange();
 		} 
+		
+		updateDamagePicker();
 		
 	}
 
@@ -194,13 +233,19 @@ public class ColossalGridDamageFragment extends SherlockDialogFragment implement
 	}
 	
 	private void updateDamagePicker() {
-		
+		int damageableBoxCount = 0;
 		damageNumberPicker.setMinValue(0);
-		if (selectedSide == LEFT) {
-			damageNumberPicker.setMaxValue(((WarjackDamageGrid) leftGrid).getDamagePendingStatus().getRemainingPoints());
-		} else {
-			damageNumberPicker.setMaxValue(((WarjackDamageGrid) rightGrid).getDamagePendingStatus().getRemainingPoints());
+		if (grid.getForceFieldGrid() != null) {
+			damageableBoxCount = grid.getForceFieldGrid().getDamagePendingStatus().getRemainingPoints();
 		}
+
+		if (selectedSide == LEFT) {
+			damageableBoxCount += grid.getLeftGrid().getDamagePendingStatus().getRemainingPoints(); 
+		} else if (selectedSide == RIGHT) {
+			damageableBoxCount += grid.getRightGrid().getDamagePendingStatus().getRemainingPoints();
+		}
+		// set at least max value to current value...
+		damageNumberPicker.setMaxValue( damageableBoxCount +  damageNumberPicker.getValue());
 		damageNumberPicker.setWrapSelectorWheel(false);
 	}
 

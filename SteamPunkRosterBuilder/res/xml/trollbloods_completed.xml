@@ -7,14 +7,14 @@
 			
 			<warlocks>
 				<warlock id="Tw01" name="Chief Madrak Ironhide" full_name="Chief Madrak Ironhide" generation="P" qualification="TROLLBLOOD TROLLKIN WARLOCK" fury="5" warbeast_points="6" fa="C">
-					<basestats name="Chief Madrak Ironhide" spd="6" str="8" mat="7" rat="3" def="14" arm="16" cmd="9" hitpoints="18" tough="true" />
+					<basestats name="Chief Madrak Ironhide" spd="6" str="8" mat="7" rat="6" def="14" arm="16" cmd="9" hitpoints="18" tough="true" />
 					<weapons>
 						<melee_weapon name="Rathrok" pow="7" p_plus_s="15" magical="true" reach="true">
 							<capacity title="Critical Grievous Wounds">
 On a critical hit, the model hit by this weapon loses Tough, cannot heal or be healed, and cannot transfer damage for one round.							
 							</capacity>
 						</melee_weapon>
-						<ranged_weapon name="Thrown Rathrok" rng="8" rof="1" aoe="-" pow="7">
+						<ranged_weapon name="Thrown Rathrok" rng="8" rof="1" aoe="-" pow="7" magical="true">
 							<capacity title="Critical Grievous Wounds">
 See above.							
 							</capacity>
@@ -51,7 +51,7 @@ On a critical hit, the model hit by this weapon loses Tough, cannot heal or be h
 This model gains 1 fury point each time it destroys a living enemy model with this weapon.							
 							</capacity>
 						</melee_weapon>
-						<ranged_weapon name="Thrown Rathrok" rng="8" rof="1" aoe="-" pow="7">
+						<ranged_weapon name="Thrown Rathrok" rng="8" rof="1" aoe="-" pow="7" magical="true">
 							<capacity title="Critical Grievous Wounds">
 See above.							
 							</capacity>
@@ -125,10 +125,7 @@ rolls for the attack.
 						</melee_weapon>
 					</weapons>
 					<feat title="SCROLL OF GRIMMR">
-Doomshaper and friendly Faction warbeasts in his battlegroup
-beginning their activations in his control area gain +3 SPD and
-can charge or make slam or trample power attacks without
-being forced. Scroll of Grimmr lasts for one turn.
+Doomshaper and friendly Faction warbeasts in his battlegroup beginning their activations in his control area gain +3 SPD and can charge or make slam or trample power attacks without being forced. Scroll of Grimmr lasts for one turn.
 </feat>
 					<spell name="AGITATION" cost="3" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">
 Place 1 fury point on each enemy warbeast currently in this model's
@@ -177,26 +174,18 @@ damage points at the start of each of its activations.
 					<weapons>
 						<melee_weapon name="resounder" p_plus_s="14" pow="7" magical="true">
 							<capacity title="Critical Smite">
-On a critical hit, this model can slam the
-model hit instead of rolling damage normally. The model hit
-is slammed d6" directly away from this model and suffers a
-damage roll with POW equal to this model's STR plus the POW
-of this weapon. The POW of collateral damage is equal to this
-model's STR.							
+On a critical hit, this model can slam the model hit instead of rolling damage normally. The model hit is slammed d6" directly away from this model and suffers a damage roll with POW equal to this model's STR plus the POW of this weapon. The POW of collateral damage is equal to this model's STR.							
 							</capacity>
 						</melee_weapon>
 						<ranged_weapon aoe="-" name="Sonic blast" pow="12" rng="SP8" rof="1"></ranged_weapon>
 					</weapons>
 					<feat title="FELL CHORUS">
-					Friendly Faction models currently in BLOODSONG's control area gain Fearless, can make one additional melee attack during their activations this turn, and can make a full advance at the end of this turn after all friendly models have ended their activations. During this movement, affected models cannot be targeted by free strikes. While in Bloodsong's control area, enemy models/units cannot give or receive orders and cannot cast spells. Affected friendly models are considered to have been affected by a Fell Call this turn. A friendly model/unit that has already been affected by a Fell Call this turn is not affected by Fell Chorus. Fell Chorus lasts for one round.</feat>
+Friendly Faction models currently in BLOODSONG's control area gain Fearless, can make one additional melee attack during their activations this turn, and can make a full advance at the end of this turn after all friendly models have ended their activations. During this movement, affected models cannot be targeted by free strikes. While in Bloodsong's control area, enemy models/units cannot give or receive orders and cannot cast spells. Affected friendly models are considered to have been affected by a Fell Call this turn. A friendly model/unit that has already been affected by a Fell Call this turn is not affected by Fell Chorus. Fell Chorus lasts for one round.</feat>
 					<spell name="CALAMITY" cost="3" rng="8" aoe="-" pow="-" up="YES" off="YES">
 Friendly models gain +2 to attack and damage rolls against target enemy model/ unit.
 					</spell>
 					<spell name="HALLOWED AVENGER" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">
-When an enemy attack destroys or removes from play one or more
-friendly Faction models within 5" of target warbeast in this model's
-battlegroup, after the attack is resolved the affected warbeast can charge
-an enemy model, then Hallowed Avenger expires.
+When an enemy attack destroys or removes from play one or more friendly Faction models within 5" of target warbeast in this model's battlegroup, after the attack is resolved the affected warbeast can charge an enemy model, then Hallowed Avenger expires.
 
 					</spell>
 					<spell name="RIFT" cost="3" rng="8" aoe="4" pow="13" up="NO" off="YES">
@@ -288,11 +277,11 @@ When a model is hit by an attack with this weapon, it is knocked down.
 					<feat title="SPREAD THE NET">
 While in Grim's control area, enemy models suffer -3 DEF. Enemy models beginning their activations in Grim's control area suffer -3 SPD and cannot make special attacks. Spread the Net lasts for one round.					
 					</feat>
-					<spell name="CROSSCOUNTRY" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">
-A model damaged by Lock the Target cannot run, charge, or be placed for one round.
+Target friendly Faction model/unit gains Pathfinder and Hunter. (A model with Hunter ignores forests, concealment, and cover when determining LOS or making a ranged attack.)
+										<spell name="CROSSCOUNTRY" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">
 </spell>
 					<spell name="LOCK THE TARGET" cost="2" rng="10" aoe="-" pow="10" up="NO" off="YES">
-Target friendly Faction model/unit gains Pathfinder and Hunter. (A model with Hunter ignores forests, concealment, and cover when determining LOS or making a ranged attack.)
+A model damaged by Lock the Target cannot run, charge, or be placed for one round.
 </spell>
 					<spell name="MARKED FOR DEATH" cost="2" rng="8" aoe="-" pow="-" up="YES" off="YES">
 Target enemy model/unit suffers -2 DEF and loses Incorporeal and Stealth and cannot gain those abilities while affected by Marked for Death. Friendly Faction models can target an affected model regardless of LOS.
@@ -350,7 +339,7 @@ If target enemy model/unit advances during its activation, immediately after end
 						<basestats name="Krump" spd="6" str="5" mat="5" rat="6" def="14" arm="12" cmd="7" hitpoints="5" tough="true" pathfinder="true"/>
 						<weapons>
 							<melee_weapon name="Hand axe" p_plus_s="8" pow="3"></melee_weapon>
-							<ranged_weapon name="Blunderbuss" rng="SP8" rof="1" aoe="-" pow="12" >
+							<ranged_weapon name="Blunderbuss" rng="8" rof="1" aoe="-" pow="12" >
 							</ranged_weapon>
 						</weapons>
 <capacity title="Granted: Circular Vision"> While this model is in play models in this unit gain Circular Vision. (The front arc of a model with Circular Vision extends to 360'.)</capacity>
@@ -404,7 +393,7 @@ template, then you can choose its facing.)
 				<warlock id="TW06" name="Calandra Truthsayer" full_name="Calandra Truthsayer" generation="P" qualification="warlock" fury="7" warbeast_points="5" fa="C">
 					<basestats name="Calandra Truthsayer" spd="5" str="6" mat="5" rat="4" def="14" arm="14" cmd="8" hitpoints="16" tough="true"/>
 					<weapons>
-					    <melee_weapon name="SALT" p_plus_s="0" pow="0"> <!--  complete! -->
+					    <melee_weapon name="SALT" p_plus_s="10" pow="4"> <!--  complete! -->
 					        <capacity title="Mercy Killer">When attacking with this weapon, this model
 gains an additional die on damage rolls against damaged models.</capacity>
 					    </melee_weapon>
@@ -619,9 +608,9 @@ This model can be forced to heal d3 damage points once per activation. This mode
 				<warbeast id="TB02" name="Slag Troll" full_name="Slag Troll" damage_spiral="7-8-7" fury="3" threshold="8" cost="6" qualification="trollblood light warbeast" fa="U">
 					<basestats name="Slag Troll" spd="5" str="10" mat="6" rat="5" def="12" arm="17" cmd="5" immunity_corrosion="true"/>
 					<weapons>
-					    <melee_weapon name="Claw" location="R" pow="3" p_plus_s="12" open_fist="true"></melee_weapon>
-					    <melee_weapon name="Claw" location="L" pow="3" p_plus_s="12" open_fist="true"></melee_weapon>
-					    <ranged_weapon name="Spew Acid" location="H" rng="8" rof="1" aoe="3" pow="12" continuous_corrosion="true" corrosion="true">
+					    <melee_weapon name="Claw" location="R" pow="3" p_plus_s="13" open_fist="true"></melee_weapon>
+					    <melee_weapon name="Claw" location="L" pow="3" p_plus_s="13" open_fist="true"></melee_weapon>
+					    <ranged_weapon name="Spew Acid" location="H" rng="8" rof="2" aoe="-" pow="12" continuous_corrosion="true" corrosion="true">
 					        <capacity title="Erosion">This model rolls an additional die on this weapon's damage rolls against non-living models.</capacity>
 					    </ranged_weapon>
 					</weapons>
@@ -651,7 +640,7 @@ the Corrosion continuous effect unless this model was destroyed or removed from 
 					<basestats name="Troll Axer" spd="5" str="9" mat="6" rat="4" def="12" arm="18" cmd="6" />
 					<weapons>
 					    <melee_weapon name="Great Axe" pow="5" p_plus_s="14" reach="true">
-					        <capacity title="Tresher"></capacity>
+					        <capacity title="Tresher (*Attack)">This model makes one melee attack with this weapon against each model in its LOS and this weapon’s melee range.</capacity>
 					    </melee_weapon>
 					</weapons>
 					<animus name="RUSH"
@@ -670,6 +659,7 @@ This model can be forced to heal d3 damage points once per activation. This mode
 					<basestats name="Troll Bouncer" spd="5" str="9" mat="5" rat="4" def="12" arm="17" cmd="6" />
 					<weapons>
 					    <melee_weapon name="Ball &amp; chain" pow="4" p_plus_s="13" reach="true" chain="true">
+					        <capacity title="Chain Weapon">This attack ignores the Buckler and Shield weapon qualities and Shield Wall.</capacity>
 					    </melee_weapon>
 					    <melee_weapon name="Shield" pow="1" p_plus_s="10" shield="true">
 					    </melee_weapon>
@@ -682,12 +672,14 @@ This model can be forced to heal d3 damage points once per activation. This mode
 		up="NO"
 		off="NO">
 When target friendly model is damaged by an enemy attack, after the attack is resolved  the enemy model is pushed 3" directly away from the affected model, then Bump expires. Bump lasts for one round.</animus>
+					<capacity title="Brace for Impact">When this model is slammed, reduce the slam distance rolled by 3. If the total slam distance is 0 or less, this model is not knocked down. This model is not knocked down when it suffers collateral damage</capacity>
 					<capacity title="Regeneration [D3]">
 This model can be forced to heal d3 damage points once per activation. This model cannot use Regeneration during an activation it runs.
 					</capacity>
+					<capacity title="Shield Guard">Once per round, when a friendly model is directly hit by a ranged attack during your opponent's turn while within 2" of this model, this model can become the target of the attack and be automatically hit instead. This model cannot use Shield Guard if it is incorporeal, knocked down, or stationary.</capacity>
 				</warbeast>
 				<warbeast id="TB05" name="Troll Impaler" full_name="Troll Impaler" damage_spiral="7-8-7" fury="3" threshold="9" cost="5" qualification="trollblood light warbeast" fa="U">
-					<basestats name="Troll Impaler" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+					<basestats name="Troll Impaler" spd="5" str="9" mat="5" rat="5" def="12" arm="16" cmd="6" />
 					<weapons>
 					    <melee_weapon name="Battle spear" pow="4" p_plus_s="13" reach="true">
 					    </melee_weapon>
@@ -715,7 +707,7 @@ This model can be forced to heal d3 damage points once per activation. This mode
 					</capacity>
 				</warbeast>
 				<warbeast id="TB06" name="Winter Troll" full_name="Winter Troll" damage_spiral="7-8-7" fury="3" threshold="8" cost="5" qualification="trollblood light warbeast" fa="U">
-					<basestats name="Winter Troll" spd="5" str="9" mat="6" rat="4" def="12" arm="18" cmd="6" immunity_frost="true"/>
+					<basestats name="Winter Troll" spd="5" str="9" mat="5" rat="4" def="12" arm="16" cmd="6" immunity_frost="true"/>
 					<weapons>
 					    <melee_weapon name="Claw" location="R" pow="3" p_plus_s="12" open_fist="true"></melee_weapon>
 					    <melee_weapon name="Claw" location="L" pow="3" p_plus_s="12" open_fist="true"></melee_weapon>
@@ -777,8 +769,8 @@ This model can make melee and ranged attack during the same combat action. When 
 				<warbeast id="TB08" name="Dire Troll Mauler" full_name="Dire Troll Mauler" damage_spiral="9-10-9" fury="5" threshold="9" cost="9" qualification="TROLLBLOOD HEAVY WARBEAST" fa="U">
 					<basestats name="Dire Troll Mauler" spd="5" str="12" mat="6" rat="3" def="12" arm="18" cmd="5" />
 					<weapons>
-					    <melee_weapon name="Big meaty fist" location="R" pow="4" p_plus_s="16" open_fist="true"></melee_weapon>
-					    <melee_weapon name="Big meaty fist" location="L" pow="4" p_plus_s="16" open_fist="true"></melee_weapon>
+					    <melee_weapon name="Big Meaty Fist" location="R" pow="4" p_plus_s="16" open_fist="true"></melee_weapon>
+					    <melee_weapon name="Big Meaty Fist" location="L" pow="4" p_plus_s="16" open_fist="true"></melee_weapon>
 					    
 					</weapons>
 <animus name="RAGE"
@@ -803,7 +795,7 @@ When this model boxes a Living model with a melee attack, this model can heal d3
 					
 				</warbeast>
 				<warbeast id="TB09" name="Earthborn Dire Troll" full_name="Earthborn Dire Troll" damage_spiral="10-11-11" fury="5" threshold="10" cost="10" qualification="TROLLBLOOD HEAVY WARBEAST" fa="U">
-					<basestats name="Earthborn Dire Troll" spd="5" str="12" mat="6" rat="3" def="12" arm="18" cmd="5" />
+					<basestats name="Earthborn Dire Troll" spd="5" str="12" mat="6" rat="3" def="12" arm="18" cmd="5" pathfinder="true"/>
 					<weapons>
 					    <melee_weapon name="Claw" location="R" pow="3" p_plus_s="15" open_fist="true">
 					        <capacity title="Adaption">
@@ -892,7 +884,7 @@ When this model boxes a Living model with a melee attack, this model can heal d3
 					</capacity>
 				</warbeast>
 				<warbeast id="TB12" name="Swamp Troll" full_name="Swamp Troll" damage_spiral="7-8-7" fury="3" threshold="9" cost="4" qualification="trollblood light warbeast" fa="U">
-					<basestats name="Swamp Troll" spd="5" str="9" mat="5" rat="5" def="12" arm="15" cmd="6" immunity_fire="true"/>
+					<basestats name="Swamp Troll" spd="5" str="9" mat="5" rat="5" def="12" arm="15" cmd="6" pathfinder="true"/>
 					<weapons>
 					    <melee_weapon name="Claw" location="R" pow="3" p_plus_s="12" open_fist="true"></melee_weapon>
 					    <melee_weapon name="Claw" location="L" pow="3" p_plus_s="12" open_fist="true"></melee_weapon>
@@ -917,7 +909,7 @@ This model can be forced to heal d3 damage points once per activation. This mode
 					</capacity>
 				</warbeast>
 				<warbeast id="TB13" name="Rök" full_name="Rök" damage_spiral="9-10-9" fury="5" threshold="7" cost="11" qualification="trollblood dire troll character heavy warbeast" fa="C">
-					<basestats name="Rök" spd="5" str="12" mat="7" rat="0" def="12" arm="18" cmd="5" immunity_frost="true"/>
+					<basestats name="Rök" spd="5" str="12" mat="7" rat="5" def="12" arm="18" cmd="5" immunity_frost="true"/>
 					<weapons>
 					    <melee_weapon name="Battle axe" location="R" pow="6" p_plus_s="18">
 					    </melee_weapon>
@@ -925,7 +917,7 @@ This model can be forced to heal d3 damage points once per activation. This mode
 					    </melee_weapon>
 					    <ranged_weapon name="Frost breath" location="H" rng="SP6" rof="1" aoe="-" pow="14" cold="true">
 					        <capacity title="Critical Freeze">
-					            On a critical hit, the model hit becomes stationary for one round unless it has Immunity:cold.
+On a critical hit, the model hit becomes stationary for one round unless it has Immunity:cold.
 					        </capacity>
 
 					    </ranged_weapon>
@@ -1007,7 +999,7 @@ This model can be forced to heal d3 damage points once per activation. This mode
 
 				</warbeast>
 				<warbeast id="TB16" name="Mountain King" full_name="Mountain King" damage_spiral="11-20-17" fury="5" threshold="6" cost="20" qualification="Trollblood gargantuan" fa="2">
-					<basestats name="Mountain King" spd="5" str="15" mat="5" rat="5" def="9" arm="19" cmd="4" />
+					<basestats name="Mountain King" spd="5" str="15" mat="5" rat="5" def="9" arm="19" cmd="4" terror="true"/>
 					<weapons>
 					    <melee_weapon name="Big Meaty Fist" location="R" pow="4" p_plus_s="19" open_fist="true">
 					    </melee_weapon>
@@ -1039,7 +1031,7 @@ model into play B2B with this model if there is enough room for the Whelp’s ba
 			
 			<battleEngines>
 				<battleEngine id="TE01" name="War Wagon" full_name="War Wagon" cost="9" qualification="trollkin cavalry battle engine" fa="2">
-					<basestats name="War Wagon" spd="7" str="14" mat="6" rat="5" def="10" arm="19" cmd="0" hitpoints="22" construct="true"/>
+					<basestats name="War Wagon" spd="7" str="14" mat="6" rat="5" def="10" arm="19" cmd="10" hitpoints="22" construct="true"/>
 					<weapons>
 					    <ranged_weapon name="Pounder" rng="10" rof="1" aoe="5" pow="16">
 					        <capacity title="Arcing Fire">
@@ -1052,7 +1044,7 @@ On a direct hit against an enemy model, all models hit are knocked down.
 					    <ranged_weapon name="Scattergun" rng="SP8" rof="1" aoe="-" pow="12">
 					        
 					    </ranged_weapon>
-					    <mount_weapon pow="14">
+					    <mount_weapon pow="14" name="Mount">
 					        <capacity title="Knockdown">When a model is hit by an attack with this weapon, it is knocked down.</capacity>
 					        <capacity title="Trampling Hooves">This model can charge and make charge attacks with this weapon. During a combat action it did not make a charge attack, this model can make one melee attack with this weapon.</capacity>
 					    </mount_weapon>
@@ -1118,7 +1110,10 @@ model. This model has the same number of unmarked damage boxes as the chosen Gru
 										
 					<unit_attachment id="TA03" name="Krielstone Stone Scribe Elder" full_name="Krielstone Stone Scribe Elder" fa="1" cost="1" qualification="trollblood trollkin unit attachment">
 						<model id="Krielstone Stone Scribe Elder">
-							<basestats name="Stone Scribe Elder" spd="5" str="7" mat="5" rat="4" def="12" arm="13" cmd="9" fearless="true" tough="true" officer="true"/>
+							<basestats name="Stone Scribe Elder" spd="5" str="7" mat="6" rat="4" def="12" arm="13" cmd="9" fearless="true" tough="true" officer="true"/>
+							<weapons>
+						    	<melee_weapon p_plus_s="11" pow="4" name="Hand weapon"></melee_weapon>
+							</weapons>
 							<capacity title="Attachment [Krielstone Bearer &amp; Stone Scribes]"> This attachment can be added to a Krielstone Bearer &amp; Stone Scribes unit.</capacity>
 							<capacity title="Stone Warp"> This model can use one of the following effects each turn anytime during its unit’s activation:</capacity>
 							<capacity title="* Combat Warding"> Continuous effects on friendly Faction models affected by this units Protective Aura expire. While affected by this unit's Protective Aura, a model is immune to continuous effects. Combat Warding lasts for one round.</capacity>
@@ -1185,7 +1180,7 @@ While B2B with one or more grunts in this unit, the leader gains +2 to attack ro
 					</model>
 				</unit>
 				<unit id="TU06" name="Trollkin Champions" full_name="Trollkin Champions" base_cost="6" baseCount="3" full_cost="10" fullCount="5" qualification="trollblood unit" fa="2" has_unit_attachment="true">
-					<basestats name="Leader and grunts" spd="5" str="7" mat="8" rat="4" def="12" arm="16" cmd="9" hitpoints="8" tough="true" fearless="true"/>
+					<basestats name="Leader and grunts" spd="5" str="7" mat="7" rat="4" def="12" arm="16" cmd="9" hitpoints="8" tough="true" fearless="true"/>
 					<weapons>
 					    <melee_weapon p_plus_s="11" pow="4" name="Hand weapon" weapon_master="true" count="2"></melee_weapon>
 					</weapons>
@@ -1213,7 +1208,7 @@ While B2B with one or more grunts in this unit, the leader gains +2 to attack ro
 					<capacity title="Vengeance">During your Maintenance Phase, if one or more models in this unit were destroyed or removed from play by enemy attacks during your opponent's last turn, each model in the unit can advance 3" and make one normal melee attack.</capacity>
 					<unit_attachment id="TA04" name="Trollkin Fennblade Officer &amp; Drummer" full_name="Trollkin Fennblade Officer &amp; Drummer" fa="1" cost="2" qualification="TROLLBLOOD UNIT ATTACHMENT">
 						<model id="Trollkin Fennblade Officer">
-							<basestats name="Trollkin Fennblade Officer" spd="6" str="7" mat="6" rat="4" def="12" arm="14" cmd="9" hitpoints="5" officer="true" tough="true"/>
+							<basestats name="Trollkin Fennblade Officer" spd="6" str="7" mat="7" rat="4" def="12" arm="14" cmd="9" hitpoints="5" officer="true" tough="true"/>
 							<weapons>
 					    		<melee_weapon p_plus_s="12" pow="5" name="Hooked great sword" reach="true"></melee_weapon>
 							</weapons>
@@ -1237,7 +1232,7 @@ While B2B with one or more grunts in this unit, the leader gains +2 to attack ro
 					    <melee_weapon p_plus_s="12" pow="5" name="Cavalry Axe" reach="true">
 					        <capacity title="Brutal Charge">This model gains +2 to charge attack damage rolls with this weapon.</capacity>
 					    </melee_weapon>
-					    <mount_weapon pow="14">
+					    <mount_weapon pow="14" name="Mount">
 					        <capacity title="Critical Knockdown">On a critical hit, the model hit is knocked down.</capacity>
 					    </mount_weapon>
 					</weapons>
@@ -1245,9 +1240,16 @@ While B2B with one or more grunts in this unit, the leader gains +2 to attack ro
 This model can make slam power attacks. A slammed model suffers a damage roll with POW equal to the current POW of this mode1’s Mount. The POW of collateral damage from a slam is equal to the current POW of the Mount. If this model makes a successful slam but moved less than 3", it makes an attack roll against its target. If the target is hit, it suffers a damage roll with POW equal to the current POW of this model’s Mount but is not slammed. After resolving a slam power attack, this model can make one normal melee attack.
 					</capacity>
 				</unit>
-				<unit id="TU09" name="Trollkin Runeshapers" full_name="Trollkin Runeshapers" base_cost="4" baseCount="3" full_cost="-" fullCount="-" qualification="Unit" fa="2">
-					<basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5"/>
-					<weapons></weapons>
+				<unit id="TU09" name="Trollkin Runeshapers" full_name="Trollkin Runeshapers" base_cost="4" baseCount="3" full_cost="-" fullCount="-" qualification="trollblood unit" fa="2">
+					<basestats name="Leader and grunts" spd="5" str="6" mat="6" rat="4" def="12" arm="15" cmd="8" hitpoints="5" pathfinder="true" tough="true"/>
+					<weapons>
+					    <melee_weapon p_plus_s="10" pow="4" name="Hand weapon" magical="true">
+					    </melee_weapon>
+					</weapons>
+					<capacity title="Magic Ability [7]"></capacity>
+					<capacity title="* Rock Hammer" type="*Attack">Rock Hammer is a RNG 8, AOE 3, POW 14 magic attack. On a critical hit, models hit are knocked down.</capacity>
+					<capacity title="* Tremor" type="*Attack">Tremor affects every model within 2" of this model and does not require a target. Make one magic attack roll. If the roll equals or exceeds the DEF of an affected model, it is knocked down. This attack roll cannot be rerolled. This model can make a Tremor special attack if it charges.</capacity>
+					<capacity title="Steady">This model cannot be knocked down.</capacity>
 				</unit>
 				<unit id="TU10" name="Trollkin Scattergunners" full_name="Trollkin Scattergunners" base_cost="5" baseCount="6" full_cost="8" fullCount="10" qualification="trollblood trollkin unit" fa="2" has_unit_attachment="true">
 					<basestats name="Leader and grunts" spd="6" str="6" mat="5" rat="5" def="12" arm="14" cmd="8" tough="true"/>
@@ -1257,7 +1259,7 @@ This model can make slam power attacks. A slammed model suffers a damage roll wi
 					</weapons>
 					<unit_attachment id="TA06" name="Trollkin Scattergunner Officer &amp; Standard" full_name="Trollkin Scattergunner Officer &amp; Standard" fa="1" cost="2" qualification="Unit attachment">
 						<model id="Trollkin Scattergunner Officer">
-							<basestats name="Trollkin Scattergunner Officer" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" tough="true"/>
+							<basestats name="Trollkin Scattergunner Officer" spd="6" str="6" mat="6" rat="6" def="12" arm="14" cmd="9" hitpoints="5" tough="true" officer="true"/>
 							<weapons>
 							    <melee_weapon p_plus_s="9" pow="3" name="Gun blade"></melee_weapon>
 							    <ranged_weapon rng="SP8" name="Scattergun" aoe="-" pow="12" rof="1"></ranged_weapon>
@@ -1267,7 +1269,7 @@ This model can make slam power attacks. A slammed model suffers a damage roll wi
 							<capacity title="Tactics: Combined Melee Attack"> Models in this unit gain Combined Melee Attack  </capacity>
 						</model>
 						<model id="Trollkin Scattergunner Drummer">
-							<basestats name="Trollkin Scattergunner Drummer" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" standard_bearer="true" tough="true"/>
+							<basestats name="Trollkin Scattergunner Drummer" spd="6" str="6" mat="5" rat="5" def="12" arm="14" cmd="8" standard_bearer="true" tough="true"/>
 						</model>
 					</unit_attachment>
 				</unit>
@@ -1385,10 +1387,10 @@ As part of a charge, after moving but before making its charge attack, this mode
 					<capacity title="Model count">5 whelps</capacity>
 				</solo>
 				<solo id="TS04" name="Trollkin Champion Hero" full_name="Trollkin Champion Hero" cost="3" qualification="Solo" fa="2">
-					<basestats name="Trollkin Champion Hero" spd="5" str="7" mat="8" rat="4" def="12" arm="16" cmd="10" hitpoints="8" tough="true"/>
+					<basestats name="Trollkin Champion Hero" spd="5" str="7" mat="8" rat="4" def="12" arm="16" cmd="10" hitpoints="8" tough="true" fearless="true" commander="true"/>
 					<weapons>
 					    <melee_weapon name="Great Axe" pow="5" p_plus_s="12" reach="true" weapon_master="true">
-					        <capacity title="Tresher"></capacity>
+					        <capacity title="Tresher (*Attack)">This model makes one melee attack with this weapon against each model in its LOS and this weapon’s melee range.</capacity>
 					    </melee_weapon>
 					</weapons>
 					<capacity title="Relentless Charge">This model gains Pathfinder during activations it charges.</capacity>
@@ -1396,7 +1398,7 @@ As part of a charge, after moving but before making its charge attack, this mode
 					<capacity title="Tactician [Trollkin Champion]">While in this model’s command range, friendly Trollkin Champion models ignore other friendly Trollkin Champion models when determining LOS. Friendly Trollkin Champion models can advance through other friendly Trollkin Champion models in this model’s command range without effect if they have enough movement to move completely past them.</capacity>
 				</solo>
 				<solo id="TS05" name="Horthol, Long Rider Champion" full_name="Horthol, Long Rider Champion" cost="5" qualification="trollblood trollkin dragoon character solo" fa="C" dragoon="true">
-					<basestats name="Horthol, Long Rider Champion(mounted)" spd="7" str="9" mat="8" rat="4" def="12" arm="18" cmd="9" hitpoints="10"/>
+					<basestats name="Horthol, Long Rider Champion(mounted)" spd="7" str="9" mat="8" rat="4" def="12" arm="18" cmd="9" hitpoints="10" tough="true" fearless="true"/>
 					<weapons>
 					    <melee_weapon name="Long Hammer" pow="6" p_plus_s="15" reach="true">
 					        <capacity title="Critical Stagger">On a critical hit, the model hit loses its initial attacks and cannot make special attack for one round.</capacity>
@@ -1411,9 +1413,11 @@ As part of a charge, after moving but before making its charge attack, this mode
 					<capacity title="Follow Up"> When this model slams an enemy model, immediately after the slam is resolved this model can advance directly toward the slammed model up to the distance the slammed model was moved.</capacity>
 					<capacity title="Line Breaker">This model gains an additional die on impact attack rolls.</capacity>
 					<model id="Horthol_dismount">
-					    <basestats name="Horthol, Long Rider Champion(dismounted)" spd="5" str="9" mat="8" rat="4" def="12" arm="16" cmd="9" hitpoints="8" tough="true"/>
+					    <basestats name="Horthol, Long Rider Champion(dismounted)" spd="5" str="9" mat="8" rat="4" def="12" arm="16" cmd="9" hitpoints="8" tough="true" fearless="true"/>
 					    <weapons>
-						    <melee_weapon name="Long Hammer" pow="6" p_plus_s="15" reach="true"></melee_weapon>
+						    <melee_weapon name="Long Hammer" pow="6" p_plus_s="15" reach="true">
+						        <capacity title="Critical Stagger">See above.</capacity>
+						    </melee_weapon>
 						</weapons>
 					</model>
 				</solo>
@@ -1425,9 +1429,9 @@ As part of a charge, after moving but before making its charge attack, this mode
 					<capacity title="Power Glyphs" type="*Action">This model can make a Power Glyphs special action only once per game while in its Warlock's control area. This model immediately casts one of its warlock's spells with a COST of 3 or less. The warlock is considered to have cast the spell but this model is its point of origin. When making a magic attack roll, this model uses its warloclds FURY. This model cannot cast spells with a RNG of SELF or CTRL.</capacity>
 				</solo>
 				<solo id="TS07" name="Trollblood Skinner" full_name="Trollblood Skinner" cost="2" qualification="trollblood solo" fa="2">
-					<basestats name="Trollblood Skinner" spd="6" str="6" mat="7" rat="3" def="13" arm="14" cmd="0" hitpoints="8" advance_deployment="true" tough="true" pathfinder="true"/>
+					<basestats name="Trollblood Skinner" spd="6" str="6" mat="7" rat="3" def="13" arm="14" cmd="8" hitpoints="8" advance_deployment="true" tough="true" pathfinder="true"/>
 					<weapons>
-					    <melee_weapon p_plus_s="9" pow="2" name="Skinning knife" weapon_master="true"></melee_weapon>
+					    <melee_weapon p_plus_s="8" pow="2" name="Skinning knife" weapon_master="true"></melee_weapon>
 					</weapons>
 					<capacity title="Dismember">When this model hits a warbeast with a melee attack, roll an additional damage die.</capacity>
 					<capacity title="Duck">This model gains +4 DEF against melee and ranged attack rolls made by warbeasts. Warbeasts cannot target this model with free strikes.</capacity>
@@ -1438,11 +1442,10 @@ As part of a charge, after moving but before making its charge attack, this mode
 					<basestats name="Janissa Stonetide" spd="5" str="6" mat="6" rat="4" def="12" arm="15" cmd="8" hitpoints="8" tough="true" pathfinder="true"/>
 					<weapons>
 					    <melee_weapon name="Earthsplitter" pow="3" p_plus_s="9" magical="true">
-					        <capacity title="Force Lock">Enemy models in this model’s melee range cannot advance except to change facing.</capacity>
 					        <capacity title="Armor Piercing (*Attack)">When calculating damage from this attack, halve the base ARM stats of models hit that have medium or larger bases. This attack gains +2 to damage rolls against models with small bases.</capacity>
 					    </melee_weapon>
 					</weapons>
-					
+					<capacity title="Force Lock">Enemy models in this model’s melee range cannot advance except to change facing.</capacity>
 					<capacity title="Leadership [Runeshapers]">While in this model's command range, friendly Runeshaper models gain Force Lock.</capacity>
 					<capacity title="Magic Ability">[8]</capacity>
 					<capacity title="Rock Hammer" type="*Attack">Rock Hammer is a RNG 8, AOE 3, POW 14 magic attack. On a critical hit, models hit are knocked down.</capacity>

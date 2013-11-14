@@ -23,6 +23,10 @@ public class ModelDamageLine  extends DamageGrid implements Serializable {
 	
 	List<DamageBox> boxes = new ArrayList<DamageBox>();
 	
+	/**
+	 * keep tracks of boxes with damages, usefull for damage deletion.
+	 */
+	private List<DamageBox> justDamagedBoxes = new ArrayList<DamageBox>();
 	
 	/**
 	 * create a new line by copy (no pointer reference to old line)
@@ -126,11 +130,13 @@ public class ModelDamageLine  extends DamageGrid implements Serializable {
 						box.setCurrentlyChangePending(true);
 						box.setDamagedPending(true);
 						damageApplied ++;
+						justDamagedBoxes.add(box);
 					}
 					if (! box.isDamagedPending() && box.isCurrentlyChangePending()) {
 						box.setCurrentlyChangePending(false);
 						box.setDamagedPending(true);
 						damageApplied ++;
+						justDamagedBoxes.add(box);
 					}
 				}
 			}
@@ -182,6 +188,21 @@ public class ModelDamageLine  extends DamageGrid implements Serializable {
 		
 		return new DamageStatus(nbHits, nbDamages, "");
 	}
+	
+	public DamageStatus getDamagePendingStatus() {
+		int nbHits = 0;
+		int nbDamages = 0;
+		for (DamageBox box : boxes) {
+			if (!box.getSystem().equals(WarmachineDamageSystemsEnum.EMPTY)) {
+				nbHits++;
+				if ((box.isDamagedPending() && box.isCurrentlyChangePending()) || box.isDamaged()) {
+					nbDamages++;
+				}
+			}
+		}
+		
+		return new DamageStatus(nbHits, nbDamages, "");
+	}
 
 	@Override
 	public void commitFakeDamages() {
@@ -192,7 +213,7 @@ public class ModelDamageLine  extends DamageGrid implements Serializable {
 			}
 		}
 		notifyBoxChange();
-		
+		justDamagedBoxes = new ArrayList<DamageBox>();
 		notifyCommit();
 	}
 
@@ -204,6 +225,7 @@ public class ModelDamageLine  extends DamageGrid implements Serializable {
 				box.setCurrentlyChangePending(false);
 			}
 		}
+		justDamagedBoxes = new ArrayList<DamageBox>();
 		notifyBoxChange();
 	}
 
@@ -220,4 +242,9 @@ public class ModelDamageLine  extends DamageGrid implements Serializable {
 		notifyBoxChange();
 	}
 
+	public List<DamageBox> getJustDamagedBoxes() {
+		return justDamagedBoxes;
+	}
+
+	
 }

@@ -1,5 +1,6 @@
 package com.schlaf.steam.activities.battle;
 
+import com.schlaf.steam.activities.damages.ModelDamageLine;
 import com.schlaf.steam.data.ArmyElement;
 import com.schlaf.steam.data.Colossal;
 import com.schlaf.steam.data.ColossalDamageGrid;
@@ -37,6 +38,12 @@ public class JackEntry extends MultiPVModel {
 			leftGrid.fromString(((Colossal) jack).getLeftGrid());
 			WarjackDamageGrid rightGrid = new WarjackDamageGrid(model);
 			rightGrid.fromString(((Colossal) jack).getRightGrid());
+			
+			if ( ((Colossal)jack).isMyrmidon()) {
+				ModelDamageLine forceFieldGrid = new ModelDamageLine(new MiniModelDescription(model), ((Colossal)jack).getForceField());
+				colossalGrid.setForceFieldGrid(forceFieldGrid);
+			}
+			
 			colossalGrid.setLeftGrid(leftGrid);
 			colossalGrid.setRightGrid(rightGrid);
 

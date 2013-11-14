@@ -14,4 +14,6 @@ public abstract class WarjackLikeDamageGrid extends DamageGrid {
 	public abstract DamageStatus getNbHitPointsSystem(WarmachineDamageSystemsEnum system);
 
 	public abstract List<WarmachineDamageSystemsEnum> getSystems();
+
+	public abstract List<DamageBox> getJustDamagedBoxes();
 }

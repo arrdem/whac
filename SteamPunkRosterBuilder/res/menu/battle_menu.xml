@@ -25,7 +25,7 @@
         android:showAsAction="ifRoom"
         android:title="End battle"/>
     
-    
+    <!-- 
     <item android:id="@+id/startBeddernet"
           android:icon="@drawable/bluetooth_init"
           android:title="Open bluetooth channel"
@@ -40,7 +40,7 @@
           android:icon="@android:drawable/ic_menu_mylocation"
           android:title="@string/discoverable"
           android:showAsAction="ifRoom|withText" />
-    
+     -->
     
     <item
         android:id="@+id/menu_more"

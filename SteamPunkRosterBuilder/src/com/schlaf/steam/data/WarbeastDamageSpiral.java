@@ -351,9 +351,9 @@ public class WarbeastDamageSpiral extends DamageGrid {
 
 	public enum AspectEnum {
 		
-		SPIRIT(1,2, Math.PI * 2 / 3, Color.GREEN),
+		MIND(1,2, Math.PI * 2 / 3, Color.CYAN),
 		BODY(3,4, Math.PI * 4 / 3, Color.RED),
-		MIND(5,6, 0, Color.BLUE);
+		SPIRIT(5,6, 0, Color.GREEN);
 		
 		private int branchId1;
 		private int branchId2;
@@ -420,7 +420,7 @@ public class WarbeastDamageSpiral extends DamageGrid {
 			AspectEnum aspect = null;
 			switch (aspectOrdinal) {
 				case 1 :{
-					aspect = AspectEnum.SPIRIT;
+					aspect = AspectEnum.MIND;
 					break;
 				}
 				case 2 :{
@@ -428,7 +428,7 @@ public class WarbeastDamageSpiral extends DamageGrid {
 					break;
 				}
 				case 3 :{
-					aspect = AspectEnum.MIND;
+					aspect = AspectEnum.SPIRIT;
 					break;
 				}
 			}

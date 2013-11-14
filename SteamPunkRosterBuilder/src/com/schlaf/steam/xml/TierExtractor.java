@@ -40,6 +40,7 @@ public class TierExtractor {
 	private static final String NUMBER_ATTRIBUTE = "number";
 	
 	private static final String ONLY_TAG = "only";
+	private static final String FOR_EACH_TAG = "forEach";
 	private static final String ENTRY_TAG = "entry";
 	
 	private static final String BENEFITS_TAG = "benefits";
@@ -67,7 +68,7 @@ public class TierExtractor {
 	private static final String ID_TAG = "id";
 	private static final String NAME_TAG = "name";
 	
-	private boolean D = false;
+	private boolean D = true;
 	
 
 	/** access to local resources */
@@ -259,14 +260,8 @@ public class TierExtractor {
 				if (INGAMEEFFECT_TAG.equals(xpp.getName())) {
 					String inGameEffect = xpp.nextText(); // xpp.getAttributeValue(null, LABEL_ATTRIBUTE);
 					benefit.setInGameEffect(inGameEffect);
-					
 				} else if (ALTERFA_TAG.equals(xpp.getName())) {
-					TierFAAlteration alteration = new TierFAAlteration();
-					String bonus = xpp.getAttributeValue(null, BONUS_ATTRIBUTE);
-					String entryId = xpp.getAttributeValue(null, ENTRYID_ATTRIBUTE);
-					alteration.setEntry(new TierEntry(entryId));
-					alteration.setFaAlteration(parseFA(bonus));
-					benefit.getAlterations().add(alteration);
+					loadFaAlteration(xpp, benefit);
 				} else if (ALTERCOST_TAG.equals(xpp.getName())) {
 					TierCostAlteration alteration = new TierCostAlteration();
 					String bonus = xpp.getAttributeValue(null, BONUS_ATTRIBUTE);
@@ -275,13 +270,36 @@ public class TierExtractor {
 					alteration.setCostAlteration(Integer.parseInt(bonus));
 					benefit.getAlterations().add(alteration);
 				} else if (FREEMODEL_TAG.equals(xpp.getName())) {
-					TierFreeModel freeModel = new TierFreeModel();
-					loadFreeModels(xpp, freeModel);
-					benefit.getFreebies().add(freeModel);
+					loadFreeModel(xpp, benefit);
 				} 
 			}
 			eventType = xpp.next();
 		}
+	}
+
+	private void loadFreeModel(XmlResourceParser xpp, TierBenefit benefit) throws XmlPullParserException, IOException {
+		TierFreeModel freeModel = new TierFreeModel();
+		loadFreeModels(xpp, freeModel);
+		benefit.getFreebies().add(freeModel);
+	}
+
+	private void loadFaAlteration(XmlResourceParser xpp, TierBenefit benefit) throws XmlPullParserException, IOException  {
+		TierFAAlteration alteration = new TierFAAlteration();
+		String bonus = xpp.getAttributeValue(null, BONUS_ATTRIBUTE);
+		String entryId = xpp.getAttributeValue(null, ENTRYID_ATTRIBUTE);
+		alteration.setEntry(new TierEntry(entryId));
+		alteration.setFaAlteration(parseFA(bonus));
+		benefit.getAlterations().add(alteration);
+		
+		int eventType = xpp.getEventType();
+		while (! (eventType == XmlPullParser.END_TAG && ALTERFA_TAG.equals(xpp
+				.getName()))) {
+			if (FOR_EACH_TAG.equals(xpp.getName())) {
+				loadForEachFAAlter(xpp, alteration);
+			}
+			eventType = xpp.next();
+		}
+		
 	}
 
 	private int parseFA(String bonus) {
@@ -300,6 +318,10 @@ public class TierExtractor {
 				if (ENTRY_TAG.equals(xpp.getName())) {
 					TierEntry entry = loadEntry(xpp);
 					freeModel.getFreeModels().add(entry);
+				}
+				
+				if (FOR_EACH_TAG.equals(xpp.getName())) {
+						loadForEachFreeModel(xpp, freeModel);
 				}
 			}
 			eventType = xpp.next();
@@ -345,7 +367,40 @@ public class TierExtractor {
 			eventType = xpp.next();
 		}
 	}
+	
+	
+	private void loadForEachFAAlter(XmlResourceParser xpp, TierFAAlteration faAlteration) throws XmlPullParserException, IOException  {
+		int eventType = xpp.getEventType();
+		faAlteration.setForEach(new ArrayList<TierEntry>());
+		while (!(eventType == XmlPullParser.END_TAG && FOR_EACH_TAG.equals(xpp
+				.getName()))) {
+			// until the end of tag factions
+			if (eventType == XmlPullParser.START_TAG) {
+				if (ENTRY_TAG.equals(xpp.getName())) {
+					TierEntry entry = loadEntry(xpp);
+					faAlteration.getForEach().add(entry);
+				}
+			}
+			eventType = xpp.next();
+		}
+	}
 
+	private void loadForEachFreeModel(XmlResourceParser xpp, TierFreeModel freeModel) throws XmlPullParserException, IOException  {
+		int eventType = xpp.getEventType();
+		freeModel.setForEach(new ArrayList<TierEntry>());
+		while (!(eventType == XmlPullParser.END_TAG && FOR_EACH_TAG.equals(xpp
+				.getName()))) {
+			// until the end of tag factions
+			if (eventType == XmlPullParser.START_TAG) {
+				if (ENTRY_TAG.equals(xpp.getName())) {
+					TierEntry entry = loadEntry(xpp);
+					freeModel.getForEach().add(entry);
+				}
+			}
+			eventType = xpp.next();
+		}
+	}
+	
 	private void loadEntryGroup(XmlResourceParser xpp, TierEntryGroup group) throws XmlPullParserException, IOException  {
 
 		String groupMin = xpp.getAttributeValue(null, MINNUMBER_ATTRIBUTE);

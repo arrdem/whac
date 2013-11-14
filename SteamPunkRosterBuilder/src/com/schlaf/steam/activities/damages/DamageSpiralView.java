@@ -4,12 +4,21 @@ import java.util.ArrayList;
 import java.util.List;
 
 import android.content.Context;
+import android.graphics.BlurMaskFilter;
 import android.graphics.Canvas;
 import android.graphics.Color;
+import android.graphics.ComposePathEffect;
+import android.graphics.CornerPathEffect;
 import android.graphics.Paint;
+import android.graphics.PathDashPathEffect;
+import android.graphics.BlurMaskFilter.Blur;
 import android.graphics.Paint.Align;
+import android.graphics.Path.FillType;
+import android.graphics.Path;
+import android.graphics.PathEffect;
 import android.graphics.RadialGradient;
 import android.graphics.Shader.TileMode;
+import android.graphics.Typeface;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 
@@ -112,7 +121,8 @@ public class DamageSpiralView extends DamageBaseView implements ColumnChangeNoti
 						distance = dist;
 					}
 				}
-				if (distance < pointProche.radius * pointProche.radius * 3.5) {
+				// to touch branch indicator, enlarge sensibility zone.
+				if (distance < pointProche.radius * pointProche.radius * 4.5) {
 					if (indicateurColumnProche.colNumber != currentColumn) {
 						currentColumn = indicateurColumnProche.colNumber;
 						notifyColumnChange();
@@ -138,7 +148,7 @@ public class DamageSpiralView extends DamageBaseView implements ColumnChangeNoti
 			sm.setName("example");
 			spiral = new WarbeastDamageSpiral(sm);
 			spiral.fromString("9-13-12");
-			spiral.fromString("11-20-17");
+			spiral.fromString("6-5-9");
 		}
 		
 		
@@ -186,23 +196,42 @@ public class DamageSpiralView extends DamageBaseView implements ColumnChangeNoti
 		coords = new ArrayList<DamageSpiralView.Coords>();
 		coordsColumnIndicator = new ArrayList<CoordsColumn>();
 
-
+		// draw aspect name
 		for (AspectEnum aspect : spiral.getBranches().keySet()) {
 			DamageBranch branch = spiral.getBranches().get(aspect);
-			
-			paint.setColor(branch.getAspect().getColor());
-			paint.setTextSize((float) h/10);
-			if (branch.getAspect() == AspectEnum.SPIRIT) {
-				paint.setTextAlign(Align.LEFT);
-				canvas.drawText( branch.getAspect().name(), 10, h /10 + 10, paint);
-			} else if (branch.getAspect() == AspectEnum.BODY) {
-				paint.setTextAlign(Align.RIGHT);
-				canvas.drawText( branch.getAspect().name(), l - 10, h /10 + 10, paint);
-			} else if (branch.getAspect() == AspectEnum.MIND) {
-				paint.setTextAlign(Align.LEFT);
-				canvas.drawText( branch.getAspect().name(), 10, h - 10 , paint);
-			}
 
+			paint.setColor(Color.WHITE);
+			paint.setTextSize((float) h/15);
+			
+			BlurMaskFilter filter = new BlurMaskFilter(5, Blur.OUTER);
+			
+			if (branch.getAspect() == AspectEnum.BODY) {
+				paint.setTextAlign(Align.RIGHT);
+				paint.setMaskFilter(filter);
+				paint.setColor(Color.WHITE);
+				canvas.drawText( branch.getAspect().name(), l-10, h - 10, paint);
+				paint.setMaskFilter(null);
+				paint.setColor(branch.getAspect().getColor());
+				canvas.drawText( branch.getAspect().name(), l-10, h - 10 , paint);
+			} else if (branch.getAspect() == AspectEnum.MIND) {
+				paint.setTextAlign(Align.RIGHT);
+				paint.setColor(Color.WHITE);
+				paint.setMaskFilter(filter);
+				canvas.drawText( branch.getAspect().name(), l - 10, h /10 + 10, paint);
+				paint.setMaskFilter(null);
+				paint.setColor(branch.getAspect().getColor());
+				canvas.drawText( branch.getAspect().name(), l - 10, h /10 + 10, paint);
+			} else if (branch.getAspect() == AspectEnum.SPIRIT) {
+				paint.setTextAlign(Align.LEFT);
+				paint.setColor(Color.WHITE);
+				paint.setMaskFilter(filter);
+				canvas.drawText( branch.getAspect().name(), 10,  h /10 + 10 , paint);
+				paint.setMaskFilter(null);
+				paint.setColor(branch.getAspect().getColor());
+				canvas.drawText( branch.getAspect().name(), 10,  h /10 + 10 , paint);
+
+			}
+			paint.setMaskFilter(null);
 			
 			drawBranchesBackground(rayon, centerX, centerY, branch, paint, canvas, maxCircle);
 		}
@@ -297,10 +326,10 @@ public class DamageSpiralView extends DamageBaseView implements ColumnChangeNoti
 			int centerX, int centerY, Paint paint, Canvas canvas,
 			int maxCircle, int circlesCount, int radialMultiplicator, int red,
 			int green, int blue, boolean outer, boolean isSelected) {
-		for (int i = 0; i < circlesCount ; i ++) { //  +1 car cercle de légende 
+		for (int i = 0; i < maxCircle + 1 ; i ++) { //  +1 car cercle de légende 
 			
-			int R = (int) ( (i+3) * ( rayon * POURCENTAGE_RAYON / maxCircle)) ; // on prend 80% du rayon
-			double angle = (i+3) * ( OUVERTURE_ANGULAIRE / maxCircle) + theta  ; // on tourne sur 90° + pi/10
+			int R = (int) ( 2.5 * rayon * POURCENTAGE_RAYON / maxCircle + (i+1) * ( rayon * POURCENTAGE_RAYON / (maxCircle+2))) ; // on prend 80% du rayon
+			double angle = (i+3) * ( OUVERTURE_ANGULAIRE / (maxCircle)) + theta  ; // on tourne sur 90° + pi/10
 			if (outer) {
 				angle += POSITIVE_ANGULAR_OFFSET;
 			} else {
@@ -312,7 +341,7 @@ public class DamageSpiralView extends DamageBaseView implements ColumnChangeNoti
 			int y = (int) (R * Math.sin(angle)) + centerY;
 			
 
-			int shadedColor1 = Color.argb( 125 + 255 * i / circlesCount / 2 , red, green, blue);
+			int shadedColor1 = Color.argb( 125 + 255 * i / maxCircle / 2 , red, green, blue);
 			int shadedColor2 = Color.argb( 0 , red, green, blue);
 
 			if (isSelected) {
@@ -341,10 +370,64 @@ public class DamageSpiralView extends DamageBaseView implements ColumnChangeNoti
 			int centerY, List<DamageCircle> circles, Paint paint, Canvas canvas, boolean outer, int maxCircle, AspectEnum aspect) {
 
 		
-		for (int i = 0; i < circles.size() + 1 ; i ++) { //  +1 car cercle de légende 
+		Path p = new Path();
+	    
+		for (int i = 0; i < maxCircle + 1 ; i ++) { //  +1 car cercle de légende
+			int R = (int) ( 2.5 * rayon * POURCENTAGE_RAYON / maxCircle + (i+1) * ( rayon * POURCENTAGE_RAYON / (maxCircle+2))) ; // on prend 80% du rayon
+			double angle = (i+3) * ( OUVERTURE_ANGULAIRE / (maxCircle)) + theta  ; // on tourne sur 90° + pi/10
 			
-			int R = (int) ( (i+3) * ( rayon * POURCENTAGE_RAYON / maxCircle)) ; // on prend 80% du rayon
-			double angle = (i+3) * ( OUVERTURE_ANGULAIRE / maxCircle) + theta  ; // on tourne sur 90° + pi/10
+			if (outer) {
+				angle += POSITIVE_ANGULAR_OFFSET;
+			} else {
+				angle -= NEGATIVE_ANGULAR_OFFSET;
+			}
+			
+			int x = (int) (R * Math.cos(angle)) + centerX;
+			int y = (int) (R * Math.sin(angle)) + centerY;
+
+			if (i==0) {
+				p.moveTo(x,y);
+			} else {
+				p.lineTo(x, y);
+			}
+
+		}
+		
+		paint.setColor(Color.BLACK);
+		paint.setStyle(Paint.Style.STROKE);
+		paint.setStrokeWidth(1.5f);
+		PathEffect pe = new CornerPathEffect(20);
+		paint.setPathEffect(pe);
+		
+		if (aspect.getBranchId1() == currentColumn && ! outer && edit) {
+			PathEffect dash = new PathDashPathEffect(makePathDash(), 12, 5,
+	                PathDashPathEffect.Style.ROTATE);
+			PathEffect finalPath = new ComposePathEffect(pe, dash);
+			paint.setPathEffect(finalPath);
+			canvas.drawPath(p, paint);
+		} else if (aspect.getBranchId2() == currentColumn && outer && edit) {
+			PathEffect dash = new PathDashPathEffect(makePathDash(), 12, 5,
+	                PathDashPathEffect.Style.ROTATE);
+			PathEffect finalPath = new ComposePathEffect(pe, dash);
+			paint.setPathEffect(finalPath);
+			canvas.drawPath(p, paint);	
+		} else {
+			canvas.drawPath(p, paint);	
+		}
+		
+		
+		
+		paint.setStyle(Paint.Style.FILL);
+		paint.setPathEffect(null);
+
+		
+		for (int i = 0; i < maxCircle + 1 ; i ++) { //  +1 car cercle de légende 
+			
+			boolean emptyCircleForLegend = (i >= circles.size() && i < maxCircle);
+			boolean lastCircleForLegend = (i == maxCircle );
+			
+			int R = (int) ( 2.5 * rayon * POURCENTAGE_RAYON / maxCircle + (i+1) * ( rayon * POURCENTAGE_RAYON / (maxCircle+2))) ; // on prend 80% du rayon
+			double angle = (i+3) * ( OUVERTURE_ANGULAIRE / (maxCircle)) + theta  ; // on tourne sur 90° + pi/10
 			if (outer) {
 				angle += POSITIVE_ANGULAR_OFFSET;
 			} else {
@@ -356,57 +439,69 @@ public class DamageSpiralView extends DamageBaseView implements ColumnChangeNoti
 			int y = (int) (R * Math.sin(angle)) + centerY;
 			
 			
-			boolean lastCircleForLegend = (i == circles.size());
-			
 			// cercle extérieur 
-			if ( ! lastCircleForLegend) {
+			if ( ! lastCircleForLegend && !emptyCircleForLegend) {
 				coords.add(new Coords(circles.get(i), x, y, (int) tailleCercle));
 			} 
-			paint.setColor(Color.BLACK);	// case de légende
-			canvas.drawCircle(x, y, (int) tailleCercle,paint);
+			if (lastCircleForLegend) {
+				paint.setColor(Color.WHITE);	// case de légende
+			} else if (emptyCircleForLegend) {
+				//paint.setColor(Color.BLACK);
+				tailleCercle = 0;
+			} else {
+				paint.setColor(Color.BLACK);	// case de légende
+			}
+			
+			
+			
+			if (!emptyCircleForLegend) {
+				canvas.drawCircle(x, y, (int) tailleCercle,paint);
+			}
 
 			
 			if (lastCircleForLegend) {
 				// cercle de légende, blanc sauf si selectionné
 				if (aspect.getBranchId1() == currentColumn && !outer && edit) {
-					paint.setColor(Color.YELLOW);
+					paint.setColor(Color.RED);
 				}
 				else if (aspect.getBranchId2() == currentColumn && outer && edit) {
-					paint.setColor(Color.YELLOW);
+					paint.setColor(Color.RED);
 				} else {
-					paint.setColor(Color.LTGRAY);
+					paint.setColor(Color.DKGRAY);
 				}
 			} else {
 				// case de dommage
-				DamageCircle circle = circles.get(i);
-				if (circle.isCurrentlyChangePending()) {
-					if (circle.isDamaged() && circle.isDamagedPending()) {
-						paint.setColor(BOX_INNER_COLOR_DAMAGED); // damaged : gray inside
-					} else if (circle.isDamaged() && ! circle.isDamagedPending()){
-						paint.setColor(BOX_INNER_COLOR_REPAIRED_PENDING);
-					} else if (! circle.isDamaged() && circle.isDamagedPending()) {
-						paint.setColor(BOX_INNER_COLOR_DAMAGED_PENDING);
+				if (! emptyCircleForLegend) {
+					DamageCircle circle = circles.get(i);
+					if (circle.isCurrentlyChangePending()) {
+						if (circle.isDamaged() && circle.isDamagedPending()) {
+							paint.setColor(BOX_INNER_COLOR_DAMAGED); // damaged : gray inside
+						} else if (circle.isDamaged() && ! circle.isDamagedPending()){
+							paint.setColor(BOX_INNER_COLOR_REPAIRED_PENDING);
+						} else if (! circle.isDamaged() && circle.isDamagedPending()) {
+							paint.setColor(BOX_INNER_COLOR_DAMAGED_PENDING);
+						} else {
+							paint.setColor(BOX_INNER_COLOR_OK); // no damaged : white inside
+						}
 					} else {
-						paint.setColor(BOX_INNER_COLOR_OK); // no damaged : white inside
-					}
-				} else {
-					if (circle.isDamaged()) {
-						paint.setColor(BOX_INNER_COLOR_DAMAGED); // damaged : gray inside
-					} else {
-						paint.setColor(BOX_INNER_COLOR_OK); // no damaged : white inside
+						if (circle.isDamaged()) {
+							paint.setColor(BOX_INNER_COLOR_DAMAGED); // damaged : gray inside
+						} else {
+							paint.setColor(BOX_INNER_COLOR_OK); // no damaged : white inside
+						}
 					}
 				}
 			}
-				
-			canvas.drawCircle(x, y, (int) tailleCercle - 1 ,paint);
 			
+			canvas.drawCircle(x, y, (int) tailleCercle - 1 ,paint);
 			
 			
 			if (lastCircleForLegend) {
 				// cercle de légende
-				paint.setColor(Color.BLACK);
+				paint.setColor(Color.WHITE);
 				paint.setTextAlign(Align.CENTER);
-				paint.setTextSize((float) 0.06 * rayon);
+				paint.setTextSize((float) 0.08 * rayon);
+				paint.setTypeface(Typeface.DEFAULT_BOLD);
 				canvas.drawText(String.valueOf(outer?aspect.getBranchId2():aspect.getBranchId1()), x, (int) (y + 0.03 * rayon), paint);
 			}
 			
@@ -422,7 +517,9 @@ public class DamageSpiralView extends DamageBaseView implements ColumnChangeNoti
 				coordsColumnIndicator.add(coord);
 			}
 			
-		}		
+		}	
+		
+		
 	}
 
 
@@ -687,5 +784,16 @@ public class DamageSpiralView extends DamageBaseView implements ColumnChangeNoti
 		invalidate();
 	}
 
+
+    private static Path makePathDash() {
+        Path p = new Path();
+        p.moveTo(-4, 0);
+        p.lineTo(0, -4);
+        p.lineTo(-8, -4);
+        p.lineTo(-12, 0);
+        p.lineTo(-8, 4);
+        p.lineTo(0, 4);
+        return p;
+    }
 	
 }

@@ -1316,9 +1316,9 @@ During its activation, this model can spend 1 focus point to gain Bushwhack this
 							p_plus_s="16"
 							chain="true">
 							<capacity
-								title="CHAIN WEAPON">This attack ignores shields and Shield Wall.</capacity>
+								title="CHAIN WEAPON">This attack ignores the Buckler and Shield weapon qualities and Shield Wall.</capacity>
 							<capacity
-								title="TRESHER"
+								title="TRESHER (*Attack)"
 								type="*Attack">
 		                        When making a Thresher attack, this model makes one normal melee attack with this weapon. Compare the total rolled to the DEF of each model in this model’s LOS and this weapon’s melee range. If the attack roll equals or exceeds a model’s DEF, that model is directly hit.
 		                    </capacity>

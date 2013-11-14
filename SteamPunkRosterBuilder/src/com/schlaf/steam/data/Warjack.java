@@ -52,7 +52,7 @@ public class Warjack extends ArmyElement implements Serializable, Restrictable {
 		this.grid = grid;
 	}
 
-	public ArrayList<String> getAllowedCastersToWorkFor() {
+	public ArrayList<String> getAllowedEntriesToAttach() {
 		return allowedCastersToWorkFor;
 	}
 	
